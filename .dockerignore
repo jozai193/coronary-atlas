@@ -7,3 +7,8 @@ docs/sources
 data/raw
 *.log
 __pycache__
+.env
+.railway
+tmp
+**/private
+data/external_audit

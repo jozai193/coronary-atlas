@@ -1,4 +1,4 @@
-"""Exact first-two public benchmark rows for field review; never new evaluation."""
+"""Exact selected A/B public benchmark rows for field review; never new evaluation."""
 from pathlib import Path
 import argparse
 import html
