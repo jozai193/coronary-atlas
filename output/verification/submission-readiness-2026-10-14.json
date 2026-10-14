@@ -20,7 +20,7 @@
     "visual_review": "six-page contact sheet plus final changed page reviewed"
   },
   "live_app": {
-    "url": "https://delicious-she-suggested-laura.trycloudflare.com",
+    "url": "https://coronary-atlas-production.up.railway.app",
     "password_required": false,
     "anonymous_profiles": [
       "a",
@@ -32,7 +32,11 @@
       "calibrated_ensemble_v1"
     ],
     "desktop_and_mobile": "passed; no page exceptions; no horizontal overflow at 390px",
-    "limitations": "Temporary tunnel depends on laptop, server and tunnel uptime. Static Hugging Face portal is separately hosted, not a managed inference backend."
+    "limitations": "Availability depends on account credits/plan; no paid upgrade was started.",
+    "hosting": "Railway Docker service, independent of entrant laptop",
+    "source_commit": "3178ffa",
+    "report_ocr_and_export_smoke_checks": "passed; simulated source review and previously inspected public lab specimen only",
+    "static_portal": "https://huggingface.co/spaces/jozai182/coronary-atlas"
   },
   "devpost": {
     "preview": "https://devpost.com/software/coronary-atlas-tjy0d7",
@@ -41,7 +45,10 @@
     "total_steps": 5,
     "final_submission_performed": false,
     "track": "A",
-    "entrant": "Aditya Jevoor"
+    "entrant": "Aditya Jevoor",
+    "gallery_images": 5,
+    "thumbnail": "uploaded and verified",
+    "entrant_profile_name": "Aditya Jevoor, persisted and verified"
   },
   "claims": "Engineering verification only; no independent clinical or broad OCR validation claimed."
 }

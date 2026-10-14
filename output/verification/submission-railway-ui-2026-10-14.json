@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-14",
+  "base_url": "https://coronary-atlas-production.up.railway.app",
+  "scope": "Engineering smoke checks, not clinical validation or a new independent OCR evaluation",
+  "public_lab_specimen_ocr": {
+    "worker_loaded": true,
+    "proposals": {
+      "CR": 0.76,
+      "Na": 134,
+      "K": 3.5
+    },
+    "all_unconfirmed": true,
+    "post_requests": 0,
+    "specimen_previously_inspected": true
+  },
+  "simulated_source_review": {
+    "attachment_opened_as_local_blob": true,
+    "attachment_upload_requests": 0,
+    "notes_excluded_from_prediction": true,
+    "explicit_checked_ef_copy": 55,
+    "old_prediction_cleared": true,
+    "research_json_downloaded": true,
+    "summary_preserved_context": true,
+    "switching_profile_cleared_source_notes": true,
+    "refresh_cleared_case": true,
+    "mobile_viewport_and_document_width": 390
+  },
+  "page_exceptions_in_desktop_mobile_check": 0,
+  "static_judge_portal": {
+    "url": "https://jozai182-coronary-atlas.static.hf.space/index.html",
+    "anonymous_embedded_prediction": "ready",
+    "managed_inference_backend": true,
+    "backend_host": "Railway"
+  }
+}

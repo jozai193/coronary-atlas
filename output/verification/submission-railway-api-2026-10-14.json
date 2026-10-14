@@ -1,0 +1,85 @@
+{
+  "base_url": "https://coronary-atlas-production.up.railway.app",
+  "anonymous": true,
+  "cookies_sent": false,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "seconds": 0.47
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.39
+    },
+    {
+      "path": "/api/review-profiles",
+      "status": 200,
+      "seconds": 0.41
+    },
+    {
+      "path": "/api/model/info",
+      "status": 200,
+      "seconds": 0.42
+    },
+    {
+      "path": "/api/model/candidates",
+      "status": 200,
+      "seconds": 0.42
+    },
+    {
+      "path": "/api/model/metrics",
+      "status": 200,
+      "seconds": 0.55
+    },
+    {
+      "path": "/api/held-out/cases",
+      "status": 200,
+      "seconds": 0.41
+    },
+    {
+      "path": "/api/predict",
+      "profile": "a",
+      "variant": "baseline",
+      "status": 200,
+      "seconds": 0.59
+    },
+    {
+      "path": "/api/predict",
+      "profile": "a",
+      "variant": "histgb_lcx_v2",
+      "status": 200,
+      "seconds": 0.56
+    },
+    {
+      "path": "/api/predict",
+      "profile": "a",
+      "variant": "calibrated_ensemble_v1",
+      "status": 200,
+      "seconds": 2.06
+    },
+    {
+      "path": "/api/predict",
+      "profile": "b",
+      "variant": "baseline",
+      "status": 200,
+      "seconds": 0.78
+    },
+    {
+      "path": "/api/predict",
+      "profile": "b",
+      "variant": "histgb_lcx_v2",
+      "status": 200,
+      "seconds": 0.62
+    },
+    {
+      "path": "/api/predict",
+      "profile": "b",
+      "variant": "calibrated_ensemble_v1",
+      "status": 200,
+      "seconds": 1.78
+    }
+  ],
+  "hosting": "Railway managed service; availability depends on account credits/plan."
+}

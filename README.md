@@ -8,12 +8,12 @@ The redesigned interface includes two complete recorded examples, searchable obs
 
 ## Judge quick start
 
-- [Open the live application](https://delicious-she-suggested-laura.trycloudflare.com) · [Watch the narrated demo](https://youtu.be/93zRA3R-Mdo) · [Stable judge portal](https://huggingface.co/spaces/jozai182/coronary-atlas). The live backend is temporary and requires the entrant's laptop/server/tunnel to remain running; the static portal, video and source are independently hosted.
+- [Open the live application](https://coronary-atlas-production.up.railway.app) · [Watch the narrated demo](https://youtu.be/93zRA3R-Mdo) · [Stable judge portal](https://huggingface.co/spaces/jozai182/coronary-atlas). The complete application runs on Railway and does not require the entrant's laptop. Availability depends on the hosting account's remaining credits/plan.
 - Repository: https://github.com/jozai193/coronary-atlas.
 - Choose **Explore profile A** or **Explore profile B**. Both have all 55 recorded model inputs and immediately compute four outputs. A/B are selected development examples, not independent tests. C/D have been removed from the judge-facing choices.
 - Focus LAD, LCX and RCA; try the internal view, camera presets and probability mode. Inspect the explanation and **Model evidence**, then **Open case summary** and download a worksheet/research result.
 - **Import a report photo** runs OCR locally. Confirm each numerical proposal. Echo excerpts require separate case/source review; unreadable measurements remain unknown. **Explore real public ECG references** is separate from the current case.
-- No password, API key or account is required. Anonymous A/B predictions passed for all three model variants, alongside desktop/mobile browser checks. If the temporary host is offline, use the video or reproduce locally from this repository.
+- No password, API key or account is required. Anonymous A/B predictions passed for all three model variants, alongside desktop/mobile browser checks. If the host is unavailable, use the narrated video or reproduce locally from this repository.
 
 The [six-page technical report](output/pdf/technical_report.pdf) is included. AI assistance: OpenAI Codex / ChatGPT supported research, engineering, testing and documentation; the demo uses Deepgram Aura 2 Orion stock synthetic narration. No inference API key is required to use the app.
 
@@ -221,9 +221,9 @@ The [next frozen development study](docs/peerj_operating_results.md) used 331–
 
 Run `python -m ml.peerj_operating verify` and `python scripts/verify_peerj_operating.py`; regenerate the UI copy with `python scripts/export_peerj_operating.py`. The [Beijing source audit](docs/beijing_source_audit.md) preserves a newly found public cohort unscored because the final study population and CAD endpoint cannot be reconstructed reliably. No reviewer-defined operating objective or acceptable error costs have been supplied.
 
-## Doctor feedback follow-up — 13 October
+## Doctor feedback follow-up — 13–14 October
 
-[Relayed informal feedback](docs/doctor_feedback_2026-10-13.md) prompted clearer example provenance, unknown values and anatomy. Both synthetic examples now supply 49 values: unchosen Q-wave/ST-elevation/LVH/poor-R-progression/BBB flags and VHD are null, shown as **—**, with computation-time imputation disclosed. Supplied zero codes remain valid. CSV accepts blank or dash for missing; source records, model weights and historical evaluation stay unchanged. The current example predictions are not new accuracy evidence.
+[Relayed informal feedback](docs/doctor_feedback_2026-10-13.md) prompted clearer example provenance, unknown values and anatomy. The final judge-facing A/B cases contain all 55 recorded inputs, selected by contrasting source labels and original row order before scoring. They replace the earlier incomplete synthetic demonstrations. Missing manual/CSV values remain **—**, distinct from supplied zero codes, with computation-time imputation disclosed where permitted by the completeness guard. Source records, model weights and historical evaluation remain unchanged. These development examples are not new accuracy evidence.
 
 An **ECG and echo behind this estimate** panel shows the exact supplied findings separately from CAD/vessel probability. EF, RWMA and VHD are inputs, not model-predicted echo diagnoses. The existing modality audit does not justify a blanket echo override for all four labels. Informal feedback remains distinct from a completed qualified anatomy/input review or clinical sign-off.
 

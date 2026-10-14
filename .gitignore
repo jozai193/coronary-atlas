@@ -42,3 +42,4 @@ data/external_audit/physionet_v1/raw/
 data/external_audit/physionet_v1/source-pages/
 output/video/
 .railway/
+.devpost-hackathon-state.json

@@ -43,7 +43,7 @@ OpenAI Codex / ChatGPT assisted research, analysis, implementation, testing, doc
 
 ## Links and assets
 - Source and setup: https://github.com/jozai193/coronary-atlas
-- Public app: https://delicious-she-suggested-laura.trycloudflare.com — anonymous API and desktop/mobile browser checks passed. Temporary backend requires the host laptop, server and tunnel to remain running. Stable static portal: https://huggingface.co/spaces/jozai182/coronary-atlas
+- Public app: https://coronary-atlas-production.up.railway.app — anonymous API and desktop/mobile browser checks passed. Railway-hosted backend runs independently of the entrant's laptop; availability depends on account credits/plan. Stable static portal: https://huggingface.co/spaces/jozai182/coronary-atlas
 - YouTube demo: https://youtu.be/93zRA3R-Mdo — unlisted, published and anonymous oEmbed verified; English synthetic narration and burned captions; local duration 357.24 seconds (YouTube rounds up to 5:58).
 - Technical report: output/pdf/technical_report.pdf — 6 pages, rendered and visually reviewed 14 October
 - Judge guide: docs/judge_guide.md
