@@ -1,0 +1,80 @@
+{
+  "base_url": "https://delicious-she-suggested-laura.trycloudflare.com",
+  "anonymous": true,
+  "cookies_sent": false,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "seconds": 0.19
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.16
+    },
+    {
+      "path": "/api/review-profiles",
+      "status": 200,
+      "seconds": 0.17
+    },
+    {
+      "path": "/api/model/info",
+      "status": 200,
+      "seconds": 0.19
+    },
+    {
+      "path": "/api/model/candidates",
+      "status": 200,
+      "seconds": 0.22
+    },
+    {
+      "path": "/api/model/metrics",
+      "status": 200,
+      "seconds": 0.2
+    },
+    {
+      "path": "/api/predict",
+      "profile": "a",
+      "variant": "baseline",
+      "status": 200,
+      "seconds": 0.28
+    },
+    {
+      "path": "/api/predict",
+      "profile": "a",
+      "variant": "histgb_lcx_v2",
+      "status": 200,
+      "seconds": 0.3
+    },
+    {
+      "path": "/api/predict",
+      "profile": "a",
+      "variant": "calibrated_ensemble_v1",
+      "status": 200,
+      "seconds": 1.12
+    },
+    {
+      "path": "/api/predict",
+      "profile": "b",
+      "variant": "baseline",
+      "status": 200,
+      "seconds": 0.25
+    },
+    {
+      "path": "/api/predict",
+      "profile": "b",
+      "variant": "histgb_lcx_v2",
+      "status": 200,
+      "seconds": 0.3
+    },
+    {
+      "path": "/api/predict",
+      "profile": "b",
+      "variant": "calibrated_ensemble_v1",
+      "status": 200,
+      "seconds": 1.08
+    }
+  ],
+  "hosting": "Temporary Cloudflare tunnel; requires this laptop/server/tunnel to remain running."
+}

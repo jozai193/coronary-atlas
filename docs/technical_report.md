@@ -93,7 +93,7 @@ Python 3.11, pinned requirements.txt and package-lock.json define dependencies. 
 
 Key commands: python scripts/setup_data.py; python scripts/analyze_data.py; python ml/train.py; python -m pytest -q; npm --prefix frontend ci; npm --prefix frontend run build; python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000. Report source: docs/technical_report.md. Full metrics: ml/metrics/evaluation.json.
 
-The README records public source/demo links and their release status. A narrated 3-10 minute YouTube video, real-name team roster and final Devpost confirmation remain distinct release checks. Each person may join one submitting team and each team one track. Deadline: 15 October 2026, 00:15 IST [3]. AI assistance from OpenAI Codex covers research, engineering, tests and writing and must be disclosed in Built With and README.
+The README records public source/demo links and their release status. A narrated 3-10 minute YouTube video, real-name team roster and final Devpost confirmation remain distinct release checks. Each person may join one submitting team and each team one track. Deadline: 15 October 2026, 12:15 IST [3]. AI assistance from OpenAI Codex covers research, engineering, tests and writing and must be disclosed in Built With and README.
 
 ## References and credits
 

@@ -25,7 +25,7 @@ describe('API request deadline',()=>{
       .mockResolvedValueOnce({ok:true,json:async()=>({ready:true})})
     vi.stubGlobal('fetch',fetchMock)
     const pending=api('/predict',{features:{Age:42}})
-    const rejected=expect(pending).rejects.toThrow('The request timed out after 30 seconds. Check that the local server is running, then retry.')
+    const rejected=expect(pending).rejects.toThrow('The server did not respond within 30 seconds. A hosted demo may be waking up; wait briefly and retry.')
     const request=fetchMock.mock.calls[0][1] as RequestInit
     await vi.advanceTimersByTimeAsync(REQUEST_TIMEOUT_MS-1)
     expect(request.signal?.aborted).toBe(false)
@@ -44,7 +44,7 @@ describe('API request deadline',()=>{
     vi.stubGlobal('fetch',vi.fn((_url:string,request:RequestInit)=>new Promise((_resolve,reject)=>{
       request.signal?.addEventListener('abort',()=>reject(new Error('AbortError')),{once:true})
     })))
-    const rejected=expect(api('/model/info')).rejects.toThrow('The request timed out after 30 seconds.')
+    const rejected=expect(api('/model/info')).rejects.toThrow('The server did not respond within 30 seconds.')
     await vi.advanceTimersByTimeAsync(REQUEST_TIMEOUT_MS)
     await rejected
     expect(vi.getTimerCount()).toBe(0)
@@ -53,7 +53,7 @@ describe('API request deadline',()=>{
   it('also bounds a stalled response body after headers have arrived',async()=>{
     const fetchMock=vi.fn().mockResolvedValue({ok:true,json:()=>new Promise(()=>{})})
     vi.stubGlobal('fetch',fetchMock)
-    const rejected=expect(api('/model/info')).rejects.toThrow('The request timed out after 30 seconds.')
+    const rejected=expect(api('/model/info')).rejects.toThrow('The server did not respond within 30 seconds.')
     await vi.advanceTimersByTimeAsync(REQUEST_TIMEOUT_MS)
     await rejected
     expect(fetchMock.mock.calls[0][1].signal.aborted).toBe(true)

@@ -1,0 +1,47 @@
+{
+  "checked_on": "2026-10-14",
+  "python_tests": 154,
+  "frontend_tests": 77,
+  "frontend_build": "passed",
+  "protected_models_and_evaluation": "11 hashes unchanged",
+  "video": {
+    "url": "https://youtu.be/93zRA3R-Mdo",
+    "visibility": "unlisted",
+    "seconds": 357.24,
+    "narration_voice": "aura-2-orion-en",
+    "captions": "burned in",
+    "anonymous_oembed": "passed",
+    "audio_mean_db": -17.2,
+    "audio_peak_db": -1.3
+  },
+  "technical_report": {
+    "path": "output/pdf/technical_report.pdf",
+    "pages": 6,
+    "visual_review": "six-page contact sheet plus final changed page reviewed"
+  },
+  "live_app": {
+    "url": "https://delicious-she-suggested-laura.trycloudflare.com",
+    "password_required": false,
+    "anonymous_profiles": [
+      "a",
+      "b"
+    ],
+    "variants": [
+      "baseline",
+      "histgb_lcx_v2",
+      "calibrated_ensemble_v1"
+    ],
+    "desktop_and_mobile": "passed; no page exceptions; no horizontal overflow at 390px",
+    "limitations": "Temporary tunnel depends on laptop, server and tunnel uptime. Static Hugging Face portal is separately hosted, not a managed inference backend."
+  },
+  "devpost": {
+    "preview": "https://devpost.com/software/coronary-atlas-tjy0d7",
+    "registered_solo": true,
+    "draft_steps": 4,
+    "total_steps": 5,
+    "final_submission_performed": false,
+    "track": "A",
+    "entrant": "Aditya Jevoor"
+  },
+  "claims": "Engineering verification only; no independent clinical or broad OCR validation claimed."
+}

@@ -1,6 +1,6 @@
 # Judge walkthrough
 
-Open the public Space at https://huggingface.co/spaces/jozai182/coronary-atlas. No application password or API key is required. Deployment verification is recorded in the final release receipt; a free host may need to wake before first use.
+Open https://delicious-she-suggested-laura.trycloudflare.com, or the stable static portal at https://huggingface.co/spaces/jozai182/coronary-atlas. No application password or API key is required. The live backend is temporary and requires the entrant's laptop, server and tunnel to remain running. The narrated demo at https://youtu.be/93zRA3R-Mdo, public repository and six-page report remain independently accessible. Anonymous A/B predictions passed on all three variants. Desktop and 390-pixel mobile checks passed with no page exceptions or horizontal overflow.
 
 1. Choose **Explore profile A**, then **Explore profile B**. Both supply all 55 actual source inputs. A is worksheet row 5, with all four source labels Normal; B is row 7, with CAD and three Stenotic vessel labels. Cases were selected by these contrasts and source row order before scoring, not by confidence. They were used in development and cannot establish accuracy.
 2. Rotate/zoom the heart. Focus LAD, LCX and RCA, use camera presets and internal anatomy, isolate a vessel, and switch between anatomy and probability display. The model colours shared reference anatomy; it does not locate lesions or measure narrowing.

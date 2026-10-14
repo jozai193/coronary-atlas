@@ -1,54 +1,55 @@
-# Devpost draft - not submitted
+# Coronary Atlas — Devpost submission draft
 
-## Title
+Status: solo registration confirmed; Devpost draft saved through 4/5 steps on 14 October 2026. Final submission has not been authorized or performed. Track A. The official event page currently lists 15 October 2026, 12:15 PM IST.
 
+## Project name
 Coronary Atlas
 
-## Tagline
+## Elevator pitch
+See the heart. Understand the estimate. Explore coronary AI through reference anatomy, source-reviewed observations and transparent model evidence.
 
-See when coronary AI is wrong: held-out errors, reference anatomy and transport evidence.
+## Inspiration
+A probability in a table is hard to explain. A colourful heart can be even more misleading if it suggests that a model has found a blockage. I wanted a learner to move between the observations, the named arteries and the evidence, while seeing clearly what the model can and cannot establish. Doctor feedback helped identify confusing vessel colours, incomplete demo cases and the need to review echo findings in their original context. This feedback was advisory, not clinical validation.
 
 ## What it does
+Coronary Atlas connects 55 demographic, clinical, ECG, laboratory and echo observations to four estimates: overall CAD and the supplied LAD, LCX and RCA labels. Users explore 104 licensed BodyParts3D meshes, focus or isolate an artery, switch camera and internal views, inspect explanations, compare model evidence and export a case summary.
 
-Coronary Atlas accepts tabular demographic, clinical, ECG, laboratory and echocardiographic observations. Four models estimate the supplied CAD and LAD/LCX/RCA stenosis labels. For the default baseline, a disclosed consistency step can adjust displayed probabilities so overall CAD is no lower than any vessel estimate. The interface links displayed values to licensed reference anatomy and evidence, while signed SHAP contributions explain each unadjusted model output.
+Judges can start with profile A or B without passwords, API keys or accounts. Both contain all 55 recorded source inputs. They were chosen by contrasting source labels and original row order before model scoring. They are development examples, not independent evaluation. The incomplete C/D choices have been removed.
 
-Users can try four deliberately selected original-cohort teaching cases: guess a CAD or vessel label, then reveal its saved raw outer-fold probability and actual supplied label. This challenge is separate from live inference; no full-data SHAP explanation is assigned to a fold prediction. Users can also enter observations manually, load a clearly labeled synthetic profile or import one CSV row. They can rotate and select arteries, compare live-model explanations, inspect calibration/error counts and export a research result. Old results clear as soon as inputs change.
+Report-photo OCR runs locally in the browser. It proposes readable observations for individual confirmation and keeps unreadable measurements unknown. Echo chamber, valve, flow and impression excerpts require source/case review; they do not automatically become coronary labels. A separate library presents 12 real public PTB-XL ECG references with original report strings and annotations. These are different people and cannot alter the active profile. A four-case teaching challenge exposes saved held-out successes and errors.
 
-## How we built it
+## How I built it
+React, TypeScript, Vite and React Three Fiber/Three.js provide the interface and reference anatomy. FastAPI and Pydantic validate the exact input contract. Python, pandas, NumPy, scikit-learn and SHAP support preprocessing, nested cross-validation and explanations. Tesseract.js supplies browser OCR. The default baseline exposes SHAP for raw outputs and discloses a later consistency adjustment to displayed probabilities. Optional research variants identify their own methods and limits. No paid inference API or dedicated GPU is required to use the application.
 
-Python, scikit-learn and SHAP provide fold-local preprocessing, nested cross-validation and model explanations. FastAPI validates requests and serves the production React/TypeScript/Vite dashboard. React Three Fiber/Three.js renders 56 BodyParts3D OBJ meshes using explicit FMA mappings. No paid inference API or dedicated GPU is required; the browser needs WebGL support.
+The public dataset contains 303 records. All four outcome columns are excluded from the 55 inputs. Fold-local preprocessing and training avoid fitting transformations on test folds. The code, models, sources, protocols and negative results accompany the project. The hosted runtime is downloaded from a tagged public release with a SHA-256 integrity check.
 
-## Evidence and limitations
+## Challenges
+The dataset has no original ECG/echo reports or measured artery narrowing percentages for these cases. I therefore kept tabular source labels, reviewed report evidence and predictions separate. Ordinary echo flow or valve findings cannot justify forcing a coronary prediction to agree with the report. Alcohol and other new lifestyle notes remain context because compatible training evidence is missing. The supplied echo image was too uncertain for reliable automatic EF extraction; the app abstains rather than substituting a reference range.
 
-Executed nested out-of-fold AUC for the original raw-model procedure on 303 records: CAD 0.920, LAD 0.831, LCX 0.741 and RCA 0.717. LCX/RCA sensitivity is about 40% at threshold 0.5, a major limitation. A later pilot-informed, same-cohort comparison found that the default consistency projection reduced mean four-target Brier by only 0.001198 across two repeats of those same 303 people. The raw-model AUCs are not adjusted-output validation. We retained and analyzed one inconsistent CAD/vessel label. We do not claim clinical validation, diagnosis, future-event prediction or lesion localization.
+## Accomplishments
+The result is an inspectable end-to-end prototype with complete judge cases, interactive coronary anatomy, explanations, local report review, a separate real ECG library and visible failure evidence. The final application passed 154 Python tests, 77 frontend tests and a production build. A standalone packaged runtime passed real prediction checks. These are engineering checks, not clinical accuracy or independent OCR validation.
 
-We subsequently acquired 27,125 public CONFIRM records and ran a separate shared-input transport experiment. It failed to transfer well: CAD AUC .656 with substantial overprediction. After preserving that result, a separate CONFIRM development model reached AUC .789 and Brier .119 on 1,402 complete-case CAD test patients. Additional-input and calibration gains were measured on matched patients. Missing-input handling expanded eligibility to 14,257 before outcome exclusions. These are separate research models, not the model serving the dashboard, and the later results are internal development evidence on a previously inspected cohort. False alarms remain substantial at high-sensitivity cutoffs. Full protocols, negative results and immutable artifacts accompany the code.
+## What I learned
+The original raw-model nested out-of-fold AUCs were CAD 0.920, LAD 0.831, LCX 0.741 and RCA 0.717. At the fixed 0.5 threshold, LCX/RCA sensitivity was only about 40%. This weakness remains visible. Those results do not validate the later displayed adjustment or research variants. Separate reduced-input transport studies have both encouraging and poor results, but do not externally validate this 55-input dashboard. Selected demonstrations, repeated development experiments and compelling graphics cannot replace independent validation.
 
-We then found AngioCAD, a new invasive-angiography cohort from another center: 413 patients have segment labels and 377 have clinical features. A fixed **13-input** source-trained logistic model was frozen before external scoring. After prespecified data-quality and ambiguous endpoint exclusions, external AUC was CAD .781 (n=345), LAD .723 (n=322), LCX .709 (n=331) and RCA .687 (n=326). At 0.5, LCX missed 54/90 positives and RCA 106/155. The outcome bins and smaller input set mean this result does **not** validate the dashboard's 55-input predictor. We verified all saved-prediction metrics and retained the mapping and cohort exclusions.
+## What is next
+Independent validation on a compatible, genuinely unused cohort; broader OCR testing on varied real report layouts; authoritative clinical coding/timing review; and observed learner/educator usability studies. Measured stenosis requires appropriate angiographic evidence. The current output is an educational disease-label estimate, not diagnosis, future-event risk, a lesion map or a percentage of narrowing.
 
-## What we learned
+## Built with
+Python, pandas, NumPy, scikit-learn, SHAP, CatBoost, FastAPI, Pydantic, React, TypeScript, Vite, Three.js, React Three Fiber, Tesseract.js, BodyParts3D, UCI, PTB-XL, Hugging Face Spaces, Gradio, uv, OpenAI Codex / ChatGPT, Deepgram Aura 2 Orion, FFmpeg.
 
-Correct input exclusion is necessary but does not remove every scientific uncertainty. Clinical measurement timing, rare categories and correlated features still matter. A clear visualization must distinguish probability from narrowing percentage and a displayed adjusted value from its raw model output. We tested SHAP reconstruction against the fitted raw output; SHAP does not reconstruct the separately adjusted probability.
+## AI tools disclosure
+OpenAI Codex / ChatGPT assisted research, analysis, implementation, testing, documentation and demo preparation. Deepgram Aura 2 Orion generated the demo narration using the same stock voice configured in Jarvis and used for the previous NextStep demo. It is synthetic narration, not a cloned clinician voice. AI assistance is disclosed; I remain responsible for reviewing, understanding and presenting the work.
 
-## Next steps
+## Links and assets
+- Source and setup: https://github.com/jozai193/coronary-atlas
+- Public app: https://delicious-she-suggested-laura.trycloudflare.com — anonymous API and desktop/mobile browser checks passed. Temporary backend requires the host laptop, server and tunnel to remain running. Stable static portal: https://huggingface.co/spaces/jozai182/coronary-atlas
+- YouTube demo: https://youtu.be/93zRA3R-Mdo — unlisted, published and anonymous oEmbed verified; English synthetic narration and burned captions; local duration 357.24 seconds (YouTube rounds up to 5:58).
+- Technical report: output/pdf/technical_report.pdf — 6 pages, rendered and visually reviewed 14 October
+- Judge guide: docs/judge_guide.md
+- Gallery: output/playwright/submission-overview.png, submission-heart.png, submission-explanation.png, submission-echo-review.png, submission-public-ecg.png
+- Solo entrant: Aditya Jevoor (confirmed by user); Devpost jozai193. Team name Coronary Atlas, Track A. Private organizer email was entered with user confirmation and is deliberately absent from this public file.
+- Devpost preview: https://devpost.com/software/coronary-atlas-tjy0d7
 
-Independent anatomical/clinical feature review, authoritative input codes and timing, a genuinely unused **55-input compatible** cohort for the dashboard, and a small observed learner comparison. These are future work, not completed validation. Training-only error and site-code robustness audits are documented separately; they do not make the existing test set independent again.
-
-## Built With
-
-Python; scikit-learn; pandas; NumPy; SHAP; FastAPI; Pydantic; React; TypeScript; Vite; Three.js; React Three Fiber; BodyParts3D; UCI; OpenAI Codex / ChatGPT.
-
-## AI disclosure
-
-OpenAI Codex assisted research, data analysis, architecture, implementation, tests, documentation and local browser verification. The participant remains responsible for reviewing, understanding and presenting the work.
-
-## Attachments to complete
-
-- Public GitHub URL: not published yet.
-- YouTube URL: not recorded/uploaded yet; public or unlisted, 3-10 minutes, English audio/subtitles.
-- Technical report: output/pdf/technical_report.pdf (rebuilt and visually verified at 6 pages on 9 October).
-- Screenshots: output/playwright/heldout-case-desktop.png, heldout-case-mobile.png and existing overview/model/anatomy receipts. The challenge screenshots reflect the latest verified build; inspect all selected final images and exact final UI before submission.
-- Team roster: real full names and Devpost accounts to be supplied/verified by the user.
-- Eligibility and one-team/one-track compliance: user verification outstanding.
-
-Do not submit placeholders as actual URLs. Final submission has not been authorized or performed by this draft.
+## Credits and boundaries
+Code MIT. BodyParts3D anatomy and the attributed UCI/PTB-XL resources retain their source-specific CC BY 4.0 credits and provenance. No endorsement by a doctor, dataset author or institution is claimed. App observations and report images are not persisted by application code. No clinical validation or broad independent photo-autofill validation is claimed.

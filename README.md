@@ -2,18 +2,20 @@
 
 A local educational research app for the Multimodal AI Hackathon 2026, Track A. It predicts the supplied CAD, LAD, LCX and RCA labels from 55 clinical observations and maps the estimates onto licensed BodyParts3D anatomy. Baseline models use SHAP explanations; the optional calibrated ensemble uses its own sampled permutation attributions.
 
-The redesigned interface includes one-click synthetic examples, searchable observations, dash-based missing-field guidance, a CSV template, 104 atlas meshes, internal heart views, camera presets, vessel isolation and plain-language contribution summaries. [Product research](docs/product_research.md) documents existing alternatives, public feedback and the learner/educator audience hypothesis; it does not claim validated user demand or unique invention.
+The redesigned interface includes two complete recorded examples, searchable observations, dash-based missing-field guidance, a CSV template, 104 atlas meshes, internal heart views, camera presets, vessel isolation and plain-language contribution summaries. [Product research](docs/product_research.md) documents existing alternatives, public feedback and the learner/educator audience hypothesis; it does not claim validated user demand or unique invention.
 
-**Working local prototype; not clinically validated or submitted.** These are disease-label probabilities in a small selected cohort, not future heart-attack risk, measured stenosis percentages, diagnostic findings or localized plaque maps. LCX/RCA held-out sensitivity is only about 40% at the fixed 0.5 threshold.
+**Working educational prototype; not clinically validated.** These are disease-label probabilities in a small selected cohort, not future heart-attack risk, measured stenosis percentages, diagnostic findings or localized plaque maps. LCX/RCA held-out sensitivity is only about 40% at the fixed 0.5 threshold.
 
 ## Judge quick start
 
-- Public application: https://huggingface.co/spaces/jozai182/coronary-atlas (deployment verification pending).
-- Repository: https://github.com/jozai193/coronary-atlas (publication verification pending).
+- [Open the live application](https://delicious-she-suggested-laura.trycloudflare.com) · [Watch the narrated demo](https://youtu.be/93zRA3R-Mdo) · [Stable judge portal](https://huggingface.co/spaces/jozai182/coronary-atlas). The live backend is temporary and requires the entrant's laptop/server/tunnel to remain running; the static portal, video and source are independently hosted.
+- Repository: https://github.com/jozai193/coronary-atlas.
 - Choose **Explore profile A** or **Explore profile B**. Both have all 55 recorded model inputs and immediately compute four outputs. A/B are selected development examples, not independent tests. C/D have been removed from the judge-facing choices.
 - Focus LAD, LCX and RCA; try the internal view, camera presets and probability mode. Inspect the explanation and **Model evidence**, then **Open case summary** and download a worksheet/research result.
 - **Import a report photo** runs OCR locally. Confirm each numerical proposal. Echo excerpts require separate case/source review; unreadable measurements remain unknown. **Explore real public ECG references** is separate from the current case.
-- No password, API key or account is required in the deployed app. A free host may need time to wake; use the Space page and retry the connection after startup.
+- No password, API key or account is required. Anonymous A/B predictions passed for all three model variants, alongside desktop/mobile browser checks. If the temporary host is offline, use the video or reproduce locally from this repository.
+
+The [six-page technical report](output/pdf/technical_report.pdf) is included. AI assistance: OpenAI Codex / ChatGPT supported research, engineering, testing and documentation; the demo uses Deepgram Aura 2 Orion stock synthetic narration. No inference API key is required to use the app.
 
 See [judge walkthrough](docs/judge_guide.md), [report support and limits](docs/report_autofill_and_summary.md), and [model evidence](docs/accuracy_goal_results.md).
 
