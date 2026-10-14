@@ -1,0 +1,129 @@
+{
+  "protocol_sha256": "281fd7e99fd29382549834e017477846a066a17a7945b5373881e89b8be8ccc7",
+  "runner_sha256": "6bba5fb0933777e4a2a68cf32e4f6b712cf24e0e883d9ab906b9d73c645820df",
+  "source_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "source_rows": 303,
+  "features": [
+    "Age",
+    "Sex",
+    "BMI",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "WBC",
+    "PLT"
+  ],
+  "categorical": [
+    "Sex",
+    "DM",
+    "HTN",
+    "Current Smoker"
+  ],
+  "numeric": [
+    "Age",
+    "BMI",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "WBC",
+    "PLT"
+  ],
+  "seed": 20261007,
+  "model_sha256": "a1698ff541e282ed308745502a9a0a199042efb4f0d8385214c13b13accf9c3d",
+  "source_oof_sha256": "661079c3bcb7d705c1301e67affa002e7b96b0439676ba985cba857b44e30df1",
+  "source_metrics": {
+    "cad": {
+      "n": 303,
+      "positives": 216,
+      "prevalence": 0.7128712871287128,
+      "mean_probability": 0.7120923176608,
+      "roc_auc": 0.7899106002554278,
+      "brier": 0.16443519309479057,
+      "source_prevalence_constant_brier": 0.20468581511616513,
+      "accuracy": 0.7623762376237624,
+      "sensitivity": 0.9861111111111112,
+      "specificity": 0.20689655172413793,
+      "precision": 0.7553191489361702,
+      "f1": 0.8554216867469879,
+      "confusion": {
+        "tn": 18,
+        "fp": 69,
+        "fn": 3,
+        "tp": 213
+      }
+    },
+    "lad": {
+      "n": 303,
+      "positives": 177,
+      "prevalence": 0.5841584158415841,
+      "mean_probability": 0.585086993568895,
+      "roc_auc": 0.6946462200699488,
+      "brier": 0.21580310773712588,
+      "source_prevalence_constant_brier": 0.24291736104303494,
+      "accuracy": 0.6633663366336634,
+      "sensitivity": 0.8135593220338984,
+      "specificity": 0.4523809523809524,
+      "precision": 0.676056338028169,
+      "f1": 0.7384615384615385,
+      "confusion": {
+        "tn": 57,
+        "fp": 69,
+        "fn": 33,
+        "tp": 144
+      }
+    },
+    "lcx": {
+      "n": 303,
+      "positives": 119,
+      "prevalence": 0.3927392739273927,
+      "mean_probability": 0.39431448785652234,
+      "roc_auc": 0.7315491413956887,
+      "brier": 0.20488828939330783,
+      "source_prevalence_constant_brier": 0.23849513664237712,
+      "accuracy": 0.7095709570957096,
+      "sensitivity": 0.4369747899159664,
+      "specificity": 0.8858695652173914,
+      "precision": 0.7123287671232876,
+      "f1": 0.5416666666666666,
+      "confusion": {
+        "tn": 163,
+        "fp": 21,
+        "fn": 67,
+        "tp": 52
+      }
+    },
+    "rca": {
+      "n": 303,
+      "positives": 114,
+      "prevalence": 0.37623762376237624,
+      "mean_probability": 0.3795836143106305,
+      "roc_auc": 0.7117330362944398,
+      "brier": 0.2096671273130284,
+      "source_prevalence_constant_brier": 0.23468287422801692,
+      "accuracy": 0.6666666666666666,
+      "sensitivity": 0.2631578947368421,
+      "specificity": 0.91005291005291,
+      "precision": 0.6382978723404256,
+      "f1": 0.37267080745341613,
+      "confusion": {
+        "tn": 172,
+        "fp": 17,
+        "fn": 84,
+        "tp": 30
+      }
+    }
+  },
+  "versions": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  }
+}

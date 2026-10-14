@@ -1,0 +1,36 @@
+{
+  "verified_utc": "2026-10-14T16:13:08.377831+00:00",
+  "protected_artifacts_unchanged": {
+    "models/cad.joblib": true,
+    "models/lad.joblib": true,
+    "models/lcx.joblib": true,
+    "models/rca.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/background.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/cad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lcx.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/rca.joblib": true,
+    "models/metadata.json": true,
+    "ml/metrics/evaluation.json": true
+  },
+  "protected_artifact_count": 11,
+  "receipt_hashes": {
+    "data/external_audit/physionet_v1/ptbxl-audit.json": "a4ac5dcf76ec0670a4ec81f8dc08db650831e9d2febcf818c6e668e0e891c1b2",
+    "data/external_audit/physionet_v1/mimic-iv-ecg-audit.json": "f5aa285f63683886828c6935a116d6cd09f1ba26e112e09949526fdb7f389399",
+    "data/external_audit/physionet_v1/resource-registry.json": "7ee1d6af975fbdc938d9142a222200f037f0d4a2c5084480f2effd9e76c27ac6",
+    "frontend/public/reference-ecg/index.json": "b0441f201302c536a3c4dc9fe8e699db2213d2d0f26b7aa07c98d470852252c2",
+    "output/verification/physionet-report-parser-protocol.json": "173b1a62e17c4d3a6e768b8ff350f92794265bdfb0a7cbbd7a45b1256253a12a",
+    "output/verification/physionet-report-parser-results.json": "b62ce8505a74f68089b809b10253eefb0c9fb0efb64b69354b5eefc5559f5c11",
+    "output/verification/physionet-ui-2026-10-14.json": "91a41b6a17182bb69dcccca8e04820c8115386e7d8e7020d7486816439b48b7f"
+  },
+  "engineering_checks": {
+    "frontend_tests": 71,
+    "frontend_test_files": 23,
+    "waveform_decoder_and_selection_tests": 8,
+    "typescript_vite_build": "passed",
+    "source_waveform_records_verified": 12,
+    "provider_checksum_matches": 27
+  },
+  "model_fitted_or_scored": false,
+  "independent_clinical_validation": false
+}

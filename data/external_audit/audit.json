@@ -1,0 +1,171 @@
+{
+  "source": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+  "download": "https://archive.ics.uci.edu/static/public/45/heart%2Bdisease.zip",
+  "archive_sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+  "license": "CC BY 4.0",
+  "authors": "Andras Janosi, William Steinbrunn, Matthias Pfisterer, Robert Detrano",
+  "doi": "10.24432/C52P4X",
+  "cohorts": {
+    "cleveland.data": {
+      "record_chunks": 294,
+      "utf8_replacement_characters": 2,
+      "field_count_distribution": {
+        "75": 282,
+        "243": 1,
+        "421": 1,
+        "10": 2,
+        "1": 2,
+        "24": 1,
+        "151": 1,
+        "43": 1,
+        "210": 1,
+        "2": 1,
+        "62": 1
+      },
+      "shape_valid_records": 282,
+      "warning": "Token count checks do not establish clinical correctness or vessel code semantics.",
+      "vessel_values": {
+        "lmt": {
+          "1": 270,
+          "2": 12
+        },
+        "ladprox": {
+          "1": 242,
+          "2": 40
+        },
+        "laddist": {
+          "1": 224,
+          "2": 58
+        },
+        "cxmain": {
+          "1": 238,
+          "2": 44
+        },
+        "rcaprox": {
+          "1": 233,
+          "2": 49
+        },
+        "rcadist": {
+          "1": 246,
+          "2": 36
+        }
+      }
+    },
+    "hungarian.data": {
+      "record_chunks": 294,
+      "utf8_replacement_characters": 0,
+      "field_count_distribution": {
+        "75": 294
+      },
+      "shape_valid_records": 294,
+      "warning": "Token count checks do not establish clinical correctness or vessel code semantics.",
+      "vessel_values": {
+        "lmt": {
+          "-9": 275,
+          "2": 15,
+          "1": 4
+        },
+        "ladprox": {
+          "-9": 236,
+          "2": 48,
+          "1": 10
+        },
+        "laddist": {
+          "-9": 246,
+          "2": 32,
+          "1": 16
+        },
+        "cxmain": {
+          "-9": 235,
+          "2": 49,
+          "1": 10
+        },
+        "rcaprox": {
+          "-9": 244,
+          "2": 40,
+          "1": 10
+        },
+        "rcadist": {
+          "-9": 269,
+          "2": 22,
+          "1": 3
+        }
+      }
+    },
+    "switzerland.data": {
+      "record_chunks": 123,
+      "utf8_replacement_characters": 0,
+      "field_count_distribution": {
+        "75": 123
+      },
+      "shape_valid_records": 123,
+      "warning": "Token count checks do not establish clinical correctness or vessel code semantics.",
+      "vessel_values": {
+        "lmt": {
+          "1": 118,
+          "2": 5
+        },
+        "ladprox": {
+          "2": 62,
+          "1": 61
+        },
+        "laddist": {
+          "1": 82,
+          "2": 41
+        },
+        "cxmain": {
+          "1": 89,
+          "2": 34
+        },
+        "rcaprox": {
+          "1": 71,
+          "2": 52
+        },
+        "rcadist": {
+          "1": 94,
+          "2": 29
+        }
+      }
+    },
+    "long-beach-va.data": {
+      "record_chunks": 200,
+      "utf8_replacement_characters": 0,
+      "field_count_distribution": {
+        "75": 200
+      },
+      "shape_valid_records": 200,
+      "warning": "Token count checks do not establish clinical correctness or vessel code semantics.",
+      "vessel_values": {
+        "lmt": {
+          "1": 188,
+          "2": 10,
+          "162": 1,
+          "0": 1
+        },
+        "ladprox": {
+          "1": 133,
+          "2": 67
+        },
+        "laddist": {
+          "2": 31,
+          "1": 169
+        },
+        "cxmain": {
+          "1": 130,
+          "2": 70
+        },
+        "rcaprox": {
+          "2": 83,
+          "1": 116,
+          "-9": 1
+        },
+        "rcadist": {
+          "1": 178,
+          "2": 21,
+          "-9": 1
+        }
+      }
+    }
+  },
+  "decision": "Do not merge or claim external validation. Cleveland raw data explicitly marked corrupted; input definitions/coverage and vessel code semantics require harmonization. Missing labels must not become normal labels."
+}

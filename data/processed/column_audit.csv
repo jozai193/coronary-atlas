@@ -1,0 +1,60 @@
+column,dtype,missing,distinct,iqr_flags,values
+Age,int64,0,46,0.0,30 to 86; median 58
+Weight,int64,0,54,3.0,48 to 120; median 74
+Length,int64,0,44,0.0,140 to 188; median 165
+Sex,str,0,2,,"{'Male': 176, 'Fmale': 127}"
+BMI,float64,0,263,6.0,18.1 to 40.9; median 26.8
+DM,str,0,2,,"{'0': 213, '1': 90}"
+HTN,str,0,2,,"{'1': 179, '0': 124}"
+Current Smoker,str,0,2,,"{'0': 240, '1': 63}"
+EX-Smoker,str,0,2,,"{'0': 293, '1': 10}"
+FH,str,0,2,,"{'0': 255, '1': 48}"
+Obesity,str,0,2,,"{'Y': 211, 'N': 92}"
+CRF,str,0,2,,"{'N': 297, 'Y': 6}"
+CVA,str,0,2,,"{'N': 298, 'Y': 5}"
+Airway disease,str,0,2,,"{'N': 292, 'Y': 11}"
+Thyroid Disease,str,0,2,,"{'N': 296, 'Y': 7}"
+CHF,str,0,2,,"{'N': 302, 'Y': 1}"
+DLP,str,0,2,,"{'N': 191, 'Y': 112}"
+BP,int64,0,17,9.0,90 to 190; median 130
+PR,int64,0,21,13.0,50 to 110; median 70
+Edema,str,0,2,,"{'0': 291, '1': 12}"
+Weak Peripheral Pulse,str,0,2,,"{'N': 298, 'Y': 5}"
+Lung rales,str,0,2,,"{'N': 292, 'Y': 11}"
+Systolic Murmur,str,0,2,,"{'N': 262, 'Y': 41}"
+Diastolic Murmur,str,0,2,,"{'N': 294, 'Y': 9}"
+Typical Chest Pain,str,0,2,,"{'1': 164, '0': 139}"
+Dyspnea,str,0,2,,"{'N': 169, 'Y': 134}"
+Function Class,str,0,4,,"{'0': 211, '2': 73, '3': 18, '1': 1}"
+Atypical,str,0,2,,"{'N': 210, 'Y': 93}"
+Nonanginal,str,0,2,,"{'N': 287, 'Y': 16}"
+Exertional CP,str,0,1,,{'N': 303}
+LowTH Ang,str,0,2,,"{'N': 301, 'Y': 2}"
+Q Wave,str,0,2,,"{'0': 287, '1': 16}"
+St Elevation,str,0,2,,"{'0': 289, '1': 14}"
+St Depression,str,0,2,,"{'0': 232, '1': 71}"
+Tinversion,str,0,2,,"{'0': 213, '1': 90}"
+LVH,str,0,2,,"{'N': 283, 'Y': 20}"
+Poor R Progression,str,0,2,,"{'N': 294, 'Y': 9}"
+BBB,str,0,3,,"{'N': 282, 'LBBB': 13, 'RBBB': 8}"
+FBS,int64,0,113,30.0,62 to 400; median 98
+CR,float64,0,18,8.0,0.5 to 2.2; median 1
+TG,int64,0,147,16.0,37 to 1.05e+03; median 122
+LDL,int64,0,110,6.0,18 to 232; median 100
+HDL,float64,0,47,6.0,15.9 to 111; median 39
+BUN,int64,0,33,17.0,6 to 52; median 16
+ESR,int64,0,58,13.0,1 to 90; median 15
+HB,float64,0,66,7.0,8.9 to 17.6; median 13.2
+K,float64,0,27,2.0,3 to 6.6; median 4.2
+Na,int64,0,25,15.0,128 to 156; median 141
+WBC,int64,0,78,9.0,3.7e+03 to 1.8e+04; median 7.1e+03
+Lymph,int64,0,50,3.0,7 to 60; median 32
+Neut,int64,0,52,1.0,32 to 89; median 60
+PLT,int64,0,135,11.0,25 to 742; median 210
+EF-TTE,int64,0,11,15.0,15 to 60; median 50
+Region RWMA,str,0,5,,"{'0': 217, '2': 32, '1': 26, '4': 14, '3': 14}"
+VHD,str,0,4,,"{'mild': 149, 'N': 116, 'Moderate': 27, 'Severe': 11}"
+LAD,str,0,2,,"{'Stenotic': 177, 'Normal': 126}"
+LCX,str,0,2,,"{'Normal': 184, 'Stenotic': 119}"
+RCA,str,0,2,,"{'Normal': 189, 'Stenotic': 114}"
+Cath,str,0,2,,"{'CAD': 216, 'Normal': 87}"

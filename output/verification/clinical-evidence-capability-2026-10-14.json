@@ -1,0 +1,48 @@
+{
+  "source": "https://archive.ics.uci.edu/dataset/411/extention+of+z+alizadeh+sani+dataset",
+  "workbook_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "rows": 303,
+  "model_input_count": 55,
+  "original_source_archive_members": [
+    "extention of Z-Alizadeh sani dataset.xlsx"
+  ],
+  "source_archive_report_files": [],
+  "outcome_categories": {
+    "Cath": {
+      "CAD": 216,
+      "Normal": 87
+    },
+    "LAD": {
+      "Stenotic": 177,
+      "Normal": 126
+    },
+    "LCX": {
+      "Normal": 184,
+      "Stenotic": 119
+    },
+    "RCA": {
+      "Normal": 189,
+      "Stenotic": 114
+    }
+  },
+  "additional_context_not_in_training_inputs": [
+    "smoking_pack_years",
+    "smoking_history",
+    "alcohol_status",
+    "alcohol_pattern",
+    "total_cholesterol_mg_dl",
+    "physical_activity",
+    "diet",
+    "lifestyle_changes"
+  ],
+  "model_weights_modified": false,
+  "new_participants_acquired": 0,
+  "full_app_independent_validation": "Not established. Replayed reduced-input external-study receipts are separate experiments.",
+  "remaining_requirements": {
+    "original_reports_and_narrowing": "Paired original ECG/echo and angiography/CCTA records with reviewed source definitions. User confirms only public examples are available.",
+    "forced_echo_agreement": "No supported rule: EF, valve findings and CAD/vessel probabilities describe different outcomes. Reconcile source input errors explicitly instead.",
+    "alcohol_lifestyle_prediction": "Compatible pre-outcome alcohol/lifestyle variables and CAD/vessel labels, followed by versioned training and independent validation.",
+    "independent_model_validation": "Unused participants with compatible predictors/endpoints, permissions, timing and participant separation reviewed before scoring."
+  },
+  "claim": "This verifies source/input capability and records remaining evidence gaps. It does not establish clinical performance or prove that no suitable dataset exists elsewhere."
+}

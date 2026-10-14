@@ -1,0 +1,272 @@
+{
+  "protocol": "docs/broad_search_protocol.md",
+  "protocol_sha256": "f52be9554734058df1b7a6da28b9d36e7a451f13e8a8d8a107963200e2ea7d00",
+  "runner_sha256": "08bd2e659699a7fca5a25d720e457505cc8ad64ea49c461f07939a5ede42fff3",
+  "raw_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "production_metadata_sha256": "f5dd3327b6189238e33ab58090c937977b5b1140c0b87f20dc9d83dc5b9d52c7",
+  "schema_sha256": "8a4fa4aae2795e1f57601dd350f777edf90e61b1a118abe1659532fa92f59049",
+  "preprocessing_sha256": "53ceea948ed8cb40a242abd4de899a2df3083847ee49bb5bfebc9451000af5f3",
+  "metrics_sha256": "333b55e651c3835724111da03775546f2b44faac2dc6673abf248c8a305fb401",
+  "baseline_runner_sha256": "db258651255f2e650a8cb82bbc14d7ce3ae0b72b686b50414845cb63c6893ac8",
+  "baseline_repeat1_reference_files": {
+    "cad": {
+      "path": "ml\\experiments\\improvement_v1\\cad_repeat_1.csv",
+      "sha256": "7c95fe5cff4f9c5e70f536c4110ec473de961f926b15566cebab722cd2b05295"
+    },
+    "lad": {
+      "path": "ml\\experiments\\improvement_v1\\lad_repeat_1.csv",
+      "sha256": "f9da52bb57c84389b442791ab51f931807174db41a1823853c07738596fc06a2"
+    },
+    "lcx": {
+      "path": "ml\\experiments\\improvement_v1\\lcx_repeat_1.csv",
+      "sha256": "a6dc29916866ee98f7024ca9fb704e5022d6d19a3e98581eb8aa11fc15901690"
+    },
+    "rca": {
+      "path": "ml\\experiments\\improvement_v1\\rca_repeat_1.csv",
+      "sha256": "cde434d9589f641f15045469c946c9c0c49b2491bc9402f1f38916c0380e37f6"
+    }
+  },
+  "rows": 303,
+  "features": [
+    "Age",
+    "Sex",
+    "Weight",
+    "Length",
+    "BMI",
+    "BP",
+    "PR",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "VHD"
+  ],
+  "prohibited_target_columns": [
+    "Cath",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "targets": [
+    "cad",
+    "lad",
+    "lcx",
+    "rca"
+  ],
+  "repeat_seeds": [
+    20261007,
+    20261108
+  ],
+  "outer_cv": "5-fold StratifiedKFold, shuffle=True, repeat seed 20261007/20261108",
+  "inner_cv": "3-fold StratifiedKFold on each outer-training partition, seed repeat_seed + outer_fold",
+  "baseline_candidates": [
+    "logistic_003",
+    "logistic_03",
+    "forest",
+    "boosting"
+  ],
+  "candidates": {
+    "logistic_003": {
+      "family": "logistic",
+      "parameters": {
+        "C": 0.03
+      },
+      "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification."
+    },
+    "logistic_03": {
+      "family": "logistic",
+      "parameters": {
+        "C": 0.3
+      },
+      "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification."
+    },
+    "forest": {
+      "family": "random_forest",
+      "parameters": {
+        "n_estimators": 120,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt"
+      },
+      "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification."
+    },
+    "boosting": {
+      "family": "gradient_boosting",
+      "parameters": {
+        "n_estimators": 80,
+        "learning_rate": 0.035,
+        "max_depth": 2,
+        "min_samples_leaf": 8
+      },
+      "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification."
+    },
+    "elasticnet_l1_025": {
+      "family": "elastic_net_logistic",
+      "parameters": {
+        "C": 0.1,
+        "l1_ratio": 0.25,
+        "solver": "saga",
+        "max_iter": 5000
+      },
+      "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified."
+    },
+    "elasticnet_l1_075": {
+      "family": "elastic_net_logistic",
+      "parameters": {
+        "C": 0.1,
+        "l1_ratio": 0.75,
+        "solver": "saga",
+        "max_iter": 5000
+      },
+      "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified."
+    },
+    "shrinkage_lda": {
+      "family": "shrinkage_lda",
+      "parameters": {
+        "solver": "lsqr",
+        "shrinkage": "auto"
+      },
+      "explanation_feasibility": "A linear posterior-margin decomposition is plausible; new mapping and reconstruction checks are required."
+    },
+    "hist_gradient_boosting": {
+      "family": "hist_gradient_boosting",
+      "parameters": {
+        "max_iter": 100,
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 7,
+        "l2_regularization": 2.0
+      },
+      "explanation_feasibility": "Tree SHAP support is unverified for this estimator; a model-agnostic fallback may be costly."
+    },
+    "extra_trees": {
+      "family": "extra_trees",
+      "parameters": {
+        "n_estimators": 160,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt"
+      },
+      "explanation_feasibility": "Tree SHAP is plausible after one-hot preprocessing; candidate-specific grouped additivity must be verified."
+    },
+    "rbf_svm_sigmoid": {
+      "family": "rbf_svm_with_nested_sigmoid_calibration",
+      "parameters": {
+        "C": 1.0,
+        "kernel": "rbf",
+        "calibration": "sigmoid",
+        "calibration_folds": 3
+      },
+      "explanation_feasibility": "Model-agnostic explanation of calibrated probabilities is possible but approximate and likely more expensive."
+    },
+    "mlp_small": {
+      "family": "small_mlp",
+      "parameters": {
+        "hidden_layer_sizes": [
+          16,
+          8
+        ],
+        "alpha": 0.05,
+        "max_iter": 350,
+        "early_stopping": true,
+        "n_iter_no_change": 20
+      },
+      "explanation_feasibility": "Model-agnostic explanation is possible but approximate and likely more expensive."
+    },
+    "catboost_native": {
+      "family": "catboost_native_categorical",
+      "parameters": {
+        "iterations": 180,
+        "depth": 4,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 6.0,
+        "thread_count": 1
+      },
+      "explanation_feasibility": "Native Tree SHAP is plausible; the native-category artifact and original-field grouping need a new verified path."
+    }
+  },
+  "uniform_ensemble_members": [
+    "logistic_003",
+    "boosting",
+    "extra_trees",
+    "rbf_svm_sigmoid",
+    "catboost_native"
+  ],
+  "ensemble_rule": "fixed equal average of held-out probabilities; members and weights frozen before results",
+  "selection_rule": "mean inner-fold ROC-AUC; stable candidate-list order breaks exact ties",
+  "calibration_rule": "RBF SVC sigmoid CalibratedClassifierCV with 3-fold CV entirely inside each fit input",
+  "hard_job_timeout_seconds": 120,
+  "stage_budget_seconds": 10800,
+  "worker_processes": 1,
+  "thread_limit": 1,
+  "python": "3.11.5",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "joblib": "1.6.0",
+    "openpyxl": "3.1.5",
+    "threadpoolctl": "3.7.0",
+    "catboost": "1.2.10",
+    "torch": "2.10.0+cpu",
+    "tabicl": "2.2.0"
+  },
+  "warning": "Exploratory repeated internal validation of reused data; repeats reuse the same people and are not independent. No production model or metric is changed.",
+  "started_utc": "2026-10-07T19:35:19Z",
+  "finished_utc": "2026-10-07T19:54:41Z",
+  "elapsed_seconds": 1161.859999999986,
+  "outer_folds_completed": 40,
+  "candidate_jobs_attempted": 480,
+  "candidate_jobs_completed": 480,
+  "candidate_jobs_terminated": 0,
+  "candidate_worker_failures": 0,
+  "stage_deadline_terminations": 0,
+  "candidate_job_timeouts": 0,
+  "candidate_fit_failures": 0,
+  "slow_individual_fits": 0,
+  "estimator_warnings": 320,
+  "stage_budget_omissions": 0,
+  "fatal_error": null,
+  "run_complete": true
+}

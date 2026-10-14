@@ -1,0 +1,15 @@
+{
+  "source_records_loaded": 12,
+  "waveform_images_loaded": 12,
+  "post_requests_from_source_selection": 0,
+  "current_profile_and_estimates_preserved": true,
+  "application_page_errors": 0,
+  "mobile": {
+    "viewport": 390,
+    "document": 380,
+    "traceClient": 318,
+    "traceScroll": 850
+  },
+  "method": "Real Chrome, Playwright session heart-colors; all twelve selections, desktop 1500x1000 and mobile 390x844. Results transcribed from returned browser QA output.",
+  "console_scope": "Injected antivirus script was intentionally blocked in the isolated test page; not counted as an application error."
+}

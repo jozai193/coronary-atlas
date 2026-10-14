@@ -1,0 +1,303 @@
+{
+  "scope": "Previously inspected cohorts; full-input local development, no independent validation.",
+  "scores": {
+    "1": {
+      "common_local": {
+        "n": 303,
+        "positives": 119,
+        "prevalence": 0.3927392739273927,
+        "mean_probability": 0.3906632527652229,
+        "auc": 0.7155188162221411,
+        "average_precision": 0.6080524506128615,
+        "brier": 0.20832384765498518,
+        "log_loss": 0.6041119305550031,
+        "accuracy": 0.6897689768976898,
+        "sensitivity": 0.3949579831932773,
+        "specificity": 0.8804347826086957,
+        "precision": 0.6811594202898551,
+        "f1": 0.5,
+        "confusion": {
+          "tn": 162,
+          "fp": 22,
+          "fn": 72,
+          "tp": 47
+        },
+        "reliability": [
+          {
+            "n": 20,
+            "mean_probability": 0.16791918928031627,
+            "observed_fraction": 0.1
+          },
+          {
+            "n": 148,
+            "mean_probability": 0.3052602382203494,
+            "observed_fraction": 0.2702702702702703
+          },
+          {
+            "n": 114,
+            "mean_probability": 0.4894824683425552,
+            "observed_fraction": 0.5701754385964912
+          },
+          {
+            "n": 20,
+            "mean_probability": 0.6606827017153596,
+            "observed_fraction": 0.55
+          },
+          {
+            "n": 1,
+            "mean_probability": 0.8194111202860125,
+            "observed_fraction": 1.0
+          }
+        ]
+      },
+      "full_augmented": {
+        "n": 303,
+        "positives": 119,
+        "prevalence": 0.3927392739273927,
+        "mean_probability": 0.39238166866480434,
+        "auc": 0.7457526488856412,
+        "average_precision": 0.6092999816904714,
+        "brier": 0.20019210886442043,
+        "log_loss": 0.5832807643725699,
+        "accuracy": 0.6864686468646864,
+        "sensitivity": 0.453781512605042,
+        "specificity": 0.8369565217391305,
+        "precision": 0.6428571428571429,
+        "f1": 0.5320197044334976,
+        "confusion": {
+          "tn": 154,
+          "fp": 30,
+          "fn": 65,
+          "tp": 54
+        },
+        "reliability": [
+          {
+            "n": 42,
+            "mean_probability": 0.13590345451907357,
+            "observed_fraction": 0.047619047619047616
+          },
+          {
+            "n": 125,
+            "mean_probability": 0.3017094442861053,
+            "observed_fraction": 0.288
+          },
+          {
+            "n": 94,
+            "mean_probability": 0.49323788541365443,
+            "observed_fraction": 0.5638297872340425
+          },
+          {
+            "n": 37,
+            "mean_probability": 0.677133430235558,
+            "observed_fraction": 0.6756756756756757
+          },
+          {
+            "n": 5,
+            "mean_probability": 0.8103443664544583,
+            "observed_fraction": 0.6
+          }
+        ]
+      },
+      "full_local": {
+        "n": 303,
+        "positives": 119,
+        "prevalence": 0.3927392739273927,
+        "mean_probability": 0.3927765428421687,
+        "auc": 0.7293569601753744,
+        "average_precision": 0.6097997824098247,
+        "brier": 0.20462829321724063,
+        "log_loss": 0.5935003476851215,
+        "accuracy": 0.6633663366336634,
+        "sensitivity": 0.40336134453781514,
+        "specificity": 0.8315217391304348,
+        "precision": 0.6075949367088608,
+        "f1": 0.48484848484848486,
+        "confusion": {
+          "tn": 153,
+          "fp": 31,
+          "fn": 71,
+          "tp": 48
+        },
+        "reliability": [
+          {
+            "n": 32,
+            "mean_probability": 0.14018470089706386,
+            "observed_fraction": 0.0625
+          },
+          {
+            "n": 133,
+            "mean_probability": 0.2960865729721106,
+            "observed_fraction": 0.2706766917293233
+          },
+          {
+            "n": 100,
+            "mean_probability": 0.48661295850126607,
+            "observed_fraction": 0.56
+          },
+          {
+            "n": 34,
+            "mean_probability": 0.6819720263847167,
+            "observed_fraction": 0.6176470588235294
+          },
+          {
+            "n": 4,
+            "mean_probability": 0.8243807749933463,
+            "observed_fraction": 1.0
+          }
+        ]
+      }
+    },
+    "2": {
+      "common_local": {
+        "n": 303,
+        "positives": 119,
+        "prevalence": 0.3927392739273927,
+        "mean_probability": 0.38824679096016607,
+        "auc": 0.7153361344537814,
+        "average_precision": 0.5992215244730584,
+        "brier": 0.2089383918020487,
+        "log_loss": 0.605451431978456,
+        "accuracy": 0.6765676567656765,
+        "sensitivity": 0.35294117647058826,
+        "specificity": 0.8858695652173914,
+        "precision": 0.6666666666666666,
+        "f1": 0.46153846153846156,
+        "confusion": {
+          "tn": 163,
+          "fp": 21,
+          "fn": 77,
+          "tp": 42
+        },
+        "reliability": [
+          {
+            "n": 21,
+            "mean_probability": 0.16293658130018793,
+            "observed_fraction": 0.14285714285714285
+          },
+          {
+            "n": 150,
+            "mean_probability": 0.3067815522450657,
+            "observed_fraction": 0.26666666666666666
+          },
+          {
+            "n": 111,
+            "mean_probability": 0.4898426529227096,
+            "observed_fraction": 0.5765765765765766
+          },
+          {
+            "n": 21,
+            "mean_probability": 0.6584448639259879,
+            "observed_fraction": 0.5714285714285714
+          },
+          {
+            "n": 0,
+            "mean_probability": null,
+            "observed_fraction": null
+          }
+        ]
+      },
+      "full_augmented": {
+        "n": 303,
+        "positives": 119,
+        "prevalence": 0.3927392739273927,
+        "mean_probability": 0.3880970367432757,
+        "auc": 0.7195834855681402,
+        "average_precision": 0.5789720421273024,
+        "brier": 0.2070222643295616,
+        "log_loss": 0.5974570370211411,
+        "accuracy": 0.66996699669967,
+        "sensitivity": 0.42857142857142855,
+        "specificity": 0.8260869565217391,
+        "precision": 0.6144578313253012,
+        "f1": 0.504950495049505,
+        "confusion": {
+          "tn": 152,
+          "fp": 32,
+          "fn": 68,
+          "tp": 51
+        },
+        "reliability": [
+          {
+            "n": 45,
+            "mean_probability": 0.13602022818589624,
+            "observed_fraction": 0.06666666666666667
+          },
+          {
+            "n": 124,
+            "mean_probability": 0.2988717450011161,
+            "observed_fraction": 0.3064516129032258
+          },
+          {
+            "n": 94,
+            "mean_probability": 0.4971249830429391,
+            "observed_fraction": 0.5851063829787234
+          },
+          {
+            "n": 39,
+            "mean_probability": 0.6890919286566888,
+            "observed_fraction": 0.5641025641025641
+          },
+          {
+            "n": 1,
+            "mean_probability": 0.8080618610616702,
+            "observed_fraction": 1.0
+          }
+        ]
+      },
+      "full_local": {
+        "n": 303,
+        "positives": 119,
+        "prevalence": 0.3927392739273927,
+        "mean_probability": 0.3858221722516325,
+        "auc": 0.7046035805626599,
+        "average_precision": 0.5733126266900461,
+        "brier": 0.21096287954758638,
+        "log_loss": 0.6072261331814299,
+        "accuracy": 0.6402640264026402,
+        "sensitivity": 0.37815126050420167,
+        "specificity": 0.8097826086956522,
+        "precision": 0.5625,
+        "f1": 0.45226130653266333,
+        "confusion": {
+          "tn": 149,
+          "fp": 35,
+          "fn": 74,
+          "tp": 45
+        },
+        "reliability": [
+          {
+            "n": 40,
+            "mean_probability": 0.14639900405890255,
+            "observed_fraction": 0.125
+          },
+          {
+            "n": 126,
+            "mean_probability": 0.2920477186507597,
+            "observed_fraction": 0.29365079365079366
+          },
+          {
+            "n": 98,
+            "mean_probability": 0.485680922930256,
+            "observed_fraction": 0.5408163265306123
+          },
+          {
+            "n": 35,
+            "mean_probability": 0.6689579031420684,
+            "observed_fraction": 0.6285714285714286
+          },
+          {
+            "n": 4,
+            "mean_probability": 0.8099721056888366,
+            "observed_fraction": 0.5
+          }
+        ]
+      }
+    }
+  },
+  "paired_brier_delta": -0.004188399785422478,
+  "conditional_delta_95": [
+    -0.008842543160043213,
+    0.0007024861441959841
+  ],
+  "prediction_sha256": "1b4d4a4377650677d340fbc5e39747cee4e77d7e9a913ff7f0e9934861bcd648"
+}

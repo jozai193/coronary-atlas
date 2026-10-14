@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-09",
+  "parent_commit": "aee8fc806b4d77f5070557a0d2c4963c4b70d22b",
+  "tests": {
+    "working_python": {
+      "passed": 76,
+      "skipped": 1
+    },
+    "git_export_python": {
+      "passed": 75,
+      "skipped": 2
+    },
+    "frontend": {
+      "passed": 27
+    },
+    "production_build": "passed"
+  },
+  "verification": [
+    "original model/anatomy hashes",
+    "original EBM frozen evidence",
+    "AngioCAD frozen evidence",
+    "coherence saved evidence",
+    "missing-input stress evidence",
+    "China primary/source/bootstrap evidence",
+    "China subgroup/reliability/freeze ordering",
+    "UI and browser-download exact evidence bytes"
+  ],
+  "git_portability": {
+    "newline_only_existing_files": 240,
+    "method": "git -c core.autocrlf=false archive of staged tree; run on Windows using existing interpreter",
+    "historical_hashes_preserved": true,
+    "linux_execution": false
+  },
+  "browser": {
+    "engine": "Chromium",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "hung_request": "30 second timeout, controls reenabled, stale export disabled",
+    "retry": "Prediction ready and export enabled",
+    "console_errors": 0,
+    "console_warnings": 0,
+    "mobile_page_horizontal_overflow": false
+  },
+  "experiment": {
+    "task": "separate 14-input source-only CAD transport",
+    "n": 553,
+    "positives": 201,
+    "ebm_auc": 0.6641508367254636,
+    "logistic_auc": 0.6740728177295341,
+    "ebm_brier": 0.33263183111571604,
+    "logistic_brier": 0.3073481805342348,
+    "promoted": false,
+    "full_app_external_validation": false
+  },
+  "pdf": {
+    "pages": 6,
+    "rendered_pages_reviewed": 6,
+    "sha256": "4518bf25a29ee5ffa08c1c45cf4c4aa39ba113e12fdbd35df1546cc16bc38307"
+  },
+  "limitations": [
+    "no clinical or anatomical review completed",
+    "no observed learner task completed",
+    "no Linux or Docker execution",
+    "no public publication or final submission"
+  ]
+}

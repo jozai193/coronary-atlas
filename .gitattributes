@@ -1,0 +1,17 @@
+# Research manifests record exact SHA-256 values of text and binary artifacts.
+# Preserve original bytes across checkouts and archives on every platform.
+# This disables newline conversion; Git still auto-detects text for diffs.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Generated reports, data archives, model artifacts and screenshots are binary.
+*.pdf binary
+*.xlsx binary
+*.zip binary
+*.joblib binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+
+# Matplotlib's frozen SVG contains spaces before line breaks in path data.
+output/research/confirm-development.svg -whitespace

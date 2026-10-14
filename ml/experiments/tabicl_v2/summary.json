@@ -1,0 +1,238 @@
+{
+  "cad": {
+    "mean_metrics": {
+      "roc_auc": {
+        "baseline": 0.909802043422733,
+        "tabicl_v2": 0.9301032354193274
+      },
+      "average_precision": {
+        "baseline": 0.958920806285829,
+        "tabicl_v2": 0.9683815334862473
+      },
+      "brier": {
+        "baseline": 0.1045085131880594,
+        "tabicl_v2": 0.0895852567529759
+      },
+      "log_loss": {
+        "baseline": 0.33812562756621434,
+        "tabicl_v2": 0.29916476424484106
+      },
+      "accuracy": {
+        "baseline": 0.863036303630363,
+        "tabicl_v2": 0.8811881188118812
+      },
+      "precision": {
+        "baseline": 0.8993526897938663,
+        "tabicl_v2": 0.9129538040618752
+      },
+      "recall": {
+        "baseline": 0.9097222222222222,
+        "tabicl_v2": 0.9212962962962963
+      },
+      "specificity": {
+        "baseline": 0.7471264367816092,
+        "tabicl_v2": 0.7816091954022988
+      },
+      "f1": {
+        "baseline": 0.9044781337401475,
+        "tabicl_v2": 0.9170626556302994
+      }
+    },
+    "repeat_deltas": {
+      "roc_auc": [
+        0.012771392081736943,
+        0.027830991911451775
+      ],
+      "brier_tabicl_minus_baseline": [
+        -0.011694201047904765,
+        -0.01815231182226225
+      ]
+    },
+    "raw_predictor_screen": {
+      "rule": "mean AUROC gain >= 0.015; neither repeat AUROC lower; mean Brier increase <= 0.005",
+      "eligible": true
+    },
+    "probability_quality_screen": {
+      "rule": "mean Brier improvement >= 0.005; neither repeat AUROC decrease > 0.01",
+      "eligible": true
+    },
+    "complete": true
+  },
+  "lad": {
+    "mean_metrics": {
+      "roc_auc": {
+        "baseline": 0.8287149134606762,
+        "tabicl_v2": 0.8353959286162675
+      },
+      "average_precision": {
+        "baseline": 0.8621556602184773,
+        "tabicl_v2": 0.8663087462310661
+      },
+      "brier": {
+        "baseline": 0.16831854385806627,
+        "tabicl_v2": 0.1583677244257941
+      },
+      "log_loss": {
+        "baseline": 0.5144581099553034,
+        "tabicl_v2": 0.4905967156276272
+      },
+      "accuracy": {
+        "baseline": 0.7788778877887789,
+        "tabicl_v2": 0.7904290429042904
+      },
+      "precision": {
+        "baseline": 0.7780188366216596,
+        "tabicl_v2": 0.7978309998897586
+      },
+      "recall": {
+        "baseline": 0.8700564971751412,
+        "tabicl_v2": 0.8587570621468927
+      },
+      "specificity": {
+        "baseline": 0.6507936507936508,
+        "tabicl_v2": 0.6944444444444444
+      },
+      "f1": {
+        "baseline": 0.8213371266002845,
+        "tabicl_v2": 0.8271380970011106
+      }
+    },
+    "repeat_deltas": {
+      "roc_auc": [
+        0.00246614653394317,
+        0.010895883777239712
+      ],
+      "brier_tabicl_minus_baseline": [
+        -0.00878791119901684,
+        -0.011113727665527456
+      ]
+    },
+    "raw_predictor_screen": {
+      "rule": "mean AUROC gain >= 0.015; neither repeat AUROC lower; mean Brier increase <= 0.005",
+      "eligible": false
+    },
+    "probability_quality_screen": {
+      "rule": "mean Brier improvement >= 0.005; neither repeat AUROC decrease > 0.01",
+      "eligible": true
+    },
+    "complete": true
+  },
+  "lcx": {
+    "mean_metrics": {
+      "roc_auc": {
+        "baseline": 0.727644318597004,
+        "tabicl_v2": 0.7420761782974059
+      },
+      "average_precision": {
+        "baseline": 0.5864847479913744,
+        "tabicl_v2": 0.608935809497502
+      },
+      "brier": {
+        "baseline": 0.20605932823536333,
+        "tabicl_v2": 0.20006293479033088
+      },
+      "log_loss": {
+        "baseline": 0.5969927735026894,
+        "tabicl_v2": 0.5835185812043682
+      },
+      "accuracy": {
+        "baseline": 0.6683168316831682,
+        "tabicl_v2": 0.6864686468646864
+      },
+      "precision": {
+        "baseline": 0.6271412257327751,
+        "tabicl_v2": 0.6049242424242425
+      },
+      "recall": {
+        "baseline": 0.38235294117647056,
+        "tabicl_v2": 0.5840336134453781
+      },
+      "specificity": {
+        "baseline": 0.8532608695652174,
+        "tabicl_v2": 0.7527173913043479
+      },
+      "f1": {
+        "baseline": 0.4750204526861195,
+        "tabicl_v2": 0.594014361148161
+      }
+    },
+    "repeat_deltas": {
+      "roc_auc": [
+        0.015208257215929888,
+        0.013655462184874123
+      ],
+      "brier_tabicl_minus_baseline": [
+        -0.008506834810779323,
+        -0.003485952079285509
+      ]
+    },
+    "raw_predictor_screen": {
+      "rule": "mean AUROC gain >= 0.015; neither repeat AUROC lower; mean Brier increase <= 0.005",
+      "eligible": false
+    },
+    "probability_quality_screen": {
+      "rule": "mean Brier improvement >= 0.005; neither repeat AUROC decrease > 0.01",
+      "eligible": true
+    },
+    "complete": true
+  },
+  "rca": {
+    "mean_metrics": {
+      "roc_auc": {
+        "baseline": 0.7078808131439711,
+        "tabicl_v2": 0.7148194560475263
+      },
+      "average_precision": {
+        "baseline": 0.564714785502572,
+        "tabicl_v2": 0.5729770570193831
+      },
+      "brier": {
+        "baseline": 0.20801264323281454,
+        "tabicl_v2": 0.20709253168517586
+      },
+      "log_loss": {
+        "baseline": 0.6032053562091029,
+        "tabicl_v2": 0.6008483648224797
+      },
+      "accuracy": {
+        "baseline": 0.665016501650165,
+        "tabicl_v2": 0.6551155115511551
+      },
+      "precision": {
+        "baseline": 0.5860074626865671,
+        "tabicl_v2": 0.55
+      },
+      "recall": {
+        "baseline": 0.3771929824561403,
+        "tabicl_v2": 0.42105263157894735
+      },
+      "specificity": {
+        "baseline": 0.8386243386243386,
+        "tabicl_v2": 0.7962962962962963
+      },
+      "f1": {
+        "baseline": 0.4581078771999772,
+        "tabicl_v2": 0.4758522727272727
+      }
+    },
+    "repeat_deltas": {
+      "roc_auc": [
+        0.02910052910052907,
+        -0.015223243293418731
+      ],
+      "brier_tabicl_minus_baseline": [
+        -0.011698266491867532,
+        0.00985804339659016
+      ]
+    },
+    "raw_predictor_screen": {
+      "rule": "mean AUROC gain >= 0.015; neither repeat AUROC lower; mean Brier increase <= 0.005",
+      "eligible": false
+    },
+    "probability_quality_screen": {
+      "rule": "mean Brier improvement >= 0.005; neither repeat AUROC decrease > 0.01",
+      "eligible": false
+    },
+    "complete": true
+  }
+}

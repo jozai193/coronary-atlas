@@ -1,0 +1,91 @@
+{
+  "id": "smwx5gzvxn",
+  "doi": {
+    "id": "10.17632/smwx5gzvxn.1",
+    "status": "allocated",
+    "prefix": "10.17632"
+  },
+  "name": "2018 IJC (Single stress dataset CTP accuracy)",
+  "description": "Background: Coronary computed tomography angiography (cCTA) has limited diagnostic accuracy in patients\nwith intermediate to high pre-test likelihood of coronary artery disease (CAD) that may have large amounts of\ncoronary calcium. Stress computed tomography myocardial perfusion (CTP) has emerged as a valuable strategy,\ncombining anatomical and functional assessment of CAD. Purpose of the study is to evaluate the diagnostic accuracy\nof combining coronary artery imaging and myocardial perfusion in a single stress dataset versus invasive\ncoronary angiography (ICA) and invasive fractional flow reserve (FFR) as reference standard.\nMethods: One-hundred-thirty consecutive symptomatic patients (age: 65± 9 years; men: 70%) scheduled for\nclinically indicated ICA plus invasive FFR were prospectively enrolled. cCTA + CTP were simultaneously\nevaluated in a single stress-dataset by blinded readers and compared to ICA and invasive FFR findings.\nResults: CTPwas successfully performed in all patients. The most common artifacts observed in the stress dataset\nfor coronary artery imaging were blooming effect and motion effect related. Overall evaluability of coronary arteries\nby using cCTA stress dataset was 93%. In a vessel and patient-based model, stress cCTA + stress CTP\nshowed sensitivity, specificity, negative predictive value, positive predictive value and diagnostic accuracy of\n93%, 94%, 97%, 85%, 94%, and 98%, 86%, 98%, 85%, 92%, respectively. The overall effective dose (ED) of stress protocol\nacquisition alone was 2.5±1.1 mSv.\nConclusions: Simultaneous evaluation of coronary arteries andmyocardial perfusion with single stress acquisition\nis feasible and it has diagnostic accuracy and low ED to identify functionally significant stenosis in patients with\nintermediate to high risk for CAD.",
+  "version": 1,
+  "contributors": [
+    {
+      "profile_id": "2041e254-bf63-3039-a387-777f515cc4ba",
+      "first_name": "Gianluca",
+      "last_name": "Pontone"
+    }
+  ],
+  "files": [
+    {
+      "filename": "Database Blinded.xlsx",
+      "id": "bcb5d8d2-376b-4725-8838-dcd0bed2bf7e",
+      "content_details": {
+        "id": "4985e7ce-0210-4d50-bbf6-b664687baf50",
+        "sha256_hash": "aea2c411f59d91fe183a3f97ea80dfcff8739f4e2cdd167ad75ba768bbb32ff2",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "size": 163785,
+        "created_date": "2019-09-15T00:00:00Z",
+        "download_url": "https://data.mendeley.com/public-files/datasets/smwx5gzvxn/files/bcb5d8d2-376b-4725-8838-dcd0bed2bf7e/file_downloaded",
+        "view_url": "https://data.mendeley.com/public-files/datasets/smwx5gzvxn/files/bcb5d8d2-376b-4725-8838-dcd0bed2bf7e/file_viewed",
+        "download_expiry_time": "2126-10-13T19:58:35.825379373Z"
+      },
+      "metrics": {
+        "downloads": 0,
+        "previews": 0
+      },
+      "size": 163785,
+      "status": "COMPLETED"
+    }
+  ],
+  "versions": [
+    {
+      "version": 1,
+      "available": true,
+      "publish_date": "2019-09-15T19:01:42.433Z"
+    }
+  ],
+  "articles": [],
+  "categories": [
+    {
+      "id": "http://data.elsevier.com/vocabulary/OmniScience/Concept-328826400",
+      "label": "Cardiology"
+    }
+  ],
+  "institutions": [],
+  "metrics": {
+    "views": 0,
+    "file_downloads": 0,
+    "file_previews": 0
+  },
+  "available": true,
+  "size": 163785,
+  "owner": {
+    "profile_id": "2041e254-bf63-3039-a387-777f515cc4ba",
+    "first_name": "Gianluca",
+    "last_name": "Pontone"
+  },
+  "channel": "WEB",
+  "owner_id": "2041e254-bf63-3039-a387-777f515cc4ba",
+  "publish_date": "2019-09-15T19:01:42.433Z",
+  "data_licence": {
+    "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+    "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+    "url": "http://creativecommons.org/licenses/by/4.0",
+    "category": "Creative",
+    "short_name": "CC BY 4.0",
+    "full_name": "Creative Commons Attribution 4.0 International"
+  },
+  "related_links": [],
+  "funders": [],
+  "customer_id": "7377952c-6404-4428-bbfc-77242cfc301e",
+  "modified_on": "2019-09-15T19:01:06.846Z",
+  "created_on": "2019-09-15T19:00:13.509Z",
+  "confidential": false,
+  "links": {
+    "view": "https://data.mendeley.com/datasets/smwx5gzvxn"
+  },
+  "repository": {
+    "id": "MENDELEY_DATA",
+    "name": "Mendeley Data"
+  }
+}

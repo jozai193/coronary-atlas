@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-09T21:20:12.934362+00:00",
+  "files": {
+    "runner_snapshot.py": "cbf3e9615e45bdb6d712b2aaeb4cf3bbbeb3710c9fde482526f8708adef35979",
+    "prepared.json": "8f2a42e917b44ea74b0b97fe40bc58d8432f6edba05ab1d57aae74f28eaeb665",
+    "partitions.json": "28f19100c51b8679727235e5fa34434f8a9c24747a3e0cc90098cbc1a2f1174b",
+    "fitted.joblib": "a00706f0aaf53c53befb671276d304b2244907632f81f871bb58cad6c6aba2aa",
+    "fit_manifest.json": "aa471518bc5f7d8bac55015dec9d9e204af79fd7c27030a4fcd6e5005b4aefa0",
+    "predictions.csv": "10fdcef4e585ba2512f1e2b0b1f6672c555e47fc564efbcde4d39a447279271a",
+    "results.json": "8f3ca4676540a4a9b1184a4071aa5c057f4021995dd9a3ca1804d7968c743fe5"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "InterpretML EBM fixed-candidate GitHub feasibility trial",
+  "frozen_date_ist": "2026-10-09",
+  "status": "frozen_before_first_fit",
+  "design": "Exploratory repeated internal outer-fold comparison on previously inspected patients and folds; not fresh validation or a production model selection",
+  "source_cohort_rows": 303,
+  "source_workbook_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "schema_py_sha256": "8a4fa4aae2795e1f57601dd350f777edf90e61b1a118abe1659532fa92f59049",
+  "fold_files": 40,
+  "fold_files_combined_sha256": "f4d692ae2e13913af0772a17f388ecd0121ae0fbf41e2667154ef5f218ff6913",
+  "baseline_csv_files": 8,
+  "baseline_csv_combined_sha256": "53741537b80c7b506bce5b15d05b47e7990a470b31b1246267bf22d199ae0ec5",
+  "targets": ["cad", "lad", "lcx", "rca"],
+  "repeat_seeds": [20261007, 20261108],
+  "input_policy": "Use ml.schema.FEATURES in exact order: 55 original source fields. Force ml.schema.NUMERIC to continuous and all remaining fields to nominal. Exclude Cath, LAD, LCX and RCA in all fits. No imputation, target-driven selection, patient deletion, or global preprocessing.",
+  "candidate": {
+    "package": "interpret-core==0.7.8",
+    "class": "interpret.glassbox.ExplainableBoostingClassifier",
+    "parameters": {
+      "interactions": 0,
+      "max_bins": 64,
+      "outer_bags": 8,
+      "learning_rate": 0.015,
+      "max_rounds": 1000,
+      "early_stopping_rounds": 100,
+      "early_stopping_tolerance": 0.00001,
+      "validation_size": 0.15,
+      "smoothing_rounds": 75,
+      "min_samples_leaf": 4,
+      "missing": "separate",
+      "n_jobs": 1
+    },
+    "random_state_formula": "20261007 + 10000*target_index + 100*repeat_index + outer_fold_index"
+  },
+  "comparison": "Saved broad_v2 baseline_selector predictions on exactly the same target, repeat and outer test rows; baseline selector used its nested inner-fold selection, EBM configuration is fixed without selection",
+  "metrics": ["raw_oof_roc_auc", "raw_oof_brier", "raw_oof_sensitivity_at_0.5"],
+  "aggregation": "Compute metrics for each target and repeat over 303 held-out predictions, then average the two repeat metrics; never treat repeated predictions as 606 independent people",
+  "screens": {
+    "auc": "mean AUC gain >= 0.015, both repeat AUC differences >= 0, mean Brier difference <= 0.005",
+    "probability_quality": "mean Brier difference <= -0.005, both repeat AUC differences >= -0.01"
+  },
+  "resource_policy": "One spawned worker per outer fit, one numerical thread, at most 120 seconds per fit and 30 minutes for the stage. On failure or timeout, preserve partial status without filling missing predictions or claiming a complete score.",
+  "promotion_policy": "A passing internal screen only nominates follow-up. It does not replace the served 55-input models, validate them externally, or imply diagnosis/clinical benefit. Independent compatible data and a fresh explanation/API audit remain necessary."
+}

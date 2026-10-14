@@ -1,0 +1,9 @@
+.venv*
+frontend/node_modules
+frontend/dist
+.git
+output
+docs/sources
+data/raw
+*.log
+__pycache__

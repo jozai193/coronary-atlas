@@ -1,0 +1,11 @@
+{
+  "source": "https://physionet.org/content/mimic-iv-ecg/1.0/",
+  "protocol_sha256": "2aa96726e39008bc04c14d3093d8101234802c5bf167857eadb895bc9f7696c2",
+  "parser_sha256": "cb6aa3b5bd134fc770a040db4299a328d7db8b17a3874d7051c5325009b09a77",
+  "records_replayed": 1000,
+  "proposals": 0,
+  "unflagged_proposals": 0,
+  "field_counts": {},
+  "autoconfirmed": 0,
+  "scope": "Negative-control replay on public machine-generated ECG text. It does not evaluate diagnostic interpretation, photo OCR, sensitivity on positive lab/echo examples, or CAD accuracy."
+}

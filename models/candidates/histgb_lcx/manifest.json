@@ -1,0 +1,242 @@
+{
+  "candidate_id": "histgb_lcx_v2",
+  "candidate_status": "isolated_research_candidate_not_registered_or_promoted",
+  "target": "lcx",
+  "feature_names": [
+    "Age",
+    "Sex",
+    "Weight",
+    "Length",
+    "BMI",
+    "BP",
+    "PR",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "VHD"
+  ],
+  "artifact": {
+    "file": "histgb_lcx.joblib",
+    "sha256": "f61d3287903233f754a2c09f2434f017d1a3e5310907bf378bdbb252882d9bb9"
+  },
+  "inference_verified": true,
+  "validation_file": {
+    "file": "validation.json",
+    "sha256": "b4209afe0e3d5f08320efaf49e134097122f565284cc21708a238f6156e3a04a"
+  },
+  "model": {
+    "family": "HistGradientBoostingClassifier",
+    "parameters": {
+      "max_iter": 100,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 2.0,
+      "early_stopping": false,
+      "random_state": 20261007
+    },
+    "preprocessing": "Existing ml.preprocessing.pipeline preprocessing, fitted on all 303 source records for the candidate artifact only.",
+    "background_rows": 100,
+    "background_sampling": "default_rng(seed=20261007), without replacement from transformed full-cohort inputs"
+  },
+  "source": {
+    "dataset": "data/raw/extention of Z-Alizadeh sani dataset.xlsx",
+    "dataset_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+    "rows": 303,
+    "target_column": "LCX",
+    "positive_label": "Stenotic",
+    "excluded_outcomes": [
+      "Cath",
+      "LAD",
+      "LCX",
+      "RCA"
+    ],
+    "feature_allowlist_path": "ml/schema.py::FEATURES",
+    "training_uses_only_features": true
+  },
+  "eligibility": {
+    "raw_predictor_screen_pass": true,
+    "probability_quality_screen_pass": true,
+    "thresholds_path": "docs/broad_search_protocol.md",
+    "status_note": "Post-search fixed-candidate diagnostic; engineering gates are not statistical, clinical, external-validation, or production approval criteria."
+  },
+  "production_baseline_unchanged": {
+    "metadata_path": "models/metadata.json",
+    "metadata_sha256": "f5dd3327b6189238e33ab58090c937977b5b1140c0b87f20dc9d83dc5b9d52c7",
+    "lcx_artifact_path": "models/lcx.joblib",
+    "lcx_artifact_sha256": "c91973f59f4f37fde361b8a57a126ebb78f717ee6774d0c24fcd1ab378992e35",
+    "matches_frozen_broad_search_metadata": true,
+    "matches_production_metadata_artifact_hash": true
+  },
+  "nested_heldout_evidence": {
+    "evidence_role": "Two-repeat nested repeated-CV row predictions, source-matched to baseline_selector on identical rows/folds.",
+    "protocol_path": "docs/broad_search_protocol.md",
+    "protocol_sha256": "f52be9554734058df1b7a6da28b9d36e7a451f13e8a8d8a107963200e2ea7d00",
+    "runner_path": "ml/broad_search.py",
+    "runner_sha256": "08bd2e659699a7fca5a25d720e457505cc8ad64ea49c461f07939a5ede42fff3",
+    "repeated_results": [
+      {
+        "repeat": 1,
+        "seed": 20261007,
+        "rows": 303,
+        "candidate": {
+          "roc_auc": 0.7541103397880891,
+          "brier": 0.19561631882119354,
+          "log_loss": 0.5738781720211514,
+          "recall": 0.5210084033613446,
+          "specificity": 0.8152173913043478,
+          "precision": 0.6458333333333334,
+          "f1": 0.5767441860465117,
+          "calibration_intercept": 0.0020068724880673364,
+          "calibration_slope": 0.8746631173516946,
+          "expected_calibration_error_5_quantile_bins": 0.03389935975094361
+        },
+        "baseline_selector": {
+          "roc_auc": 0.7410485933503835,
+          "brier": 0.20302293614382178,
+          "log_loss": 0.5903492837930997,
+          "recall": 0.40336134453781514,
+          "specificity": 0.8586956521739131,
+          "precision": 0.6486486486486487,
+          "f1": 0.49740932642487046,
+          "calibration_intercept": 0.11890317960151287,
+          "calibration_slope": 1.340877058933105,
+          "expected_calibration_error_5_quantile_bins": 0.07091184163744704
+        },
+        "delta_candidate_minus_baseline": {
+          "roc_auc": 0.013061746437705524,
+          "brier": -0.007406617322628234,
+          "log_loss": -0.016471111771948266,
+          "calibration_intercept": -0.11689630711344554,
+          "calibration_slope": -0.4662139415814104
+        }
+      },
+      {
+        "repeat": 2,
+        "seed": 20261108,
+        "rows": 303,
+        "candidate": {
+          "roc_auc": 0.7337413226160029,
+          "brier": 0.20339491208240296,
+          "log_loss": 0.5955277092731811,
+          "recall": 0.5546218487394958,
+          "specificity": 0.8152173913043478,
+          "precision": 0.66,
+          "f1": 0.6027397260273972,
+          "calibration_intercept": -0.026085495683254915,
+          "calibration_slope": 0.7707557043533227,
+          "expected_calibration_error_5_quantile_bins": 0.06666668259872086
+        },
+        "baseline_selector": {
+          "roc_auc": 0.7142400438436244,
+          "brier": 0.20909572032690485,
+          "log_loss": 0.6036362632122793,
+          "recall": 0.36134453781512604,
+          "specificity": 0.8478260869565217,
+          "precision": 0.6056338028169014,
+          "f1": 0.45263157894736844,
+          "calibration_intercept": 0.11424306383140699,
+          "calibration_slope": 1.316847553109189,
+          "expected_calibration_error_5_quantile_bins": 0.04190643182280723
+        },
+        "delta_candidate_minus_baseline": {
+          "roc_auc": 0.019501278772378505,
+          "brier": -0.005700808244501893,
+          "log_loss": -0.008108553939098151,
+          "calibration_intercept": -0.14032855951466192,
+          "calibration_slope": -0.5460918487558662
+        }
+      }
+    ],
+    "mean_two_repeat_auroc_gain": 0.016281512605042014,
+    "mean_two_repeat_brier_change": -0.006553712783565063,
+    "per_repeat_auroc_gain": [
+      0.013061746437705524,
+      0.019501278772378505
+    ],
+    "per_repeat_brier_change": [
+      -0.007406617322628234,
+      -0.005700808244501893
+    ],
+    "baseline_reference": "The primary comparison baseline_selector was selected using inner CV and predicted on the same outer held-out rows in broad_v2; improvement_v1/lcx_repeat_1.csv is additionally retained as the exact-repeat-one baseline provenance check.",
+    "files": [
+      {
+        "path": "ml/experiments/broad_v2/lcx.json",
+        "sha256": "5ca9796239f539e8e541ffd10410e22aca28661d877851771f1c8e9b2b6d8459"
+      },
+      {
+        "path": "ml/experiments/broad_v2/lcx_repeat_1.csv",
+        "sha256": "2a21ed9b0d3080d497005241b32ec0a5ad2aeef6e05f31e69f99fa6c1ffe8ee9"
+      },
+      {
+        "path": "ml/experiments/broad_v2/lcx_repeat_2.csv",
+        "sha256": "d8887e5fefc5ef44f0f9b206809912f4a4c3ddff51345e298a5fdce44397cb08"
+      },
+      {
+        "path": "ml/experiments/improvement_v1/lcx_repeat_1.csv",
+        "sha256": "a6dc29916866ee98f7024ca9fb704e5022d6d19a3e98581eb8aa11fc15901690"
+      }
+    ],
+    "post_search_caveat": "The fixed family/configuration passed after a broad family scan on reused data. Its metrics are exploratory post-search diagnostics, not an unbiased winner estimate or an independent test."
+  },
+  "fit_environment": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "shap": "0.51.0",
+    "joblib": "1.6.0",
+    "cpu_thread_limit": 1,
+    "fit_seconds": 0.08749070001067594
+  },
+  "implementation_hashes": {
+    "build_script": "bde6d5b4072fbfd0e5c04c17011e130b4b05abe682f47ef00bb35068e337f52f",
+    "preprocessing": "53ceea948ed8cb40a242abd4de899a2df3083847ee49bb5bfebc9451000af5f3",
+    "explanation": "e592a39e30b2f05608188b8d7a41f8fc49e6ac468cb0fe70e8dfa704ac31e7dc",
+    "metrics": "333b55e651c3835724111da03775546f2b44faac2dc6673abf248c8a305fb401"
+  },
+  "created_utc": "2026-10-08T05:51:38Z"
+}

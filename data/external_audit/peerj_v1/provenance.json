@@ -1,0 +1,45 @@
+{
+  "accessed": "2026-10-09",
+  "title": "Study on the risk of coronary heart disease in middle-aged and young people based on machine learning methods: a retrospective cohort study",
+  "authors": "Cao et al.",
+  "doi": "10.7717/peerj.14078",
+  "pmcid": "PMC9653049",
+  "license": "CC BY 4.0",
+  "article_url": "https://doi.org/10.7717/peerj.14078",
+  "primary_csv_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9653049.1/peerj-10-14078-s001.csv",
+  "metadata_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9653049.1/PMC9653049.1.json",
+  "rows": 553,
+  "columns": 45,
+  "positives": 201,
+  "negatives": 352,
+  "duplicates": 0,
+  "missing_cells": 0,
+  "raw_excluded_from_package": true,
+  "used_file": "peerj-10-14078-s001.csv",
+  "files": {
+    "peerj-10-14078-s001.csv": {
+      "bytes": 92823,
+      "sha256": "c94efdcd7aed7d2b02c242e405c3d07faffb66687ec119743648335299808cc5"
+    },
+    "PMC9653049.1.json": {
+      "bytes": 1357,
+      "sha256": "ce30549720c6a02628f6bf7ccf0ec3fddaff5ba5d78f2a54f0fcc266db00f331"
+    },
+    "article.xml": {
+      "bytes": 123576,
+      "sha256": "536b3ba11136c7fec244b220ba47a47acd1fbd0fd8cf9cbe793fa95a90d53087"
+    },
+    "secondary-author-coronary.csv": {
+      "bytes": 116542,
+      "sha256": "652d870506e54532a68336c7ca1ec99006ce1ee31254032c9f014b25705f26fa"
+    }
+  },
+  "unused_mirror": {
+    "url": "https://raw.githubusercontent.com/YUkiJiang559/SPFS/main/original_data/Coronary%20Heart%20Disease.csv",
+    "rows": 715,
+    "exact_duplicate_rows": 162,
+    "reason": "Duplicate and altered records; never used for fitting or scoring"
+  },
+  "protocol_sha256": "40469f7e0557fa53659a7a1b07b15d3e20d2cf0c55682e319444f7281dcf6a47",
+  "scope": "Separate source-only 14-input CAD transport, not full-app validation"
+}

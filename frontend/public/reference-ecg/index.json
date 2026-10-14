@@ -1,0 +1,344 @@
+{
+  "source": "https://physionet.org/content/ptb-xl/1.0.3/",
+  "version": "1.0.3",
+  "license": "CC BY 4.0",
+  "citation": "Wagner et al. PTB-XL v1.0.3, PhysioNet (2022), doi:10.13026/kfzx-aw45; Scientific Data (2020), doi:10.1038/s41597-020-0495-6.",
+  "selection": "First four distinct-patient ECGs by ID from each provider fold 1, 9 and 10. Reference display only, not a benchmark or validation cohort.",
+  "signal_display": "Source 100 Hz WFDB-16; first 250 samples (2.5 seconds) per lead, calibrated to mV; shared vertical range within each figure. Schematic scaling, not diagnostic ECG paper.",
+  "cases": [
+    {
+      "ecg_id": 32,
+      "provider_fold": 1,
+      "age": 18.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus rechtstyp linksposteriorer hemiblock",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "LPFB",
+          "description": "left posterior fascicular block",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00032.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00032_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00032_lr.dat",
+      "header_sha256": "649339aed38456a6ed3a99ea61659a1f20185d8df35b874336278dd074afd82e",
+      "signal_sha256": "7ae5cd84f8fa0e87763902f12480bcce81ab9a5429826f8baa26a0b9e9bf97bb",
+      "waveform_sha256": "2d8a76eab06a6a7cca7ac49915fa5c9a28ffa93b0e37f47e441b697b1927e3bc"
+    },
+    {
+      "ecg_id": 35,
+      "provider_fold": 1,
+      "age": 20.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus normales ekg",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00035.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00035_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00035_lr.dat",
+      "header_sha256": "6df4f22824379481d79cb276738dc047c22f0ba983f346a547bcbb8eb63e01d3",
+      "signal_sha256": "9e2b67bf3936471f2f66e7766a79c94559992e4241ae3ac441d2903ca3cbedc8",
+      "waveform_sha256": "9025dbef064ba597c4da4816119d4cf96a2a247d76277049d36900a7047c4735"
+    },
+    {
+      "ecg_id": 36,
+      "provider_fold": 1,
+      "age": 55.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus normales ekg",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00036.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00036_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00036_lr.dat",
+      "header_sha256": "00f986f4f99425e5bd2fffac40d14d281d61fc19286cee44321e23246c26c0bf",
+      "signal_sha256": "6de1af4da1d80505b2d2efb569f23f025916cc4786d6d8c18390df191e5a0f07",
+      "waveform_sha256": "530837ca8167c71cc237146a9a5629935cd0baa2e29d3d58be1b8ce62e60f07e"
+    },
+    {
+      "ecg_id": 37,
+      "provider_fold": 1,
+      "age": 25.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 1,
+      "report": "sinus arrhythmie sonst normales ekg",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 80.0
+        },
+        {
+          "code": "SARRH",
+          "description": "sinus arrhythmia",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00037.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00037_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00037_lr.dat",
+      "header_sha256": "6b3e97e37be0e15a59947e00879f9c0206fd4e77a76ed6acb62b18c43c60126e",
+      "signal_sha256": "981e35464f475b2db3f09f1291d2225761f406932ab077fdd604d940b292c0b5",
+      "waveform_sha256": "f12d6ea62ba70e59ebe48bc945ddd156a62004ea74374a1b13ca808eeaf691b6"
+    },
+    {
+      "ecg_id": 8,
+      "provider_fold": 9,
+      "age": 48.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus linkstyp qrs(t) abnormal    inferiorer infarkt     alter unbest.",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "IMI",
+          "description": "inferior myocardial infarction",
+          "source_likelihood": 35.0
+        },
+        {
+          "code": "ABQRS",
+          "description": "abnormal QRS",
+          "source_likelihood": 0.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00008.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00008_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00008_lr.dat",
+      "header_sha256": "76578466fc1fb3813652a5642380b7eafb23aa5ad88aa1acb7217eb9b1d05941",
+      "signal_sha256": "8fbb29fe211d4fbfd718111c459efdcb6788bb5e9598a30961d98d54c7d490e7",
+      "waveform_sha256": "3e719156c1ade7040a959e06b669d2682f3c262e597a8f98c47c8870ece077ab"
+    },
+    {
+      "ecg_id": 10,
+      "provider_fold": 9,
+      "age": 22.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 1,
+      "report": "sinusrhythmus normales ekg",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00010.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00010_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00010_lr.dat",
+      "header_sha256": "d14f5366f996ae6fd7a34e233f80a9ed49db3cae87eea7679809674d9703052b",
+      "signal_sha256": "64a407d42f60568f789cb301e839018050af2c6e57e57c3cd24f815ced86b525",
+      "waveform_sha256": "f8d792bf2aa05ce2720148392087f281a912be060afaf2f693d7ade9ad037b1e"
+    },
+    {
+      "ecg_id": 17,
+      "provider_fold": 9,
+      "age": 56.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "vorhof:hf  280 tachykardes vorhofflimmern ueberdrehter linkstyp qrs(t) abnormal    inferiorer infarkt     alter unbest.",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "AFLT",
+          "description": "atrial flutter",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "ABQRS",
+          "description": "abnormal QRS",
+          "source_likelihood": 0.0
+        },
+        {
+          "code": "AFIB",
+          "description": "atrial fibrillation",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00017.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00017_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00017_lr.dat",
+      "header_sha256": "86ee88d33a52451c8fba07bc0b3892b55ceaaf11f5b678bdec405f338fe60be9",
+      "signal_sha256": "421112cb86fd97d98a22191c1ddb3b5d2ed1724df646dedd3b4b3c6e84fdad95",
+      "waveform_sha256": "7b821a5ef3c4a4ab32c3b9e3bdd5792821a3bf308aa91ae055d9adb7c7242544"
+    },
+    {
+      "ecg_id": 30,
+      "provider_fold": 9,
+      "age": 25.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus unspezifischer intraventrikulÄrer block linkshypertrophie",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "LVH",
+          "description": "left ventricular hypertrophy",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00030.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00030_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00030_lr.dat",
+      "header_sha256": "c26aa131d4c7c9772c773106d88018526886b8643df43a9b891aefd3ac745911",
+      "signal_sha256": "30747702445ecea190b8a9f3ca7bad396465d105882e56d35d88142ceaf58659",
+      "waveform_sha256": "a536ec7269d730f80d4df145c8f0e0036cd5e7462916d2a1b3d11fa6323274de"
+    },
+    {
+      "ecg_id": 9,
+      "provider_fold": 10,
+      "age": 55.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus normales ekg",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00009.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00009_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00009_lr.dat",
+      "header_sha256": "469fb2b770a525fda47dca4a5f0215bded63738a2733e03deb5c5743f9874cdc",
+      "signal_sha256": "025d88dbe60416c6658a514a5f7250f718c99da4c8acc2b989ed81c8cee865e8",
+      "waveform_sha256": "893e689deebae243e30b5f9296c17346efea21d611a458919b888c96dbe5c138"
+    },
+    {
+      "ecg_id": 38,
+      "provider_fold": 10,
+      "age": 40.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus schwierig bestimmbare qrs-achse",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00038.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00038_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00038_lr.dat",
+      "header_sha256": "e17d738f5a50479034edece6023d2b7671f290f2963622819cd4dae435b28192",
+      "signal_sha256": "d64485a78a31d5fd78f8827f37f6cad86e1cf2a100846419155b854d9f6995d1",
+      "waveform_sha256": "f825a90eb7660764455c7145a1da153b02631bf82741fa653bbb7df9e9116988"
+    },
+    {
+      "ecg_id": 40,
+      "provider_fold": 10,
+      "age": 60.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus linkstyp sonst normales ekg",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 80.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00040.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00040_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00040_lr.dat",
+      "header_sha256": "56b0c7ad449ce97a08d4470d8b5df4c2317c2e8fc87375643702ba8a5ecb67a8",
+      "signal_sha256": "d0aee7c8e117c8c7ebd522630d3394f26216aa7990cff426424823bdf72b1b05",
+      "waveform_sha256": "c637d93498fa53175e0f8313df55bbb81686e76b056ccc6680dc91d89c331468"
+    },
+    {
+      "ecg_id": 57,
+      "provider_fold": 10,
+      "age": 26.0,
+      "age_note": "Reported age at ECG",
+      "sex_source_code": 0,
+      "report": "sinusrhythmus normales ekg",
+      "validated_by_human": true,
+      "statements": [
+        {
+          "code": "NORM",
+          "description": "normal ECG",
+          "source_likelihood": 100.0
+        },
+        {
+          "code": "SR",
+          "description": "sinus rhythm",
+          "source_likelihood": 0.0
+        }
+      ],
+      "waveform": "/reference-ecg/ptbxl-00057.svg",
+      "source_header": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00057_lr.hea",
+      "source_signal": "https://physionet.org/files/ptb-xl/1.0.3/records100/00000/00057_lr.dat",
+      "header_sha256": "5504eb5aaa9bd1af95281c642319954dca960d45d8731832f768192a853f0bae",
+      "signal_sha256": "5385b62d6425b520426a229d6824d6822b2735bc3c6e8cfa068696eca332e9a7",
+      "waveform_sha256": "57ccc3a271bd3ed4dd1cd3510e8b407ea5d98e8e34657d5f1bdf846dbe3f919d"
+    }
+  ]
+}

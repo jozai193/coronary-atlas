@@ -1,0 +1,43 @@
+{
+  "role": "Post-external-result development, not independent validation",
+  "runner_sha256": "8316d3a10abb1310cb69eff5f8940fcd0862ea04411ff3cc7ce6dbae0ecad235",
+  "protocol_sha256": "22dfcc2d44eba2337019b718538f98007e7dac3c4877f4b45242c9f7d96798c7",
+  "raw_sha256": "67eef2dcdd4b62901a459f020c0231afdabae73e70c109bf57b0540f2e25035a",
+  "historical_manifest_sha256": "d86a6155e235ff1d5f754949d36d838e44d73acbfe2383d6cd401aa89841f5ef",
+  "partition_sha256": "5b0aa132baa63b95ae788663d0aed51800e866665cfb02c72c49527c95b13979",
+  "raw_rows": 27125,
+  "eligible_available": 14257,
+  "eligible_complete": 7100,
+  "partition_counts": {
+    "train": 8574,
+    "calibration": 2863,
+    "test": 2820
+  },
+  "features": {
+    "numeric": [
+      "age",
+      "bmi",
+      "ldl",
+      "hdl"
+    ],
+    "categorical_opaque_codes": [
+      "sex",
+      "htn",
+      "dm",
+      "chol",
+      "famhx",
+      "smokecurrent",
+      "smokepast",
+      "chest_pain",
+      "typicality",
+      "exertion",
+      "sob"
+    ]
+  },
+  "missing_numeric_eligible": {
+    "age": 0,
+    "bmi": 374,
+    "ldl": 6900,
+    "hdl": 6642
+  }
+}

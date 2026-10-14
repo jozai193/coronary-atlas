@@ -1,0 +1,256 @@
+{
+  "status": "complete",
+  "repeat_metrics": [
+    {
+      "target": "cad",
+      "repeat": 1,
+      "ebm": {
+        "auc": 0.9371008939974458,
+        "brier": 0.08829918696229595,
+        "sensitivity_at_0_5": 0.9398148148148148,
+        "true_positives": 203,
+        "false_negatives": 13
+      },
+      "baseline": {
+        "auc": 0.920338441890166,
+        "brier": 0.0985314438237378,
+        "sensitivity_at_0_5": 0.9027777777777778,
+        "true_positives": 195,
+        "false_negatives": 21
+      }
+    },
+    {
+      "target": "cad",
+      "repeat": 2,
+      "ebm": {
+        "auc": 0.9199659429544488,
+        "brier": 0.09773858966767487,
+        "sensitivity_at_0_5": 0.9305555555555556,
+        "true_positives": 201,
+        "false_negatives": 15
+      },
+      "baseline": {
+        "auc": 0.8992656449553,
+        "brier": 0.11048558255238101,
+        "sensitivity_at_0_5": 0.9166666666666666,
+        "true_positives": 198,
+        "false_negatives": 18
+      }
+    },
+    {
+      "target": "lad",
+      "repeat": 1,
+      "ebm": {
+        "auc": 0.8258900547036141,
+        "brier": 0.16201621857945078,
+        "sensitivity_at_0_5": 0.8757062146892656,
+        "true_positives": 155,
+        "false_negatives": 22
+      },
+      "baseline": {
+        "auc": 0.83091202582728,
+        "brier": 0.16797207007820075,
+        "sensitivity_at_0_5": 0.8587570621468926,
+        "true_positives": 152,
+        "false_negatives": 25
+      }
+    },
+    {
+      "target": "lad",
+      "repeat": 2,
+      "ebm": {
+        "auc": 0.8319881624966371,
+        "brier": 0.16130863633162085,
+        "sensitivity_at_0_5": 0.8418079096045198,
+        "true_positives": 149,
+        "false_negatives": 28
+      },
+      "baseline": {
+        "auc": 0.8265178010940722,
+        "brier": 0.1686650176379318,
+        "sensitivity_at_0_5": 0.8813559322033898,
+        "true_positives": 156,
+        "false_negatives": 21
+      }
+    },
+    {
+      "target": "lcx",
+      "repeat": 1,
+      "ebm": {
+        "auc": 0.7167519181585678,
+        "brier": 0.2063206633102765,
+        "sensitivity_at_0_5": 0.36134453781512604,
+        "true_positives": 43,
+        "false_negatives": 76
+      },
+      "baseline": {
+        "auc": 0.7410485933503835,
+        "brier": 0.20302293614382178,
+        "sensitivity_at_0_5": 0.40336134453781514,
+        "true_positives": 48,
+        "false_negatives": 71
+      }
+    },
+    {
+      "target": "lcx",
+      "repeat": 2,
+      "ebm": {
+        "auc": 0.6764249177932042,
+        "brier": 0.22354395743709515,
+        "sensitivity_at_0_5": 0.47058823529411764,
+        "true_positives": 56,
+        "false_negatives": 63
+      },
+      "baseline": {
+        "auc": 0.7142400438436244,
+        "brier": 0.20909572032690485,
+        "sensitivity_at_0_5": 0.36134453781512604,
+        "true_positives": 43,
+        "false_negatives": 76
+      }
+    },
+    {
+      "target": "rca",
+      "repeat": 1,
+      "ebm": {
+        "auc": 0.7240323029796716,
+        "brier": 0.2054462220436552,
+        "sensitivity_at_0_5": 0.3333333333333333,
+        "true_positives": 38,
+        "false_negatives": 76
+      },
+      "baseline": {
+        "auc": 0.7165599183143043,
+        "brier": 0.20722682243832516,
+        "sensitivity_at_0_5": 0.40350877192982454,
+        "true_positives": 46,
+        "false_negatives": 68
+      }
+    },
+    {
+      "target": "rca",
+      "repeat": 2,
+      "ebm": {
+        "auc": 0.667455676227606,
+        "brier": 0.21879858795544876,
+        "sensitivity_at_0_5": 0.34210526315789475,
+        "true_positives": 39,
+        "false_negatives": 75
+      },
+      "baseline": {
+        "auc": 0.6992017079736378,
+        "brier": 0.20879846402730393,
+        "sensitivity_at_0_5": 0.3508771929824561,
+        "true_positives": 40,
+        "false_negatives": 74
+      }
+    }
+  ],
+  "target_summary": {
+    "cad": {
+      "ebm_mean": {
+        "auc": 0.9285334184759473,
+        "brier": 0.09301888831498542,
+        "sensitivity_at_0_5": 0.9351851851851851
+      },
+      "baseline_mean": {
+        "auc": 0.909802043422733,
+        "brier": 0.1045085131880594,
+        "sensitivity_at_0_5": 0.9097222222222222
+      },
+      "auc_delta_by_repeat": [
+        0.01676245210727978,
+        0.020700297999148742
+      ],
+      "brier_delta_by_repeat": [
+        -0.010232256861441844,
+        -0.01274699288470614
+      ],
+      "sensitivity_delta_by_repeat": [
+        0.03703703703703698,
+        0.01388888888888895
+      ],
+      "auc_screen": true,
+      "probability_quality_screen": true
+    },
+    "lad": {
+      "ebm_mean": {
+        "auc": 0.8289391086001257,
+        "brier": 0.16166242745553583,
+        "sensitivity_at_0_5": 0.8587570621468927
+      },
+      "baseline_mean": {
+        "auc": 0.8287149134606762,
+        "brier": 0.16831854385806627,
+        "sensitivity_at_0_5": 0.8700564971751412
+      },
+      "auc_delta_by_repeat": [
+        -0.005021971123665869,
+        0.0054703614025648495
+      ],
+      "brier_delta_by_repeat": [
+        -0.00595585149874997,
+        -0.007356381306310944
+      ],
+      "sensitivity_delta_by_repeat": [
+        0.016949152542372947,
+        -0.039548022598870025
+      ],
+      "auc_screen": false,
+      "probability_quality_screen": true
+    },
+    "lcx": {
+      "ebm_mean": {
+        "auc": 0.696588417975886,
+        "brier": 0.21493231037368582,
+        "sensitivity_at_0_5": 0.4159663865546218
+      },
+      "baseline_mean": {
+        "auc": 0.727644318597004,
+        "brier": 0.20605932823536333,
+        "sensitivity_at_0_5": 0.38235294117647056
+      },
+      "auc_delta_by_repeat": [
+        -0.024296675191815775,
+        -0.037815126050420145
+      ],
+      "brier_delta_by_repeat": [
+        0.0032977271664547114,
+        0.014448237110190304
+      ],
+      "sensitivity_delta_by_repeat": [
+        -0.04201680672268909,
+        0.1092436974789916
+      ],
+      "auc_screen": false,
+      "probability_quality_screen": false
+    },
+    "rca": {
+      "ebm_mean": {
+        "auc": 0.6957439896036388,
+        "brier": 0.21212240499955198,
+        "sensitivity_at_0_5": 0.33771929824561403
+      },
+      "baseline_mean": {
+        "auc": 0.7078808131439711,
+        "brier": 0.20801264323281454,
+        "sensitivity_at_0_5": 0.3771929824561403
+      },
+      "auc_delta_by_repeat": [
+        0.00747238466536726,
+        -0.031746031746031744
+      ],
+      "brier_delta_by_repeat": [
+        -0.0017806003946699567,
+        0.010000123928144838
+      ],
+      "sensitivity_delta_by_repeat": [
+        -0.07017543859649122,
+        -0.008771929824561375
+      ],
+      "auc_screen": false,
+      "probability_quality_screen": false
+    }
+  },
+  "interpretation": "Repeated internal development check only; no independent validation or app change."
+}

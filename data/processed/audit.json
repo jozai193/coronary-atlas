@@ -1,0 +1,11 @@
+{
+  "rows": 303,
+  "columns": 59,
+  "missing": 0,
+  "duplicates": 0,
+  "feature_duplicates": 0,
+  "inconsistent_row_indices": [
+    93
+  ],
+  "raw_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b"
+}

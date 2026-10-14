@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-10-08T06:53:57.842794+00:00",
+  "features": [
+    "Age",
+    "BMI",
+    "LDL",
+    "HDL"
+  ],
+  "source_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "protocol_sha256": "0e9f77b41e451a15a51f696ae306b8487673f531055d2deeb65069d8d76908b9",
+  "runner_sha256": "6dce196901596b492e584f95606b8bb4080624b59f657aab9ff8b91d34642f03",
+  "external_sha256": "67eef2dcdd4b62901a459f020c0231afdabae73e70c109bf57b0540f2e25035a",
+  "training_rows": 303,
+  "external_rows_used_for_fit": 0,
+  "targets": {
+    "cad": {
+      "file": "cad.joblib",
+      "sha256": "6370e902f215f584348bba1a34453d1b8d626109c6215a79937e3ef97f5db7dd",
+      "source_prevalence": 0.7128712871287128,
+      "source_oof": {
+        "accuracy": 0.7194719471947195,
+        "precision": 0.7205387205387206,
+        "recall": 0.9907407407407407,
+        "f1": 0.834307992202729,
+        "roc_auc": 0.7183375904640272,
+        "specificity": 0.04597701149425287,
+        "brier": 0.1831682605304359,
+        "log_loss": 0.5467641221794164,
+        "confusion_matrix": [
+          [
+            4,
+            83
+          ],
+          [
+            2,
+            214
+          ]
+        ]
+      }
+    },
+    "lad": {
+      "file": "lad.joblib",
+      "sha256": "99ab4388f6514a2f302e8835a47e87bbdc2b65bdfa9d6fc08950adbe5978a785",
+      "source_prevalence": 0.5841584158415841,
+      "source_oof": {
+        "accuracy": 0.636963696369637,
+        "precision": 0.6401673640167364,
+        "recall": 0.864406779661017,
+        "f1": 0.7355769230769231,
+        "roc_auc": 0.6670702179176756,
+        "specificity": 0.31746031746031744,
+        "brier": 0.22475134158849075,
+        "log_loss": 0.6404470193831024,
+        "confusion_matrix": [
+          [
+            40,
+            86
+          ],
+          [
+            24,
+            153
+          ]
+        ]
+      }
+    },
+    "lcx": {
+      "file": "lcx.joblib",
+      "sha256": "3354d1cf449c9c028bad07fb7003d9fa5a71d45df580517024f134fcca9f0eda",
+      "source_prevalence": 0.3927392739273927,
+      "source_oof": {
+        "accuracy": 0.6138613861386139,
+        "precision": 0.5185185185185185,
+        "recall": 0.23529411764705882,
+        "f1": 0.3236994219653179,
+        "roc_auc": 0.6787997807818779,
+        "specificity": 0.8586956521739131,
+        "brier": 0.21918742162549076,
+        "log_loss": 0.6282340342507993,
+        "confusion_matrix": [
+          [
+            158,
+            26
+          ],
+          [
+            91,
+            28
+          ]
+        ]
+      }
+    },
+    "rca": {
+      "file": "rca.joblib",
+      "sha256": "39f7bafac11dcf57e26e49e763e3c8503982bc5535d0e16650bd44c4dd3eeed8",
+      "source_prevalence": 0.37623762376237624,
+      "source_oof": {
+        "accuracy": 0.6072607260726073,
+        "precision": 0.38095238095238093,
+        "recall": 0.07017543859649122,
+        "f1": 0.11851851851851852,
+        "roc_auc": 0.6007147498375569,
+        "specificity": 0.9312169312169312,
+        "brier": 0.22926132502725804,
+        "log_loss": 0.6502025517984539,
+        "confusion_matrix": [
+          [
+            176,
+            13
+          ],
+          [
+            106,
+            8
+          ]
+        ]
+      }
+    }
+  }
+}

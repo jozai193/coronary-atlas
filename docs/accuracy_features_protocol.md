@@ -1,0 +1,16 @@
+# Accuracy goal: fold-local feature selection and spline follow-up v1
+
+14 October 2026. Frozen while the ensemble trial is fitting, before its aggregate outcomes are evaluated. This separate stage addresses predictor variance and smooth numeric relationships. Reused 303-person source data, no independent validation or clinical promotion.
+
+Reuse the exact shared outer and target-specific inner partitions already frozen in `accuracy_ensemble_v1/manifest.json`, with the same 55-input allowlist and unmodified labels. Comparator is that run's projected original baseline-selector procedure. No historical target-specific prediction mixing.
+
+Two separately nested procedures, using only each outer training partition:
+
+* **Primary, selected ridge:** median imputation, standard scaling, and one-hot category encoding from the original pipeline; then fold-local ANOVA SelectPercentile with 25, 50 or 100 percent of encoded features retained; then ridge logistic C=.01, .03 or .1. Nine configurations. Rank each configuration by mean three-inner-fold Brier; deterministic first configuration wins ties. Refit only the selected configuration on all outer training rows. The 100-percent choice is a no-selection control within the search. ANOVA considers encoded columns, not grouped original variables.
+* **Secondary, spline ridge:** replace the numeric branch with median imputation, quadratic splines with four quantile knots and no bias, linear extrapolation, then standard scaling. Categorical preprocessing is unchanged. Choose ridge C=.01, .03 or .1 by the same inner Brier rule, then refit. All knots, transforms and coefficients are learned on each current training subset. No clinical code interpretations, derived outcome features or new inputs.
+
+No calibration or threshold tuning. For both procedures retain raw outputs and apply the existing CAD/vessel coherence projection. Publish all targets/repeats/arms and candidate-selection frequencies, not just favorable results. Use the ensemble protocol's fixed Brier engineering screen and .5 operating point, patient-level conditional bootstrap (2,000 draws), and metric definitions. Passing nominates research only; exploratory repeated splits of previously studied patients cannot demonstrate independent generalization. No target-specific promotion, primary/secondary switching or configuration edits after evaluation.
+
+Prepare a manifest and code/protocol hashes before fitting. After the ensemble baseline has completed, verify its fit receipt and hash the prediction source. Save selected fitted models and inner candidate metrics privately/publicly respectively. Preserve all prior evidence. Fit on one thread with a 30-minute limit and no automatic parameter retries. A fresh-process verifier must replay every selected outer model, reconstruct every inner candidate score and selection, verify exact labels/splits and reproduce the entire results summary. Tests cover learned feature selection staying inside training partitions, numeric knots, and artifact tampering.
+
+Method references: [scikit-learn feature selection](https://scikit-learn.org/stable/modules/feature_selection.html), [SplineTransformer](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.SplineTransformer.html). These are algorithm references, not empirical support for a coronary benefit.

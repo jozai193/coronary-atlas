@@ -1,0 +1,60 @@
+{
+  "input_hashes": {
+    "ml/accuracy_missingness.py": "3d0c4897b979344b18c519b5d9e6faa3f9e13dc0a644f55f0f812843dee59564",
+    "docs/accuracy_missingness_protocol.md": "c021aa4103f4c35788a0317ee68995bcf74f6ad8246434219ff198312100a068",
+    "ml/experiments/accuracy_ensemble_v1/manifest.json": "6f9e62cbe0e50f08490efe04bdbb94dcd7198f8c4c81443ae39253f29c06ed5d",
+    "ml/experiments/accuracy_ensemble_v1/fit_receipt.json": "6ef6953d127824d576ba2a540d69b2eb8a0253a1e5bfa2b75f6aa5faf072e86a",
+    "ml/experiments/accuracy_ensemble_v1/results.json": "cdaacc957e22ff3f01b68a215dffea8e6db38c7dac583b6c574da2e8f6d60d9d"
+  },
+  "scenarios": {
+    "complete": [],
+    "no_laboratory": [
+      "FBS",
+      "CR",
+      "TG",
+      "LDL",
+      "HDL",
+      "BUN",
+      "ESR",
+      "HB",
+      "K",
+      "Na",
+      "WBC",
+      "Lymph",
+      "Neut",
+      "PLT"
+    ],
+    "no_echo": [
+      "EF-TTE",
+      "Region RWMA",
+      "VHD"
+    ],
+    "core_only": [
+      "FBS",
+      "CR",
+      "TG",
+      "LDL",
+      "HDL",
+      "BUN",
+      "ESR",
+      "HB",
+      "K",
+      "Na",
+      "WBC",
+      "Lymph",
+      "Neut",
+      "PLT",
+      "EF-TTE",
+      "Region RWMA",
+      "VHD",
+      "Q Wave",
+      "St Elevation",
+      "St Depression",
+      "Tinversion",
+      "LVH",
+      "Poor R Progression",
+      "BBB"
+    ]
+  },
+  "scope": "Post-search artificial missingness; no naturally incomplete validation."
+}

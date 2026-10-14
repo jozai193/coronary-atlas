@@ -1,0 +1,164 @@
+"""Local educational API. Input is ephemeral and never written to disk."""
+from contextlib import asynccontextmanager
+import json
+import math
+from typing import Any, Literal
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.staticfiles import StaticFiles
+from starlette.middleware.gzip import GZipMiddleware
+from pydantic import BaseModel, ConfigDict, Field
+from ml.schema import ROOT, FEATURES, NUMERIC, PROHIBITED
+from ml.predict import Predictor
+from backend.candidates import load_candidate
+
+DISCLAIMER='This software is an educational/research decision-support prototype and is not a substitute for professional medical diagnosis, coronary angiography or other diagnostic imaging.'
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    app.state.predictor=Predictor()
+    app.state.metrics=json.loads((ROOT/'ml/metrics/evaluation.json').read_text(encoding='utf-8'))
+    app.state.candidate,app.state.candidate_info=load_candidate(app.state.predictor)
+    yield
+
+
+app=FastAPI(title='Coronary Atlas',version='1.0.0',lifespan=lifespan)
+app.add_middleware(GZipMiddleware,minimum_size=1000)
+
+
+class PatientRequest(BaseModel):
+    model_config=ConfigDict(extra='forbid')
+    features: dict[str, Any] = Field(description='Canonical field names from /model/info. Null means unknown.')
+    model_variant: Literal['baseline','histgb_lcx_v2'] = 'baseline'
+
+
+class Factor(BaseModel):
+    feature: str
+    contribution: float
+
+
+class Explanation(BaseModel):
+    method: str
+    unit: str
+    base_value: float
+    output_value: float
+    additivity_error: float
+    factors: list[Factor]
+    note: str
+
+
+class Prediction(BaseModel):
+    probability: float = Field(ge=0,le=1)
+    classification: int = Field(ge=0,le=1)
+    category: str
+    model: str
+    explanation: Explanation
+
+
+class PredictionResponse(BaseModel):
+    cad: Prediction
+    lad: Prediction
+    lcx: Prediction
+    rca: Prediction
+    warnings: list[str]
+    missing_features: list[str]
+    input_snapshot: dict[str, Any]
+    disclaimer: str
+    model_version: str
+
+
+@app.middleware('http')
+async def headers(request: Request, call_next):
+    # The local API never persists requests; browser caches must not retain predictions.
+    response=await call_next(request)
+    response.headers['X-Content-Type-Options']='nosniff'
+    if '/predict' in request.url.path:
+        response.headers['Cache-Control']='no-store'
+    return response
+
+
+@app.get('/health')
+@app.get('/api/health')
+def health():
+    return dict(status='ok',models=list(app.state.predictor.artifacts),version='1.0.0')
+
+
+@app.get('/model/info')
+@app.get('/api/model/info')
+def model_info():
+    m=app.state.predictor.metadata
+    return dict(version='1.0.0',features=m['feature_schema'],rows=m['rows'],seed=m['seed'],models={k:v['selected']['kind'] for k,v in m['artifacts'].items()},disclaimer=DISCLAIMER,dataset='UCI Extension of Z-Alizadeh Sani (303 records)',source='https://doi.org/10.24432/C5461K',feature_count=len(FEATURES),threshold=.5,bands={'lower':[0,.3],'intermediate':[.3,.7],'higher':[.7,1]},limitations=['Internal cross-validation only; no external or clinical validation.', 'Color bands are interface conventions, not clinical thresholds.', 'Probabilities concern supplied cross-sectional labels, not future heart attacks.', 'Four independently trained models may produce discordant CAD/vessel estimates.', 'Reference anatomy shows vessel-level risk, not lesion location.', 'Units are conventional interpretations; original feature documentation is incomplete.'])
+
+
+@app.get('/model/metrics')
+@app.get('/api/model/metrics')
+def model_metrics():
+    return app.state.metrics
+
+
+@app.get('/sample-patients')
+@app.get('/api/sample-patients')
+def samples():
+    return json.loads((ROOT/'data/processed/sample_patients.json').read_text(encoding='utf-8'))
+
+
+@app.get('/model/candidates')
+@app.get('/api/model/candidates')
+def candidate_info():
+    return app.state.candidate_info
+
+
+def validate_features(features, schema):
+    unknown=set(features)-set(FEATURES)
+    if unknown:
+        raise HTTPException(422,detail=f'Unknown or prohibited input fields: {", ".join(sorted(unknown))}. Labels are never inputs.')
+    clean={}; warnings=[]
+    for spec in schema:
+        name=spec['name']; value=features.get(name)
+        if value is None:
+            clean[name]=None
+            continue
+        if name in NUMERIC:
+            if isinstance(value,bool) or not isinstance(value,(int,float)) or not math.isfinite(value) or value<0 or value>1000000:
+                raise HTTPException(422,detail=f'{name}: enter a finite nonnegative number or null.')
+            clean[name]=float(value)
+            if value<spec['minimum'] or value>spec['maximum']:
+                warnings.append(f'{name} is outside the observed dataset range ({spec["minimum"]:g}–{spec["maximum"]:g}); extrapolation is unreliable.')
+        else:
+            # Numeric source codes may be sent as JSON numbers, but booleans are ambiguous.
+            if isinstance(value,bool) or not isinstance(value,(str,int,float)):
+                raise HTTPException(422,detail=f'{name}: invalid category.')
+            normalized=str(int(value)) if isinstance(value,(int,float)) and math.isfinite(value) and value==int(value) else str(value)
+            if normalized not in spec['options']:
+                raise HTTPException(422,detail=f'{name}: expected one of {spec["options"]}, or null.')
+            clean[name]=normalized
+    missing=[k for k,v in clean.items() if v is None]
+    if clean['Age'] is None or len(missing)>len(FEATURES)//2:
+        raise HTTPException(422,detail='Enter age and at least 28 of 55 observations. This completeness rule is a prototype guard, not clinically validated.')
+    if missing:
+        warnings.append(f'{len(missing)} unknown inputs were imputed from training data. Explanations include imputed values, not measured findings.')
+    if clean['Age'] is not None and clean['Age']<30:
+        warnings.append('No patients below age 30 occurred in the training cohort.')
+    return clean,missing,warnings
+
+
+@app.post('/predict',response_model=PredictionResponse)
+@app.post('/api/predict',response_model=PredictionResponse)
+def predict(patient: PatientRequest):
+    clean,missing,warnings=validate_features(patient.features,app.state.predictor.metadata['feature_schema'])
+    predictor=app.state.predictor
+    if patient.model_variant=='histgb_lcx_v2':
+        if app.state.candidate is None:
+            raise HTTPException(503,detail='The optional experimental LCX model is not installed.')
+        predictor=app.state.candidate
+        warnings.append('Experimental LCX model selected after a multi-family search on reused data. Only LCX uses this candidate. No independent validation; probability is not a measured blockage percentage.')
+    result=predictor.predict(clean)
+    if result['cad']['probability'] < max(result[v]['probability'] for v in ['lad','lcx','rca']):
+        warnings.append('Independent model estimates are discordant: a vessel estimate exceeds CAD. These are not a coherent joint probability model.')
+    return dict(**result,warnings=warnings,missing_features=missing,input_snapshot=clean,disclaimer=DISCLAIMER,model_version='1.0.0' if patient.model_variant=='baseline' else '1.0.0+histgb-lcx-v2')
+
+
+# Register SPA last so API routes cannot be shadowed.
+dist=ROOT/'frontend/dist'
+if dist.is_dir():
+    app.mount('/',StaticFiles(directory=dist,html=True),name='dashboard')

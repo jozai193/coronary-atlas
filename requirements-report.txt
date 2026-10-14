@@ -1,0 +1,4 @@
+# Optional PDF authoring only; application runtime does not require reportlab.
+reportlab==4.4.9
+pypdf==6.19.0
+pillow==12.3.0

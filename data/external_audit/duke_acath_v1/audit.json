@@ -1,0 +1,57 @@
+{
+  "source": "https://hbiostat.org/data/repo/acath.dta",
+  "source_page": "https://hbiostat.org/data/repo/acath",
+  "download_bytes": 85406,
+  "sha256": "b30537eb4c14827791e54a4b00411ddd31311f7d4cc635e8bcdafaf4d7ac92d0",
+  "dimensions": {
+    "rows": 3504,
+    "columns": 6
+  },
+  "columns": [
+    "sex",
+    "age",
+    "cad_dur",
+    "choleste",
+    "sigdz",
+    "tvdlm"
+  ],
+  "missing_counts": {
+    "sex": 0,
+    "age": 0,
+    "cad_dur": 0,
+    "choleste": 1246,
+    "sigdz": 0,
+    "tvdlm": 3
+  },
+  "sigdz_counts": {
+    "0": 1170,
+    "1": 2334
+  },
+  "tvdlm_counts": {
+    "0.0": 2372,
+    "1.0": 1129,
+    "nan": 3
+  },
+  "sex_counts": {
+    "0": 2405,
+    "1": 1099
+  },
+  "age_summary": {
+    "min": 17.0,
+    "25%": 46.0,
+    "50%": 52.0,
+    "75%": 59.0,
+    "max": 82.0,
+    "mean": 52.27568493150685
+  },
+  "cholesterol_summary_observed": {
+    "min": 29.0,
+    "25%": 196.0,
+    "50%": 224.5,
+    "75%": 259.0,
+    "max": 576.0,
+    "mean": 229.92825509300266
+  },
+  "row_level_data_written": false,
+  "decision": "Usable for a separate reduced-input or severe-CAD study only; not compatible with the current 55-input model or same >=50%-stenosis target. Exact shared predictors: age and sex."
+}

@@ -1,0 +1,4273 @@
+{
+  "complete": true,
+  "fatal_error": null,
+  "warning": "Exploratory repeated internal validation of reused data; repeats reuse the same people and are not independent. No production model or metric is changed.",
+  "targets": {
+    "cad": {
+      "complete": true,
+      "candidate_execution": {
+        "hard_timeouts": 0,
+        "failed_or_partial_candidate_outer_fits": 0,
+        "slow_individual_fits_over_seconds": 15,
+        "note": "A full run can complete while an individual model family has a logged fit failure; each candidate metric exposes prediction completeness."
+      },
+      "selection_frequency": {
+        "baseline_selector": {
+          "forest": 2,
+          "logistic_03": 8
+        },
+        "broad_selector": {
+          "catboost_native": 1,
+          "logistic_03": 1,
+          "shrinkage_lda": 2,
+          "uniform_ensemble": 6
+        }
+      },
+      "candidate_comparison_to_baseline_selector": {
+        "logistic_003": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8481848184818482,
+            "precision": 0.8512636612021858,
+            "recall": 0.9537037037037037,
+            "f1": 0.899561403508772,
+            "roc_auc": 0.9165602383993188,
+            "specificity": 0.5862068965517242,
+            "brier": 0.11476581358070338,
+            "log_loss": 0.3740759612715392,
+            "average_precision": 0.96322260448029,
+            "calibration_intercept": -0.6591615030494729,
+            "calibration_slope": 2.0812290414062122,
+            "expected_calibration_error_5_quantile_bins": 0.10299204371846937
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.0008514261387825295,
+              0.014367816091954144
+            ],
+            "brier": [
+              0.01575426338619458,
+              0.004760337399093373
+            ],
+            "log_loss": [
+              0.05599457158104504,
+              0.015906095829604727
+            ],
+            "calibration_slope": [
+              1.1344849914267665,
+              0.930527695163325
+            ],
+            "calibration_intercept": [
+              -0.7136260908686829,
+              -0.6043456217436862
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.006758194976585807,
+            "mean_two_repeat_brier_change": 0.010257300392643977,
+            "per_repeat_auroc_gain": [
+              -0.0008514261387825295,
+              0.014367816091954144
+            ],
+            "per_repeat_brier_change": [
+              0.01575426338619458,
+              0.004760337399093373
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "logistic_03": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8597359735973598,
+            "precision": 0.9025516795865633,
+            "recall": 0.900462962962963,
+            "f1": 0.9015048981696314,
+            "roc_auc": 0.9182896977437207,
+            "specificity": 0.7586206896551724,
+            "brier": 0.0995978791148233,
+            "log_loss": 0.3207912916869316,
+            "average_precision": 0.9641700692715436,
+            "calibration_intercept": 0.012491374694101125,
+            "calibration_slope": 0.9720922358178503,
+            "expected_calibration_error_5_quantile_bins": 0.019679153303720165
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0,
+              0.016975308641975273
+            ],
+            "brier": [
+              0.0,
+              -0.009821268146472203
+            ],
+            "log_loss": [
+              0.0,
+              -0.03466867175856536
+            ],
+            "calibration_slope": [
+              0.0,
+              -0.15326092458663276
+            ],
+            "calibration_intercept": [
+              0.0,
+              0.025334042874778785
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.008487654320987637,
+            "mean_two_repeat_brier_change": -0.004910634073236102,
+            "per_repeat_auroc_gain": [
+              0.0,
+              0.016975308641975273
+            ],
+            "per_repeat_brier_change": [
+              0.0,
+              -0.009821268146472203
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "forest": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8547854785478548,
+            "precision": 0.8690987124463518,
+            "recall": 0.9375,
+            "f1": 0.9020044543429844,
+            "roc_auc": 0.9135004257130693,
+            "specificity": 0.6494252873563218,
+            "brier": 0.11462369157701112,
+            "log_loss": 0.374789772936628,
+            "average_precision": 0.9618056368492558,
+            "calibration_intercept": -0.48656044133787857,
+            "calibration_slope": 1.9531732406383209,
+            "expected_calibration_error_5_quantile_bins": 0.08169292801166375
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.005055342699020859,
+              0.01245210727969348
+            ],
+            "brier": [
+              0.016508529337424166,
+              0.003721827440479261
+            ],
+            "log_loss": [
+              0.05893235321772383,
+              0.014395937523103641
+            ],
+            "calibration_slope": [
+              0.9690963689776174,
+              0.839804716076691
+            ],
+            "calibration_intercept": [
+              -0.5189780637026732,
+              -0.45379152548650753
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0036983822903363106,
+            "mean_two_repeat_brier_change": 0.010115178388951714,
+            "per_repeat_auroc_gain": [
+              -0.005055342699020859,
+              0.01245210727969348
+            ],
+            "per_repeat_brier_change": [
+              0.016508529337424166,
+              0.003721827440479261
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8564356435643565,
+            "precision": 0.8725835945663531,
+            "recall": 0.9351851851851851,
+            "f1": 0.9027994167465644,
+            "roc_auc": 0.9018465304384844,
+            "specificity": 0.6609195402298851,
+            "brier": 0.11207148491719866,
+            "log_loss": 0.3665374503136468,
+            "average_precision": 0.9541926510302232,
+            "calibration_intercept": -0.3442941265018225,
+            "calibration_slope": 1.4710416447390986,
+            "expected_calibration_error_5_quantile_bins": 0.052541590251468775
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.021046189868028864,
+              0.005135163899531725
+            ],
+            "brier": [
+              0.015432613551510155,
+              -0.00030667009323163963
+            ],
+            "log_loss": [
+              0.053857892846995103,
+              0.0029657526478700236
+            ],
+            "calibration_slope": [
+              0.4477098211818701,
+              0.39692807207399383
+            ],
+            "calibration_intercept": [
+              -0.3607030479080531,
+              -0.3275339116090154
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.00795551298424857,
+            "mean_two_repeat_brier_change": 0.007562971729139258,
+            "per_repeat_auroc_gain": [
+              -0.021046189868028864,
+              0.005135163899531725
+            ],
+            "per_repeat_brier_change": [
+              0.015432613551510155,
+              -0.00030667009323163963
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_025": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.858085808580858,
+            "precision": 0.8744940029985008,
+            "recall": 0.9351851851851851,
+            "f1": 0.90381766495836,
+            "roc_auc": 0.9150968497232865,
+            "specificity": 0.6666666666666667,
+            "brier": 0.10731919443479906,
+            "log_loss": 0.3493826158787995,
+            "average_precision": 0.9629477364835657,
+            "calibration_intercept": -0.3079071638287588,
+            "calibration_slope": 1.5843368392546195,
+            "expected_calibration_error_5_quantile_bins": 0.05948874010211486
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.0017560664112388213,
+              0.012345679012345734
+            ],
+            "brier": [
+              0.008281149281494787,
+              -0.0026597867880154835
+            ],
+            "log_loss": [
+              0.030472775856861978,
+              -0.007958799231691627
+            ],
+            "calibration_slope": [
+              0.6232043516848319,
+              0.4480239306020739
+            ],
+            "calibration_intercept": [
+              -0.3628701298163099,
+              -0.25259290435463116
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.005294806300553456,
+            "mean_two_repeat_brier_change": 0.002810681246739652,
+            "per_repeat_auroc_gain": [
+              -0.0017560664112388213,
+              0.012345679012345734
+            ],
+            "per_repeat_brier_change": [
+              0.008281149281494787,
+              -0.0026597867880154835
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_075": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8514851485148515,
+            "precision": 0.8669527896995708,
+            "recall": 0.9351851851851852,
+            "f1": 0.8997772828507795,
+            "roc_auc": 0.9026713495104299,
+            "specificity": 0.6436781609195402,
+            "brier": 0.11762837244834148,
+            "log_loss": 0.3818120922681374,
+            "average_precision": 0.9552594804824837,
+            "calibration_intercept": -0.4545052463260706,
+            "calibration_slope": 1.8165827337291254,
+            "expected_calibration_error_5_quantile_bins": 0.09031418323799179
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.012558535547041338,
+              -0.001702852277564837
+            ],
+            "brier": [
+              0.018049887548821072,
+              0.00818983097174307
+            ],
+            "log_loss": [
+              0.06213044225427794,
+              0.025242487149568227
+            ],
+            "calibration_slope": [
+              0.8633446627338522,
+              0.6723754085020652
+            ],
+            "calibration_intercept": [
+              -0.5185798591865445,
+              -0.39007933997902017
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.007130693912303088,
+            "mean_two_repeat_brier_change": 0.013119859260282071,
+            "per_repeat_auroc_gain": [
+              -0.012558535547041338,
+              -0.001702852277564837
+            ],
+            "per_repeat_brier_change": [
+              0.018049887548821072,
+              0.00818983097174307
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "shrinkage_lda": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8679867986798679,
+            "precision": 0.9170485175202157,
+            "recall": 0.8958333333333333,
+            "f1": 0.9063117019876268,
+            "roc_auc": 0.9227064708386548,
+            "specificity": 0.7988505747126438,
+            "brier": 0.10656190206593465,
+            "log_loss": 0.41376579435787275,
+            "average_precision": 0.9662547731144566,
+            "calibration_intercept": 0.44260598308628535,
+            "calibration_slope": 0.47206759926275754,
+            "expected_calibration_error_5_quantile_bins": 0.06985322610581694
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.007130693912303143,
+              0.018678160919540332
+            ],
+            "brier": [
+              0.003523928288148029,
+              0.0005828494676024532
+            ],
+            "log_loss": [
+              0.07488299861440306,
+              0.07639733496891388
+            ],
+            "calibration_slope": [
+              -0.5010885516096997,
+              -0.6522216460871185
+            ],
+            "calibration_intercept": [
+              0.42037007796404025,
+              0.465193181695107
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.012904427415921738,
+            "mean_two_repeat_brier_change": 0.002053388877875241,
+            "per_repeat_auroc_gain": [
+              0.007130693912303143,
+              0.018678160919540332
+            ],
+            "per_repeat_brier_change": [
+              0.003523928288148029,
+              0.0005828494676024532
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "A linear posterior-margin decomposition is plausible; new mapping and reconstruction checks are required.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "hist_gradient_boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8531353135313531,
+            "precision": 0.8769615800865801,
+            "recall": 0.9236111111111112,
+            "f1": 0.8996288387227984,
+            "roc_auc": 0.8991858237547892,
+            "specificity": 0.6781609195402298,
+            "brier": 0.10807917501484578,
+            "log_loss": 0.3513921025603753,
+            "average_precision": 0.9483310923861314,
+            "calibration_intercept": -0.10315969536720496,
+            "calibration_slope": 1.0469415074688457,
+            "expected_calibration_error_5_quantile_bins": 0.019014865187055658
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.01968922945934437,
+              -0.0015432098765432167
+            ],
+            "brier": [
+              0.008342255148553052,
+              -0.001200931494980309
+            ],
+            "log_loss": [
+              0.03368737642796715,
+              -0.007154426439645145
+            ],
+            "calibration_slope": [
+              0.0821913560264399,
+              -0.08575373731108171
+            ],
+            "calibration_intercept": [
+              -0.12709001879579962,
+              -0.07887807845203376
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.010616219667943794,
+            "mean_two_repeat_brier_change": 0.0035706618267863713,
+            "per_repeat_auroc_gain": [
+              -0.01968922945934437,
+              -0.0015432098765432167
+            ],
+            "per_repeat_brier_change": [
+              0.008342255148553052,
+              -0.001200931494980309
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Tree SHAP support is unverified for this estimator; a model-agnostic fallback may be costly.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "extra_trees": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.863036303630363,
+            "precision": 0.8852932002495322,
+            "recall": 0.9282407407407407,
+            "f1": 0.9062308478038815,
+            "roc_auc": 0.9147509578544061,
+            "specificity": 0.7011494252873562,
+            "brier": 0.10742296334527096,
+            "log_loss": 0.3491461939596818,
+            "average_precision": 0.9629805957902353,
+            "calibration_intercept": -0.24066636631646293,
+            "calibration_slope": 1.5402780394644284,
+            "expected_calibration_error_5_quantile_bins": 0.05572486761448035
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.005108556832694844,
+              0.015006385696040958
+            ],
+            "brier": [
+              0.008668552627281806,
+              -0.0028396523128586815
+            ],
+            "log_loss": [
+              0.03157102589573724,
+              -0.009529893108802145
+            ],
+            "calibration_slope": [
+              0.5328863222781702,
+              0.4502243604283531
+            ],
+            "calibration_intercept": [
+              -0.2804708390607452,
+              -0.2005106000856041
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.004948914431673057,
+            "mean_two_repeat_brier_change": 0.002914450157211562,
+            "per_repeat_auroc_gain": [
+              -0.005108556832694844,
+              0.015006385696040958
+            ],
+            "per_repeat_brier_change": [
+              0.008668552627281806,
+              -0.0028396523128586815
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Tree SHAP is plausible after one-hot preprocessing; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "rbf_svm_sigmoid": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.858085808580858,
+            "precision": 0.8827433628318584,
+            "recall": 0.9236111111111112,
+            "f1": 0.9027149321266968,
+            "roc_auc": 0.9022722435078757,
+            "specificity": 0.6954022988505748,
+            "brier": 0.10752344706733835,
+            "log_loss": 0.3536664694144832,
+            "average_precision": 0.9503013185789488,
+            "calibration_intercept": -0.08286732925450341,
+            "calibration_slope": 1.1532494188723175,
+            "expected_calibration_error_5_quantile_bins": 0.030558915599206746
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.012132822477650018,
+              -0.0029267773520645912
+            ],
+            "brier": [
+              0.006818796551179632,
+              -0.0007889287926217403
+            ],
+            "log_loss": [
+              0.028474985490658133,
+              0.0026066982058797206
+            ],
+            "calibration_slope": [
+              0.21671636748689493,
+              -0.007662925964593281
+            ],
+            "calibration_intercept": [
+              -0.11655272838445027,
+              -0.04883063663798002
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.007529799914857305,
+            "mean_two_repeat_brier_change": 0.0030149338792789457,
+            "per_repeat_auroc_gain": [
+              -0.012132822477650018,
+              -0.0029267773520645912
+            ],
+            "per_repeat_brier_change": [
+              0.006818796551179632,
+              -0.0007889287926217403
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation of calibrated probabilities is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "mlp_small": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8547854785478548,
+            "precision": 0.8822721795302345,
+            "recall": 0.9189814814814814,
+            "f1": 0.9002349892275179,
+            "roc_auc": 0.9057045551298425,
+            "specificity": 0.6954022988505747,
+            "brier": 0.10914853064686,
+            "log_loss": 0.34637069041632307,
+            "average_precision": 0.9596964610128391,
+            "calibration_intercept": -0.1795540798461854,
+            "calibration_slope": 1.0769928039175733,
+            "expected_calibration_error_5_quantile_bins": 0.0289811928826942
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.017879948914431565,
+              0.00968497232865051
+            ],
+            "brier": [
+              0.013197846942632388,
+              -0.003917812025031178
+            ],
+            "log_loss": [
+              0.03693950248410194,
+              -0.020449376783884365
+            ],
+            "calibration_slope": [
+              0.1495792142699125,
+              -0.09303900265709908
+            ],
+            "calibration_intercept": [
+              -0.18854488585801163,
+              -0.17021198034778265
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.004097488292890528,
+            "mean_two_repeat_brier_change": 0.004640017458800605,
+            "per_repeat_auroc_gain": [
+              -0.017879948914431565,
+              0.00968497232865051
+            ],
+            "per_repeat_brier_change": [
+              0.013197846942632388,
+              -0.003917812025031178
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "catboost_native": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8811881188118812,
+            "precision": 0.8930396643783372,
+            "recall": 0.9467592592592593,
+            "f1": 0.9191108148507252,
+            "roc_auc": 0.9207375478927204,
+            "specificity": 0.7183908045977012,
+            "brier": 0.10107885948788513,
+            "log_loss": 0.3302757925748492,
+            "average_precision": 0.965213357194748,
+            "calibration_intercept": -0.3588876781711383,
+            "calibration_slope": 1.3702437347406167,
+            "expected_calibration_error_5_quantile_bins": 0.0499193660632512
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0027139208173692086,
+              0.019157088122605526
+            ],
+            "brier": [
+              0.0015912820362902619,
+              -0.008450589436638817
+            ],
+            "log_loss": [
+              0.01193237711994738,
+              -0.027632047102677526
+            ],
+            "calibration_slope": [
+              0.3918548151671749,
+              0.25118725809172515
+            ],
+            "calibration_intercept": [
+              -0.38630555675014616,
+              -0.33111850610555393
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.010935504469987367,
+            "mean_two_repeat_brier_change": -0.0034296537001742775,
+            "per_repeat_auroc_gain": [
+              0.0027139208173692086,
+              0.019157088122605526
+            ],
+            "per_repeat_brier_change": [
+              0.0015912820362902619,
+              -0.008450589436638817
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Native Tree SHAP is plausible; the native-category artifact and original-field grouping need a new verified path.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "uniform_ensemble": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.8679867986798679,
+            "precision": 0.8793266819017892,
+            "recall": 0.9444444444444444,
+            "f1": 0.910718823335974,
+            "roc_auc": 0.9251543209876543,
+            "specificity": 0.6781609195402298,
+            "brier": 0.10313709004757027,
+            "log_loss": 0.341799296446641,
+            "average_precision": 0.9674816228108111,
+            "calibration_intercept": -0.4514271948516022,
+            "calibration_slope": 1.7151453190125676,
+            "expected_calibration_error_5_quantile_bins": 0.07875239216509433
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0058535547041294045,
+              0.024851000425713088
+            ],
+            "brier": [
+              0.0042030662189975615,
+              -0.006945912499975851
+            ],
+            "log_loss": [
+              0.024437698490431092,
+              -0.017090360729577758
+            ],
+            "calibration_slope": [
+              0.737828642220992,
+              0.59501659958181
+            ],
+            "calibration_intercept": [
+              -0.48471255159029975,
+              -0.41779054462632814
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.015352277564921246,
+            "mean_two_repeat_brier_change": -0.0013714231404891447,
+            "per_repeat_auroc_gain": [
+              0.0058535547041294045,
+              0.024851000425713088
+            ],
+            "per_repeat_brier_change": [
+              0.0042030662189975615,
+              -0.006945912499975851
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "An explanation of the averaged probability needs a model-agnostic or verified member-composition path; no additive result is established here.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "broad_selector": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.863036303630363,
+            "precision": 0.8869251347417286,
+            "recall": 0.9259259259259259,
+            "f1": 0.9059514647786158,
+            "roc_auc": 0.9068752660706683,
+            "specificity": 0.7068965517241379,
+            "brier": 0.10649734686414612,
+            "log_loss": 0.3586774177139117,
+            "average_precision": 0.9559927570650699,
+            "calibration_intercept": -0.018036447685549253,
+            "calibration_slope": 1.0690129617801047,
+            "expected_calibration_error_5_quantile_bins": 0.03363350570428596
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.001968922945934426,
+              -0.00782247765006383
+            ],
+            "brier": [
+              0.0033181448758894255,
+              0.000659522476284008
+            ],
+            "log_loss": [
+              0.023213649202969533,
+              0.01788993109242526
+            ],
+            "calibration_slope": [
+              0.2807646949528976,
+              -0.24018416761502126
+            ],
+            "calibration_intercept": [
+              -0.14577120013439843,
+              0.11004959824987645
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.0029267773520647022,
+            "mean_two_repeat_brier_change": 0.0019888336760867167,
+            "per_repeat_auroc_gain": [
+              0.001968922945934426,
+              -0.00782247765006383
+            ],
+            "per_repeat_brier_change": [
+              0.0033181448758894255,
+              0.000659522476284008
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Depends on the inner-selected candidate; see its explanation assessment.",
+          "interpretation": "nested broad-selector screen; thresholds are engineering screens only, not statistical or production-admission claims"
+        }
+      },
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.8712871287128713,
+                "precision": 0.8831168831168831,
+                "recall": 0.9444444444444444,
+                "f1": 0.912751677852349,
+                "roc_auc": 0.9261919965942954,
+                "specificity": 0.6896551724137931,
+                "brier": 0.10273451004273536,
+                "log_loss": 0.34046437585436695,
+                "confusion_matrix": [
+                  [
+                    60,
+                    27
+                  ],
+                  [
+                    12,
+                    204
+                  ]
+                ],
+                "average_precision": 0.9678833205904163,
+                "calibration_intercept": -0.4735120125541121,
+                "calibration_slope": 1.7319670875338664,
+                "expected_calibration_error_5_quantile_bins": 0.0825441270972717,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.304584160829082,
+                    0.6117016871322228,
+                    0.8152038091256621,
+                    0.9075964699858667,
+                    0.9522564585609283
+                  ],
+                  "observed_fraction": [
+                    0.14754098360655737,
+                    0.55,
+                    0.9180327868852459,
+                    0.95,
+                    1.0
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.8613861386138614,
+                "precision": 0.9027777777777778,
+                "recall": 0.9027777777777778,
+                "f1": 0.9027777777777778,
+                "roc_auc": 0.920338441890166,
+                "specificity": 0.7586206896551724,
+                "brier": 0.0985314438237378,
+                "log_loss": 0.31602667736393586,
+                "confusion_matrix": [
+                  [
+                    66,
+                    21
+                  ],
+                  [
+                    21,
+                    195
+                  ]
+                ],
+                "average_precision": 0.9654114339117387,
+                "calibration_intercept": 0.011200539036187635,
+                "calibration_slope": 0.9941384453128744,
+                "expected_calibration_error_5_quantile_bins": 0.01397086423923974,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.16085701840765043,
+                    0.5615370984869025,
+                    0.872928138239851,
+                    0.9714415938128703,
+                    0.994830411770478
+                  ],
+                  "observed_fraction": [
+                    0.18032786885245902,
+                    0.5333333333333333,
+                    0.8852459016393442,
+                    0.9666666666666667,
+                    1.0
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.8712871287128713,
+                "precision": 0.8864628820960698,
+                "recall": 0.9398148148148148,
+                "f1": 0.9123595505617977,
+                "roc_auc": 0.9223073648361004,
+                "specificity": 0.7011494252873564,
+                "brier": 0.10184958869962722,
+                "log_loss": 0.3392403265669054,
+                "confusion_matrix": [
+                  [
+                    61,
+                    26
+                  ],
+                  [
+                    13,
+                    203
+                  ]
+                ],
+                "average_precision": 0.9677458792385303,
+                "calibration_intercept": -0.13457066109821078,
+                "calibration_slope": 1.274903140265772,
+                "expected_calibration_error_5_quantile_bins": 0.03944943467274184,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.22668936950270957,
+                    0.5972876562908379,
+                    0.8270561454998053,
+                    0.9238487182751984,
+                    0.9808325285127005
+                  ],
+                  "observed_fraction": [
+                    0.16393442622950818,
+                    0.5666666666666667,
+                    0.8688524590163934,
+                    0.9666666666666667,
+                    1.0
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.8646864686468647,
+                "precision": 0.8755364806866953,
+                "recall": 0.9444444444444444,
+                "f1": 0.9086859688195991,
+                "roc_auc": 0.9241166453810131,
+                "specificity": 0.6666666666666666,
+                "brier": 0.10353967005240516,
+                "log_loss": 0.34313421703891495,
+                "confusion_matrix": [
+                  [
+                    58,
+                    29
+                  ],
+                  [
+                    12,
+                    204
+                  ]
+                ],
+                "average_precision": 0.9670799250312059,
+                "calibration_intercept": -0.4293423771490923,
+                "calibration_slope": 1.6983235504912688,
+                "expected_calibration_error_5_quantile_bins": 0.07496065723291696,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.29890933344920395,
+                    0.6101031847628315,
+                    0.814700283543038,
+                    0.9048800151200707,
+                    0.9530666078896385
+                  ],
+                  "observed_fraction": [
+                    0.16393442622950818,
+                    0.55,
+                    0.9016393442622951,
+                    0.95,
+                    1.0
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.8646864686468647,
+                "precision": 0.8959276018099548,
+                "recall": 0.9166666666666666,
+                "f1": 0.9061784897025171,
+                "roc_auc": 0.8992656449553,
+                "specificity": 0.735632183908046,
+                "brier": 0.11048558255238101,
+                "log_loss": 0.3602245777684927,
+                "confusion_matrix": [
+                  [
+                    64,
+                    23
+                  ],
+                  [
+                    18,
+                    198
+                  ]
+                ],
+                "average_precision": 0.9524301786599193,
+                "calibration_intercept": -0.011551832522764172,
+                "calibration_slope": 1.1033069509094589,
+                "expected_calibration_error_5_quantile_bins": 0.0343197310417042,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.2329559828042535,
+                    0.561966011980516,
+                    0.8261855000732541,
+                    0.9335594655844787,
+                    0.9888099625072959
+                  ],
+                  "observed_fraction": [
+                    0.18032786885245902,
+                    0.5833333333333334,
+                    0.8852459016393442,
+                    0.95,
+                    0.9672131147540983
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.8547854785478548,
+                "precision": 0.8873873873873874,
+                "recall": 0.9120370370370371,
+                "f1": 0.8995433789954338,
+                "roc_auc": 0.8914431673052362,
+                "specificity": 0.7126436781609196,
+                "brier": 0.11114510502866502,
+                "log_loss": 0.37811450886091796,
+                "confusion_matrix": [
+                  [
+                    62,
+                    25
+                  ],
+                  [
+                    19,
+                    197
+                  ]
+                ],
+                "average_precision": 0.9442396348916096,
+                "calibration_intercept": 0.09849776572711227,
+                "calibration_slope": 0.8631227832944376,
+                "expected_calibration_error_5_quantile_bins": 0.02781757673583007,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.18382052383157346,
+                    0.5842437329298615,
+                    0.84747443460354,
+                    0.945101628267768,
+                    0.9928375086609976
+                  ],
+                  "observed_fraction": [
+                    0.18032786885245902,
+                    0.5666666666666667,
+                    0.9180327868852459,
+                    0.95,
+                    0.9508196721311475
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "lad": {
+      "complete": true,
+      "candidate_execution": {
+        "hard_timeouts": 0,
+        "failed_or_partial_candidate_outer_fits": 0,
+        "slow_individual_fits_over_seconds": 15,
+        "note": "A full run can complete while an individual model family has a logged fit failure; each candidate metric exposes prediction completeness."
+      },
+      "selection_frequency": {
+        "baseline_selector": {
+          "boosting": 2,
+          "forest": 7,
+          "logistic_003": 1
+        },
+        "broad_selector": {
+          "catboost_native": 2,
+          "forest": 1,
+          "shrinkage_lda": 1,
+          "uniform_ensemble": 6
+        }
+      },
+      "candidate_comparison_to_baseline_selector": {
+        "logistic_003": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7706270627062706,
+            "precision": 0.7721387549994873,
+            "recall": 0.8615819209039548,
+            "f1": 0.8144002053505219,
+            "roc_auc": 0.8270110304008609,
+            "specificity": 0.6428571428571429,
+            "brier": 0.16772760716724994,
+            "log_loss": 0.5099929127736571,
+            "average_precision": 0.8616133841488198,
+            "calibration_intercept": -0.1174733536989199,
+            "calibration_slope": 1.4777224628446546,
+            "expected_calibration_error_5_quantile_bins": 0.06386645407328792
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.002645502645502562,
+              -0.0007622634741277778
+            ],
+            "brier": [
+              -0.001120329703008044,
+              -6.154367862462595e-05
+            ],
+            "log_loss": [
+              -0.007132619074745938,
+              -0.0017977752885466325
+            ],
+            "calibration_slope": [
+              -0.1748372840324921,
+              0.01532044843710767
+            ],
+            "calibration_intercept": [
+              0.027313802159933204,
+              0.03981724777868763
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.00170388305981517,
+            "mean_two_repeat_brier_change": -0.0005909366908163349,
+            "per_repeat_auroc_gain": [
+              -0.002645502645502562,
+              -0.0007622634741277778
+            ],
+            "per_repeat_brier_change": [
+              -0.001120329703008044,
+              -6.154367862462595e-05
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "logistic_03": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7541254125412542,
+            "precision": 0.7763532763532763,
+            "recall": 0.8135593220338984,
+            "f1": 0.7944502793126018,
+            "roc_auc": 0.8197471078827011,
+            "specificity": 0.6706349206349207,
+            "brier": 0.17091821289160009,
+            "log_loss": 0.5219131009099431,
+            "average_precision": 0.8508368461263152,
+            "calibration_intercept": 0.08251210869838138,
+            "calibration_slope": 0.7284985270242346,
+            "expected_calibration_error_5_quantile_bins": 0.0720097083585717
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.008205542103847052,
+              -0.009730069052102941
+            ],
+            "brier": [
+              0.0007814885414241801,
+              0.004417849525643447
+            ],
+            "log_loss": [
+              -0.0004620426038978165,
+              0.015372024513177429
+            ],
+            "calibration_slope": [
+              -0.9343545335225301,
+              -0.7236101737136943
+            ],
+            "calibration_intercept": [
+              0.2227636343111986,
+              0.2443383404220248
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.008967805577974997,
+            "mean_two_repeat_brier_change": 0.0025996690335338135,
+            "per_repeat_auroc_gain": [
+              -0.008205542103847052,
+              -0.009730069052102941
+            ],
+            "per_repeat_brier_change": [
+              0.0007814885414241801,
+              0.004417849525643447
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "forest": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7788778877887789,
+            "precision": 0.7807170567865234,
+            "recall": 0.8644067796610169,
+            "f1": 0.8203852788959172,
+            "roc_auc": 0.831629450273518,
+            "specificity": 0.6587301587301588,
+            "brier": 0.16874264656850857,
+            "log_loss": 0.5171702386746044,
+            "average_precision": 0.862385340136581,
+            "calibration_intercept": -0.1623935449580623,
+            "calibration_slope": 1.7092131498262138,
+            "expected_calibration_error_5_quantile_bins": 0.08382200032955989
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0,
+              0.005829073625683745
+            ],
+            "brier": [
+              0.0,
+              0.000848205420884568
+            ],
+            "log_loss": [
+              0.0,
+              0.005424257438601976
+            ],
+            "calibration_slope": [
+              0.0,
+              0.3034645383677341
+            ],
+            "calibration_intercept": [
+              0.0,
+              -0.022709332579663927
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0029145368128418725,
+            "mean_two_repeat_brier_change": 0.000424102710442284,
+            "per_repeat_auroc_gain": [
+              0.0,
+              0.005829073625683745
+            ],
+            "per_repeat_brier_change": [
+              0.0,
+              0.000848205420884568
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7788778877887789,
+            "precision": 0.7879581151832461,
+            "recall": 0.8502824858757062,
+            "f1": 0.8179347826086956,
+            "roc_auc": 0.8363487579589274,
+            "specificity": 0.6785714285714286,
+            "brier": 0.16255697332265195,
+            "log_loss": 0.4996494582747052,
+            "average_precision": 0.8724751838686662,
+            "calibration_intercept": -0.06753165571877583,
+            "calibration_slope": 1.3413882720897017,
+            "expected_calibration_error_5_quantile_bins": 0.05634174186647217
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.00894538606403017,
+              0.006322302932472379
+            ],
+            "brier": [
+              -0.007095003459008126,
+              -0.00442813761182051
+            ],
+            "log_loss": [
+              -0.01939912407968042,
+              -0.010218179281516027
+            ],
+            "calibration_slope": [
+              -0.31158337307435513,
+              -0.1206018440309351
+            ],
+            "calibration_intercept": [
+              0.11615842589316004,
+              0.050856020005748945
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.007633844498251274,
+            "mean_two_repeat_brier_change": -0.005761570535414318,
+            "per_repeat_auroc_gain": [
+              0.00894538606403017,
+              0.006322302932472379
+            ],
+            "per_repeat_brier_change": [
+              -0.007095003459008126,
+              -0.00442813761182051
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_025": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7623762376237624,
+            "precision": 0.7733857840477483,
+            "recall": 0.8389830508474576,
+            "f1": 0.8048282497411077,
+            "roc_auc": 0.8274145816518697,
+            "specificity": 0.6547619047619048,
+            "brier": 0.16566486402064987,
+            "log_loss": 0.5034389656422116,
+            "average_precision": 0.8618575012269097,
+            "calibration_intercept": -0.03210537589505239,
+            "calibration_slope": 1.1989442467853735,
+            "expected_calibration_error_5_quantile_bins": 0.04179097595426406
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.0027800197291723006,
+              0.00017935611155950326
+            ],
+            "brier": [
+              -0.0026021881499404542,
+              -0.002705171524892358
+            ],
+            "log_loss": [
+              -0.012151147045482147,
+              -0.009887141580701475
+            ],
+            "calibration_slope": [
+              -0.46923142745093327,
+              -0.24784184026301315
+            ],
+            "calibration_intercept": [
+              0.1230177842502084,
+              0.11484922129614746
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.0013003318088063986,
+            "mean_two_repeat_brier_change": -0.002653679837416406,
+            "per_repeat_auroc_gain": [
+              -0.0027800197291723006,
+              0.00017935611155950326
+            ],
+            "per_repeat_brier_change": [
+              -0.0026021881499404542,
+              -0.002705171524892358
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_075": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7755775577557755,
+            "precision": 0.7766439909297052,
+            "recall": 0.8644067796610169,
+            "f1": 0.8181733690795353,
+            "roc_auc": 0.8352614115325979,
+            "specificity": 0.6507936507936508,
+            "brier": 0.16655325032779372,
+            "log_loss": 0.5098527947430573,
+            "average_precision": 0.8676069537252844,
+            "calibration_intercept": -0.12125684155477413,
+            "calibration_slope": 1.5749795864081904,
+            "expected_calibration_error_5_quantile_bins": 0.08386966363482412
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -4.483902788976479e-05,
+              0.013137835171733392
+            ],
+            "brier": [
+              0.00023321962835490262,
+              -0.003763806688900029
+            ],
+            "log_loss": [
+              -0.001840359062555308,
+              -0.007370271361936687
+            ],
+            "calibration_slope": [
+              -0.15179419900209212,
+              0.18679161053377946
+            ],
+            "calibration_intercept": [
+              0.05862963016659664,
+              0.0009344440603157311
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0065464980719218135,
+            "mean_two_repeat_brier_change": -0.001765293530272563,
+            "per_repeat_auroc_gain": [
+              -4.483902788976479e-05,
+              0.013137835171733392
+            ],
+            "per_repeat_brier_change": [
+              0.00023321962835490262,
+              -0.003763806688900029
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "shrinkage_lda": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7755775577557755,
+            "precision": 0.8044692737430168,
+            "recall": 0.8135593220338984,
+            "f1": 0.8089887640449438,
+            "roc_auc": 0.8294099183929693,
+            "specificity": 0.7222222222222222,
+            "brier": 0.17774728566588177,
+            "log_loss": 0.6426745934408751,
+            "average_precision": 0.8544038343494477,
+            "calibration_intercept": 0.16452753762943811,
+            "calibration_slope": 0.40394835050795275,
+            "expected_calibration_error_5_quantile_bins": 0.11475825534682732
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.000493229306788523,
+              0.0018832391713747842
+            ],
+            "brier": [
+              0.007494118738985173,
+              0.011363364876645798
+            ],
+            "log_loss": [
+              0.11402438171685281,
+              0.14240858525429057
+            ],
+            "calibration_slope": [
+              -1.2769429949520033,
+              -1.0301220653167849
+            ],
+            "calibration_intercept": [
+              0.3171344126412794,
+              0.31399841995405753
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0006950049322931307,
+            "mean_two_repeat_brier_change": 0.009428741807815486,
+            "per_repeat_auroc_gain": [
+              -0.000493229306788523,
+              0.0018832391713747842
+            ],
+            "per_repeat_brier_change": [
+              0.007494118738985173,
+              0.011363364876645798
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "A linear posterior-margin decomposition is plausible; new mapping and reconstruction checks are required.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "hist_gradient_boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7755775577557755,
+            "precision": 0.793048128342246,
+            "recall": 0.8333333333333333,
+            "f1": 0.8126859328516787,
+            "roc_auc": 0.8217424446238005,
+            "specificity": 0.6944444444444444,
+            "brier": 0.16497635615296852,
+            "log_loss": 0.5072280069448675,
+            "average_precision": 0.8522886690017125,
+            "calibration_intercept": 0.039737146209528604,
+            "calibration_slope": 0.9011637920928431,
+            "expected_calibration_error_5_quantile_bins": 0.060778743954220074
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.010088781275221836,
+              -0.00385615639852932
+            ],
+            "brier": [
+              -0.0023005422155749633,
+              -0.004383833194620518
+            ],
+            "log_loss": [
+              -0.008597135397325317,
+              -0.005863070623546518
+            ],
+            "calibration_slope": [
+              -0.7661938245003768,
+              -0.5464403525986303
+            ],
+            "calibration_intercept": [
+              0.1983577512161341,
+              0.18319429853938374
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.006972468836875578,
+            "mean_two_repeat_brier_change": -0.0033421877050977405,
+            "per_repeat_auroc_gain": [
+              -0.010088781275221836,
+              -0.00385615639852932
+            ],
+            "per_repeat_brier_change": [
+              -0.0023005422155749633,
+              -0.004383833194620518
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Tree SHAP support is unverified for this estimator; a model-agnostic fallback may be costly.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "extra_trees": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7887788778877888,
+            "precision": 0.7882653061224489,
+            "recall": 0.8728813559322034,
+            "f1": 0.8284182305630027,
+            "roc_auc": 0.8214061519146265,
+            "specificity": 0.6706349206349207,
+            "brier": 0.16318442483854684,
+            "log_loss": 0.5013458401334014,
+            "average_precision": 0.8520003868655869,
+            "calibration_intercept": -0.05176596168960258,
+            "calibration_slope": 1.3048776753226383,
+            "expected_calibration_error_5_quantile_bins": 0.07119646129941495
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.009685230024212954,
+              -0.004932293067886229
+            ],
+            "brier": [
+              -0.004351800015749335,
+              -0.005916438023289561
+            ],
+            "log_loss": [
+              -0.013953000904717405,
+              -0.012271538739086485
+            ],
+            "calibration_slope": [
+              -0.39411243637717663,
+              -0.1110939742622401
+            ],
+            "calibration_intercept": [
+              0.13498982989958835,
+              0.06355600405766712
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.007308761546049591,
+            "mean_two_repeat_brier_change": -0.005134119019519448,
+            "per_repeat_auroc_gain": [
+              -0.009685230024212954,
+              -0.004932293067886229
+            ],
+            "per_repeat_brier_change": [
+              -0.004351800015749335,
+              -0.005916438023289561
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Tree SHAP is plausible after one-hot preprocessing; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "rbf_svm_sigmoid": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7673267326732673,
+            "precision": 0.7682787509520184,
+            "recall": 0.8615819209039548,
+            "f1": 0.812196782704911,
+            "roc_auc": 0.8173706394045377,
+            "specificity": 0.6349206349206349,
+            "brier": 0.16674809423664372,
+            "log_loss": 0.5066547966895957,
+            "average_precision": 0.8504581407576969,
+            "calibration_intercept": -0.03234130192245112,
+            "calibration_slope": 1.1722021823938706,
+            "expected_calibration_error_5_quantile_bins": 0.05516177365247934
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.01049233252623083,
+              -0.012196215586046
+            ],
+            "brier": [
+              -0.0033478856275927504,
+              0.0002069863847476705
+            ],
+            "log_loss": [
+              -0.014343897230574942,
+              -0.0012627293008404816
+            ],
+            "calibration_slope": [
+              -0.5187485905907712,
+              -0.25180880590618115
+            ],
+            "calibration_intercept": [
+              0.11978803249977679,
+              0.1176071209917816
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.011344274056138415,
+            "mean_two_repeat_brier_change": -0.00157044962142254,
+            "per_repeat_auroc_gain": [
+              -0.01049233252623083,
+              -0.012196215586046
+            ],
+            "per_repeat_brier_change": [
+              -0.0033478856275927504,
+              0.0002069863847476705
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation of calibrated probabilities is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "mlp_small": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7458745874587458,
+            "precision": 0.7511553905598909,
+            "recall": 0.844632768361582,
+            "f1": 0.7951362363127069,
+            "roc_auc": 0.8029100529100529,
+            "specificity": 0.6071428571428572,
+            "brier": 0.17518127947788098,
+            "log_loss": 0.5324601802145633,
+            "average_precision": 0.819150415606642,
+            "calibration_intercept": -0.14196463255233463,
+            "calibration_slope": 1.0941641168552945,
+            "expected_calibration_error_5_quantile_bins": 0.044658233287051596
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.014886557259438549,
+              -0.03672316384180785
+            ],
+            "brier": [
+              0.002251646135632307,
+              0.011473825103997082
+            ],
+            "log_loss": [
+              0.006488269068670394,
+              0.029515871449849462
+            ],
+            "calibration_slope": [
+              -0.4562148171849385,
+              -0.47041871038916616
+            ],
+            "calibration_intercept": [
+              -0.05087217426485649,
+              0.0690206664966479
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.0258048605506232,
+            "mean_two_repeat_brier_change": 0.006862735619814694,
+            "per_repeat_auroc_gain": [
+              -0.014886557259438549,
+              -0.03672316384180785
+            ],
+            "per_repeat_brier_change": [
+              0.002251646135632307,
+              0.011473825103997082
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "catboost_native": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7838283828382838,
+            "precision": 0.7926563791678148,
+            "recall": 0.8531073446327684,
+            "f1": 0.821770228645895,
+            "roc_auc": 0.8359339969509461,
+            "specificity": 0.6865079365079365,
+            "brier": 0.15998087159035007,
+            "log_loss": 0.4913097859007013,
+            "average_precision": 0.8728084445220381,
+            "calibration_intercept": -0.04918473781008746,
+            "calibration_slope": 1.127569880662033,
+            "expected_calibration_error_5_quantile_bins": 0.03960426217904946
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0016590440319255162,
+              0.012779122948614496
+            ],
+            "brier": [
+              -0.006770938980593694,
+              -0.009904405554838736
+            ],
+            "log_loss": [
+              -0.02192851562807674,
+              -0.024368132481127458
+            ],
+            "calibration_slope": [
+              -0.5478217622751478,
+              -0.3120002376854798
+            ],
+            "calibration_intercept": [
+              0.11994141222169871,
+              0.083766869494587
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.007219083490270006,
+            "mean_two_repeat_brier_change": -0.008337672267716215,
+            "per_repeat_auroc_gain": [
+              0.0016590440319255162,
+              0.012779122948614496
+            ],
+            "per_repeat_brier_change": [
+              -0.006770938980593694,
+              -0.009904405554838736
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Native Tree SHAP is plausible; the native-category artifact and original-field grouping need a new verified path.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "uniform_ensemble": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7920792079207921,
+            "precision": 0.7849946248656217,
+            "recall": 0.887005649717514,
+            "f1": 0.8328830350106946,
+            "roc_auc": 0.8452156757241504,
+            "specificity": 0.6587301587301587,
+            "brier": 0.15815489771920743,
+            "log_loss": 0.4897214888752753,
+            "average_precision": 0.8758874658650814,
+            "calibration_intercept": -0.1276642151289786,
+            "calibration_slope": 1.4981677942193077,
+            "expected_calibration_error_5_quantile_bins": 0.07417105309042199
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.014348488924760261,
+              0.018653035602188228
+            ],
+            "brier": [
+              -0.010229770300631547,
+              -0.010097521977086132
+            ],
+            "log_loss": [
+              -0.026956240326034553,
+              -0.022517001834021666
+            ],
+            "calibration_slope": [
+              -0.18166962845972123,
+              0.06304345561364344
+            ],
+            "calibration_intercept": [
+              0.03883015134916959,
+              0.007919175729333844
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.016500762263474245,
+            "mean_two_repeat_brier_change": -0.01016364613885884,
+            "per_repeat_auroc_gain": [
+              0.014348488924760261,
+              0.018653035602188228
+            ],
+            "per_repeat_brier_change": [
+              -0.010229770300631547,
+              -0.010097521977086132
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "An explanation of the averaged probability needs a model-agnostic or verified member-composition path; no additive result is established here.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "broad_selector": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7920792079207921,
+            "precision": 0.7924833592043989,
+            "recall": 0.8728813559322034,
+            "f1": 0.830654486586494,
+            "roc_auc": 0.8306429916599408,
+            "specificity": 0.6785714285714286,
+            "brier": 0.16309908989600302,
+            "log_loss": 0.5137069702206917,
+            "average_precision": 0.8546415435731292,
+            "calibration_intercept": 0.018494577841108636,
+            "calibration_slope": 1.0552602820360393,
+            "expected_calibration_error_5_quantile_bins": 0.04473025733404128
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.004304546677427967,
+              0.008160703075957398
+            ],
+            "brier": [
+              -0.0030546344939503534,
+              -0.007384273430176114
+            ],
+            "log_loss": [
+              0.014654264824128571,
+              -0.016156544293352004
+            ],
+            "calibration_slope": [
+              -0.8344573043951748,
+              -0.16998389281743997
+            ],
+            "calibration_intercept": [
+              0.26365011915748277,
+              0.07541679386119515
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0019280781992647156,
+            "mean_two_repeat_brier_change": -0.0052194539620632335,
+            "per_repeat_auroc_gain": [
+              -0.004304546677427967,
+              0.008160703075957398
+            ],
+            "per_repeat_brier_change": [
+              -0.0030546344939503534,
+              -0.007384273430176114
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Depends on the inner-selected candidate; see its explanation assessment.",
+          "interpretation": "nested broad-selector screen; thresholds are engineering screens only, not statistical or production-admission claims"
+        }
+      },
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.7887788778877888,
+                "precision": 0.7839195979899497,
+                "recall": 0.8813559322033898,
+                "f1": 0.8297872340425532,
+                "roc_auc": 0.8452605147520402,
+                "specificity": 0.6587301587301587,
+                "brier": 0.1577422997775692,
+                "log_loss": 0.48846166421412357,
+                "confusion_matrix": [
+                  [
+                    83,
+                    43
+                  ],
+                  [
+                    21,
+                    156
+                  ]
+                ],
+                "average_precision": 0.8758505580425993,
+                "calibration_intercept": -0.1368590568268651,
+                "calibration_slope": 1.5099837466623947,
+                "expected_calibration_error_5_quantile_bins": 0.077295822887154,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.22522848549194457,
+                    0.44489687640216563,
+                    0.6339360675363193,
+                    0.7441658824030741,
+                    0.8638043082037864
+                  ],
+                  "observed_fraction": [
+                    0.09836065573770492,
+                    0.38333333333333336,
+                    0.7213114754098361,
+                    0.7833333333333333,
+                    0.9344262295081968
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.7821782178217822,
+                "precision": 0.7875647668393783,
+                "recall": 0.8587570621468926,
+                "f1": 0.8216216216216217,
+                "roc_auc": 0.83091202582728,
+                "specificity": 0.6746031746031746,
+                "brier": 0.16797207007820075,
+                "log_loss": 0.5154179045401581,
+                "confusion_matrix": [
+                  [
+                    85,
+                    41
+                  ],
+                  [
+                    25,
+                    152
+                  ]
+                ],
+                "average_precision": 0.8578658148082428,
+                "calibration_intercept": -0.1756892081760347,
+                "calibration_slope": 1.6916533751221159,
+                "expected_calibration_error_5_quantile_bins": 0.09054831903347695,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.27793768611060615,
+                    0.4540810286323123,
+                    0.6203930527143017,
+                    0.7333260314154384,
+                    0.8183505213613689
+                  ],
+                  "observed_fraction": [
+                    0.13114754098360656,
+                    0.38333333333333336,
+                    0.6885245901639344,
+                    0.8333333333333334,
+                    0.8852459016393442
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.7953795379537953,
+                "precision": 0.8010471204188482,
+                "recall": 0.864406779661017,
+                "f1": 0.8315217391304348,
+                "roc_auc": 0.826607479149852,
+                "specificity": 0.6984126984126984,
+                "brier": 0.1649174355842504,
+                "log_loss": 0.5300721693642867,
+                "confusion_matrix": [
+                  [
+                    88,
+                    38
+                  ],
+                  [
+                    24,
+                    153
+                  ]
+                ],
+                "average_precision": 0.8444572043574452,
+                "calibration_intercept": 0.08796091098144805,
+                "calibration_slope": 0.857196070726941,
+                "expected_calibration_error_5_quantile_bins": 0.04001297428807235,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.15406042487016197,
+                    0.42305516536099225,
+                    0.6277098863163214,
+                    0.7627382143345258,
+                    0.911515880394858
+                  ],
+                  "observed_fraction": [
+                    0.13114754098360656,
+                    0.36666666666666664,
+                    0.7377049180327869,
+                    0.7666666666666667,
+                    0.9180327868852459
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.7953795379537953,
+                "precision": 0.7860696517412935,
+                "recall": 0.8926553672316384,
+                "f1": 0.8359788359788359,
+                "roc_auc": 0.8451708366962605,
+                "specificity": 0.6587301587301587,
+                "brier": 0.15856749566084566,
+                "log_loss": 0.490981313536427,
+                "confusion_matrix": [
+                  [
+                    83,
+                    43
+                  ],
+                  [
+                    19,
+                    158
+                  ]
+                ],
+                "average_precision": 0.8759243736875635,
+                "calibration_intercept": -0.1184693734310921,
+                "calibration_slope": 1.486351841776221,
+                "expected_calibration_error_5_quantile_bins": 0.07104628329368996,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.22737577252185498,
+                    0.4409209994519036,
+                    0.6254576401745259,
+                    0.7509858227030307,
+                    0.8620670957398587
+                  ],
+                  "observed_fraction": [
+                    0.14754098360655737,
+                    0.35,
+                    0.7213114754098361,
+                    0.7833333333333333,
+                    0.9180327868852459
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.7755775577557755,
+                "precision": 0.7684729064039408,
+                "recall": 0.8813559322033898,
+                "f1": 0.8210526315789474,
+                "roc_auc": 0.8265178010940722,
+                "specificity": 0.626984126984127,
+                "brier": 0.1686650176379318,
+                "log_loss": 0.5134983153704487,
+                "confusion_matrix": [
+                  [
+                    79,
+                    47
+                  ],
+                  [
+                    21,
+                    156
+                  ]
+                ],
+                "average_precision": 0.8664455056287119,
+                "calibration_intercept": -0.12638854916042594,
+                "calibration_slope": 1.4233083861625775,
+                "expected_calibration_error_5_quantile_bins": 0.05328520492459909,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.24288891896119885,
+                    0.4526377045012033,
+                    0.6317147653831399,
+                    0.7475373252389783,
+                    0.8433152300301897
+                  ],
+                  "observed_fraction": [
+                    0.16393442622950818,
+                    0.4,
+                    0.639344262295082,
+                    0.8,
+                    0.9180327868852459
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.7887788778877888,
+                "precision": 0.7839195979899497,
+                "recall": 0.8813559322033898,
+                "f1": 0.8297872340425532,
+                "roc_auc": 0.8346785041700296,
+                "specificity": 0.6587301587301587,
+                "brier": 0.16128074420775568,
+                "log_loss": 0.49734177107709665,
+                "confusion_matrix": [
+                  [
+                    83,
+                    43
+                  ],
+                  [
+                    21,
+                    156
+                  ]
+                ],
+                "average_precision": 0.8648258827888131,
+                "calibration_intercept": -0.05097175529923078,
+                "calibration_slope": 1.2533244933451375,
+                "expected_calibration_error_5_quantile_bins": 0.049447540380010216,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.20621692954450416,
+                    0.42521062605446924,
+                    0.628570619758395,
+                    0.7619862940085717,
+                    0.8860209849928432
+                  ],
+                  "observed_fraction": [
+                    0.14754098360655737,
+                    0.36666666666666664,
+                    0.6885245901639344,
+                    0.8,
+                    0.9180327868852459
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "lcx": {
+      "complete": true,
+      "candidate_execution": {
+        "hard_timeouts": 0,
+        "failed_or_partial_candidate_outer_fits": 0,
+        "slow_individual_fits_over_seconds": 15,
+        "note": "A full run can complete while an individual model family has a logged fit failure; each candidate metric exposes prediction completeness."
+      },
+      "selection_frequency": {
+        "baseline_selector": {
+          "boosting": 1,
+          "forest": 7,
+          "logistic_003": 2
+        },
+        "broad_selector": {
+          "elasticnet_l1_025": 1,
+          "forest": 5,
+          "hist_gradient_boosting": 1,
+          "logistic_003": 1,
+          "uniform_ensemble": 2
+        }
+      },
+      "candidate_comparison_to_baseline_selector": {
+        "logistic_003": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6897689768976898,
+            "precision": 0.6581730769230769,
+            "recall": 0.4369747899159664,
+            "f1": 0.5252149070224217,
+            "roc_auc": 0.7326909024479357,
+            "specificity": 0.8532608695652174,
+            "brier": 0.20411816347778633,
+            "log_loss": 0.5930079929421137,
+            "average_precision": 0.6076946318663514,
+            "calibration_intercept": 0.027315345650500422,
+            "calibration_slope": 1.1001026490752803,
+            "expected_calibration_error_5_quantile_bins": 0.03311697728032997
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.008220679576178336,
+              0.001872488125685079
+            ],
+            "brier": [
+              -0.0034683171411727665,
+              -0.00041401237398122626
+            ],
+            "log_loss": [
+              -0.007858820991244131,
+              -0.00011074012990741622
+            ],
+            "calibration_slope": [
+              -0.1562005877233199,
+              -0.3013187261684134
+            ],
+            "calibration_intercept": [
+              -0.04348598234539115,
+              -0.13502956978652786
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.005046583850931707,
+            "mean_two_repeat_brier_change": -0.0019411647575769964,
+            "per_repeat_auroc_gain": [
+              0.008220679576178336,
+              0.001872488125685079
+            ],
+            "per_repeat_brier_change": [
+              -0.0034683171411727665,
+              -0.00041401237398122626
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "logistic_03": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6600660066006601,
+            "precision": 0.5764903366300698,
+            "recall": 0.5084033613445378,
+            "f1": 0.5402615004384916,
+            "roc_auc": 0.7066587504567046,
+            "specificity": 0.7581521739130435,
+            "brier": 0.22106196221136049,
+            "log_loss": 0.6446285259902164,
+            "average_precision": 0.5870832449203134,
+            "calibration_intercept": -0.19085788009453114,
+            "calibration_slope": 0.5180911113546037,
+            "expected_calibration_error_5_quantile_bins": 0.08103320084472519
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.01676105224698554,
+              -0.025210084033613356
+            ],
+            "brier": [
+              0.011000624492722488,
+              0.01900464345927183
+            ],
+            "log_loss": [
+              0.03573433536170201,
+              0.05953716961335176
+            ],
+            "calibration_slope": [
+              -0.7768506712862353,
+              -0.8446917180468512
+            ],
+            "calibration_intercept": [
+              -0.27303266926844405,
+              -0.3418293343535381
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.02098556814029945,
+            "mean_two_repeat_brier_change": 0.01500263397599716,
+            "per_repeat_auroc_gain": [
+              -0.01676105224698554,
+              -0.025210084033613356
+            ],
+            "per_repeat_brier_change": [
+              0.011000624492722488,
+              0.01900464345927183
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "forest": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6732673267326732,
+            "precision": 0.6587301587301587,
+            "recall": 0.3487394957983193,
+            "f1": 0.45604395604395603,
+            "roc_auc": 0.7318916697113629,
+            "specificity": 0.8831521739130435,
+            "brier": 0.20560231687442343,
+            "log_loss": 0.5958872011737053,
+            "average_precision": 0.5924993943526564,
+            "calibration_intercept": 0.2274337515548081,
+            "calibration_slope": 1.5752098663814884,
+            "expected_calibration_error_5_quantile_bins": 0.06026054274032551
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.004384362440628453,
+              0.004110339788089279
+            ],
+            "brier": [
+              7.313142722042976e-05,
+              -0.0009871541491001667
+            ],
+            "log_loss": [
+              0.0004801040760114006,
+              -0.0026912487339797453
+            ],
+            "calibration_slope": [
+              0.31365686034921114,
+              0.17903826037147175
+            ],
+            "calibration_intercept": [
+              0.1486739150996299,
+              0.07304734457706642
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.004247351114358866,
+            "mean_two_repeat_brier_change": -0.0004570113609398685,
+            "per_repeat_auroc_gain": [
+              0.004384362440628453,
+              0.004110339788089279
+            ],
+            "per_repeat_brier_change": [
+              7.313142722042976e-05,
+              -0.0009871541491001667
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6798679867986799,
+            "precision": 0.6502652277300165,
+            "recall": 0.40336134453781514,
+            "f1": 0.4976906552094522,
+            "roc_auc": 0.729756576543661,
+            "specificity": 0.8586956521739131,
+            "brier": 0.20401800474406045,
+            "log_loss": 0.5934879308083656,
+            "average_precision": 0.6047313708078815,
+            "calibration_intercept": 0.11903939548199022,
+            "calibration_slope": 1.2525338562483803,
+            "expected_calibration_error_5_quantile_bins": 0.061799233983276754
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0072387650712459894,
+              -0.003014249177931916
+            ],
+            "brier": [
+              -0.004027035467974643,
+              -5.56115146310987e-05
+            ],
+            "log_loss": [
+              -0.007714772230137168,
+              0.0007050868414892886
+            ],
+            "calibration_slope": [
+              0.05413137979916938,
+              -0.20678827934470267
+            ],
+            "calibration_intercept": [
+              0.04511580951843369,
+              -0.0401832619873731
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.002112257946657037,
+            "mean_two_repeat_brier_change": -0.002041323491302871,
+            "per_repeat_auroc_gain": [
+              0.0072387650712459894,
+              -0.003014249177931916
+            ],
+            "per_repeat_brier_change": [
+              -0.004027035467974643,
+              -5.56115146310987e-05
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_025": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6848184818481848,
+            "precision": 0.6283154121863799,
+            "recall": 0.4831932773109244,
+            "f1": 0.5462444705245102,
+            "roc_auc": 0.7345862257946657,
+            "specificity": 0.8152173913043478,
+            "brier": 0.2021508936692194,
+            "log_loss": 0.5879894241090255,
+            "average_precision": 0.6123272950378311,
+            "calibration_intercept": -0.025408210960145,
+            "calibration_slope": 0.9754392503410307,
+            "expected_calibration_error_5_quantile_bins": 0.022868427905887383
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.006576543660942846,
+              0.007307270734380644
+            ],
+            "brier": [
+              -0.005070564938389727,
+              -0.0027463041938980692
+            ],
+            "log_loss": [
+              -0.012284218757340204,
+              -0.005722480029987653
+            ],
+            "calibration_slope": [
+              -0.30712091464468094,
+              -0.3997251967155516
+            ],
+            "calibration_intercept": [
+              -0.10660606797376432,
+              -0.17735659737944554
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.006941907197661745,
+            "mean_two_repeat_brier_change": -0.003908434566143898,
+            "per_repeat_auroc_gain": [
+              0.006576543660942846,
+              0.007307270734380644
+            ],
+            "per_repeat_brier_change": [
+              -0.005070564938389727,
+              -0.0027463041938980692
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_075": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6864686468646866,
+            "precision": 0.6557805907172995,
+            "recall": 0.42436974789915966,
+            "f1": 0.5152035822138915,
+            "roc_auc": 0.7388107416879796,
+            "specificity": 0.8559782608695652,
+            "brier": 0.20247116014852706,
+            "log_loss": 0.5899790165238497,
+            "average_precision": 0.6153785502927067,
+            "calibration_intercept": 0.13780699750838263,
+            "calibration_slope": 1.365578913784346,
+            "expected_calibration_error_5_quantile_bins": 0.05880562141689276
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.004521373766898207,
+              0.017811472415052987
+            ],
+            "brier": [
+              -0.0026957884366266005,
+              -0.00448054773704587
+            ],
+            "log_loss": [
+              -0.005281952025270709,
+              -0.00874556193240883
+            ],
+            "calibration_slope": [
+              0.07840212130543867,
+              -0.004968905779040744
+            ],
+            "calibration_intercept": [
+              0.048549780239209944,
+              -0.00608202865536453
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.011166423090975597,
+            "mean_two_repeat_brier_change": -0.0035881680868362353,
+            "per_repeat_auroc_gain": [
+              0.004521373766898207,
+              0.017811472415052987
+            ],
+            "per_repeat_brier_change": [
+              -0.0026957884366266005,
+              -0.00448054773704587
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "shrinkage_lda": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6402640264026402,
+            "precision": 0.5460221471766276,
+            "recall": 0.5168067226890756,
+            "f1": 0.530638804194244,
+            "roc_auc": 0.6812659846547315,
+            "specificity": 0.720108695652174,
+            "brier": 0.25233364456594376,
+            "log_loss": 0.7735841112543689,
+            "average_precision": 0.546688546578598,
+            "calibration_intercept": -0.28281288059511556,
+            "calibration_slope": 0.30263095257960737,
+            "expected_calibration_error_5_quantile_bins": 0.17224225878469063
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.03548593350383622,
+              -0.05727073438070873
+            ],
+            "brier": [
+              0.03474266098567774,
+              0.05780597167548315
+            ],
+            "log_loss": [
+              0.13774038034986713,
+              0.21544229515349156
+            ],
+            "calibration_slope": [
+              -0.9884312196263305,
+              -1.0640314872567487
+            ],
+            "calibration_intercept": [
+              -0.3613510033432161,
+              -0.4374210012799348
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.046378333942272476,
+            "mean_two_repeat_brier_change": 0.04627431633058045,
+            "per_repeat_auroc_gain": [
+              -0.03548593350383622,
+              -0.05727073438070873
+            ],
+            "per_repeat_brier_change": [
+              0.03474266098567774,
+              0.05780597167548315
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "A linear posterior-margin decomposition is plausible; new mapping and reconstruction checks are required.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "hist_gradient_boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7062706270627063,
+            "precision": 0.6529166666666667,
+            "recall": 0.5378151260504203,
+            "f1": 0.5897419560369545,
+            "roc_auc": 0.743925831202046,
+            "specificity": 0.8152173913043478,
+            "brier": 0.19950561545179823,
+            "log_loss": 0.5847029406471662,
+            "average_precision": 0.6025470065733411,
+            "calibration_intercept": -0.01203931159759379,
+            "calibration_slope": 0.8227094108525086,
+            "expected_calibration_error_5_quantile_bins": 0.05028302117483223
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.013061746437705524,
+              0.019501278772378505
+            ],
+            "brier": [
+              -0.007406617322628234,
+              -0.005700808244501893
+            ],
+            "log_loss": [
+              -0.016471111771948266,
+              -0.008108553939098151
+            ],
+            "calibration_slope": [
+              -0.4662139415814104,
+              -0.5460918487558662
+            ],
+            "calibration_intercept": [
+              -0.11689630711344554,
+              -0.14032855951466192
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.016281512605042014,
+            "mean_two_repeat_brier_change": -0.006553712783565063,
+            "per_repeat_auroc_gain": [
+              0.013061746437705524,
+              0.019501278772378505
+            ],
+            "per_repeat_brier_change": [
+              -0.007406617322628234,
+              -0.005700808244501893
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Tree SHAP support is unverified for this estimator; a model-agnostic fallback may be costly.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "extra_trees": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6501650165016502,
+            "precision": 0.5730337078651686,
+            "recall": 0.4285714285714286,
+            "f1": 0.49038461538461536,
+            "roc_auc": 0.7037815126050421,
+            "specificity": 0.7934782608695652,
+            "brier": 0.20897962506590756,
+            "log_loss": 0.6021243972784314,
+            "average_precision": 0.5710070675415746,
+            "calibration_intercept": 0.07156946713764165,
+            "calibration_slope": 1.1992290732733655,
+            "expected_calibration_error_5_quantile_bins": 0.049923116732829294
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.024296675191815664,
+              -0.023428936792108113
+            ],
+            "brier": [
+              0.00294980096537531,
+              0.002890792695713157
+            ],
+            "log_loss": [
+              0.005295575816171572,
+              0.004967671735312096
+            ],
+            "calibration_slope": [
+              -0.08617952328075518,
+              -0.17308694221480758
+            ],
+            "calibration_intercept": [
+              -0.02281934060342783,
+              -0.06718796855420875
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.02386280599196189,
+            "mean_two_repeat_brier_change": 0.0029202968305442334,
+            "per_repeat_auroc_gain": [
+              -0.024296675191815664,
+              -0.023428936792108113
+            ],
+            "per_repeat_brier_change": [
+              0.00294980096537531,
+              0.002890792695713157
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Tree SHAP is plausible after one-hot preprocessing; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "rbf_svm_sigmoid": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.7079207920792079,
+            "precision": 0.7060688405797102,
+            "recall": 0.4411764705882353,
+            "f1": 0.5423393563562493,
+            "roc_auc": 0.7285348922177568,
+            "specificity": 0.8804347826086956,
+            "brier": 0.2068492219315446,
+            "log_loss": 0.6016353330887024,
+            "average_precision": 0.5983697406342834,
+            "calibration_intercept": 0.10294558666177789,
+            "calibration_slope": 1.2898092721182723,
+            "expected_calibration_error_5_quantile_bins": 0.06028488798485815
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.003653635367190544,
+              -0.001872488125684968
+            ],
+            "brier": [
+              0.0009554541599410549,
+              0.0006243332324215312
+            ],
+            "log_loss": [
+              0.0049638712795633255,
+              0.004321247892462576
+            ],
+            "calibration_slope": [
+              0.09051390802436288,
+              -0.16861997583011235
+            ],
+            "calibration_intercept": [
+              0.06753540577244879,
+              -0.09479047588181287
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0008905736207527881,
+            "mean_two_repeat_brier_change": 0.000789893696181293,
+            "per_repeat_auroc_gain": [
+              0.003653635367190544,
+              -0.001872488125684968
+            ],
+            "per_repeat_brier_change": [
+              0.0009554541599410549,
+              0.0006243332324215312
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation of calibrated probabilities is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "mlp_small": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6617161716171618,
+            "precision": 0.6096119929453263,
+            "recall": 0.38655462184873945,
+            "f1": 0.4725132275132275,
+            "roc_auc": 0.676150895140665,
+            "specificity": 0.8396739130434783,
+            "brier": 0.21819943118443857,
+            "log_loss": 0.6251281268974332,
+            "average_precision": 0.5571226478680592,
+            "calibration_intercept": -0.05611374202296364,
+            "calibration_slope": 1.2656116621682894,
+            "expected_calibration_error_5_quantile_bins": 0.04285422386228249
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.059234563390573536,
+              -0.043752283522104585
+            ],
+            "brier": [
+              0.0144307061298386,
+              0.009849499768311898
+            ],
+            "log_loss": [
+              0.033578841896518496,
+              0.022691864892969038
+            ],
+            "calibration_slope": [
+              0.1174868546533474,
+              -0.24398814235906263
+            ],
+            "calibration_intercept": [
+              -0.165329774915377,
+              -0.1800439525634701
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.05149342345633906,
+            "mean_two_repeat_brier_change": 0.012140102949075249,
+            "per_repeat_auroc_gain": [
+              -0.059234563390573536,
+              -0.043752283522104585
+            ],
+            "per_repeat_brier_change": [
+              0.0144307061298386,
+              0.009849499768311898
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "catboost_native": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6782178217821782,
+            "precision": 0.6352056962025316,
+            "recall": 0.42436974789915966,
+            "f1": 0.5088066595604284,
+            "roc_auc": 0.7479219948849104,
+            "specificity": 0.842391304347826,
+            "brier": 0.1992566718521277,
+            "log_loss": 0.5821949294443898,
+            "average_precision": 0.6170064645301512,
+            "calibration_intercept": 0.12630471111220026,
+            "calibration_slope": 1.1440066526664103,
+            "expected_calibration_error_5_quantile_bins": 0.03832943616731929
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.020825721592985014,
+              0.019729630982827873
+            ],
+            "brier": [
+              -0.0073545691821872705,
+              -0.006250743584283985
+            ],
+            "log_loss": [
+              -0.016734034187769975,
+              -0.01286165392882932
+            ],
+            "calibration_slope": [
+              -0.08585768428361362,
+              -0.28385362242585965
+            ],
+            "calibration_intercept": [
+              0.051420093831302804,
+              -0.03195691503982216
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.020277676287906443,
+            "mean_two_repeat_brier_change": -0.006802656383235628,
+            "per_repeat_auroc_gain": [
+              0.020825721592985014,
+              0.019729630982827873
+            ],
+            "per_repeat_brier_change": [
+              -0.0073545691821872705,
+              -0.006250743584283985
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Native Tree SHAP is plausible; the native-category artifact and original-field grouping need a new verified path.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "uniform_ensemble": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6963696369636964,
+            "precision": 0.6900793650793651,
+            "recall": 0.4117647058823529,
+            "f1": 0.5157483586802958,
+            "roc_auc": 0.7518724881256851,
+            "specificity": 0.8804347826086957,
+            "brier": 0.2003359978838493,
+            "log_loss": 0.585444480954469,
+            "average_precision": 0.6207183235388256,
+            "calibration_intercept": 0.19792581885395932,
+            "calibration_slope": 1.4846290836269063,
+            "expected_calibration_error_5_quantile_bins": 0.05638589574820265
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.027447935696017667,
+              0.021008403361344463
+            ],
+            "brier": [
+              -0.006265083576361186,
+              -0.005181577126666864
+            ],
+            "log_loss": [
+              -0.012814390306333134,
+              -0.010282194790107835
+            ],
+            "calibration_slope": [
+              0.26729181223915877,
+              0.04424174297235983
+            ],
+            "calibration_intercept": [
+              0.13413044990085343,
+              0.02857494437414533
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.024228169528681065,
+            "mean_two_repeat_brier_change": -0.005723330351514025,
+            "per_repeat_auroc_gain": [
+              0.027447935696017667,
+              0.021008403361344463
+            ],
+            "per_repeat_brier_change": [
+              -0.006265083576361186,
+              -0.005181577126666864
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "An explanation of the averaged probability needs a model-agnostic or verified member-composition path; no additive result is established here.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "broad_selector": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6798679867986799,
+            "precision": 0.6480560162152202,
+            "recall": 0.40336134453781514,
+            "f1": 0.49618279569892476,
+            "roc_auc": 0.7296081476068688,
+            "specificity": 0.8586956521739131,
+            "brier": 0.20426207569843333,
+            "log_loss": 0.593439557217807,
+            "average_precision": 0.6016657428635692,
+            "calibration_intercept": 0.09984393460605102,
+            "calibration_slope": 1.2098855421340837,
+            "expected_calibration_error_5_quantile_bins": 0.04317750532627235
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0027858969674827705,
+              0.001141761052246948
+            ],
+            "brier": [
+              -0.003160920626390784,
+              -0.00043358444746918745
+            ],
+            "log_loss": [
+              -0.006442261614093225,
+              -0.0006641709556718389
+            ],
+            "calibration_slope": [
+              -0.246718284910733,
+              0.008764757136606516
+            ],
+            "calibration_intercept": [
+              -0.0521153835221016,
+              0.018657009301283792
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.001963829009864859,
+            "mean_two_repeat_brier_change": -0.0017972525369299858,
+            "per_repeat_auroc_gain": [
+              0.0027858969674827705,
+              0.001141761052246948
+            ],
+            "per_repeat_brier_change": [
+              -0.003160920626390784,
+              -0.00043358444746918745
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Depends on the inner-selected candidate; see its explanation assessment.",
+          "interpretation": "nested broad-selector screen; thresholds are engineering screens only, not statistical or production-admission claims"
+        }
+      },
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6996699669966997,
+                "precision": 0.6944444444444444,
+                "recall": 0.42016806722689076,
+                "f1": 0.5235602094240838,
+                "roc_auc": 0.7684965290464012,
+                "specificity": 0.8804347826086957,
+                "brier": 0.1967578525674606,
+                "log_loss": 0.5775348934867666,
+                "confusion_matrix": [
+                  [
+                    162,
+                    22
+                  ],
+                  [
+                    69,
+                    50
+                  ]
+                ],
+                "average_precision": 0.6379488669043771,
+                "calibration_intercept": 0.2530336295023663,
+                "calibration_slope": 1.6081688711722637,
+                "expected_calibration_error_5_quantile_bins": 0.06376796068661054,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.18396626466679603,
+                    0.2971316823682386,
+                    0.3882504490327882,
+                    0.47548294449349193,
+                    0.5986212612805945
+                  ],
+                  "observed_fraction": [
+                    0.08196721311475409,
+                    0.25,
+                    0.4098360655737705,
+                    0.48333333333333334,
+                    0.7377049180327869
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6798679867986799,
+                "precision": 0.6486486486486487,
+                "recall": 0.40336134453781514,
+                "f1": 0.49740932642487046,
+                "roc_auc": 0.7410485933503835,
+                "specificity": 0.8586956521739131,
+                "brier": 0.20302293614382178,
+                "log_loss": 0.5903492837930997,
+                "confusion_matrix": [
+                  [
+                    158,
+                    26
+                  ],
+                  [
+                    71,
+                    48
+                  ]
+                ],
+                "average_precision": 0.6034617591422807,
+                "calibration_intercept": 0.11890317960151287,
+                "calibration_slope": 1.340877058933105,
+                "expected_calibration_error_5_quantile_bins": 0.07091184163744704,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.18907535980360313,
+                    0.2989579625740934,
+                    0.3954658103230873,
+                    0.47444107402253033,
+                    0.6164769210613312
+                  ],
+                  "observed_fraction": [
+                    0.09836065573770492,
+                    0.21666666666666667,
+                    0.47540983606557374,
+                    0.5666666666666667,
+                    0.6065573770491803
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6897689768976898,
+                "precision": 0.654320987654321,
+                "recall": 0.44537815126050423,
+                "f1": 0.53,
+                "roc_auc": 0.7438344903178663,
+                "specificity": 0.8478260869565217,
+                "brier": 0.199862015517431,
+                "log_loss": 0.5839070221790065,
+                "confusion_matrix": [
+                  [
+                    156,
+                    28
+                  ],
+                  [
+                    66,
+                    53
+                  ]
+                ],
+                "average_precision": 0.6234480253119793,
+                "calibration_intercept": 0.06678779607941127,
+                "calibration_slope": 1.094158774022372,
+                "expected_calibration_error_5_quantile_bins": 0.05246127363713061,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.13453588374461928,
+                    0.27992410269637874,
+                    0.3939014617806836,
+                    0.4848935960479446,
+                    0.6390944955189434
+                  ],
+                  "observed_fraction": [
+                    0.11475409836065574,
+                    0.18333333333333332,
+                    0.47540983606557374,
+                    0.55,
+                    0.639344262295082
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.693069306930693,
+                "precision": 0.6857142857142857,
+                "recall": 0.40336134453781514,
+                "f1": 0.5079365079365079,
+                "roc_auc": 0.7352484472049688,
+                "specificity": 0.8804347826086957,
+                "brier": 0.20391414320023799,
+                "log_loss": 0.5933540684221714,
+                "confusion_matrix": [
+                  [
+                    162,
+                    22
+                  ],
+                  [
+                    71,
+                    48
+                  ]
+                ],
+                "average_precision": 0.6034877801732742,
+                "calibration_intercept": 0.14281800820555232,
+                "calibration_slope": 1.3610892960815488,
+                "expected_calibration_error_5_quantile_bins": 0.04900383080979476,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.1851039580991845,
+                    0.3000469596575385,
+                    0.39240503677711136,
+                    0.47713728245884623,
+                    0.6025322718689801
+                  ],
+                  "observed_fraction": [
+                    0.11475409836065574,
+                    0.26666666666666666,
+                    0.3770491803278688,
+                    0.5333333333333333,
+                    0.6721311475409836
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6567656765676567,
+                "precision": 0.6056338028169014,
+                "recall": 0.36134453781512604,
+                "f1": 0.45263157894736844,
+                "roc_auc": 0.7142400438436244,
+                "specificity": 0.8478260869565217,
+                "brier": 0.20909572032690485,
+                "log_loss": 0.6036362632122793,
+                "confusion_matrix": [
+                  [
+                    156,
+                    28
+                  ],
+                  [
+                    76,
+                    43
+                  ]
+                ],
+                "average_precision": 0.5695077368404681,
+                "calibration_intercept": 0.11424306383140699,
+                "calibration_slope": 1.316847553109189,
+                "expected_calibration_error_5_quantile_bins": 0.04190643182280723,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.18905769945299505,
+                    0.31523925524206914,
+                    0.3999635085152646,
+                    0.47422783705640625,
+                    0.589031618574058
+                  ],
+                  "observed_fraction": [
+                    0.09836065573770492,
+                    0.3333333333333333,
+                    0.4426229508196721,
+                    0.5166666666666667,
+                    0.5737704918032787
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.66996699669967,
+                "precision": 0.6417910447761194,
+                "recall": 0.36134453781512604,
+                "f1": 0.46236559139784944,
+                "roc_auc": 0.7153818048958713,
+                "specificity": 0.8695652173913043,
+                "brier": 0.20866213587943566,
+                "log_loss": 0.6029720922566074,
+                "confusion_matrix": [
+                  [
+                    160,
+                    24
+                  ],
+                  [
+                    76,
+                    43
+                  ]
+                ],
+                "average_precision": 0.579883460415159,
+                "calibration_intercept": 0.13290007313269078,
+                "calibration_slope": 1.3256123102457955,
+                "expected_calibration_error_5_quantile_bins": 0.03389373701541408,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.1908557394307651,
+                    0.3078019335516927,
+                    0.3971875718459341,
+                    0.4732275335877544,
+                    0.5858864203908422
+                  ],
+                  "observed_fraction": [
+                    0.11475409836065574,
+                    0.31666666666666665,
+                    0.39344262295081966,
+                    0.5,
+                    0.639344262295082
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "rca": {
+      "complete": true,
+      "candidate_execution": {
+        "hard_timeouts": 0,
+        "failed_or_partial_candidate_outer_fits": 0,
+        "slow_individual_fits_over_seconds": 15,
+        "note": "A full run can complete while an individual model family has a logged fit failure; each candidate metric exposes prediction completeness."
+      },
+      "selection_frequency": {
+        "baseline_selector": {
+          "forest": 5,
+          "logistic_003": 4,
+          "logistic_03": 1
+        },
+        "broad_selector": {
+          "catboost_native": 1,
+          "elasticnet_l1_025": 2,
+          "extra_trees": 1,
+          "forest": 1,
+          "logistic_003": 4,
+          "logistic_03": 1
+        }
+      },
+      "candidate_comparison_to_baseline_selector": {
+        "logistic_003": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6518151815181519,
+            "precision": 0.5603818103818103,
+            "recall": 0.33771929824561403,
+            "f1": 0.4208137997355451,
+            "roc_auc": 0.731736749280609,
+            "specificity": 0.8412698412698412,
+            "brier": 0.2008235892240503,
+            "log_loss": 0.5839547874650197,
+            "average_precision": 0.5927748868818709,
+            "calibration_intercept": 0.04629629776655077,
+            "calibration_slope": 1.1107431745970442,
+            "expected_calibration_error_5_quantile_bins": 0.06564846122893539
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.022834864940128097,
+              0.024877007333147683
+            ],
+            "brier": [
+              -0.009508728115238008,
+              -0.004869379902290499
+            ],
+            "log_loss": [
+              -0.02598665902127717,
+              -0.012514478466889023
+            ],
+            "calibration_slope": [
+              0.3676314610777458,
+              -0.1084047771991854
+            ],
+            "calibration_intercept": [
+              0.18972013682148167,
+              -0.044525460638450864
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.02385593613663789,
+            "mean_two_repeat_brier_change": -0.0071890540087642535,
+            "per_repeat_auroc_gain": [
+              0.022834864940128097,
+              0.024877007333147683
+            ],
+            "per_repeat_brier_change": [
+              -0.009508728115238008,
+              -0.004869379902290499
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "logistic_03": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6501650165016502,
+            "precision": 0.5419321209313102,
+            "recall": 0.44298245614035087,
+            "f1": 0.48726449233067964,
+            "roc_auc": 0.7135895293790031,
+            "specificity": 0.7751322751322751,
+            "brier": 0.2159604611249081,
+            "log_loss": 0.6272527246817727,
+            "average_precision": 0.566319132223536,
+            "calibration_intercept": -0.18247912743635814,
+            "calibration_slope": 0.5458363119066888,
+            "expected_calibration_error_5_quantile_bins": 0.08714982057679968
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.009421702404158516,
+              0.0019957300659055877
+            ],
+            "brier": [
+              0.0022040901239383515,
+              0.013691545660248772
+            ],
+            "log_loss": [
+              0.005876931342278069,
+              0.042217805603061875
+            ],
+            "calibration_slope": [
+              -0.2145287360465552,
+              -0.6560583054555953
+            ],
+            "calibration_intercept": [
+              -0.04679325126566744,
+              -0.2655629229571196
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.005708716235032052,
+            "mean_two_repeat_brier_change": 0.007947817892093562,
+            "per_repeat_auroc_gain": [
+              0.009421702404158516,
+              0.0019957300659055877
+            ],
+            "per_repeat_brier_change": [
+              0.0022040901239383515,
+              0.013691545660248772
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Linear SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "forest": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6749174917491749,
+            "precision": 0.6303056027164686,
+            "recall": 0.32894736842105265,
+            "f1": 0.43211722488038273,
+            "roc_auc": 0.7098069247192054,
+            "specificity": 0.8835978835978835,
+            "brier": 0.20775346795101807,
+            "log_loss": 0.6009848610154647,
+            "average_precision": 0.5584463700150913,
+            "calibration_intercept": 0.1446150844554422,
+            "calibration_slope": 1.3274611111054435,
+            "expected_calibration_error_5_quantile_bins": 0.05738255584457508
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.01759027197623686,
+              -0.013738048825768123
+            ],
+            "brier": [
+              -0.0036908439651534564,
+              0.0031724934015604778
+            ],
+            "log_loss": [
+              -0.011968116278138208,
+              0.007527125890861908
+            ],
+            "calibration_slope": [
+              0.7190140659412356,
+              -0.026351509045876798
+            ],
+            "calibration_intercept": [
+              0.3572847201866066,
+              -0.015452470625792941
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0019261115752343683,
+            "mean_two_repeat_brier_change": -0.0002591752817964893,
+            "per_repeat_auroc_gain": [
+              0.01759027197623686,
+              -0.013738048825768123
+            ],
+            "per_repeat_brier_change": [
+              -0.0036908439651534564,
+              0.0031724934015604778
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.66996699669967,
+            "precision": 0.5963235294117647,
+            "recall": 0.38596491228070173,
+            "f1": 0.46788263283108644,
+            "roc_auc": 0.6933073424301495,
+            "specificity": 0.8412698412698413,
+            "brier": 0.2089542193908456,
+            "log_loss": 0.6051844476520427,
+            "average_precision": 0.5761595523339142,
+            "calibration_intercept": 0.004107147974406401,
+            "calibration_slope": 0.9851215863285689,
+            "expected_calibration_error_5_quantile_bins": 0.04185301495983529
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.00877192982456143,
+              -0.0379188712522045
+            ],
+            "brier": [
+              -0.005593378202615823,
+              0.007476530518677943
+            ],
+            "log_loss": [
+              -0.015450463006521642,
+              0.019408645892401433
+            ],
+            "calibration_slope": [
+              0.34053398703584037,
+              -0.3325504796942307
+            ],
+            "calibration_intercept": [
+              0.21520265358425766,
+              -0.1543862769855156
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.014573470713821535,
+            "mean_two_repeat_brier_change": 0.00094157615803106,
+            "per_repeat_auroc_gain": [
+              0.00877192982456143,
+              -0.0379188712522045
+            ],
+            "per_repeat_brier_change": [
+              -0.005593378202615823,
+              0.007476530518677943
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Existing grouped Tree SHAP path; candidate artifact still needs exact additivity verification.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_025": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6534653465346534,
+            "precision": 0.5575657894736843,
+            "recall": 0.381578947368421,
+            "f1": 0.4530113944655453,
+            "roc_auc": 0.7322008725517497,
+            "specificity": 0.8174603174603174,
+            "brier": 0.20031601912156105,
+            "log_loss": 0.5818944823306528,
+            "average_precision": 0.591901628065617,
+            "calibration_intercept": -0.021939858689711267,
+            "calibration_slope": 0.9742483981267283,
+            "expected_calibration_error_5_quantile_bins": 0.06227035951381562
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.027615334632878463,
+              0.021024784182678946
+            ],
+            "brier": [
+              -0.011158922336469312,
+              -0.004234325886037699
+            ],
+            "log_loss": [
+              -0.030700534584027328,
+              -0.011921213172872758
+            ],
+            "calibration_slope": [
+              0.23919952952139645,
+              -0.25296239858346814
+            ],
+            "calibration_intercept": [
+              0.12749776249579317,
+              -0.11877539922528642
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.024320059407778705,
+            "mean_two_repeat_brier_change": -0.0076966241112535055,
+            "per_repeat_auroc_gain": [
+              0.027615334632878463,
+              0.021024784182678946
+            ],
+            "per_repeat_brier_change": [
+              -0.011158922336469312,
+              -0.004234325886037699
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "elasticnet_l1_075": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6732673267326732,
+            "precision": 0.6125919117647058,
+            "recall": 0.35526315789473684,
+            "f1": 0.4496234102975676,
+            "roc_auc": 0.7250533741761812,
+            "specificity": 0.8650793650793651,
+            "brier": 0.20348982521911108,
+            "log_loss": 0.5923336095640249,
+            "average_precision": 0.5903767833038284,
+            "calibration_intercept": 0.13566681820540472,
+            "calibration_slope": 1.3480351907028847,
+            "expected_calibration_error_5_quantile_bins": 0.047613756126624995
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.022324329341873117,
+              0.012020792722547191
+            ],
+            "brier": [
+              -0.007357778813892518,
+              -0.0016878572135144154
+            ],
+            "log_loss": [
+              -0.018352309971076397,
+              -0.003391183319079394
+            ],
+            "calibration_slope": [
+              0.6553716855947069,
+              0.07843903049553425
+            ],
+            "calibration_intercept": [
+              0.30166804257954705,
+              0.022267674481191657
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.017172561032210154,
+            "mean_two_repeat_brier_change": -0.004522818013703467,
+            "per_repeat_auroc_gain": [
+              0.022324329341873117,
+              0.012020792722547191
+            ],
+            "per_repeat_brier_change": [
+              -0.007357778813892518,
+              -0.0016878572135144154
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Linear SHAP is plausible in the transformed feature space; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "shrinkage_lda": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6485148514851484,
+            "precision": 0.5353736089030207,
+            "recall": 0.5,
+            "f1": 0.5168518518518519,
+            "roc_auc": 0.7166759491320895,
+            "specificity": 0.7380952380952381,
+            "brier": 0.2357513897829135,
+            "log_loss": 0.7248762050379642,
+            "average_precision": 0.5842162640895115,
+            "calibration_intercept": -0.2532715361190075,
+            "calibration_slope": 0.3540260294696286,
+            "expected_calibration_error_5_quantile_bins": 0.16722240026867446
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0092824654228163,
+              0.00830780655342056
+            ],
+            "brier": [
+              0.020815101874720687,
+              0.034662391225477235
+            ],
+            "log_loss": [
+              0.09160741117032045,
+              0.1517342864874025
+            ],
+            "calibration_slope": [
+              -0.42452444209494644,
+              -0.8296831642813245
+            ],
+            "calibration_intercept": [
+              -0.11478690148809462,
+              -0.3391540900999911
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.00879513598811843,
+            "mean_two_repeat_brier_change": 0.02773874655009896,
+            "per_repeat_auroc_gain": [
+              0.0092824654228163,
+              0.00830780655342056
+            ],
+            "per_repeat_brier_change": [
+              0.020815101874720687,
+              0.034662391225477235
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "A linear posterior-margin decomposition is plausible; new mapping and reconstruction checks are required.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "hist_gradient_boosting": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.641914191419142,
+            "precision": 0.530791788856305,
+            "recall": 0.42105263157894735,
+            "f1": 0.46950782034725214,
+            "roc_auc": 0.6938874965190756,
+            "specificity": 0.7751322751322751,
+            "brier": 0.21793534711915521,
+            "log_loss": 0.6293426953232708,
+            "average_precision": 0.5498131919845684,
+            "calibration_intercept": -0.1596828608524295,
+            "calibration_slope": 0.5906737836875249,
+            "expected_calibration_error_5_quantile_bins": 0.0861824306250473
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.00371298616912652,
+              -0.031699619418917524
+            ],
+            "brier": [
+              0.002062602194007057,
+              0.017782805578674288
+            ],
+            "log_loss": [
+              0.0029948629437275276,
+              0.04927981528460834
+            ],
+            "calibration_slope": [
+              -0.13407782304020555,
+              -0.6468342749002729
+            ],
+            "calibration_intercept": [
+              -0.002455620049994195,
+              -0.26430802100493556
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.013993316624895502,
+            "mean_two_repeat_brier_change": 0.009922703886340672,
+            "per_repeat_auroc_gain": [
+              0.00371298616912652,
+              -0.031699619418917524
+            ],
+            "per_repeat_brier_change": [
+              0.002062602194007057,
+              0.017782805578674288
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Tree SHAP support is unverified for this estimator; a model-agnostic fallback may be costly.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "extra_trees": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6716171617161716,
+            "precision": 0.5997907153729072,
+            "recall": 0.381578947368421,
+            "f1": 0.46641941233971596,
+            "roc_auc": 0.7077647823261859,
+            "specificity": 0.8465608465608465,
+            "brier": 0.20548135280500773,
+            "log_loss": 0.5937867479900524,
+            "average_precision": 0.5777856894980457,
+            "calibration_intercept": 0.05063624824548858,
+            "calibration_slope": 1.093072551509079,
+            "expected_calibration_error_5_quantile_bins": 0.0535136937939765
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.015548129583217274,
+              -0.015780191218787598
+            ],
+            "brier": [
+              -0.008069344183746635,
+              0.003006763328133044
+            ],
+            "log_loss": [
+              -0.024690435883703565,
+              0.0058532194456026865
+            ],
+            "calibration_slope": [
+              0.45211620659130114,
+              -0.22823076888867144
+            ],
+            "calibration_intercept": [
+              0.23669357415043224,
+              -0.0828189970095258
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.00011603081778516211,
+            "mean_two_repeat_brier_change": -0.0025312904278067955,
+            "per_repeat_auroc_gain": [
+              0.015548129583217274,
+              -0.015780191218787598
+            ],
+            "per_repeat_brier_change": [
+              -0.008069344183746635,
+              0.003006763328133044
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Tree SHAP is plausible after one-hot preprocessing; candidate-specific grouped additivity must be verified.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "rbf_svm_sigmoid": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6749174917491749,
+            "precision": 0.6226196603190941,
+            "recall": 0.34210526315789475,
+            "f1": 0.4410574328665039,
+            "roc_auc": 0.7107351712614871,
+            "specificity": 0.8756613756613756,
+            "brier": 0.20701426215010799,
+            "log_loss": 0.5998129270002028,
+            "average_precision": 0.560523899961084,
+            "calibration_intercept": 0.06340792356364419,
+            "calibration_slope": 1.1620412488933516,
+            "expected_calibration_error_5_quantile_bins": 0.04660782422266441
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.003898635477582957,
+              0.0018100807574491506
+            ],
+            "brier": [
+              -0.0029980169953910674,
+              0.0010012548299779545
+            ],
+            "log_loss": [
+              -0.009436774614328791,
+              0.002651916196528936
+            ],
+            "calibration_slope": [
+              0.42122162837397603,
+              -0.05939879590280084
+            ],
+            "calibration_intercept": [
+              0.210490759798872,
+              -0.031072832021654326
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.0028543581175160537,
+            "mean_two_repeat_brier_change": -0.0009983810827065565,
+            "per_repeat_auroc_gain": [
+              0.003898635477582957,
+              0.0018100807574491506
+            ],
+            "per_repeat_brier_change": [
+              -0.0029980169953910674,
+              0.0010012548299779545
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation of calibrated probabilities is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "mlp_small": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6386138613861386,
+            "precision": 0.5284810126582278,
+            "recall": 0.2675438596491228,
+            "f1": 0.34284413947626385,
+            "roc_auc": 0.6450385222315047,
+            "specificity": 0.8624338624338623,
+            "brier": 0.22285507773356372,
+            "log_loss": 0.644732151851727,
+            "average_precision": 0.5066192774939731,
+            "calibration_intercept": -0.24828019003857812,
+            "calibration_slope": 0.5580901688003008,
+            "expected_calibration_error_5_quantile_bins": 0.07856003391568124
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              -0.012299266685231736,
+              -0.11338531513970107
+            ],
+            "brier": [
+              0.005942560509455713,
+              0.023742308492042646
+            ],
+            "log_loss": [
+              0.01884943724539445,
+              0.06420415403985413
+            ],
+            "calibration_slope": [
+              -0.09747790126566003,
+              -0.7486014264492666
+            ],
+            "calibration_intercept": [
+              -0.09080255748872079,
+              -0.3531557419385062
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.0628422909124664,
+            "mean_two_repeat_brier_change": 0.01484243450074918,
+            "per_repeat_auroc_gain": [
+              -0.012299266685231736,
+              -0.11338531513970107
+            ],
+            "per_repeat_brier_change": [
+              0.005942560509455713,
+              0.023742308492042646
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Model-agnostic explanation is possible but approximate and likely more expensive.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "catboost_native": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6831683168316831,
+            "precision": 0.6329004329004329,
+            "recall": 0.37719298245614036,
+            "f1": 0.47258454106280195,
+            "roc_auc": 0.6981110182864569,
+            "specificity": 0.8677248677248677,
+            "brier": 0.21067935298169627,
+            "log_loss": 0.6088313401639561,
+            "average_precision": 0.554109959603649,
+            "calibration_intercept": 0.00677905107409436,
+            "calibration_slope": 0.8645835566593871,
+            "expected_calibration_error_5_quantile_bins": 0.039234122389916734
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.005894365543488322,
+              -0.02543395525851666
+            ],
+            "brier": [
+              -0.0016654306286159881,
+              0.006998850126379436
+            ],
+            "log_loss": [
+              -0.007445934596687409,
+              0.018697902506394026
+            ],
+            "calibration_slope": [
+              0.16414679178420077,
+              -0.3972393437809546
+            ],
+            "calibration_intercept": [
+              0.18699424544778503,
+              -0.12083406264966703
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.009769794857514169,
+            "mean_two_repeat_brier_change": 0.0026667097488817237,
+            "per_repeat_auroc_gain": [
+              0.005894365543488322,
+              -0.02543395525851666
+            ],
+            "per_repeat_brier_change": [
+              -0.0016654306286159881,
+              0.006998850126379436
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Native Tree SHAP is plausible; the native-category artifact and original-field grouping need a new verified path.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "uniform_ensemble": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6815181518151815,
+            "precision": 0.636002886002886,
+            "recall": 0.35964912280701755,
+            "f1": 0.4594161958568738,
+            "roc_auc": 0.7257263529193354,
+            "specificity": 0.8756613756613756,
+            "brier": 0.20238319829510404,
+            "log_loss": 0.5888008084099043,
+            "average_precision": 0.5856304979962152,
+            "calibration_intercept": 0.13876735270438445,
+            "calibration_slope": 1.2642886645402358,
+            "expected_calibration_error_5_quantile_bins": 0.07732720885220448
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.02914694142764307,
+              0.006544138123085519
+            ],
+            "brier": [
+              -0.009760441482456333,
+              -0.001498448392964702
+            ],
+            "log_loss": [
+              -0.02559941667482135,
+              -0.0032096789235755985
+            ],
+            "calibration_slope": [
+              0.5995870776956511,
+              -0.0332694139307077
+            ],
+            "calibration_intercept": [
+              0.3237390131790676,
+              0.006397772879630531
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": 0.017845539775364294,
+            "mean_two_repeat_brier_change": -0.005629444937710518,
+            "per_repeat_auroc_gain": [
+              0.02914694142764307,
+              0.006544138123085519
+            ],
+            "per_repeat_brier_change": [
+              -0.009760441482456333,
+              -0.001498448392964702
+            ]
+          },
+          "raw_predictor_screen_pass": true,
+          "probability_quality_screen_pass": true,
+          "explanation_feasibility": "An explanation of the averaged probability needs a model-agnostic or verified member-composition path; no additive result is established here.",
+          "interpretation": "post-search fixed-candidate diagnostic; not an unbiased winner estimate; thresholds are engineering screens only, not statistical or production-admission claims"
+        },
+        "broad_selector": {
+          "metrics_mean_across_repeats": {
+            "accuracy": 0.6534653465346535,
+            "precision": 0.5583333333333333,
+            "recall": 0.37280701754385964,
+            "f1": 0.44679082141669435,
+            "roc_auc": 0.7030771372876636,
+            "specificity": 0.8227513227513228,
+            "brier": 0.20959044418525052,
+            "log_loss": 0.6067754547076282,
+            "average_precision": 0.5619907481847586,
+            "calibration_intercept": -0.0913112898149758,
+            "calibration_slope": 0.8124722513014395,
+            "expected_calibration_error_5_quantile_bins": 0.04271632630500278
+          },
+          "per_repeat_deltas_vs_baseline": {
+            "roc_auc": [
+              0.0,
+              -0.009607351712614731
+            ],
+            "brier": [
+              0.0,
+              0.003155601904871963
+            ],
+            "log_loss": [
+              0.0,
+              0.007140196997050707
+            ],
+            "calibration_slope": [
+              0.0,
+              -0.33731516271264905
+            ],
+            "calibration_intercept": [
+              0.0,
+              -0.13002049898002233
+            ]
+          },
+          "preregistered_engineering_gate_inputs": {
+            "mean_two_repeat_auroc_gain": -0.004803675856307366,
+            "mean_two_repeat_brier_change": 0.0015778009524359815,
+            "per_repeat_auroc_gain": [
+              0.0,
+              -0.009607351712614731
+            ],
+            "per_repeat_brier_change": [
+              0.0,
+              0.003155601904871963
+            ]
+          },
+          "raw_predictor_screen_pass": false,
+          "probability_quality_screen_pass": false,
+          "explanation_feasibility": "Depends on the inner-selected candidate; see its explanation assessment.",
+          "interpretation": "nested broad-selector screen; thresholds are engineering screens only, not statistical or production-admission claims"
+        }
+      },
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6864686468646864,
+                "precision": 0.6507936507936508,
+                "recall": 0.35964912280701755,
+                "f1": 0.4632768361581921,
+                "roc_auc": 0.7457068597419474,
+                "specificity": 0.8835978835978836,
+                "brier": 0.1974663809558688,
+                "log_loss": 0.5775357413149109,
+                "confusion_matrix": [
+                  [
+                    167,
+                    22
+                  ],
+                  [
+                    73,
+                    41
+                  ]
+                ],
+                "average_precision": 0.6099087600268293,
+                "calibration_intercept": 0.19987275948288377,
+                "calibration_slope": 1.4078483342907058,
+                "expected_calibration_error_5_quantile_bins": 0.09042864084134856,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.17277723855571514,
+                    0.27095442961150495,
+                    0.3667079730902148,
+                    0.457069294053719,
+                    0.5975700071865628
+                  ],
+                  "observed_fraction": [
+                    0.06557377049180328,
+                    0.21666666666666667,
+                    0.5245901639344263,
+                    0.4,
+                    0.6721311475409836
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6633663366336634,
+                "precision": 0.575,
+                "recall": 0.40350877192982454,
+                "f1": 0.4742268041237113,
+                "roc_auc": 0.7165599183143043,
+                "specificity": 0.8201058201058201,
+                "brier": 0.20722682243832513,
+                "log_loss": 0.6031351579897323,
+                "confusion_matrix": [
+                  [
+                    155,
+                    34
+                  ],
+                  [
+                    68,
+                    46
+                  ]
+                ],
+                "average_precision": 0.5638085874144511,
+                "calibration_intercept": -0.12386625369618387,
+                "calibration_slope": 0.8082612565950547,
+                "expected_calibration_error_5_quantile_bins": 0.04064685654727755,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.13894538667269596,
+                    0.2617915201801204,
+                    0.3660870661092532,
+                    0.48234349859483977,
+                    0.6787665358088238
+                  ],
+                  "observed_fraction": [
+                    0.13114754098360656,
+                    0.21666666666666667,
+                    0.4262295081967213,
+                    0.5,
+                    0.6065573770491803
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6633663366336634,
+                "precision": 0.575,
+                "recall": 0.40350877192982454,
+                "f1": 0.4742268041237113,
+                "roc_auc": 0.7165599183143043,
+                "specificity": 0.8201058201058201,
+                "brier": 0.20722682243832513,
+                "log_loss": 0.6031351579897323,
+                "confusion_matrix": [
+                  [
+                    155,
+                    34
+                  ],
+                  [
+                    68,
+                    46
+                  ]
+                ],
+                "average_precision": 0.5638085874144511,
+                "calibration_intercept": -0.12386625369618387,
+                "calibration_slope": 0.8082612565950547,
+                "expected_calibration_error_5_quantile_bins": 0.04064685654727755,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.13894538667269596,
+                    0.2617915201801204,
+                    0.3660870661092532,
+                    0.48234349859483977,
+                    0.6787665358088238
+                  ],
+                  "observed_fraction": [
+                    0.13114754098360656,
+                    0.21666666666666667,
+                    0.4262295081967213,
+                    0.5,
+                    0.6065573770491803
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "status": "complete",
+          "metrics": {
+            "uniform_ensemble": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6765676567656765,
+                "precision": 0.6212121212121212,
+                "recall": 0.35964912280701755,
+                "f1": 0.45555555555555555,
+                "roc_auc": 0.7057458460967233,
+                "specificity": 0.8677248677248677,
+                "brier": 0.20730001563433925,
+                "log_loss": 0.6000658755048978,
+                "confusion_matrix": [
+                  [
+                    164,
+                    25
+                  ],
+                  [
+                    73,
+                    41
+                  ]
+                ],
+                "average_precision": 0.5613522359656014,
+                "calibration_intercept": 0.07766194592588513,
+                "calibration_slope": 1.1207289947897658,
+                "expected_calibration_error_5_quantile_bins": 0.06422577686306041,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.18000445716861,
+                    0.266465157415288,
+                    0.35622282408295536,
+                    0.4516173051593101,
+                    0.604908165464901
+                  ],
+                  "observed_fraction": [
+                    0.11475409836065574,
+                    0.3,
+                    0.47540983606557374,
+                    0.36666666666666664,
+                    0.6229508196721312
+                  ]
+                }
+              }
+            },
+            "baseline_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6666666666666666,
+                "precision": 0.5970149253731343,
+                "recall": 0.3508771929824561,
+                "f1": 0.4419889502762431,
+                "roc_auc": 0.6992017079736378,
+                "specificity": 0.8571428571428571,
+                "brier": 0.20879846402730395,
+                "log_loss": 0.6032755544284734,
+                "confusion_matrix": [
+                  [
+                    162,
+                    27
+                  ],
+                  [
+                    74,
+                    40
+                  ]
+                ],
+                "average_precision": 0.5656209835906931,
+                "calibration_intercept": 0.0712641730462546,
+                "calibration_slope": 1.1539984087204735,
+                "expected_calibration_error_5_quantile_bins": 0.04304354920157997,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.18530799772884637,
+                    0.2819707995405157,
+                    0.36539509707190143,
+                    0.45424117855828355,
+                    0.5925444298020142
+                  ],
+                  "observed_fraction": [
+                    0.13114754098360656,
+                    0.25,
+                    0.45901639344262296,
+                    0.43333333333333335,
+                    0.6065573770491803
+                  ]
+                }
+              }
+            },
+            "broad_selector": {
+              "status": "complete",
+              "available_rows": 303,
+              "expected_rows": 303,
+              "metrics": {
+                "accuracy": 0.6435643564356436,
+                "precision": 0.5416666666666666,
+                "recall": 0.34210526315789475,
+                "f1": 0.41935483870967744,
+                "roc_auc": 0.6895943562610231,
+                "specificity": 0.8253968253968254,
+                "brier": 0.21195406593217592,
+                "log_loss": 0.6104157514255241,
+                "confusion_matrix": [
+                  [
+                    156,
+                    33
+                  ],
+                  [
+                    75,
+                    39
+                  ]
+                ],
+                "average_precision": 0.5601729089550662,
+                "calibration_intercept": -0.058756325933767735,
+                "calibration_slope": 0.8166832460078245,
+                "expected_calibration_error_5_quantile_bins": 0.044785796062728006,
+                "calibration_curve": {
+                  "mean_predicted": [
+                    0.14076812471117223,
+                    0.24817039904470845,
+                    0.3514457798672187,
+                    0.4571618933912642,
+                    0.653802352634952
+                  ],
+                  "observed_fraction": [
+                    0.13114754098360656,
+                    0.3333333333333333,
+                    0.39344262295081966,
+                    0.43333333333333335,
+                    0.5901639344262295
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

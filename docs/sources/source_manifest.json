@@ -1,0 +1,92 @@
+[
+  {
+    "file": "bodyparts-elements.txt",
+    "bytes": 1142159,
+    "sha256": "a3de74423f943b0d724ae8f59b3a817f87c423a544f8db98113b1980817cbeaf"
+  },
+  {
+    "file": "bodyparts-ids.txt",
+    "bytes": 128086,
+    "sha256": "ab7796deedd49205e77f3609a1cb8c53e2bbee14ecb5c9a6ca05227469780513"
+  },
+  {
+    "file": "bodyparts-license.html",
+    "bytes": 14694,
+    "sha256": "35bcff0ff97f87a8e5cb4c7b03f9141cf813cfe2b4bd59a12ff603b5bf422474"
+  },
+  {
+    "file": "prizes.pdf",
+    "bytes": 34719,
+    "sha256": "3dff7c70e3625fc80148f99b556a0992f84ea2b79d407d61c5c8bc33501470ac"
+  },
+  {
+    "file": "prizes.txt",
+    "bytes": 707,
+    "sha256": "4f264514d6e0e57fecb209b5f35af1bc9aeb86f68ac624f6bee3263ba41d88b9"
+  },
+  {
+    "file": "problem-statements.pdf",
+    "bytes": 68933,
+    "sha256": "c5921afdb1b23f2aa82d68643633aee4e1142201a9b17f10833c174a674b41f1"
+  },
+  {
+    "file": "problem-statements.txt",
+    "bytes": 1397,
+    "sha256": "56fc55ea4dc5974360610554b33196ff0926ee984ca6f21104d1028374b199fd"
+  },
+  {
+    "file": "rules.html",
+    "bytes": 51177,
+    "sha256": "88053ee254ebf50593642c04846929a75e992b6dbd8c1fe844924da2a9432f6b"
+  },
+  {
+    "file": "submission.pdf",
+    "bytes": 43767,
+    "sha256": "2bebf2cf758f9d38443c4f98108dd9a84a7a905e981e68f7cf47ef93653a1fe1"
+  },
+  {
+    "file": "submission.txt",
+    "bytes": 1232,
+    "sha256": "616df3705439e5b1dcf7a35f1a0455f1c450b73677264002104e76cc52bdd270"
+  },
+  {
+    "file": "track-a.pdf",
+    "bytes": 101246,
+    "sha256": "677dead1f9fa473bf6be3bfef5d08be90a3a511ffe3f73092dfb7e5b85696764"
+  },
+  {
+    "file": "track-a.txt",
+    "bytes": 7761,
+    "sha256": "61578ef39bb490debab029c9a54e0504b22702bb890b7126deb836129cc2d9b4"
+  },
+  {
+    "file": "track-b.pdf",
+    "bytes": 116878,
+    "sha256": "61c154cb73af5c29df5153d329999294bbf66f4cf011fd761edc19439d479af6"
+  },
+  {
+    "file": "track-b.txt",
+    "bytes": 6839,
+    "sha256": "56631f8613868a5b0fd666116f93f9f56fa198d572d667d7b984839ecb978eac"
+  },
+  {
+    "file": "track-c.pdf",
+    "bytes": 81189,
+    "sha256": "0e621d35e6bfdbb9d9e169b259ebf9d3d923d1efcbab38ba2a4331f6958fb280"
+  },
+  {
+    "file": "track-c.txt",
+    "bytes": 5598,
+    "sha256": "a0bea51f6ffe36ac7de180fcc7fc5064a80657b0ac101350562aeec5286abba3"
+  },
+  {
+    "file": "track-d.pdf",
+    "bytes": 86318,
+    "sha256": "50bbeededa07f58be3d75aac0fc7abbf1a28bc89913e80cd97b5ce7bae4bfbf5"
+  },
+  {
+    "file": "track-d.txt",
+    "bytes": 5800,
+    "sha256": "e61ae574fffaff922e0514e73ffddb40db11f5116f99c9c7a9310942b4eeccc9"
+  }
+]

@@ -1,0 +1,5214 @@
+{
+  "scope": "Retrospective development; already inspected 553-person cohort; separate 14-input CAD task.",
+  "reviewer_guidance": "None. All sensitivity targets are exploratory and unapproved.",
+  "unique_people": 553,
+  "repeats": {
+    "1": {
+      "probabilities": {
+        "source": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.6737328156305846,
+          "auc": 0.6740728177295341,
+          "brier": 0.3073481805342348,
+          "log_loss": 0.8267672856998278,
+          "accuracy": 0.4394213381555154,
+          "sensitivity": 0.9203980099502488,
+          "specificity": 0.16477272727272727,
+          "precision": 0.3862212943632568,
+          "f1": 0.5441176470588235,
+          "confusion": {
+            "tn": 58,
+            "fp": 294,
+            "fn": 16,
+            "tp": 185
+          },
+          "mean_within_fold_auc": 0.6754576483289985,
+          "average_precision": 0.5778867801844885,
+          "reliability": [
+            {
+              "bin": 2,
+              "n": 6,
+              "mean_probability": 0.27700649261209864,
+              "prevalence": 0.0
+            },
+            {
+              "bin": 3,
+              "n": 11,
+              "mean_probability": 0.3488577262668523,
+              "prevalence": 0.09090909090909091
+            },
+            {
+              "bin": 4,
+              "n": 57,
+              "mean_probability": 0.45711574722528997,
+              "prevalence": 0.2631578947368421
+            },
+            {
+              "bin": 5,
+              "n": 83,
+              "mean_probability": 0.5543739454053158,
+              "prevalence": 0.20481927710843373
+            },
+            {
+              "bin": 6,
+              "n": 138,
+              "mean_probability": 0.6520387686733081,
+              "prevalence": 0.30434782608695654
+            },
+            {
+              "bin": 7,
+              "n": 158,
+              "mean_probability": 0.7505286335453171,
+              "prevalence": 0.37341772151898733
+            },
+            {
+              "bin": 8,
+              "n": 75,
+              "mean_probability": 0.8446308908668907,
+              "prevalence": 0.5866666666666667
+            },
+            {
+              "bin": 9,
+              "n": 25,
+              "mean_probability": 0.9237578818611674,
+              "prevalence": 0.92
+            }
+          ]
+        },
+        "source_sigmoid": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.3694642106728657,
+          "auc": 0.6610131162369969,
+          "brier": 0.21546266781616139,
+          "log_loss": 0.6220444804068597,
+          "accuracy": 0.674502712477396,
+          "sensitivity": 0.32338308457711445,
+          "specificity": 0.875,
+          "precision": 0.5963302752293578,
+          "f1": 0.41935483870967744,
+          "confusion": {
+            "tn": 308,
+            "fp": 44,
+            "fn": 136,
+            "tp": 65
+          },
+          "mean_within_fold_auc": 0.6754576483289985,
+          "average_precision": 0.5363114188424306,
+          "reliability": [
+            {
+              "bin": 0,
+              "n": 11,
+              "mean_probability": 0.07636013982022162,
+              "prevalence": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 64,
+              "mean_probability": 0.14868505128272094,
+              "prevalence": 0.25
+            },
+            {
+              "bin": 2,
+              "n": 152,
+              "mean_probability": 0.25469442282435834,
+              "prevalence": 0.25
+            },
+            {
+              "bin": 3,
+              "n": 117,
+              "mean_probability": 0.349302220471016,
+              "prevalence": 0.3418803418803419
+            },
+            {
+              "bin": 4,
+              "n": 100,
+              "mean_probability": 0.4366038269641933,
+              "prevalence": 0.42
+            },
+            {
+              "bin": 5,
+              "n": 44,
+              "mean_probability": 0.5454264393174657,
+              "prevalence": 0.5681818181818182
+            },
+            {
+              "bin": 6,
+              "n": 32,
+              "mean_probability": 0.6459336705213115,
+              "prevalence": 0.53125
+            },
+            {
+              "bin": 7,
+              "n": 20,
+              "mean_probability": 0.7305889741654576,
+              "prevalence": 0.75
+            },
+            {
+              "bin": 8,
+              "n": 10,
+              "mean_probability": 0.8572909673768898,
+              "prevalence": 0.5
+            },
+            {
+              "bin": 9,
+              "n": 3,
+              "mean_probability": 0.9540929924729991,
+              "prevalence": 1.0
+            }
+          ]
+        },
+        "local": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.355214247115107,
+          "auc": 0.7844583898688375,
+          "brier": 0.18172561652833136,
+          "log_loss": 0.5436590595807055,
+          "accuracy": 0.7251356238698011,
+          "sensitivity": 0.38308457711442784,
+          "specificity": 0.9204545454545454,
+          "precision": 0.7333333333333333,
+          "f1": 0.5032679738562091,
+          "confusion": {
+            "tn": 324,
+            "fp": 28,
+            "fn": 124,
+            "tp": 77
+          },
+          "mean_within_fold_auc": 0.7896797369583354,
+          "average_precision": 0.6824845639312338,
+          "reliability": [
+            {
+              "bin": 0,
+              "n": 10,
+              "mean_probability": 0.0845287604973483,
+              "prevalence": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 85,
+              "mean_probability": 0.15930424948939334,
+              "prevalence": 0.08235294117647059
+            },
+            {
+              "bin": 2,
+              "n": 152,
+              "mean_probability": 0.24740060122436916,
+              "prevalence": 0.23026315789473684
+            },
+            {
+              "bin": 3,
+              "n": 126,
+              "mean_probability": 0.34776618763037453,
+              "prevalence": 0.31746031746031744
+            },
+            {
+              "bin": 4,
+              "n": 75,
+              "mean_probability": 0.44777485754256985,
+              "prevalence": 0.56
+            },
+            {
+              "bin": 5,
+              "n": 46,
+              "mean_probability": 0.5525754165628992,
+              "prevalence": 0.6304347826086957
+            },
+            {
+              "bin": 6,
+              "n": 34,
+              "mean_probability": 0.6458884343735964,
+              "prevalence": 0.8235294117647058
+            },
+            {
+              "bin": 7,
+              "n": 19,
+              "mean_probability": 0.7481764339795355,
+              "prevalence": 0.7894736842105263
+            },
+            {
+              "bin": 8,
+              "n": 2,
+              "mean_probability": 0.834361164677518,
+              "prevalence": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 4,
+              "mean_probability": 0.944508498574089,
+              "prevalence": 0.75
+            }
+          ]
+        },
+        "local_sigmoid": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.3692725321658425,
+          "auc": 0.7716389642695614,
+          "brier": 0.18097761665226317,
+          "log_loss": 0.5433838801177694,
+          "accuracy": 0.7377938517179023,
+          "sensitivity": 0.5223880597014925,
+          "specificity": 0.8607954545454546,
+          "precision": 0.6818181818181818,
+          "f1": 0.5915492957746479,
+          "confusion": {
+            "tn": 303,
+            "fp": 49,
+            "fn": 96,
+            "tp": 105
+          },
+          "mean_within_fold_auc": 0.7896797369583354,
+          "average_precision": 0.6718012863161519,
+          "reliability": [
+            {
+              "bin": 0,
+              "n": 58,
+              "mean_probability": 0.0679731762176144,
+              "prevalence": 0.06896551724137931
+            },
+            {
+              "bin": 1,
+              "n": 119,
+              "mean_probability": 0.14753466237602927,
+              "prevalence": 0.19327731092436976
+            },
+            {
+              "bin": 2,
+              "n": 86,
+              "mean_probability": 0.24575374994223137,
+              "prevalence": 0.2441860465116279
+            },
+            {
+              "bin": 3,
+              "n": 75,
+              "mean_probability": 0.3452092118268431,
+              "prevalence": 0.30666666666666664
+            },
+            {
+              "bin": 4,
+              "n": 61,
+              "mean_probability": 0.4517528929771114,
+              "prevalence": 0.4098360655737705
+            },
+            {
+              "bin": 5,
+              "n": 45,
+              "mean_probability": 0.5428702666580162,
+              "prevalence": 0.5777777777777777
+            },
+            {
+              "bin": 6,
+              "n": 35,
+              "mean_probability": 0.6414825041541026,
+              "prevalence": 0.5428571428571428
+            },
+            {
+              "bin": 7,
+              "n": 34,
+              "mean_probability": 0.7485053281073436,
+              "prevalence": 0.7941176470588235
+            },
+            {
+              "bin": 8,
+              "n": 22,
+              "mean_probability": 0.8497509318680335,
+              "prevalence": 0.7727272727272727
+            },
+            {
+              "bin": 9,
+              "n": 18,
+              "mean_probability": 0.9500805604967832,
+              "prevalence": 0.8888888888888888
+            }
+          ]
+        },
+        "constant": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.3578220707768383,
+          "auc": 0.5031235866123925,
+          "brier": 0.2318833382521448,
+          "log_loss": 0.6565733214927678,
+          "accuracy": 0.6365280289330922,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "f1": 0.0,
+          "confusion": {
+            "tn": 352,
+            "fp": 0,
+            "fn": 201,
+            "tp": 0
+          },
+          "mean_within_fold_auc": 0.5,
+          "average_precision": 0.36563236552538175,
+          "reliability": [
+            {
+              "bin": 3,
+              "n": 553,
+              "mean_probability": 0.3578220707768383,
+              "prevalence": 0.36347197106690776
+            }
+          ]
+        }
+      },
+      "operating": {
+        "source": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 58,
+              "fp": 294,
+              "fn": 16,
+              "tp": 185
+            },
+            "sensitivity": 0.9203980099502488,
+            "specificity": 0.16477272727272727,
+            "precision": 0.3862212943632568,
+            "negative_predictive_value": 0.7837837837837838,
+            "fraction_flagged": 0.8661844484629295,
+            "sensitivity_wilson95": [
+              0.8746178773377287,
+              0.950410420024342
+            ],
+            "specificity_wilson95": [
+              0.12967741881167694,
+              0.20710587568656574
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 3,
+                  "tp": 38
+                },
+                "sensitivity": 0.926829268292683,
+                "specificity": 0.17142857142857143,
+                "precision": 0.3958333333333333,
+                "negative_predictive_value": 0.8,
+                "fraction_flagged": 0.8648648648648649,
+                "sensitivity_wilson95": [
+                  0.8057255146228096,
+                  0.9748021693660901
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 59,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.16901408450704225,
+                "precision": 0.37894736842105264,
+                "negative_predictive_value": 0.75,
+                "fraction_flagged": 0.8558558558558559,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.09941454752428264,
+                  0.2725912799863349
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 11,
+                  "fp": 60,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.15492957746478872,
+                "precision": 0.3877551020408163,
+                "negative_predictive_value": 0.8461538461538461,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.08877304270169767,
+                  0.25650962853277587
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 10,
+                  "fp": 60,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.14285714285714285,
+                "precision": 0.375,
+                "negative_predictive_value": 0.7142857142857143,
+                "fraction_flagged": 0.8727272727272727,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.07948941717066599,
+                  0.2433841988366675
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 13,
+                  "fp": 57,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.18571428571428572,
+                "precision": 0.39361702127659576,
+                "negative_predictive_value": 0.8125,
+                "fraction_flagged": 0.8545454545454545,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.11187300001902034,
+                  0.29225578206743313
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 157,
+              "fp": 195,
+              "fn": 44,
+              "tp": 157
+            },
+            "sensitivity": 0.7810945273631841,
+            "specificity": 0.4460227272727273,
+            "precision": 0.4460227272727273,
+            "negative_predictive_value": 0.7810945273631841,
+            "fraction_flagged": 0.6365280289330922,
+            "sensitivity_wilson95": [
+              0.7189517932315032,
+              0.8326943464247926
+            ],
+            "specificity_wilson95": [
+              0.3949552443644912,
+              0.4982556250886157
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 43,
+                  "fn": 7,
+                  "tp": 34
+                },
+                "sensitivity": 0.8292682926829268,
+                "specificity": 0.38571428571428573,
+                "precision": 0.44155844155844154,
+                "negative_predictive_value": 0.7941176470588235,
+                "fraction_flagged": 0.6936936936936937,
+                "sensitivity_wilson95": [
+                  0.6873738759959581,
+                  0.91474748022405
+                ],
+                "specificity_wilson95": [
+                  0.280476913015389,
+                  0.5028426441069578
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 29,
+                  "fp": 42,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.4084507042253521,
+                "precision": 0.44,
+                "negative_predictive_value": 0.8055555555555556,
+                "fraction_flagged": 0.6756756756756757,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.30168730269929867,
+                  0.5246121815057658
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 29,
+                  "fp": 42,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.4084507042253521,
+                "precision": 0.4473684210526316,
+                "negative_predictive_value": 0.8285714285714286,
+                "fraction_flagged": 0.6846846846846847,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.30168730269929867,
+                  0.5246121815057658
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 42,
+                  "fp": 28,
+                  "fn": 16,
+                  "tp": 24
+                },
+                "sensitivity": 0.6,
+                "specificity": 0.6,
+                "precision": 0.46153846153846156,
+                "negative_predictive_value": 0.7241379310344828,
+                "fraction_flagged": 0.4727272727272727,
+                "sensitivity_wilson95": [
+                  0.44595893660346186,
+                  0.7365167431570808
+                ],
+                "specificity_wilson95": [
+                  0.48293796477356277,
+                  0.7066574227443838
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 30,
+                  "fp": 40,
+                  "fn": 8,
+                  "tp": 32
+                },
+                "sensitivity": 0.8,
+                "specificity": 0.42857142857142855,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 0.7894736842105263,
+                "fraction_flagged": 0.6545454545454545,
+                "sensitivity_wilson95": [
+                  0.652426936536005,
+                  0.895000102745623
+                ],
+                "specificity_wilson95": [
+                  0.3193530887999687,
+                  0.545221634401498
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 1
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 95,
+              "fp": 257,
+              "fn": 27,
+              "tp": 174
+            },
+            "sensitivity": 0.8656716417910447,
+            "specificity": 0.26988636363636365,
+            "precision": 0.4037122969837587,
+            "negative_predictive_value": 0.7786885245901639,
+            "fraction_flagged": 0.779385171790235,
+            "sensitivity_wilson95": [
+              0.8116151129704375,
+              0.9060130510072214
+            ],
+            "specificity_wilson95": [
+              0.22618196306414104,
+              0.3185591119727882
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 16,
+                  "fp": 54,
+                  "fn": 4,
+                  "tp": 37
+                },
+                "sensitivity": 0.9024390243902439,
+                "specificity": 0.22857142857142856,
+                "precision": 0.4065934065934066,
+                "negative_predictive_value": 0.8,
+                "fraction_flagged": 0.8198198198198198,
+                "sensitivity_wilson95": [
+                  0.7745231869447662,
+                  0.9614029151019106
+                ],
+                "specificity_wilson95": [
+                  0.14588063222572434,
+                  0.33950331593984906
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 59,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.16901408450704225,
+                "precision": 0.37894736842105264,
+                "negative_predictive_value": 0.75,
+                "fraction_flagged": 0.8558558558558559,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.09941454752428264,
+                  0.2725912799863349
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 24,
+                  "fp": 47,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.3380281690140845,
+                "precision": 0.44047619047619047,
+                "negative_predictive_value": 0.8888888888888888,
+                "fraction_flagged": 0.7567567567567568,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.23884988425189946,
+                  0.4538338185724453
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 26,
+                  "fp": 44,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.37142857142857144,
+                "precision": 0.40540540540540543,
+                "negative_predictive_value": 0.7222222222222222,
+                "fraction_flagged": 0.6727272727272727,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.26770651334691126,
+                  0.4885279884157288
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 17,
+                  "fp": 53,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.24285714285714285,
+                "precision": 0.39080459770114945,
+                "negative_predictive_value": 0.7391304347826086,
+                "fraction_flagged": 0.7909090909090909,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.15751861122890576,
+                  0.3549503922963744
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 54,
+              "fp": 298,
+              "fn": 11,
+              "tp": 190
+            },
+            "sensitivity": 0.945273631840796,
+            "specificity": 0.1534090909090909,
+            "precision": 0.38934426229508196,
+            "negative_predictive_value": 0.8307692307692308,
+            "fraction_flagged": 0.8824593128390597,
+            "sensitivity_wilson95": [
+              0.9046763435468063,
+              0.9691701962627243
+            ],
+            "specificity_wilson95": [
+              0.11952021685773426,
+              0.1947811554201099
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 13,
+                  "fp": 57,
+                  "fn": 4,
+                  "tp": 37
+                },
+                "sensitivity": 0.9024390243902439,
+                "specificity": 0.18571428571428572,
+                "precision": 0.39361702127659576,
+                "negative_predictive_value": 0.7647058823529411,
+                "fraction_flagged": 0.8468468468468469,
+                "sensitivity_wilson95": [
+                  0.7745231869447662,
+                  0.9614029151019106
+                ],
+                "specificity_wilson95": [
+                  0.11187300001902034,
+                  0.29225578206743313
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 59,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.16901408450704225,
+                "precision": 0.3854166666666667,
+                "negative_predictive_value": 0.8,
+                "fraction_flagged": 0.8648648648648649,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.09941454752428264,
+                  0.2725912799863349
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 8,
+                  "fp": 63,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.11267605633802817,
+                "precision": 0.38235294117647056,
+                "negative_predictive_value": 0.8888888888888888,
+                "fraction_flagged": 0.918918918918919,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.05821271729792871,
+                  0.2069004851081131
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 10,
+                  "fp": 60,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.14285714285714285,
+                "precision": 0.3939393939393939,
+                "negative_predictive_value": 0.9090909090909091,
+                "fraction_flagged": 0.9,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.07948941717066599,
+                  0.2433841988366675
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 11,
+                  "fp": 59,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.15714285714285714,
+                "precision": 0.3917525773195876,
+                "negative_predictive_value": 0.8461538461538461,
+                "fraction_flagged": 0.8818181818181818,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.09007620559861788,
+                  0.2598824657684222
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          }
+        },
+        "source_sigmoid": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 308,
+              "fp": 44,
+              "fn": 136,
+              "tp": 65
+            },
+            "sensitivity": 0.32338308457711445,
+            "specificity": 0.875,
+            "precision": 0.5963302752293578,
+            "negative_predictive_value": 0.6936936936936937,
+            "fraction_flagged": 0.19710669077757687,
+            "sensitivity_wilson95": [
+              0.2625522777498195,
+              0.39083820087321586
+            ],
+            "specificity_wilson95": [
+              0.8363520358212486,
+              0.9055513974519036
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 68,
+                  "fp": 2,
+                  "fn": 33,
+                  "tp": 8
+                },
+                "sensitivity": 0.1951219512195122,
+                "specificity": 0.9714285714285714,
+                "precision": 0.8,
+                "negative_predictive_value": 0.6732673267326733,
+                "fraction_flagged": 0.09009009009009009,
+                "sensitivity_wilson95": [
+                  0.10234437385158025,
+                  0.3401358518706343
+                ],
+                "specificity_wilson95": [
+                  0.9016774388157609,
+                  0.9921293880545587
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 67,
+                  "fp": 4,
+                  "fn": 27,
+                  "tp": 13
+                },
+                "sensitivity": 0.325,
+                "specificity": 0.9436619718309859,
+                "precision": 0.7647058823529411,
+                "negative_predictive_value": 0.7127659574468085,
+                "fraction_flagged": 0.15315315315315314,
+                "sensitivity_wilson95": [
+                  0.200845022317827,
+                  0.47982253810122333
+                ],
+                "specificity_wilson95": [
+                  0.8639039420002305,
+                  0.9778754806983033
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 42,
+                  "fp": 29,
+                  "fn": 16,
+                  "tp": 24
+                },
+                "sensitivity": 0.6,
+                "specificity": 0.5915492957746479,
+                "precision": 0.4528301886792453,
+                "negative_predictive_value": 0.7241379310344828,
+                "fraction_flagged": 0.4774774774774775,
+                "sensitivity_wilson95": [
+                  0.44595893660346186,
+                  0.7365167431570808
+                ],
+                "specificity_wilson95": [
+                  0.47538781849423417,
+                  0.6983126973007014
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 67,
+                  "fp": 3,
+                  "fn": 34,
+                  "tp": 6
+                },
+                "sensitivity": 0.15,
+                "specificity": 0.9571428571428572,
+                "precision": 0.6666666666666666,
+                "negative_predictive_value": 0.6633663366336634,
+                "fraction_flagged": 0.08181818181818182,
+                "sensitivity_wilson95": [
+                  0.07061187717320358,
+                  0.2907232436648971
+                ],
+                "specificity_wilson95": [
+                  0.8814033125147246,
+                  0.9853184589958887
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 64,
+                  "fp": 6,
+                  "fn": 26,
+                  "tp": 14
+                },
+                "sensitivity": 0.35,
+                "specificity": 0.9142857142857143,
+                "precision": 0.7,
+                "negative_predictive_value": 0.7111111111111111,
+                "fraction_flagged": 0.18181818181818182,
+                "sensitivity_wilson95": [
+                  0.2213452887317629,
+                  0.5049411916274231
+                ],
+                "specificity_wilson95": [
+                  0.8253432750766051,
+                  0.9601233303548878
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 157,
+              "fp": 195,
+              "fn": 44,
+              "tp": 157
+            },
+            "sensitivity": 0.7810945273631841,
+            "specificity": 0.4460227272727273,
+            "precision": 0.4460227272727273,
+            "negative_predictive_value": 0.7810945273631841,
+            "fraction_flagged": 0.6365280289330922,
+            "sensitivity_wilson95": [
+              0.7189517932315032,
+              0.8326943464247926
+            ],
+            "specificity_wilson95": [
+              0.3949552443644912,
+              0.4982556250886157
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 43,
+                  "fn": 7,
+                  "tp": 34
+                },
+                "sensitivity": 0.8292682926829268,
+                "specificity": 0.38571428571428573,
+                "precision": 0.44155844155844154,
+                "negative_predictive_value": 0.7941176470588235,
+                "fraction_flagged": 0.6936936936936937,
+                "sensitivity_wilson95": [
+                  0.6873738759959581,
+                  0.91474748022405
+                ],
+                "specificity_wilson95": [
+                  0.280476913015389,
+                  0.5028426441069578
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 29,
+                  "fp": 42,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.4084507042253521,
+                "precision": 0.44,
+                "negative_predictive_value": 0.8055555555555556,
+                "fraction_flagged": 0.6756756756756757,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.30168730269929867,
+                  0.5246121815057658
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 29,
+                  "fp": 42,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.4084507042253521,
+                "precision": 0.4473684210526316,
+                "negative_predictive_value": 0.8285714285714286,
+                "fraction_flagged": 0.6846846846846847,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.30168730269929867,
+                  0.5246121815057658
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 42,
+                  "fp": 28,
+                  "fn": 16,
+                  "tp": 24
+                },
+                "sensitivity": 0.6,
+                "specificity": 0.6,
+                "precision": 0.46153846153846156,
+                "negative_predictive_value": 0.7241379310344828,
+                "fraction_flagged": 0.4727272727272727,
+                "sensitivity_wilson95": [
+                  0.44595893660346186,
+                  0.7365167431570808
+                ],
+                "specificity_wilson95": [
+                  0.48293796477356277,
+                  0.7066574227443838
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 30,
+                  "fp": 40,
+                  "fn": 8,
+                  "tp": 32
+                },
+                "sensitivity": 0.8,
+                "specificity": 0.42857142857142855,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 0.7894736842105263,
+                "fraction_flagged": 0.6545454545454545,
+                "sensitivity_wilson95": [
+                  0.652426936536005,
+                  0.895000102745623
+                ],
+                "specificity_wilson95": [
+                  0.3193530887999687,
+                  0.545221634401498
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 1
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 95,
+              "fp": 257,
+              "fn": 27,
+              "tp": 174
+            },
+            "sensitivity": 0.8656716417910447,
+            "specificity": 0.26988636363636365,
+            "precision": 0.4037122969837587,
+            "negative_predictive_value": 0.7786885245901639,
+            "fraction_flagged": 0.779385171790235,
+            "sensitivity_wilson95": [
+              0.8116151129704375,
+              0.9060130510072214
+            ],
+            "specificity_wilson95": [
+              0.22618196306414104,
+              0.3185591119727882
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 16,
+                  "fp": 54,
+                  "fn": 4,
+                  "tp": 37
+                },
+                "sensitivity": 0.9024390243902439,
+                "specificity": 0.22857142857142856,
+                "precision": 0.4065934065934066,
+                "negative_predictive_value": 0.8,
+                "fraction_flagged": 0.8198198198198198,
+                "sensitivity_wilson95": [
+                  0.7745231869447662,
+                  0.9614029151019106
+                ],
+                "specificity_wilson95": [
+                  0.14588063222572434,
+                  0.33950331593984906
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 59,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.16901408450704225,
+                "precision": 0.37894736842105264,
+                "negative_predictive_value": 0.75,
+                "fraction_flagged": 0.8558558558558559,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.09941454752428264,
+                  0.2725912799863349
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 24,
+                  "fp": 47,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.3380281690140845,
+                "precision": 0.44047619047619047,
+                "negative_predictive_value": 0.8888888888888888,
+                "fraction_flagged": 0.7567567567567568,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.23884988425189946,
+                  0.4538338185724453
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 26,
+                  "fp": 44,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.37142857142857144,
+                "precision": 0.40540540540540543,
+                "negative_predictive_value": 0.7222222222222222,
+                "fraction_flagged": 0.6727272727272727,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.26770651334691126,
+                  0.4885279884157288
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 17,
+                  "fp": 53,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.24285714285714285,
+                "precision": 0.39080459770114945,
+                "negative_predictive_value": 0.7391304347826086,
+                "fraction_flagged": 0.7909090909090909,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.15751861122890576,
+                  0.3549503922963744
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 54,
+              "fp": 298,
+              "fn": 11,
+              "tp": 190
+            },
+            "sensitivity": 0.945273631840796,
+            "specificity": 0.1534090909090909,
+            "precision": 0.38934426229508196,
+            "negative_predictive_value": 0.8307692307692308,
+            "fraction_flagged": 0.8824593128390597,
+            "sensitivity_wilson95": [
+              0.9046763435468063,
+              0.9691701962627243
+            ],
+            "specificity_wilson95": [
+              0.11952021685773426,
+              0.1947811554201099
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 13,
+                  "fp": 57,
+                  "fn": 4,
+                  "tp": 37
+                },
+                "sensitivity": 0.9024390243902439,
+                "specificity": 0.18571428571428572,
+                "precision": 0.39361702127659576,
+                "negative_predictive_value": 0.7647058823529411,
+                "fraction_flagged": 0.8468468468468469,
+                "sensitivity_wilson95": [
+                  0.7745231869447662,
+                  0.9614029151019106
+                ],
+                "specificity_wilson95": [
+                  0.11187300001902034,
+                  0.29225578206743313
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 59,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.16901408450704225,
+                "precision": 0.3854166666666667,
+                "negative_predictive_value": 0.8,
+                "fraction_flagged": 0.8648648648648649,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.09941454752428264,
+                  0.2725912799863349
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 8,
+                  "fp": 63,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.11267605633802817,
+                "precision": 0.38235294117647056,
+                "negative_predictive_value": 0.8888888888888888,
+                "fraction_flagged": 0.918918918918919,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.05821271729792871,
+                  0.2069004851081131
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 10,
+                  "fp": 60,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.14285714285714285,
+                "precision": 0.3939393939393939,
+                "negative_predictive_value": 0.9090909090909091,
+                "fraction_flagged": 0.9,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.07948941717066599,
+                  0.2433841988366675
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 11,
+                  "fp": 59,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.15714285714285714,
+                "precision": 0.3917525773195876,
+                "negative_predictive_value": 0.8461538461538461,
+                "fraction_flagged": 0.8818181818181818,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.09007620559861788,
+                  0.2598824657684222
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          }
+        },
+        "local": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 324,
+              "fp": 28,
+              "fn": 124,
+              "tp": 77
+            },
+            "sensitivity": 0.38308457711442784,
+            "specificity": 0.9204545454545454,
+            "precision": 0.7333333333333333,
+            "negative_predictive_value": 0.7232142857142857,
+            "fraction_flagged": 0.189873417721519,
+            "sensitivity_wilson95": [
+              0.31866785376317414,
+              0.4518864067337646
+            ],
+            "specificity_wilson95": [
+              0.8874371246444702,
+              0.9443939975102763
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 63,
+                  "fp": 7,
+                  "fn": 30,
+                  "tp": 11
+                },
+                "sensitivity": 0.2682926829268293,
+                "specificity": 0.9,
+                "precision": 0.6111111111111112,
+                "negative_predictive_value": 0.6774193548387096,
+                "fraction_flagged": 0.16216216216216217,
+                "sensitivity_wilson95": [
+                  0.1569496404781167,
+                  0.41933533107076637
+                ],
+                "specificity_wilson95": [
+                  0.807670851514326,
+                  0.9507106985574605
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 66,
+                  "fp": 5,
+                  "fn": 18,
+                  "tp": 22
+                },
+                "sensitivity": 0.55,
+                "specificity": 0.9295774647887324,
+                "precision": 0.8148148148148148,
+                "negative_predictive_value": 0.7857142857142857,
+                "fraction_flagged": 0.24324324324324326,
+                "sensitivity_wilson95": [
+                  0.39829091798932054,
+                  0.6929469218909508
+                ],
+                "specificity_wilson95": [
+                  0.8455098688621009,
+                  0.969546397560289
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 67,
+                  "fp": 4,
+                  "fn": 27,
+                  "tp": 13
+                },
+                "sensitivity": 0.325,
+                "specificity": 0.9436619718309859,
+                "precision": 0.7647058823529411,
+                "negative_predictive_value": 0.7127659574468085,
+                "fraction_flagged": 0.15315315315315314,
+                "sensitivity_wilson95": [
+                  0.200845022317827,
+                  0.47982253810122333
+                ],
+                "specificity_wilson95": [
+                  0.8639039420002305,
+                  0.9778754806983033
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 64,
+                  "fp": 6,
+                  "fn": 23,
+                  "tp": 17
+                },
+                "sensitivity": 0.425,
+                "specificity": 0.9142857142857143,
+                "precision": 0.7391304347826086,
+                "negative_predictive_value": 0.735632183908046,
+                "fraction_flagged": 0.20909090909090908,
+                "sensitivity_wilson95": [
+                  0.28509392559950375,
+                  0.5780493145800892
+                ],
+                "specificity_wilson95": [
+                  0.8253432750766051,
+                  0.9601233303548878
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 64,
+                  "fp": 6,
+                  "fn": 26,
+                  "tp": 14
+                },
+                "sensitivity": 0.35,
+                "specificity": 0.9142857142857143,
+                "precision": 0.7,
+                "negative_predictive_value": 0.7111111111111111,
+                "fraction_flagged": 0.18181818181818182,
+                "sensitivity_wilson95": [
+                  0.2213452887317629,
+                  0.5049411916274231
+                ],
+                "specificity_wilson95": [
+                  0.8253432750766051,
+                  0.9601233303548878
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 220,
+              "fp": 132,
+              "fn": 48,
+              "tp": 153
+            },
+            "sensitivity": 0.7611940298507462,
+            "specificity": 0.625,
+            "precision": 0.5368421052631579,
+            "negative_predictive_value": 0.8208955223880597,
+            "fraction_flagged": 0.515370705244123,
+            "sensitivity_wilson95": [
+              0.6977045692629591,
+              0.8148869764353688
+            ],
+            "specificity_wilson95": [
+              0.5733316090124755,
+              0.6739695354119085
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 42,
+                  "fp": 28,
+                  "fn": 8,
+                  "tp": 33
+                },
+                "sensitivity": 0.8048780487804879,
+                "specificity": 0.6,
+                "precision": 0.5409836065573771,
+                "negative_predictive_value": 0.84,
+                "fraction_flagged": 0.5495495495495496,
+                "sensitivity_wilson95": [
+                  0.6598641481293658,
+                  0.8976556261484198
+                ],
+                "specificity_wilson95": [
+                  0.48293796477356277,
+                  0.7066574227443838
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 39,
+                  "fp": 32,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.5492957746478874,
+                "precision": 0.5151515151515151,
+                "negative_predictive_value": 0.8666666666666667,
+                "fraction_flagged": 0.5945945945945946,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.4340106587147449,
+                  0.6595203882517588
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 42,
+                  "fp": 29,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.5915492957746479,
+                "precision": 0.5396825396825397,
+                "negative_predictive_value": 0.875,
+                "fraction_flagged": 0.5675675675675675,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.47538781849423417,
+                  0.6983126973007014
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 56,
+                  "fp": 14,
+                  "fn": 18,
+                  "tp": 22
+                },
+                "sensitivity": 0.55,
+                "specificity": 0.8,
+                "precision": 0.6111111111111112,
+                "negative_predictive_value": 0.7567567567567568,
+                "fraction_flagged": 0.32727272727272727,
+                "sensitivity_wilson95": [
+                  0.39829091798932054,
+                  0.6929469218909508
+                ],
+                "specificity_wilson95": [
+                  0.6918335550374695,
+                  0.8769526075163705
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 41,
+                  "fp": 29,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.5857142857142857,
+                "precision": 0.5084745762711864,
+                "negative_predictive_value": 0.803921568627451,
+                "fraction_flagged": 0.5363636363636364,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.46881211784560456,
+                  0.6936982143126353
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 161,
+              "fp": 191,
+              "fn": 27,
+              "tp": 174
+            },
+            "sensitivity": 0.8656716417910447,
+            "specificity": 0.45738636363636365,
+            "precision": 0.4767123287671233,
+            "negative_predictive_value": 0.8563829787234043,
+            "fraction_flagged": 0.6600361663652803,
+            "sensitivity_wilson95": [
+              0.8116151129704375,
+              0.9060130510072214
+            ],
+            "specificity_wilson95": [
+              0.40608286079191286,
+              0.5096099308815927
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 28,
+                  "fp": 42,
+                  "fn": 4,
+                  "tp": 37
+                },
+                "sensitivity": 0.9024390243902439,
+                "specificity": 0.4,
+                "precision": 0.46835443037974683,
+                "negative_predictive_value": 0.875,
+                "fraction_flagged": 0.7117117117117117,
+                "sensitivity_wilson95": [
+                  0.7745231869447662,
+                  0.9614029151019106
+                ],
+                "specificity_wilson95": [
+                  0.2933425772556162,
+                  0.5170620352264372
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 26,
+                  "fp": 45,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.36619718309859156,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 0.8666666666666667,
+                "fraction_flagged": 0.7297297297297297,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.26370221333974514,
+                  0.48242780203688757
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 37,
+                  "fp": 34,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.5211267605633803,
+                "precision": 0.5211267605633803,
+                "negative_predictive_value": 0.925,
+                "fraction_flagged": 0.6396396396396397,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.4068599735260268,
+                  0.633224760888189
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 38,
+                  "fp": 32,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.5428571428571428,
+                "precision": 0.5076923076923077,
+                "negative_predictive_value": 0.8444444444444444,
+                "fraction_flagged": 0.5909090909090909,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.42698259205475575,
+                  0.6542725740243641
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 9,
+                  "tp": 31
+                },
+                "sensitivity": 0.775,
+                "specificity": 0.45714285714285713,
+                "precision": 0.4492753623188406,
+                "negative_predictive_value": 0.7804878048780488,
+                "fraction_flagged": 0.6272727272727273,
+                "sensitivity_wilson95": [
+                  0.6249690325768998,
+                  0.8768390867645927
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 109,
+              "fp": 243,
+              "fn": 13,
+              "tp": 188
+            },
+            "sensitivity": 0.9353233830845771,
+            "specificity": 0.3096590909090909,
+            "precision": 0.4361948955916473,
+            "negative_predictive_value": 0.8934426229508197,
+            "fraction_flagged": 0.779385171790235,
+            "sensitivity_wilson95": [
+              0.8925026977559214,
+              0.961816545074625
+            ],
+            "specificity_wilson95": [
+              0.2636310216636019,
+              0.3597967811447223
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 19,
+                  "fp": 51,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.2714285714285714,
+                "precision": 0.43956043956043955,
+                "negative_predictive_value": 0.95,
+                "fraction_flagged": 0.8198198198198198,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.1811959968818828,
+                  0.38544311736281056
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 25,
+                  "fp": 46,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.352112676056338,
+                "precision": 0.43902439024390244,
+                "negative_predictive_value": 0.8620689655172413,
+                "fraction_flagged": 0.7387387387387387,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.25122748121653293,
+                  0.4681793778839557
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 21,
+                  "fp": 50,
+                  "fn": 0,
+                  "tp": 40
+                },
+                "sensitivity": 1.0,
+                "specificity": 0.29577464788732394,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 1.0,
+                "fraction_flagged": 0.8108108108108109,
+                "sensitivity_wilson95": [
+                  0.9123783988027135,
+                  1.0
+                ],
+                "specificity_wilson95": [
+                  0.2023288520131663,
+                  0.4101853819827467
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 19,
+                  "fp": 51,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.2714285714285714,
+                "precision": 0.42696629213483145,
+                "negative_predictive_value": 0.9047619047619048,
+                "fraction_flagged": 0.8090909090909091,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.1811959968818828,
+                  0.38544311736281056
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 25,
+                  "fp": 45,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.35714285714285715,
+                "precision": 0.43037974683544306,
+                "negative_predictive_value": 0.8064516129032258,
+                "fraction_flagged": 0.7181818181818181,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.2550333927163484,
+                  0.47411605368658505
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          }
+        },
+        "local_sigmoid": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 303,
+              "fp": 49,
+              "fn": 96,
+              "tp": 105
+            },
+            "sensitivity": 0.5223880597014925,
+            "specificity": 0.8607954545454546,
+            "precision": 0.6818181818181818,
+            "negative_predictive_value": 0.7593984962406015,
+            "fraction_flagged": 0.27848101265822783,
+            "sensitivity_wilson95": [
+              0.45356420091660676,
+              0.590372217286107
+            ],
+            "specificity_wilson95": [
+              0.820723869000361,
+              0.8930771614972931
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 62,
+                  "fp": 8,
+                  "fn": 26,
+                  "tp": 15
+                },
+                "sensitivity": 0.36585365853658536,
+                "specificity": 0.8857142857142857,
+                "precision": 0.6521739130434783,
+                "negative_predictive_value": 0.7045454545454546,
+                "fraction_flagged": 0.2072072072072072,
+                "sensitivity_wilson95": [
+                  0.23589831019689447,
+                  0.5187929891208799
+                ],
+                "specificity_wilson95": [
+                  0.7903577841784561,
+                  0.9409387105336235
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 62,
+                  "fp": 9,
+                  "fn": 15,
+                  "tp": 25
+                },
+                "sensitivity": 0.625,
+                "specificity": 0.8732394366197183,
+                "precision": 0.7352941176470589,
+                "negative_predictive_value": 0.8051948051948052,
+                "fraction_flagged": 0.3063063063063063,
+                "sensitivity_wilson95": [
+                  0.47032439137301096,
+                  0.7577702083276673
+                ],
+                "specificity_wilson95": [
+                  0.7763089172134625,
+                  0.9318547241043516
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 53,
+                  "fp": 18,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.7464788732394366,
+                "precision": 0.625,
+                "negative_predictive_value": 0.8412698412698413,
+                "fraction_flagged": 0.43243243243243246,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.63446074646439,
+                  0.8331944883681289
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 66,
+                  "fp": 4,
+                  "fn": 26,
+                  "tp": 14
+                },
+                "sensitivity": 0.35,
+                "specificity": 0.9428571428571428,
+                "precision": 0.7777777777777778,
+                "negative_predictive_value": 0.717391304347826,
+                "fraction_flagged": 0.16363636363636364,
+                "sensitivity_wilson95": [
+                  0.2213452887317629,
+                  0.5049411916274231
+                ],
+                "specificity_wilson95": [
+                  0.8620804952516177,
+                  0.9775562208992887
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 60,
+                  "fp": 10,
+                  "fn": 19,
+                  "tp": 21
+                },
+                "sensitivity": 0.525,
+                "specificity": 0.8571428571428571,
+                "precision": 0.6774193548387096,
+                "negative_predictive_value": 0.759493670886076,
+                "fraction_flagged": 0.2818181818181818,
+                "sensitivity_wilson95": [
+                  0.3749736210669248,
+                  0.670645298873211
+                ],
+                "specificity_wilson95": [
+                  0.7566158011633325,
+                  0.920510582829334
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 220,
+              "fp": 132,
+              "fn": 48,
+              "tp": 153
+            },
+            "sensitivity": 0.7611940298507462,
+            "specificity": 0.625,
+            "precision": 0.5368421052631579,
+            "negative_predictive_value": 0.8208955223880597,
+            "fraction_flagged": 0.515370705244123,
+            "sensitivity_wilson95": [
+              0.6977045692629591,
+              0.8148869764353688
+            ],
+            "specificity_wilson95": [
+              0.5733316090124755,
+              0.6739695354119085
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 42,
+                  "fp": 28,
+                  "fn": 8,
+                  "tp": 33
+                },
+                "sensitivity": 0.8048780487804879,
+                "specificity": 0.6,
+                "precision": 0.5409836065573771,
+                "negative_predictive_value": 0.84,
+                "fraction_flagged": 0.5495495495495496,
+                "sensitivity_wilson95": [
+                  0.6598641481293658,
+                  0.8976556261484198
+                ],
+                "specificity_wilson95": [
+                  0.48293796477356277,
+                  0.7066574227443838
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 39,
+                  "fp": 32,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.5492957746478874,
+                "precision": 0.5151515151515151,
+                "negative_predictive_value": 0.8666666666666667,
+                "fraction_flagged": 0.5945945945945946,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.4340106587147449,
+                  0.6595203882517588
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 42,
+                  "fp": 29,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.5915492957746479,
+                "precision": 0.5396825396825397,
+                "negative_predictive_value": 0.875,
+                "fraction_flagged": 0.5675675675675675,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.47538781849423417,
+                  0.6983126973007014
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 56,
+                  "fp": 14,
+                  "fn": 18,
+                  "tp": 22
+                },
+                "sensitivity": 0.55,
+                "specificity": 0.8,
+                "precision": 0.6111111111111112,
+                "negative_predictive_value": 0.7567567567567568,
+                "fraction_flagged": 0.32727272727272727,
+                "sensitivity_wilson95": [
+                  0.39829091798932054,
+                  0.6929469218909508
+                ],
+                "specificity_wilson95": [
+                  0.6918335550374695,
+                  0.8769526075163705
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 41,
+                  "fp": 29,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.5857142857142857,
+                "precision": 0.5084745762711864,
+                "negative_predictive_value": 0.803921568627451,
+                "fraction_flagged": 0.5363636363636364,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.46881211784560456,
+                  0.6936982143126353
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 161,
+              "fp": 191,
+              "fn": 27,
+              "tp": 174
+            },
+            "sensitivity": 0.8656716417910447,
+            "specificity": 0.45738636363636365,
+            "precision": 0.4767123287671233,
+            "negative_predictive_value": 0.8563829787234043,
+            "fraction_flagged": 0.6600361663652803,
+            "sensitivity_wilson95": [
+              0.8116151129704375,
+              0.9060130510072214
+            ],
+            "specificity_wilson95": [
+              0.40608286079191286,
+              0.5096099308815927
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 28,
+                  "fp": 42,
+                  "fn": 4,
+                  "tp": 37
+                },
+                "sensitivity": 0.9024390243902439,
+                "specificity": 0.4,
+                "precision": 0.46835443037974683,
+                "negative_predictive_value": 0.875,
+                "fraction_flagged": 0.7117117117117117,
+                "sensitivity_wilson95": [
+                  0.7745231869447662,
+                  0.9614029151019106
+                ],
+                "specificity_wilson95": [
+                  0.2933425772556162,
+                  0.5170620352264372
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 26,
+                  "fp": 45,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.36619718309859156,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 0.8666666666666667,
+                "fraction_flagged": 0.7297297297297297,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.26370221333974514,
+                  0.48242780203688757
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 37,
+                  "fp": 34,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.5211267605633803,
+                "precision": 0.5211267605633803,
+                "negative_predictive_value": 0.925,
+                "fraction_flagged": 0.6396396396396397,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.4068599735260268,
+                  0.633224760888189
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 38,
+                  "fp": 32,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.5428571428571428,
+                "precision": 0.5076923076923077,
+                "negative_predictive_value": 0.8444444444444444,
+                "fraction_flagged": 0.5909090909090909,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.42698259205475575,
+                  0.6542725740243641
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 9,
+                  "tp": 31
+                },
+                "sensitivity": 0.775,
+                "specificity": 0.45714285714285713,
+                "precision": 0.4492753623188406,
+                "negative_predictive_value": 0.7804878048780488,
+                "fraction_flagged": 0.6272727272727273,
+                "sensitivity_wilson95": [
+                  0.6249690325768998,
+                  0.8768390867645927
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 109,
+              "fp": 243,
+              "fn": 13,
+              "tp": 188
+            },
+            "sensitivity": 0.9353233830845771,
+            "specificity": 0.3096590909090909,
+            "precision": 0.4361948955916473,
+            "negative_predictive_value": 0.8934426229508197,
+            "fraction_flagged": 0.779385171790235,
+            "sensitivity_wilson95": [
+              0.8925026977559214,
+              0.961816545074625
+            ],
+            "specificity_wilson95": [
+              0.2636310216636019,
+              0.3597967811447223
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 19,
+                  "fp": 51,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.2714285714285714,
+                "precision": 0.43956043956043955,
+                "negative_predictive_value": 0.95,
+                "fraction_flagged": 0.8198198198198198,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.1811959968818828,
+                  0.38544311736281056
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 25,
+                  "fp": 46,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.352112676056338,
+                "precision": 0.43902439024390244,
+                "negative_predictive_value": 0.8620689655172413,
+                "fraction_flagged": 0.7387387387387387,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.25122748121653293,
+                  0.4681793778839557
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 21,
+                  "fp": 50,
+                  "fn": 0,
+                  "tp": 40
+                },
+                "sensitivity": 1.0,
+                "specificity": 0.29577464788732394,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 1.0,
+                "fraction_flagged": 0.8108108108108109,
+                "sensitivity_wilson95": [
+                  0.9123783988027135,
+                  1.0
+                ],
+                "specificity_wilson95": [
+                  0.2023288520131663,
+                  0.4101853819827467
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 19,
+                  "fp": 51,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.2714285714285714,
+                "precision": 0.42696629213483145,
+                "negative_predictive_value": 0.9047619047619048,
+                "fraction_flagged": 0.8090909090909091,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.1811959968818828,
+                  0.38544311736281056
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 25,
+                  "fp": 45,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.35714285714285715,
+                "precision": 0.43037974683544306,
+                "negative_predictive_value": 0.8064516129032258,
+                "fraction_flagged": 0.7181818181818181,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.2550333927163484,
+                  0.47411605368658505
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          }
+        }
+      }
+    },
+    "2": {
+      "probabilities": {
+        "source": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.6737328156305846,
+          "auc": 0.6740728177295341,
+          "brier": 0.3073481805342348,
+          "log_loss": 0.8267672856998278,
+          "accuracy": 0.4394213381555154,
+          "sensitivity": 0.9203980099502488,
+          "specificity": 0.16477272727272727,
+          "precision": 0.3862212943632568,
+          "f1": 0.5441176470588235,
+          "confusion": {
+            "tn": 58,
+            "fp": 294,
+            "fn": 16,
+            "tp": 185
+          },
+          "mean_within_fold_auc": 0.6731810865191148,
+          "average_precision": 0.5778867801844885,
+          "reliability": [
+            {
+              "bin": 2,
+              "n": 6,
+              "mean_probability": 0.27700649261209864,
+              "prevalence": 0.0
+            },
+            {
+              "bin": 3,
+              "n": 11,
+              "mean_probability": 0.3488577262668523,
+              "prevalence": 0.09090909090909091
+            },
+            {
+              "bin": 4,
+              "n": 57,
+              "mean_probability": 0.45711574722528997,
+              "prevalence": 0.2631578947368421
+            },
+            {
+              "bin": 5,
+              "n": 83,
+              "mean_probability": 0.5543739454053158,
+              "prevalence": 0.20481927710843373
+            },
+            {
+              "bin": 6,
+              "n": 138,
+              "mean_probability": 0.6520387686733081,
+              "prevalence": 0.30434782608695654
+            },
+            {
+              "bin": 7,
+              "n": 158,
+              "mean_probability": 0.7505286335453171,
+              "prevalence": 0.37341772151898733
+            },
+            {
+              "bin": 8,
+              "n": 75,
+              "mean_probability": 0.8446308908668907,
+              "prevalence": 0.5866666666666667
+            },
+            {
+              "bin": 9,
+              "n": 25,
+              "mean_probability": 0.9237578818611674,
+              "prevalence": 0.92
+            }
+          ]
+        },
+        "source_sigmoid": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.36902367611214026,
+          "auc": 0.671952736318408,
+          "brier": 0.20911880837684824,
+          "log_loss": 0.6055813933205545,
+          "accuracy": 0.6799276672694394,
+          "sensitivity": 0.25870646766169153,
+          "specificity": 0.9204545454545454,
+          "precision": 0.65,
+          "f1": 0.3701067615658363,
+          "confusion": {
+            "tn": 324,
+            "fp": 28,
+            "fn": 149,
+            "tp": 52
+          },
+          "mean_within_fold_auc": 0.6731810865191148,
+          "average_precision": 0.566269257861826,
+          "reliability": [
+            {
+              "bin": 0,
+              "n": 4,
+              "mean_probability": 0.09118274032036343,
+              "prevalence": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 44,
+              "mean_probability": 0.16888115626644198,
+              "prevalence": 0.06818181818181818
+            },
+            {
+              "bin": 2,
+              "n": 140,
+              "mean_probability": 0.254031655605856,
+              "prevalence": 0.3142857142857143
+            },
+            {
+              "bin": 3,
+              "n": 158,
+              "mean_probability": 0.34900087837267657,
+              "prevalence": 0.310126582278481
+            },
+            {
+              "bin": 4,
+              "n": 127,
+              "mean_probability": 0.4452709971624536,
+              "prevalence": 0.41732283464566927
+            },
+            {
+              "bin": 5,
+              "n": 41,
+              "mean_probability": 0.5517477051200343,
+              "prevalence": 0.5365853658536586
+            },
+            {
+              "bin": 6,
+              "n": 27,
+              "mean_probability": 0.6362653412816225,
+              "prevalence": 0.7037037037037037
+            },
+            {
+              "bin": 7,
+              "n": 10,
+              "mean_probability": 0.7411331220886216,
+              "prevalence": 0.9
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "mean_probability": 0.8064580220263996,
+              "prevalence": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 1,
+              "mean_probability": 0.9999944782364778,
+              "prevalence": 1.0
+            }
+          ]
+        },
+        "local": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.3623099235411095,
+          "auc": 0.7763172772501131,
+          "brier": 0.1846011471371769,
+          "log_loss": 0.5489592778237529,
+          "accuracy": 0.7215189873417721,
+          "sensitivity": 0.39800995024875624,
+          "specificity": 0.90625,
+          "precision": 0.7079646017699115,
+          "f1": 0.5095541401273885,
+          "confusion": {
+            "tn": 319,
+            "fp": 33,
+            "fn": 121,
+            "tp": 80
+          },
+          "mean_within_fold_auc": 0.7797408107179663,
+          "average_precision": 0.6634433117796976,
+          "reliability": [
+            {
+              "bin": 0,
+              "n": 8,
+              "mean_probability": 0.07734369938227219,
+              "prevalence": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 73,
+              "mean_probability": 0.15462325152357895,
+              "prevalence": 0.0684931506849315
+            },
+            {
+              "bin": 2,
+              "n": 148,
+              "mean_probability": 0.24751658330305507,
+              "prevalence": 0.19594594594594594
+            },
+            {
+              "bin": 3,
+              "n": 145,
+              "mean_probability": 0.34835466859844916,
+              "prevalence": 0.36551724137931035
+            },
+            {
+              "bin": 4,
+              "n": 66,
+              "mean_probability": 0.4491123436826453,
+              "prevalence": 0.5151515151515151
+            },
+            {
+              "bin": 5,
+              "n": 53,
+              "mean_probability": 0.543547372238901,
+              "prevalence": 0.6415094339622641
+            },
+            {
+              "bin": 6,
+              "n": 34,
+              "mean_probability": 0.6445266402328084,
+              "prevalence": 0.7352941176470589
+            },
+            {
+              "bin": 7,
+              "n": 15,
+              "mean_probability": 0.7454271205969565,
+              "prevalence": 0.8
+            },
+            {
+              "bin": 8,
+              "n": 6,
+              "mean_probability": 0.8466462773129937,
+              "prevalence": 0.6666666666666666
+            },
+            {
+              "bin": 9,
+              "n": 5,
+              "mean_probability": 0.9365287667725383,
+              "prevalence": 1.0
+            }
+          ]
+        },
+        "local_sigmoid": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.3732048575457185,
+          "auc": 0.7753985753052918,
+          "brier": 0.18274820802820443,
+          "log_loss": 0.5450550863060443,
+          "accuracy": 0.7377938517179023,
+          "sensitivity": 0.46766169154228854,
+          "specificity": 0.8920454545454546,
+          "precision": 0.7121212121212122,
+          "f1": 0.5645645645645646,
+          "confusion": {
+            "tn": 314,
+            "fp": 38,
+            "fn": 107,
+            "tp": 94
+          },
+          "mean_within_fold_auc": 0.7797408107179663,
+          "average_precision": 0.6619699186604333,
+          "reliability": [
+            {
+              "bin": 0,
+              "n": 19,
+              "mean_probability": 0.0705679891902104,
+              "prevalence": 0.05263157894736842
+            },
+            {
+              "bin": 1,
+              "n": 81,
+              "mean_probability": 0.15411336463083294,
+              "prevalence": 0.08641975308641975
+            },
+            {
+              "bin": 2,
+              "n": 130,
+              "mean_probability": 0.25048245735549884,
+              "prevalence": 0.2153846153846154
+            },
+            {
+              "bin": 3,
+              "n": 119,
+              "mean_probability": 0.3474432277287042,
+              "prevalence": 0.31092436974789917
+            },
+            {
+              "bin": 4,
+              "n": 72,
+              "mean_probability": 0.44491636161004916,
+              "prevalence": 0.4722222222222222
+            },
+            {
+              "bin": 5,
+              "n": 54,
+              "mean_probability": 0.5438729383223978,
+              "prevalence": 0.6481481481481481
+            },
+            {
+              "bin": 6,
+              "n": 37,
+              "mean_probability": 0.6458336234608685,
+              "prevalence": 0.7567567567567568
+            },
+            {
+              "bin": 7,
+              "n": 20,
+              "mean_probability": 0.7411612885179111,
+              "prevalence": 0.75
+            },
+            {
+              "bin": 8,
+              "n": 13,
+              "mean_probability": 0.8443127804941107,
+              "prevalence": 0.7692307692307693
+            },
+            {
+              "bin": 9,
+              "n": 8,
+              "mean_probability": 0.9439494558716784,
+              "prevalence": 0.75
+            }
+          ]
+        },
+        "constant": {
+          "n": 553,
+          "positives": 201,
+          "prevalence": 0.36347197106690776,
+          "mean_probability": 0.3621106147354013,
+          "auc": 0.4973004296698326,
+          "brier": 0.23139311052759595,
+          "log_loss": 0.6554613011041691,
+          "accuracy": 0.6365280289330922,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "precision": 0.0,
+          "f1": 0.0,
+          "confusion": {
+            "tn": 352,
+            "fp": 0,
+            "fn": 201,
+            "tp": 0
+          },
+          "mean_within_fold_auc": 0.5,
+          "average_precision": 0.36182197113288195,
+          "reliability": [
+            {
+              "bin": 3,
+              "n": 553,
+              "mean_probability": 0.3621106147354013,
+              "prevalence": 0.36347197106690776
+            }
+          ]
+        }
+      },
+      "operating": {
+        "source": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 58,
+              "fp": 294,
+              "fn": 16,
+              "tp": 185
+            },
+            "sensitivity": 0.9203980099502488,
+            "specificity": 0.16477272727272727,
+            "precision": 0.3862212943632568,
+            "negative_predictive_value": 0.7837837837837838,
+            "fraction_flagged": 0.8661844484629295,
+            "sensitivity_wilson95": [
+              0.8746178773377287,
+              0.950410420024342
+            ],
+            "specificity_wilson95": [
+              0.12967741881167694,
+              0.20710587568656574
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.17142857142857143,
+                "precision": 0.40816326530612246,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 10,
+                  "fp": 61,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.14084507042253522,
+                "precision": 0.3838383838383838,
+                "negative_predictive_value": 0.8333333333333334,
+                "fraction_flagged": 0.8918918918918919,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.07834202212357166,
+                  0.24021749283475802
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 16,
+                  "fp": 55,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.22535211267605634,
+                "precision": 0.38202247191011235,
+                "negative_predictive_value": 0.7272727272727273,
+                "fraction_flagged": 0.8018018018018018,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.14374669663520484,
+                  0.3351517559799884
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 11,
+                  "fp": 59,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.15714285714285714,
+                "precision": 0.3655913978494624,
+                "negative_predictive_value": 0.6470588235294118,
+                "fraction_flagged": 0.8454545454545455,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.09007620559861788,
+                  0.2598824657684222
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 9,
+                  "fp": 61,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.12857142857142856,
+                "precision": 0.39,
+                "negative_predictive_value": 0.9,
+                "fraction_flagged": 0.9090909090909091,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.06914100115337508,
+                  0.22664755949425175
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 133,
+              "fp": 219,
+              "fn": 39,
+              "tp": 162
+            },
+            "sensitivity": 0.8059701492537313,
+            "specificity": 0.3778409090909091,
+            "precision": 0.4251968503937008,
+            "negative_predictive_value": 0.7732558139534884,
+            "fraction_flagged": 0.6889692585895117,
+            "sensitivity_wilson95": [
+              0.7457747586995543,
+              0.8546896234042013
+            ],
+            "specificity_wilson95": [
+              0.32876625278715155,
+              0.429553083343564
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 19,
+                  "fp": 51,
+                  "fn": 5,
+                  "tp": 36
+                },
+                "sensitivity": 0.8780487804878049,
+                "specificity": 0.2714285714285714,
+                "precision": 0.41379310344827586,
+                "negative_predictive_value": 0.7916666666666666,
+                "fraction_flagged": 0.7837837837837838,
+                "sensitivity_wilson95": [
+                  0.7445578847902312,
+                  0.9467666353142228
+                ],
+                "specificity_wilson95": [
+                  0.1811959968818828,
+                  0.38544311736281056
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 23,
+                  "fp": 48,
+                  "fn": 9,
+                  "tp": 31
+                },
+                "sensitivity": 0.775,
+                "specificity": 0.323943661971831,
+                "precision": 0.3924050632911392,
+                "negative_predictive_value": 0.71875,
+                "fraction_flagged": 0.7117117117117117,
+                "sensitivity_wilson95": [
+                  0.6249690325768998,
+                  0.8768390867645927
+                ],
+                "specificity_wilson95": [
+                  0.2265721171064956,
+                  0.4393884294417052
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 44,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.38028169014084506,
+                "precision": 0.40540540540540543,
+                "negative_predictive_value": 0.7297297297297297,
+                "fraction_flagged": 0.6666666666666666,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.2762717345193544,
+                  0.4965814371334222
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.45714285714285713,
+                "precision": 0.4411764705882353,
+                "negative_predictive_value": 0.7619047619047619,
+                "fraction_flagged": 0.6181818181818182,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.45714285714285713,
+                "precision": 0.4794520547945205,
+                "negative_predictive_value": 0.8648648648648649,
+                "fraction_flagged": 0.6636363636363637,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 3
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 92,
+              "fp": 260,
+              "fn": 20,
+              "tp": 181
+            },
+            "sensitivity": 0.900497512437811,
+            "specificity": 0.26136363636363635,
+            "precision": 0.41043083900226757,
+            "negative_predictive_value": 0.8214285714285714,
+            "fraction_flagged": 0.7974683544303798,
+            "sensitivity_wilson95": [
+              0.8513126296365331,
+              0.9346610737675697
+            ],
+            "specificity_wilson95": [
+              0.21821540333242173,
+              0.3096642300392086
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.17142857142857143,
+                "precision": 0.40816326530612246,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 14,
+                  "fp": 57,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.19718309859154928,
+                "precision": 0.3870967741935484,
+                "negative_predictive_value": 0.7777777777777778,
+                "fraction_flagged": 0.8378378378378378,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.12125532301202226,
+                  0.30419681705088314
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 17,
+                  "fp": 54,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.23943661971830985,
+                "precision": 0.38636363636363635,
+                "negative_predictive_value": 0.7391304347826086,
+                "fraction_flagged": 0.7927927927927928,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.1552094003304011,
+                  0.350412208560936
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 43,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.38571428571428573,
+                "precision": 0.4342105263157895,
+                "negative_predictive_value": 0.7941176470588235,
+                "fraction_flagged": 0.6909090909090909,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.280476913015389,
+                  0.5028426441069578
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 22,
+                  "fp": 48,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.3142857142857143,
+                "precision": 0.4418604651162791,
+                "negative_predictive_value": 0.9166666666666666,
+                "fraction_flagged": 0.7818181818181819,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.21762290046582755,
+                  0.4302713798579859
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 60,
+              "fp": 292,
+              "fn": 15,
+              "tp": 186
+            },
+            "sensitivity": 0.9253731343283582,
+            "specificity": 0.17045454545454544,
+            "precision": 0.3891213389121339,
+            "negative_predictive_value": 0.8,
+            "fraction_flagged": 0.864376130198915,
+            "sensitivity_wilson95": [
+              0.880535470261006,
+              0.9542564755905567
+            ],
+            "specificity_wilson95": [
+              0.1347804202797717,
+              0.21324383532867028
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.17142857142857143,
+                "precision": 0.40816326530612246,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 9,
+                  "fp": 62,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.1267605633802817,
+                "precision": 0.38613861386138615,
+                "negative_predictive_value": 0.9,
+                "fraction_flagged": 0.9099099099099099,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.06814527589564845,
+                  0.22369108278653732
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 14,
+                  "fp": 57,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.19718309859154928,
+                "precision": 0.3804347826086957,
+                "negative_predictive_value": 0.7368421052631579,
+                "fraction_flagged": 0.8288288288288288,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.12125532301202226,
+                  0.30419681705088314
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 13,
+                  "fp": 57,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.18571428571428572,
+                "precision": 0.36666666666666664,
+                "negative_predictive_value": 0.65,
+                "fraction_flagged": 0.8181818181818182,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.11187300001902034,
+                  0.29225578206743313
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.17142857142857143,
+                "precision": 0.4020618556701031,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8818181818181818,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          }
+        },
+        "source_sigmoid": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 324,
+              "fp": 28,
+              "fn": 149,
+              "tp": 52
+            },
+            "sensitivity": 0.25870646766169153,
+            "specificity": 0.9204545454545454,
+            "precision": 0.65,
+            "negative_predictive_value": 0.6849894291754757,
+            "fraction_flagged": 0.14466546112115733,
+            "sensitivity_wilson95": [
+              0.20309051500684946,
+              0.3233725332527903
+            ],
+            "specificity_wilson95": [
+              0.8874371246444702,
+              0.9443939975102763
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 61,
+                  "fp": 9,
+                  "fn": 27,
+                  "tp": 14
+                },
+                "sensitivity": 0.34146341463414637,
+                "specificity": 0.8714285714285714,
+                "precision": 0.6086956521739131,
+                "negative_predictive_value": 0.6931818181818182,
+                "fraction_flagged": 0.2072072072072072,
+                "sensitivity_wilson95": [
+                  0.21558808257384846,
+                  0.49450163480170306
+                ],
+                "specificity_wilson95": [
+                  0.7733524405057483,
+                  0.9308589988466248
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 65,
+                  "fp": 6,
+                  "fn": 29,
+                  "tp": 11
+                },
+                "sensitivity": 0.275,
+                "specificity": 0.9154929577464789,
+                "precision": 0.6470588235294118,
+                "negative_predictive_value": 0.6914893617021277,
+                "fraction_flagged": 0.15315315315315314,
+                "sensitivity_wilson95": [
+                  0.16108016247667337,
+                  0.42834955806210573
+                ],
+                "specificity_wilson95": [
+                  0.8276396178569572,
+                  0.9606934922892889
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 66,
+                  "fp": 5,
+                  "fn": 28,
+                  "tp": 12
+                },
+                "sensitivity": 0.3,
+                "specificity": 0.9295774647887324,
+                "precision": 0.7058823529411765,
+                "negative_predictive_value": 0.7021276595744681,
+                "fraction_flagged": 0.15315315315315314,
+                "sensitivity_wilson95": [
+                  0.18074845229746528,
+                  0.45430018818144935
+                ],
+                "specificity_wilson95": [
+                  0.8455098688621009,
+                  0.969546397560289
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 69,
+                  "fp": 1,
+                  "fn": 34,
+                  "tp": 6
+                },
+                "sensitivity": 0.15,
+                "specificity": 0.9857142857142858,
+                "precision": 0.8571428571428571,
+                "negative_predictive_value": 0.6699029126213593,
+                "fraction_flagged": 0.06363636363636363,
+                "sensitivity_wilson95": [
+                  0.07061187717320358,
+                  0.2907232436648971
+                ],
+                "specificity_wilson95": [
+                  0.9234181286879168,
+                  0.9974737535421097
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 63,
+                  "fp": 7,
+                  "fn": 31,
+                  "tp": 9
+                },
+                "sensitivity": 0.225,
+                "specificity": 0.9,
+                "precision": 0.5625,
+                "negative_predictive_value": 0.6702127659574468,
+                "fraction_flagged": 0.14545454545454545,
+                "sensitivity_wilson95": [
+                  0.12316091323540743,
+                  0.37503096742310027
+                ],
+                "specificity_wilson95": [
+                  0.807670851514326,
+                  0.9507106985574605
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 133,
+              "fp": 219,
+              "fn": 39,
+              "tp": 162
+            },
+            "sensitivity": 0.8059701492537313,
+            "specificity": 0.3778409090909091,
+            "precision": 0.4251968503937008,
+            "negative_predictive_value": 0.7732558139534884,
+            "fraction_flagged": 0.6889692585895117,
+            "sensitivity_wilson95": [
+              0.7457747586995543,
+              0.8546896234042013
+            ],
+            "specificity_wilson95": [
+              0.32876625278715155,
+              0.429553083343564
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 19,
+                  "fp": 51,
+                  "fn": 5,
+                  "tp": 36
+                },
+                "sensitivity": 0.8780487804878049,
+                "specificity": 0.2714285714285714,
+                "precision": 0.41379310344827586,
+                "negative_predictive_value": 0.7916666666666666,
+                "fraction_flagged": 0.7837837837837838,
+                "sensitivity_wilson95": [
+                  0.7445578847902312,
+                  0.9467666353142228
+                ],
+                "specificity_wilson95": [
+                  0.1811959968818828,
+                  0.38544311736281056
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 23,
+                  "fp": 48,
+                  "fn": 9,
+                  "tp": 31
+                },
+                "sensitivity": 0.775,
+                "specificity": 0.323943661971831,
+                "precision": 0.3924050632911392,
+                "negative_predictive_value": 0.71875,
+                "fraction_flagged": 0.7117117117117117,
+                "sensitivity_wilson95": [
+                  0.6249690325768998,
+                  0.8768390867645927
+                ],
+                "specificity_wilson95": [
+                  0.2265721171064956,
+                  0.4393884294417052
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 44,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.38028169014084506,
+                "precision": 0.40540540540540543,
+                "negative_predictive_value": 0.7297297297297297,
+                "fraction_flagged": 0.6666666666666666,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.2762717345193544,
+                  0.4965814371334222
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 10,
+                  "tp": 30
+                },
+                "sensitivity": 0.75,
+                "specificity": 0.45714285714285713,
+                "precision": 0.4411764705882353,
+                "negative_predictive_value": 0.7619047619047619,
+                "fraction_flagged": 0.6181818181818182,
+                "sensitivity_wilson95": [
+                  0.5980603857923197,
+                  0.858128813609037
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.45714285714285713,
+                "precision": 0.4794520547945205,
+                "negative_predictive_value": 0.8648648648648649,
+                "fraction_flagged": 0.6636363636363637,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 3
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 92,
+              "fp": 260,
+              "fn": 20,
+              "tp": 181
+            },
+            "sensitivity": 0.900497512437811,
+            "specificity": 0.26136363636363635,
+            "precision": 0.41043083900226757,
+            "negative_predictive_value": 0.8214285714285714,
+            "fraction_flagged": 0.7974683544303798,
+            "sensitivity_wilson95": [
+              0.8513126296365331,
+              0.9346610737675697
+            ],
+            "specificity_wilson95": [
+              0.21821540333242173,
+              0.3096642300392086
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.17142857142857143,
+                "precision": 0.40816326530612246,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 14,
+                  "fp": 57,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.19718309859154928,
+                "precision": 0.3870967741935484,
+                "negative_predictive_value": 0.7777777777777778,
+                "fraction_flagged": 0.8378378378378378,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.12125532301202226,
+                  0.30419681705088314
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 17,
+                  "fp": 54,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.23943661971830985,
+                "precision": 0.38636363636363635,
+                "negative_predictive_value": 0.7391304347826086,
+                "fraction_flagged": 0.7927927927927928,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.1552094003304011,
+                  0.350412208560936
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 43,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.38571428571428573,
+                "precision": 0.4342105263157895,
+                "negative_predictive_value": 0.7941176470588235,
+                "fraction_flagged": 0.6909090909090909,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.280476913015389,
+                  0.5028426441069578
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 22,
+                  "fp": 48,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.3142857142857143,
+                "precision": 0.4418604651162791,
+                "negative_predictive_value": 0.9166666666666666,
+                "fraction_flagged": 0.7818181818181819,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.21762290046582755,
+                  0.4302713798579859
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 60,
+              "fp": 292,
+              "fn": 15,
+              "tp": 186
+            },
+            "sensitivity": 0.9253731343283582,
+            "specificity": 0.17045454545454544,
+            "precision": 0.3891213389121339,
+            "negative_predictive_value": 0.8,
+            "fraction_flagged": 0.864376130198915,
+            "sensitivity_wilson95": [
+              0.880535470261006,
+              0.9542564755905567
+            ],
+            "specificity_wilson95": [
+              0.1347804202797717,
+              0.21324383532867028
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.17142857142857143,
+                "precision": 0.40816326530612246,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 9,
+                  "fp": 62,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.1267605633802817,
+                "precision": 0.38613861386138615,
+                "negative_predictive_value": 0.9,
+                "fraction_flagged": 0.9099099099099099,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.06814527589564845,
+                  0.22369108278653732
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 14,
+                  "fp": 57,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.19718309859154928,
+                "precision": 0.3804347826086957,
+                "negative_predictive_value": 0.7368421052631579,
+                "fraction_flagged": 0.8288288288288288,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.12125532301202226,
+                  0.30419681705088314
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 13,
+                  "fp": 57,
+                  "fn": 7,
+                  "tp": 33
+                },
+                "sensitivity": 0.825,
+                "specificity": 0.18571428571428572,
+                "precision": 0.36666666666666664,
+                "negative_predictive_value": 0.65,
+                "fraction_flagged": 0.8181818181818182,
+                "sensitivity_wilson95": [
+                  0.6805000966821229,
+                  0.9125458625396408
+                ],
+                "specificity_wilson95": [
+                  0.11187300001902034,
+                  0.29225578206743313
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.17142857142857143,
+                "precision": 0.4020618556701031,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8818181818181818,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          }
+        },
+        "local": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 319,
+              "fp": 33,
+              "fn": 121,
+              "tp": 80
+            },
+            "sensitivity": 0.39800995024875624,
+            "specificity": 0.90625,
+            "precision": 0.7079646017699115,
+            "negative_predictive_value": 0.725,
+            "fraction_flagged": 0.20433996383363473,
+            "sensitivity_wilson95": [
+              0.3328635365225886,
+              0.46698166944282615
+            ],
+            "specificity_wilson95": [
+              0.8712633296341226,
+              0.9324653897451258
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 67,
+                  "fp": 3,
+                  "fn": 24,
+                  "tp": 17
+                },
+                "sensitivity": 0.4146341463414634,
+                "specificity": 0.9571428571428572,
+                "precision": 0.85,
+                "negative_predictive_value": 0.7362637362637363,
+                "fraction_flagged": 0.18018018018018017,
+                "sensitivity_wilson95": [
+                  0.27756549454252133,
+                  0.5663289686596986
+                ],
+                "specificity_wilson95": [
+                  0.8814033125147246,
+                  0.9853184589958887
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 63,
+                  "fp": 8,
+                  "fn": 23,
+                  "tp": 17
+                },
+                "sensitivity": 0.425,
+                "specificity": 0.8873239436619719,
+                "precision": 0.68,
+                "negative_predictive_value": 0.7325581395348837,
+                "fraction_flagged": 0.22522522522522523,
+                "sensitivity_wilson95": [
+                  0.28509392559950375,
+                  0.5780493145800892
+                ],
+                "specificity_wilson95": [
+                  0.7930995148918869,
+                  0.9417872827020712
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 63,
+                  "fp": 8,
+                  "fn": 23,
+                  "tp": 17
+                },
+                "sensitivity": 0.425,
+                "specificity": 0.8873239436619719,
+                "precision": 0.68,
+                "negative_predictive_value": 0.7325581395348837,
+                "fraction_flagged": 0.22522522522522523,
+                "sensitivity_wilson95": [
+                  0.28509392559950375,
+                  0.5780493145800892
+                ],
+                "specificity_wilson95": [
+                  0.7930995148918869,
+                  0.9417872827020712
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 65,
+                  "fp": 5,
+                  "fn": 29,
+                  "tp": 11
+                },
+                "sensitivity": 0.275,
+                "specificity": 0.9285714285714286,
+                "precision": 0.6875,
+                "negative_predictive_value": 0.6914893617021277,
+                "fraction_flagged": 0.14545454545454545,
+                "sensitivity_wilson95": [
+                  0.16108016247667337,
+                  0.42834955806210573
+                ],
+                "specificity_wilson95": [
+                  0.8434458778290468,
+                  0.969105782962153
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 61,
+                  "fp": 9,
+                  "fn": 22,
+                  "tp": 18
+                },
+                "sensitivity": 0.45,
+                "specificity": 0.8714285714285714,
+                "precision": 0.6666666666666666,
+                "negative_predictive_value": 0.7349397590361446,
+                "fraction_flagged": 0.24545454545454545,
+                "sensitivity_wilson95": [
+                  0.3070530781090492,
+                  0.6017090820106794
+                ],
+                "specificity_wilson95": [
+                  0.7733524405057483,
+                  0.9308589988466248
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 193,
+              "fp": 159,
+              "fn": 39,
+              "tp": 162
+            },
+            "sensitivity": 0.8059701492537313,
+            "specificity": 0.5482954545454546,
+            "precision": 0.5046728971962616,
+            "negative_predictive_value": 0.8318965517241379,
+            "fraction_flagged": 0.5804701627486437,
+            "sensitivity_wilson95": [
+              0.7457747586995543,
+              0.8546896234042013
+            ],
+            "specificity_wilson95": [
+              0.49606385739989395,
+              0.5994843120368
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 43,
+                  "fn": 8,
+                  "tp": 33
+                },
+                "sensitivity": 0.8048780487804879,
+                "specificity": 0.38571428571428573,
+                "precision": 0.4342105263157895,
+                "negative_predictive_value": 0.7714285714285715,
+                "fraction_flagged": 0.6846846846846847,
+                "sensitivity_wilson95": [
+                  0.6598641481293658,
+                  0.8976556261484198
+                ],
+                "specificity_wilson95": [
+                  0.280476913015389,
+                  0.5028426441069578
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 34,
+                  "fp": 37,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.4788732394366197,
+                "precision": 0.4788732394366197,
+                "negative_predictive_value": 0.85,
+                "fraction_flagged": 0.6396396396396397,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.36677523911181087,
+                  0.5931400264739731
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 49,
+                  "fp": 22,
+                  "fn": 9,
+                  "tp": 31
+                },
+                "sensitivity": 0.775,
+                "specificity": 0.6901408450704225,
+                "precision": 0.5849056603773585,
+                "negative_predictive_value": 0.8448275862068966,
+                "fraction_flagged": 0.4774774774774775,
+                "sensitivity_wilson95": [
+                  0.6249690325768998,
+                  0.8768390867645927
+                ],
+                "specificity_wilson95": [
+                  0.5751598742905824,
+                  0.7856027354373607
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 39,
+                  "fp": 31,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.5571428571428572,
+                "precision": 0.5303030303030303,
+                "negative_predictive_value": 0.8863636363636364,
+                "fraction_flagged": 0.6,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.44083551053188,
+                  0.6675047109069467
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 44,
+                  "fp": 26,
+                  "fn": 11,
+                  "tp": 29
+                },
+                "sensitivity": 0.725,
+                "specificity": 0.6285714285714286,
+                "precision": 0.5272727272727272,
+                "negative_predictive_value": 0.8,
+                "fraction_flagged": 0.5,
+                "sensitivity_wilson95": [
+                  0.5716504419378943,
+                  0.8389198375233267
+                ],
+                "specificity_wilson95": [
+                  0.5114720115842711,
+                  0.7322934866530887
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 144,
+              "fp": 208,
+              "fn": 17,
+              "tp": 184
+            },
+            "sensitivity": 0.9154228855721394,
+            "specificity": 0.4090909090909091,
+            "precision": 0.46938775510204084,
+            "negative_predictive_value": 0.8944099378881988,
+            "fraction_flagged": 0.7088607594936709,
+            "sensitivity_wilson95": [
+              0.8687395595944201,
+              0.9465250892781587
+            ],
+            "specificity_wilson95": [
+              0.3589782766386407,
+              0.46116634559817093
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.17142857142857143,
+                "precision": 0.40816326530612246,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 26,
+                  "fp": 45,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.36619718309859156,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 0.8666666666666667,
+                "fraction_flagged": 0.7297297297297297,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.26370221333974514,
+                  0.48242780203688757
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 37,
+                  "fp": 34,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.5211267605633803,
+                "precision": 0.5142857142857142,
+                "negative_predictive_value": 0.9024390243902439,
+                "fraction_flagged": 0.6306306306306306,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.4068599735260268,
+                  0.633224760888189
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 36,
+                  "fp": 34,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.5142857142857142,
+                "precision": 0.5211267605633803,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.6454545454545455,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.39954383919009234,
+                  0.6275412161696143
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 33,
+                  "fp": 37,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.4714285714285714,
+                "precision": 0.4861111111111111,
+                "negative_predictive_value": 0.868421052631579,
+                "fraction_flagged": 0.6545454545454545,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.3590487639638429,
+                  0.5867811253167438
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 1
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 100,
+              "fp": 252,
+              "fn": 8,
+              "tp": 193
+            },
+            "sensitivity": 0.9601990049751243,
+            "specificity": 0.2840909090909091,
+            "precision": 0.4337078651685393,
+            "negative_predictive_value": 0.9259259259259259,
+            "fraction_flagged": 0.8047016274864376,
+            "sensitivity_wilson95": [
+              0.92344090963062,
+              0.9796965756473863
+            ],
+            "specificity_wilson95": [
+              0.2395064855576748,
+              0.3333369922547527
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 11,
+                  "fp": 59,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.15714285714285714,
+                "precision": 0.40404040404040403,
+                "negative_predictive_value": 0.9166666666666666,
+                "fraction_flagged": 0.8918918918918919,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.09007620559861788,
+                  0.2598824657684222
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 20,
+                  "fp": 51,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.28169014084507044,
+                "precision": 0.43333333333333335,
+                "negative_predictive_value": 0.9523809523809523,
+                "fraction_flagged": 0.8108108108108109,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.19037090703170384,
+                  0.3954201706880652
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 16,
+                  "fp": 55,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.22535211267605634,
+                "precision": 0.4148936170212766,
+                "negative_predictive_value": 0.9411764705882353,
+                "fraction_flagged": 0.8468468468468469,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.14374669663520484,
+                  0.3351517559799884
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.45714285714285713,
+                "precision": 0.5,
+                "negative_predictive_value": 0.9411764705882353,
+                "fraction_flagged": 0.6909090909090909,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 21,
+                  "fp": 49,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.3,
+                "precision": 0.43023255813953487,
+                "negative_predictive_value": 0.875,
+                "fraction_flagged": 0.7818181818181819,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.2053660525763799,
+                  0.4154431723877268
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 1
+          }
+        },
+        "local_sigmoid": {
+          "fixed_50": {
+            "confusion": {
+              "tn": 314,
+              "fp": 38,
+              "fn": 107,
+              "tp": 94
+            },
+            "sensitivity": 0.46766169154228854,
+            "specificity": 0.8920454545454546,
+            "precision": 0.7121212121212122,
+            "negative_predictive_value": 0.7458432304038005,
+            "fraction_flagged": 0.23869801084990958,
+            "sensitivity_wilson95": [
+              0.39993741806811,
+              0.5365988667501921
+            ],
+            "specificity_wilson95": [
+              0.8552936963978985,
+              0.9203326202058517
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 65,
+                  "fp": 5,
+                  "fn": 22,
+                  "tp": 19
+                },
+                "sensitivity": 0.4634146341463415,
+                "specificity": 0.9285714285714286,
+                "precision": 0.7916666666666666,
+                "negative_predictive_value": 0.7471264367816092,
+                "fraction_flagged": 0.21621621621621623,
+                "sensitivity_wilson95": [
+                  0.32056233976336046,
+                  0.6125352873233052
+                ],
+                "specificity_wilson95": [
+                  0.8434458778290468,
+                  0.969105782962153
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 61,
+                  "fp": 10,
+                  "fn": 20,
+                  "tp": 20
+                },
+                "sensitivity": 0.5,
+                "specificity": 0.8591549295774648,
+                "precision": 0.6666666666666666,
+                "negative_predictive_value": 0.7530864197530864,
+                "fraction_flagged": 0.2702702702702703,
+                "sensitivity_wilson95": [
+                  0.35199526933465386,
+                  0.6480047306653461
+                ],
+                "specificity_wilson95": [
+                  0.7597825071652419,
+                  0.9216579778764283
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 63,
+                  "fp": 8,
+                  "fn": 23,
+                  "tp": 17
+                },
+                "sensitivity": 0.425,
+                "specificity": 0.8873239436619719,
+                "precision": 0.68,
+                "negative_predictive_value": 0.7325581395348837,
+                "fraction_flagged": 0.22522522522522523,
+                "sensitivity_wilson95": [
+                  0.28509392559950375,
+                  0.5780493145800892
+                ],
+                "specificity_wilson95": [
+                  0.7930995148918869,
+                  0.9417872827020712
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 65,
+                  "fp": 5,
+                  "fn": 22,
+                  "tp": 18
+                },
+                "sensitivity": 0.45,
+                "specificity": 0.9285714285714286,
+                "precision": 0.782608695652174,
+                "negative_predictive_value": 0.7471264367816092,
+                "fraction_flagged": 0.20909090909090908,
+                "sensitivity_wilson95": [
+                  0.3070530781090492,
+                  0.6017090820106794
+                ],
+                "specificity_wilson95": [
+                  0.8434458778290468,
+                  0.969105782962153
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 60,
+                  "fp": 10,
+                  "fn": 20,
+                  "tp": 20
+                },
+                "sensitivity": 0.5,
+                "specificity": 0.8571428571428571,
+                "precision": 0.6666666666666666,
+                "negative_predictive_value": 0.75,
+                "fraction_flagged": 0.2727272727272727,
+                "sensitivity_wilson95": [
+                  0.35199526933465386,
+                  0.6480047306653461
+                ],
+                "specificity_wilson95": [
+                  0.7566158011633325,
+                  0.920510582829334
+                ]
+              }
+            ],
+            "folds_below_calibration_target": null
+          },
+          "target_80": {
+            "confusion": {
+              "tn": 193,
+              "fp": 159,
+              "fn": 39,
+              "tp": 162
+            },
+            "sensitivity": 0.8059701492537313,
+            "specificity": 0.5482954545454546,
+            "precision": 0.5046728971962616,
+            "negative_predictive_value": 0.8318965517241379,
+            "fraction_flagged": 0.5804701627486437,
+            "sensitivity_wilson95": [
+              0.7457747586995543,
+              0.8546896234042013
+            ],
+            "specificity_wilson95": [
+              0.49606385739989395,
+              0.5994843120368
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 27,
+                  "fp": 43,
+                  "fn": 8,
+                  "tp": 33
+                },
+                "sensitivity": 0.8048780487804879,
+                "specificity": 0.38571428571428573,
+                "precision": 0.4342105263157895,
+                "negative_predictive_value": 0.7714285714285715,
+                "fraction_flagged": 0.6846846846846847,
+                "sensitivity_wilson95": [
+                  0.6598641481293658,
+                  0.8976556261484198
+                ],
+                "specificity_wilson95": [
+                  0.280476913015389,
+                  0.5028426441069578
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 34,
+                  "fp": 37,
+                  "fn": 6,
+                  "tp": 34
+                },
+                "sensitivity": 0.85,
+                "specificity": 0.4788732394366197,
+                "precision": 0.4788732394366197,
+                "negative_predictive_value": 0.85,
+                "fraction_flagged": 0.6396396396396397,
+                "sensitivity_wilson95": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ],
+                "specificity_wilson95": [
+                  0.36677523911181087,
+                  0.5931400264739731
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 49,
+                  "fp": 22,
+                  "fn": 9,
+                  "tp": 31
+                },
+                "sensitivity": 0.775,
+                "specificity": 0.6901408450704225,
+                "precision": 0.5849056603773585,
+                "negative_predictive_value": 0.8448275862068966,
+                "fraction_flagged": 0.4774774774774775,
+                "sensitivity_wilson95": [
+                  0.6249690325768998,
+                  0.8768390867645927
+                ],
+                "specificity_wilson95": [
+                  0.5751598742905824,
+                  0.7856027354373607
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 39,
+                  "fp": 31,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.5571428571428572,
+                "precision": 0.5303030303030303,
+                "negative_predictive_value": 0.8863636363636364,
+                "fraction_flagged": 0.6,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.44083551053188,
+                  0.6675047109069467
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 44,
+                  "fp": 26,
+                  "fn": 11,
+                  "tp": 29
+                },
+                "sensitivity": 0.725,
+                "specificity": 0.6285714285714286,
+                "precision": 0.5272727272727272,
+                "negative_predictive_value": 0.8,
+                "fraction_flagged": 0.5,
+                "sensitivity_wilson95": [
+                  0.5716504419378943,
+                  0.8389198375233267
+                ],
+                "specificity_wilson95": [
+                  0.5114720115842711,
+                  0.7322934866530887
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 2
+          },
+          "target_90": {
+            "confusion": {
+              "tn": 144,
+              "fp": 208,
+              "fn": 17,
+              "tp": 184
+            },
+            "sensitivity": 0.9154228855721394,
+            "specificity": 0.4090909090909091,
+            "precision": 0.46938775510204084,
+            "negative_predictive_value": 0.8944099378881988,
+            "fraction_flagged": 0.7088607594936709,
+            "sensitivity_wilson95": [
+              0.8687395595944201,
+              0.9465250892781587
+            ],
+            "specificity_wilson95": [
+              0.3589782766386407,
+              0.46116634559817093
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 12,
+                  "fp": 58,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.17142857142857143,
+                "precision": 0.40816326530612246,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.8828828828828829,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.10087724640529248,
+                  0.2761664803214543
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 26,
+                  "fp": 45,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.36619718309859156,
+                "precision": 0.4444444444444444,
+                "negative_predictive_value": 0.8666666666666667,
+                "fraction_flagged": 0.7297297297297297,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.26370221333974514,
+                  0.48242780203688757
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 37,
+                  "fp": 34,
+                  "fn": 4,
+                  "tp": 36
+                },
+                "sensitivity": 0.9,
+                "specificity": 0.5211267605633803,
+                "precision": 0.5142857142857142,
+                "negative_predictive_value": 0.9024390243902439,
+                "fraction_flagged": 0.6306306306306306,
+                "sensitivity_wilson95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "specificity_wilson95": [
+                  0.4068599735260268,
+                  0.633224760888189
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 36,
+                  "fp": 34,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.5142857142857142,
+                "precision": 0.5211267605633803,
+                "negative_predictive_value": 0.9230769230769231,
+                "fraction_flagged": 0.6454545454545455,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.39954383919009234,
+                  0.6275412161696143
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 33,
+                  "fp": 37,
+                  "fn": 5,
+                  "tp": 35
+                },
+                "sensitivity": 0.875,
+                "specificity": 0.4714285714285714,
+                "precision": 0.4861111111111111,
+                "negative_predictive_value": 0.868421052631579,
+                "fraction_flagged": 0.6545454545454545,
+                "sensitivity_wilson95": [
+                  0.738878801611489,
+                  0.945404997490546
+                ],
+                "specificity_wilson95": [
+                  0.3590487639638429,
+                  0.5867811253167438
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 1
+          },
+          "target_95": {
+            "confusion": {
+              "tn": 100,
+              "fp": 252,
+              "fn": 8,
+              "tp": 193
+            },
+            "sensitivity": 0.9601990049751243,
+            "specificity": 0.2840909090909091,
+            "precision": 0.4337078651685393,
+            "negative_predictive_value": 0.9259259259259259,
+            "fraction_flagged": 0.8047016274864376,
+            "sensitivity_wilson95": [
+              0.92344090963062,
+              0.9796965756473863
+            ],
+            "specificity_wilson95": [
+              0.2395064855576748,
+              0.3333369922547527
+            ],
+            "folds": [
+              {
+                "fold": 0,
+                "confusion": {
+                  "tn": 11,
+                  "fp": 59,
+                  "fn": 1,
+                  "tp": 40
+                },
+                "sensitivity": 0.975609756097561,
+                "specificity": 0.15714285714285714,
+                "precision": 0.40404040404040403,
+                "negative_predictive_value": 0.9166666666666666,
+                "fraction_flagged": 0.8918918918918919,
+                "sensitivity_wilson95": [
+                  0.8740493794422576,
+                  0.9956814684310874
+                ],
+                "specificity_wilson95": [
+                  0.09007620559861788,
+                  0.2598824657684222
+                ]
+              },
+              {
+                "fold": 1,
+                "confusion": {
+                  "tn": 20,
+                  "fp": 51,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.28169014084507044,
+                "precision": 0.43333333333333335,
+                "negative_predictive_value": 0.9523809523809523,
+                "fraction_flagged": 0.8108108108108109,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.19037090703170384,
+                  0.3954201706880652
+                ]
+              },
+              {
+                "fold": 2,
+                "confusion": {
+                  "tn": 16,
+                  "fp": 55,
+                  "fn": 1,
+                  "tp": 39
+                },
+                "sensitivity": 0.975,
+                "specificity": 0.22535211267605634,
+                "precision": 0.4148936170212766,
+                "negative_predictive_value": 0.9411764705882353,
+                "fraction_flagged": 0.8468468468468469,
+                "sensitivity_wilson95": [
+                  0.8711863103652591,
+                  0.9955731684973186
+                ],
+                "specificity_wilson95": [
+                  0.14374669663520484,
+                  0.3351517559799884
+                ]
+              },
+              {
+                "fold": 3,
+                "confusion": {
+                  "tn": 32,
+                  "fp": 38,
+                  "fn": 2,
+                  "tp": 38
+                },
+                "sensitivity": 0.95,
+                "specificity": 0.45714285714285713,
+                "precision": 0.5,
+                "negative_predictive_value": 0.9411764705882353,
+                "fraction_flagged": 0.6909090909090909,
+                "sensitivity_wilson95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "specificity_wilson95": [
+                  0.3457274259756359,
+                  0.5730174079452441
+                ]
+              },
+              {
+                "fold": 4,
+                "confusion": {
+                  "tn": 21,
+                  "fp": 49,
+                  "fn": 3,
+                  "tp": 37
+                },
+                "sensitivity": 0.925,
+                "specificity": 0.3,
+                "precision": 0.43023255813953487,
+                "negative_predictive_value": 0.875,
+                "fraction_flagged": 0.7818181818181819,
+                "sensitivity_wilson95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "specificity_wilson95": [
+                  0.2053660525763799,
+                  0.4154431723877268
+                ]
+              }
+            ],
+            "folds_below_calibration_target": 1
+          }
+        }
+      }
+    }
+  },
+  "mean_probabilities": {
+    "source": {
+      "brier": 0.3073481805342348,
+      "auc": 0.6740728177295341,
+      "mean_within_fold_auc": 0.6743193674240566,
+      "log_loss": 0.8267672856998278,
+      "mean_probability": 0.6737328156305846,
+      "average_precision": 0.5778867801844885
+    },
+    "source_sigmoid": {
+      "brier": 0.2122907380965048,
+      "auc": 0.6664829262777024,
+      "mean_within_fold_auc": 0.6743193674240566,
+      "log_loss": 0.6138129368637071,
+      "mean_probability": 0.369243943392503,
+      "average_precision": 0.5512903383521284
+    },
+    "local": {
+      "brier": 0.18316338183275413,
+      "auc": 0.7803878335594754,
+      "mean_within_fold_auc": 0.7847102738381508,
+      "log_loss": 0.5463091687022292,
+      "mean_probability": 0.35876208532810827,
+      "average_precision": 0.6729639378554657
+    },
+    "local_sigmoid": {
+      "brier": 0.1818629123402338,
+      "auc": 0.7735187697874266,
+      "mean_within_fold_auc": 0.7847102738381508,
+      "log_loss": 0.5442194832119068,
+      "mean_probability": 0.37123869485578054,
+      "average_precision": 0.6668856024882925
+    },
+    "constant": {
+      "brier": 0.23163822438987036,
+      "auc": 0.5002120081411126,
+      "mean_within_fold_auc": 0.5,
+      "log_loss": 0.6560173112984684,
+      "mean_probability": 0.35996634275611983,
+      "average_precision": 0.3637271683291319
+    }
+  },
+  "mean_operating": {
+    "source": {
+      "fixed_50": {
+        "sensitivity": 0.9203980099502488,
+        "specificity": 0.16477272727272727,
+        "fraction_flagged": 0.8661844484629295
+      },
+      "target_80": {
+        "sensitivity": 0.7935323383084577,
+        "specificity": 0.41193181818181823,
+        "fraction_flagged": 0.6627486437613019
+      },
+      "target_90": {
+        "sensitivity": 0.8830845771144278,
+        "specificity": 0.265625,
+        "fraction_flagged": 0.7884267631103075
+      },
+      "target_95": {
+        "sensitivity": 0.9353233830845771,
+        "specificity": 0.16193181818181818,
+        "fraction_flagged": 0.8734177215189873
+      }
+    },
+    "source_sigmoid": {
+      "fixed_50": {
+        "sensitivity": 0.291044776119403,
+        "specificity": 0.8977272727272727,
+        "fraction_flagged": 0.1708860759493671
+      },
+      "target_80": {
+        "sensitivity": 0.7935323383084577,
+        "specificity": 0.41193181818181823,
+        "fraction_flagged": 0.6627486437613019
+      },
+      "target_90": {
+        "sensitivity": 0.8830845771144278,
+        "specificity": 0.265625,
+        "fraction_flagged": 0.7884267631103075
+      },
+      "target_95": {
+        "sensitivity": 0.9353233830845771,
+        "specificity": 0.16193181818181818,
+        "fraction_flagged": 0.8734177215189873
+      }
+    },
+    "local": {
+      "fixed_50": {
+        "sensitivity": 0.39054726368159204,
+        "specificity": 0.9133522727272727,
+        "fraction_flagged": 0.19710669077757687
+      },
+      "target_80": {
+        "sensitivity": 0.7835820895522387,
+        "specificity": 0.5866477272727273,
+        "fraction_flagged": 0.5479204339963833
+      },
+      "target_90": {
+        "sensitivity": 0.8905472636815921,
+        "specificity": 0.43323863636363635,
+        "fraction_flagged": 0.6844484629294756
+      },
+      "target_95": {
+        "sensitivity": 0.9477611940298507,
+        "specificity": 0.296875,
+        "fraction_flagged": 0.7920433996383363
+      }
+    },
+    "local_sigmoid": {
+      "fixed_50": {
+        "sensitivity": 0.4950248756218905,
+        "specificity": 0.8764204545454546,
+        "fraction_flagged": 0.2585895117540687
+      },
+      "target_80": {
+        "sensitivity": 0.7835820895522387,
+        "specificity": 0.5866477272727273,
+        "fraction_flagged": 0.5479204339963833
+      },
+      "target_90": {
+        "sensitivity": 0.8905472636815921,
+        "specificity": 0.43323863636363635,
+        "fraction_flagged": 0.6844484629294756
+      },
+      "target_95": {
+        "sensitivity": 0.9477611940298507,
+        "specificity": 0.296875,
+        "fraction_flagged": 0.7920433996383363
+      }
+    }
+  },
+  "primary": {
+    "probability": {
+      "source": {
+        "difference": -0.12548526819400097,
+        "conditional_95_interval": [
+          -0.14868738117680985,
+          -0.10056454136465752
+        ],
+        "unique_people": 553,
+        "bootstrap_draws": 1000
+      },
+      "constant": {
+        "difference": -0.04977531204963655,
+        "conditional_95_interval": [
+          -0.06492777772468555,
+          -0.03506065508606373
+        ],
+        "unique_people": 553,
+        "bootstrap_draws": 1000
+      },
+      "local": {
+        "difference": -0.001300469492520316,
+        "conditional_95_interval": [
+          -0.005928590103800388,
+          0.003116731997416939
+        ],
+        "unique_people": 553,
+        "bootstrap_draws": 1000
+      }
+    },
+    "operating": {
+      "sensitivity": {
+        "difference": 0.007462686567164179,
+        "conditional_95_interval": [
+          -0.04477611940298507,
+          0.05721393034825871
+        ],
+        "unique_people": 201,
+        "bootstrap_draws": 1000
+      },
+      "specificity": {
+        "difference": 0.16761363636363635,
+        "conditional_95_interval": [
+          0.11647727272727272,
+          0.21878551136363633
+        ],
+        "unique_people": 352,
+        "bootstrap_draws": 1000
+      }
+    }
+  }
+}

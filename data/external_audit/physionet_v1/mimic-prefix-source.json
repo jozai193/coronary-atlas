@@ -1,0 +1,8 @@
+{
+  "url": "https://physionet.org/files/mimic-iv-ecg/1.0/machine_measurements.csv",
+  "status": 200,
+  "bytes_saved": 2097152,
+  "sha256": "e4b7cedfe8843b1c255ca30de2d9d8080a982c55f25ea5e41b7766489238d094",
+  "acquisition": "First 2 MiB only; response closed without downloading the full table. Not a random sample or complete file.",
+  "content_length_header": "182674683"
+}

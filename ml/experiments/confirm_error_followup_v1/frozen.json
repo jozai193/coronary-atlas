@@ -1,0 +1,23 @@
+{
+  "protocol": "f39d9cd8c0b7a20d094556142a3bc08d240f8a61cea6a3d0e753b81e3e42ef57",
+  "runner": "abb383683f108fae8fed836b99c32065e4b967cb66a9fb79e9f03b8758a03e99",
+  "previous_manifest": "ac00d6ead4c7214d7f1857a9c79916f4a18f2c48a33145974495149f96682c38",
+  "possible_group_or_time_headers": [
+    "site",
+    "date_lipid_panel",
+    "date_pci",
+    "date_cabg",
+    "date_cath",
+    "date_acs",
+    "date_mi",
+    "date_stemi",
+    "date_nstemi",
+    "date_cardiac_hosp",
+    "date_coronary_hosp",
+    "macedate",
+    "miacsdate",
+    "mi_date",
+    "revasc_date"
+  ],
+  "note": "Headers only; no site/time semantics inferred. No test evaluation."
+}

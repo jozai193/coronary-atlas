@@ -1,0 +1,449 @@
+{
+  "status": "frozen_before_evaluation",
+  "utc": "2026-10-09T21:58:51.791960+00:00",
+  "prepared_sha256": "a3e554667814ab69b8207eafb88a4069e1257e1e0664294f8b0890d442b56664",
+  "files": {
+    "fitted.joblib": "8f791351d84ea2a72ab5a7883431db8d32d0ad44153e3a82e5733a2d84843493",
+    "calibration_predictions.csv": "7a541bca2c92f4ac56fdc39e930634c3e00e9a4740f4575fc27aa8f4e0a5a36e"
+  },
+  "details": [
+    {
+      "key": "r1_f0",
+      "train_n": 331,
+      "calibration_n": 111,
+      "train_positives": 125,
+      "calibration_positives": 35,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6240050353256694,
+          "target_90": 0.5600006919441718,
+          "target_95": 0.5281700685385732
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.26627603083556833,
+          "target_90": 0.22823685422885384,
+          "target_95": 0.2112693587754223
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.2946206969847205,
+          "target_90": 0.23195539548829494,
+          "target_95": 0.20422395511926092
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.23022883178494014,
+          "target_90": 0.1524711220111996,
+          "target_95": 0.12232820572102765
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 0.7712155817983953,
+          "intercept": -1.4042838745729804
+        },
+        "local_sigmoid": {
+          "slope": 1.5676825253538618,
+          "intercept": 0.16164084966343115
+        }
+      }
+    },
+    {
+      "key": "r1_f1",
+      "train_n": 331,
+      "calibration_n": 111,
+      "train_positives": 120,
+      "calibration_positives": 41,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6038378175648007,
+          "target_90": 0.49947129920207645,
+          "target_95": 0.4860246223346909
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.304683963368759,
+          "target_90": 0.24897078318385782,
+          "target_95": 0.24240350776622402
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.31051400710907895,
+          "target_90": 0.2430595329628426,
+          "target_95": 0.22947477492386564
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.28742811303251836,
+          "target_90": 0.19988025613967794,
+          "target_95": 0.18336637761809588
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 0.6586867566830177,
+          "intercept": -1.1027160085466667
+        },
+        "local_sigmoid": {
+          "slope": 1.4164658442011455,
+          "intercept": 0.22203139470071528
+        }
+      }
+    },
+    {
+      "key": "r1_f2",
+      "train_n": 331,
+      "calibration_n": 111,
+      "train_positives": 103,
+      "calibration_positives": 58,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6276586177381357,
+          "target_90": 0.5887936700987325,
+          "target_95": 0.4869729249538242
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.3834808555089638,
+          "target_90": 0.3310282997911002,
+          "target_95": 0.21759903336282158
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.28131189051044486,
+          "target_90": 0.2613855088534225,
+          "target_95": 0.21386721821434054
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.39978795025659486,
+          "target_90": 0.3480481433617698,
+          "target_95": 0.230610563223715
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 1.401542849758286,
+          "intercept": -1.206664734053735
+        },
+        "local_sigmoid": {
+          "slope": 2.194895662499862,
+          "intercept": 1.6523832808229149
+        }
+      }
+    },
+    {
+      "key": "r1_f3",
+      "train_n": 332,
+      "calibration_n": 111,
+      "train_positives": 125,
+      "calibration_positives": 36,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6751946148720954,
+          "target_90": 0.6149491226076701,
+          "target_95": 0.4860246223346909
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.2595182719736962,
+          "target_90": 0.19786474379391777,
+          "target_95": 0.109296454327763
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.36345954107055467,
+          "target_90": 0.2654358498427104,
+          "target_95": 0.18860010798007082
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.26985027947360507,
+          "target_90": 0.17076694347758467,
+          "target_95": 0.10487534976522697
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 1.3323423068583018,
+          "intercept": -2.023448343906513
+        },
+        "local_sigmoid": {
+          "slope": 1.2782258663730672,
+          "intercept": -0.27909012206498673
+        }
+      }
+    },
+    {
+      "key": "r1_f4",
+      "train_n": 332,
+      "calibration_n": 111,
+      "train_positives": 120,
+      "calibration_positives": 41,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6240050353256694,
+          "target_90": 0.5626262812826813,
+          "target_95": 0.48651516943665035
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.2792084244069576,
+          "target_90": 0.22866855383888238,
+          "target_95": 0.17699134779693948
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.3318108425651059,
+          "target_90": 0.27820756099806276,
+          "target_95": 0.2396122319326366
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.3228944068002771,
+          "target_90": 0.2412024682744041,
+          "target_95": 0.1871605411443567
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 1.0498439762966503,
+          "intercept": -1.4802242565366923
+        },
+        "local_sigmoid": {
+          "slope": 1.6008452328522675,
+          "intercept": 0.38009978798574456
+        }
+      }
+    },
+    {
+      "key": "r2_f0",
+      "train_n": 331,
+      "calibration_n": 111,
+      "train_positives": 119,
+      "calibration_positives": 41,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6134310337046934,
+          "target_90": 0.5069636507220436,
+          "target_95": 0.49325557009402005
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.28548998698607053,
+          "target_90": 0.20363600907236437,
+          "target_95": 0.19464136142113134
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.27751385641927906,
+          "target_90": 0.2023155837723933,
+          "target_95": 0.19649222090475213
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.2730557917353734,
+          "target_90": 0.182690221962813,
+          "target_95": 0.17597683434287648
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 1.0286494325256064,
+          "intercept": -1.3923766997241873
+        },
+        "local_sigmoid": {
+          "slope": 1.250557822520044,
+          "intercept": 0.2173943678021737
+        }
+      }
+    },
+    {
+      "key": "r2_f1",
+      "train_n": 331,
+      "calibration_n": 111,
+      "train_positives": 121,
+      "calibration_positives": 40,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6160550656885005,
+          "target_90": 0.55560981749922,
+          "target_95": 0.49325557009402005
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.3061527179826434,
+          "target_90": 0.2648037360332358,
+          "target_95": 0.22708649728574543
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.29446005558983435,
+          "target_90": 0.2414643319301409,
+          "target_95": 0.2109375507284163
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.29574648781646024,
+          "target_90": 0.2369780854131315,
+          "target_95": 0.2036211528928894
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 0.8136351534294207,
+          "intercept": -1.2028848014875153
+        },
+        "local_sigmoid": {
+          "slope": 1.1138472058465598,
+          "intercept": 0.10566623117299172
+        }
+      }
+    },
+    {
+      "key": "r2_f2",
+      "train_n": 331,
+      "calibration_n": 111,
+      "train_positives": 121,
+      "calibration_positives": 40,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.5922538012260283,
+          "target_90": 0.5069636507220436,
+          "target_95": 0.49325557009402005
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.2917698403414666,
+          "target_90": 0.24189411418859355,
+          "target_95": 0.23453381649553384
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.29722218954632895,
+          "target_90": 0.2465933734554676,
+          "target_95": 0.1798355407053467
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.3221427029241899,
+          "target_90": 0.2747209798691501,
+          "target_95": 0.20992528743040947
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 0.7397047633869861,
+          "intercept": -1.1629284959892785
+        },
+        "local_sigmoid": {
+          "slope": 0.8851157031801098,
+          "intercept": 0.017753721746682473
+        }
+      }
+    },
+    {
+      "key": "r2_f3",
+      "train_n": 332,
+      "calibration_n": 111,
+      "train_positives": 118,
+      "calibration_positives": 43,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6293663858355171,
+          "target_90": 0.5880375002316863,
+          "target_95": 0.5281700685385732
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.31878636424733503,
+          "target_90": 0.29303819592640856,
+          "target_95": 0.25913046312890825
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.2981701304248053,
+          "target_90": 0.2765201487991633,
+          "target_95": 0.2679245327458965
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.303481017848127,
+          "target_90": 0.2754922968639372,
+          "target_95": 0.2644840222769887
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 0.6986758169629296,
+          "intercept": -1.1293033329644169
+        },
+        "local_sigmoid": {
+          "slope": 1.2873855231905942,
+          "intercept": 0.2712605181093293
+        }
+      }
+    },
+    {
+      "key": "r2_f4",
+      "train_n": 332,
+      "calibration_n": 111,
+      "train_positives": 121,
+      "calibration_positives": 40,
+      "cutoffs": {
+        "source": {
+          "fixed_50": 0.5,
+          "target_80": 0.6252804821359964,
+          "target_90": 0.5681807991795024,
+          "target_95": 0.5162516549252654
+        },
+        "source_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.2660929642024261,
+          "target_90": 0.22289519559008789,
+          "target_95": 0.18917040487488263
+        },
+        "local": {
+          "fixed_50": 0.5,
+          "target_80": 0.32880101414143564,
+          "target_90": 0.2674241208023736,
+          "target_95": 0.22261303462658863
+        },
+        "local_sigmoid": {
+          "fixed_50": 0.5,
+          "target_80": 0.29582313356265805,
+          "target_90": 0.219024302064301,
+          "target_95": 0.1672965127203347
+        }
+      },
+      "sigmoid_parameters": {
+        "source_sigmoid": {
+          "slope": 0.9863086532623159,
+          "intercept": -1.5195488779425366
+        },
+        "local_sigmoid": {
+          "slope": 1.3739156254555756,
+          "intercept": 0.11317610790399725
+        }
+      }
+    }
+  ],
+  "fits": 30,
+  "seconds": 0.21799999999348074,
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1"
+  }
+}

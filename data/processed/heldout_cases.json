@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "source": "UCI Extension of Z-Alizadeh Sani (303 records)",
+  "source_url": "https://doi.org/10.24432/C5461K",
+  "source_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "evaluation_sha256": "a8b884b2f1be42da467540fc9e282e992d3fc8312bbfc05478b58890204b1815",
+  "oof_sha256": {
+    "cad": "fd3338c643df139efacb01a537fae7ea7954013f1a06bd288947a88b0672c643",
+    "lad": "1a61e13c35bba8fc534bc604291ed60c4e61ab41e4956f702e3f149f146f8b33",
+    "lcx": "fce2bf63f7c0e8d8be413f820bfb4921b42b045767e47f42456f043153f2f8ce",
+    "rca": "d70e7c05bf7cc6e18b8a6e6f6f967a2183d3154942b2c9265e5a826df474a6d4"
+  },
+  "method": "Four rows deliberately chosen from the CAD true-positive, true-negative, false-positive and false-negative groups; median out-of-fold probability within each group.",
+  "note": "Original source-cohort teaching cases. Each target uses its saved outer-fold raw probability and label; target folds may differ. Not a representative sample, independent validation, live inference or a SHAP explanation.",
+  "cases": [
+    {
+      "id": "A",
+      "observations": [
+        {
+          "label": "Age band",
+          "value": "60–69 years"
+        },
+        {
+          "label": "Blood pressure band",
+          "value": "100–119 mmHg"
+        },
+        {
+          "label": "LDL band",
+          "value": "50–74 mg/dL"
+        },
+        {
+          "label": "Echo EF band",
+          "value": "50–59%"
+        }
+      ],
+      "targets": {
+        "cad": {
+          "probability": 0.969358157601302,
+          "label": 1,
+          "fold": 0
+        },
+        "lad": {
+          "probability": 0.6695691581475895,
+          "label": 1,
+          "fold": 1
+        },
+        "lcx": {
+          "probability": 0.7998965663410202,
+          "label": 1,
+          "fold": 1
+        },
+        "rca": {
+          "probability": 0.5621847926005717,
+          "label": 1,
+          "fold": 4
+        }
+      }
+    },
+    {
+      "id": "B",
+      "observations": [
+        {
+          "label": "Age band",
+          "value": "60–69 years"
+        },
+        {
+          "label": "Blood pressure band",
+          "value": "120–139 mmHg"
+        },
+        {
+          "label": "LDL band",
+          "value": "75–99 mg/dL"
+        },
+        {
+          "label": "Echo EF band",
+          "value": "50–59%"
+        }
+      ],
+      "targets": {
+        "cad": {
+          "probability": 0.18740632821165354,
+          "label": 0,
+          "fold": 1
+        },
+        "lad": {
+          "probability": 0.3843208513980574,
+          "label": 0,
+          "fold": 4
+        },
+        "lcx": {
+          "probability": 0.29821518940429986,
+          "label": 0,
+          "fold": 2
+        },
+        "rca": {
+          "probability": 0.14798294350935506,
+          "label": 0,
+          "fold": 4
+        }
+      }
+    },
+    {
+      "id": "C",
+      "observations": [
+        {
+          "label": "Age band",
+          "value": "50–59 years"
+        },
+        {
+          "label": "Blood pressure band",
+          "value": "120–139 mmHg"
+        },
+        {
+          "label": "LDL band",
+          "value": "75–99 mg/dL"
+        },
+        {
+          "label": "Echo EF band",
+          "value": "50–59%"
+        }
+      ],
+      "targets": {
+        "cad": {
+          "probability": 0.781651351838869,
+          "label": 0,
+          "fold": 4
+        },
+        "lad": {
+          "probability": 0.5151773896539764,
+          "label": 0,
+          "fold": 0
+        },
+        "lcx": {
+          "probability": 0.3553016327565152,
+          "label": 0,
+          "fold": 1
+        },
+        "rca": {
+          "probability": 0.4616846162746432,
+          "label": 0,
+          "fold": 0
+        }
+      }
+    },
+    {
+      "id": "D",
+      "observations": [
+        {
+          "label": "Age band",
+          "value": "60–69 years"
+        },
+        {
+          "label": "Blood pressure band",
+          "value": "140–159 mmHg"
+        },
+        {
+          "label": "LDL band",
+          "value": "75–99 mg/dL"
+        },
+        {
+          "label": "Echo EF band",
+          "value": "50–59%"
+        }
+      ],
+      "targets": {
+        "cad": {
+          "probability": 0.3035720421567857,
+          "label": 1,
+          "fold": 2
+        },
+        "lad": {
+          "probability": 0.39422109363113367,
+          "label": 0,
+          "fold": 1
+        },
+        "lcx": {
+          "probability": 0.23206005542015606,
+          "label": 1,
+          "fold": 4
+        },
+        "rca": {
+          "probability": 0.18076118043511594,
+          "label": 1,
+          "fold": 2
+        }
+      }
+    }
+  ]
+}

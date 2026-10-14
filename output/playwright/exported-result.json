@@ -1,0 +1,1011 @@
+{
+  "cad": {
+    "probability": 0.11288943482277879,
+    "classification": 0,
+    "category": "Lower",
+    "model": "forest",
+    "explanation": {
+      "method": "SHAP",
+      "unit": "probability",
+      "base_value": 0.7113861386138612,
+      "output_value": 0.11288943482277879,
+      "additivity_error": 2.0816681711721685e-16,
+      "factors": [
+        {
+          "feature": "Typical Chest Pain",
+          "contribution": -0.15838208510635335
+        },
+        {
+          "feature": "Atypical",
+          "contribution": -0.11560012126805924
+        },
+        {
+          "feature": "HTN",
+          "contribution": -0.07577879275764644
+        },
+        {
+          "feature": "Age",
+          "contribution": -0.06153121443113183
+        },
+        {
+          "feature": "EF-TTE",
+          "contribution": -0.03746766893324344
+        },
+        {
+          "feature": "BP",
+          "contribution": -0.02028105610791032
+        },
+        {
+          "feature": "Tinversion",
+          "contribution": -0.018502684228484813
+        },
+        {
+          "feature": "Region RWMA",
+          "contribution": -0.018041926602255096
+        },
+        {
+          "feature": "Sex",
+          "contribution": -0.011587768246316934
+        },
+        {
+          "feature": "TG",
+          "contribution": -0.010520681729407951
+        },
+        {
+          "feature": "DM",
+          "contribution": -0.010036946760303263
+        },
+        {
+          "feature": "FBS",
+          "contribution": -0.009382003932519005
+        },
+        {
+          "feature": "CR",
+          "contribution": -0.00882349253763732
+        },
+        {
+          "feature": "Dyspnea",
+          "contribution": 0.007439686791505843
+        },
+        {
+          "feature": "K",
+          "contribution": -0.007050232312387654
+        },
+        {
+          "feature": "Na",
+          "contribution": -0.0068547478979611364
+        },
+        {
+          "feature": "St Depression",
+          "contribution": -0.005937125296852493
+        },
+        {
+          "feature": "Nonanginal",
+          "contribution": 0.004755246456809064
+        },
+        {
+          "feature": "BMI",
+          "contribution": -0.004593184197565257
+        },
+        {
+          "feature": "Lymph",
+          "contribution": -0.004564544490206033
+        },
+        {
+          "feature": "FH",
+          "contribution": -0.004121219967806173
+        },
+        {
+          "feature": "Neut",
+          "contribution": -0.004049002921449073
+        },
+        {
+          "feature": "VHD",
+          "contribution": 0.0037770822271930233
+        },
+        {
+          "feature": "Current Smoker",
+          "contribution": -0.00340463705588276
+        },
+        {
+          "feature": "Function Class",
+          "contribution": -0.002741094072919205
+        },
+        {
+          "feature": "PR",
+          "contribution": -0.0026100831063560386
+        },
+        {
+          "feature": "HB",
+          "contribution": -0.0025967098508575103
+        },
+        {
+          "feature": "LDL",
+          "contribution": -0.002405854822816153
+        },
+        {
+          "feature": "BUN",
+          "contribution": -0.002153356607351516
+        },
+        {
+          "feature": "Length",
+          "contribution": -0.001970623671706639
+        },
+        {
+          "feature": "HDL",
+          "contribution": -0.0013896128745435542
+        },
+        {
+          "feature": "Obesity",
+          "contribution": -0.0010859950789859267
+        },
+        {
+          "feature": "ESR",
+          "contribution": -0.0007822861227104033
+        },
+        {
+          "feature": "WBC",
+          "contribution": -0.0006038475031677294
+        },
+        {
+          "feature": "Lung rales",
+          "contribution": -0.0004729701618288456
+        },
+        {
+          "feature": "LVH",
+          "contribution": -0.0004299468703690624
+        },
+        {
+          "feature": "PLT",
+          "contribution": 0.00041732759864070704
+        },
+        {
+          "feature": "DLP",
+          "contribution": 0.0003451320797729776
+        },
+        {
+          "feature": "Systolic Murmur",
+          "contribution": 0.0003306019986999311
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "contribution": 0.00031267348869803307
+        },
+        {
+          "feature": "BBB",
+          "contribution": 0.00020433533601360105
+        },
+        {
+          "feature": "Q Wave",
+          "contribution": -0.00019944339609543737
+        },
+        {
+          "feature": "St Elevation",
+          "contribution": -0.00014264380473218927
+        },
+        {
+          "feature": "Edema",
+          "contribution": 0.000017488928380017474
+        },
+        {
+          "feature": "Weight",
+          "contribution": -0.000010035226723172728
+        },
+        {
+          "feature": "Airway disease",
+          "contribution": 0.000009361255747224444
+        },
+        {
+          "feature": "EX-Smoker",
+          "contribution": 0
+        },
+        {
+          "feature": "CRF",
+          "contribution": 0
+        },
+        {
+          "feature": "CVA",
+          "contribution": 0
+        },
+        {
+          "feature": "Thyroid Disease",
+          "contribution": 0
+        },
+        {
+          "feature": "CHF",
+          "contribution": 0
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "contribution": 0
+        },
+        {
+          "feature": "Exertional CP",
+          "contribution": 0
+        },
+        {
+          "feature": "LowTH Ang",
+          "contribution": 0
+        },
+        {
+          "feature": "Poor R Progression",
+          "contribution": 0
+        }
+      ],
+      "note": "Factors contributing to this model prediction. Associations, not causes. Correlated inputs can share attribution. TreeSHAP background: training path frequencies; tree-path-dependent attribution."
+    }
+  },
+  "lad": {
+    "probability": 0.12146584385051903,
+    "classification": 0,
+    "category": "Lower",
+    "model": "logistic",
+    "explanation": {
+      "method": "SHAP",
+      "unit": "log-odds",
+      "base_value": 0.37329286280428914,
+      "output_value": -1.9786216842634834,
+      "additivity_error": 2.220446049250313e-16,
+      "factors": [
+        {
+          "feature": "Age",
+          "contribution": -0.542498112579854
+        },
+        {
+          "feature": "EF-TTE",
+          "contribution": -0.44361967760201554
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "contribution": -0.35338083105902496
+        },
+        {
+          "feature": "Atypical",
+          "contribution": -0.20177087731212223
+        },
+        {
+          "feature": "Region RWMA",
+          "contribution": -0.10528189359615714
+        },
+        {
+          "feature": "HTN",
+          "contribution": -0.10278954975543182
+        },
+        {
+          "feature": "Sex",
+          "contribution": -0.08343398307194039
+        },
+        {
+          "feature": "Dyspnea",
+          "contribution": 0.0809627029537831
+        },
+        {
+          "feature": "LDL",
+          "contribution": -0.07646310501899796
+        },
+        {
+          "feature": "FBS",
+          "contribution": -0.07580832547721336
+        },
+        {
+          "feature": "Tinversion",
+          "contribution": -0.07355907473330567
+        },
+        {
+          "feature": "TG",
+          "contribution": -0.07355650697882304
+        },
+        {
+          "feature": "PR",
+          "contribution": -0.05864587108166536
+        },
+        {
+          "feature": "St Depression",
+          "contribution": -0.05018797872874656
+        },
+        {
+          "feature": "ESR",
+          "contribution": -0.04408218823958717
+        },
+        {
+          "feature": "DLP",
+          "contribution": 0.04381309891766351
+        },
+        {
+          "feature": "Function Class",
+          "contribution": -0.036735955552394256
+        },
+        {
+          "feature": "BP",
+          "contribution": -0.03623744677534632
+        },
+        {
+          "feature": "FH",
+          "contribution": -0.03327269073061362
+        },
+        {
+          "feature": "Current Smoker",
+          "contribution": -0.0293761040546349
+        },
+        {
+          "feature": "DM",
+          "contribution": -0.019567470464665462
+        },
+        {
+          "feature": "WBC",
+          "contribution": -0.01735399599559477
+        },
+        {
+          "feature": "HDL",
+          "contribution": -0.016519644257015954
+        },
+        {
+          "feature": "PLT",
+          "contribution": 0.012054540645153154
+        },
+        {
+          "feature": "Nonanginal",
+          "contribution": 0.010134317214555768
+        },
+        {
+          "feature": "St Elevation",
+          "contribution": -0.00964695252753258
+        },
+        {
+          "feature": "Q Wave",
+          "contribution": -0.009095356377986233
+        },
+        {
+          "feature": "CR",
+          "contribution": -0.007957072306790465
+        },
+        {
+          "feature": "Lymph",
+          "contribution": 0.006526966390990971
+        },
+        {
+          "feature": "BBB",
+          "contribution": 0.00524988766519696
+        },
+        {
+          "feature": "BMI",
+          "contribution": 0.0044828667803719
+        },
+        {
+          "feature": "Na",
+          "contribution": -0.004233762855164528
+        },
+        {
+          "feature": "VHD",
+          "contribution": 0.0034199842551498865
+        },
+        {
+          "feature": "EX-Smoker",
+          "contribution": -0.0034020096304719014
+        },
+        {
+          "feature": "K",
+          "contribution": -0.0029979428954646243
+        },
+        {
+          "feature": "Edema",
+          "contribution": -0.0025446887928343206
+        },
+        {
+          "feature": "CVA",
+          "contribution": 0.00248149556890162
+        },
+        {
+          "feature": "HB",
+          "contribution": -0.0023966971899051443
+        },
+        {
+          "feature": "Obesity",
+          "contribution": -0.002332674417746883
+        },
+        {
+          "feature": "Neut",
+          "contribution": -0.002198131197958408
+        },
+        {
+          "feature": "Thyroid Disease",
+          "contribution": 0.0018686044812517995
+        },
+        {
+          "feature": "Poor R Progression",
+          "contribution": -0.0016271033268588871
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "contribution": 0.0013771161652657998
+        },
+        {
+          "feature": "BUN",
+          "contribution": -0.001363137760923461
+        },
+        {
+          "feature": "LVH",
+          "contribution": -0.0011492851571937958
+        },
+        {
+          "feature": "Lung rales",
+          "contribution": -0.0010382769964518692
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "contribution": 0.0009635321824600314
+        },
+        {
+          "feature": "Length",
+          "contribution": 0.0008581154360093818
+        },
+        {
+          "feature": "Airway disease",
+          "contribution": 0.0007358626206775516
+        },
+        {
+          "feature": "Weight",
+          "contribution": -0.0006886388688559242
+        },
+        {
+          "feature": "Systolic Murmur",
+          "contribution": 0.00043595137917063257
+        },
+        {
+          "feature": "CRF",
+          "contribution": -0.00037412576070507456
+        },
+        {
+          "feature": "CHF",
+          "contribution": -0.00009245059637999901
+        },
+        {
+          "feature": "Exertional CP",
+          "contribution": 0
+        },
+        {
+          "feature": "LowTH Ang",
+          "contribution": 0
+        }
+      ],
+      "note": "Factors contributing to this model prediction. Associations, not causes. Correlated inputs can share attribution. Linear SHAP background: 100 deterministic training rows."
+    }
+  },
+  "lcx": {
+    "probability": 0.04207049894549895,
+    "classification": 0,
+    "category": "Lower",
+    "model": "forest",
+    "explanation": {
+      "method": "SHAP",
+      "unit": "probability",
+      "base_value": 0.389961496149615,
+      "output_value": 0.04207049894549895,
+      "additivity_error": 2.0816681711721685e-17,
+      "factors": [
+        {
+          "feature": "Typical Chest Pain",
+          "contribution": -0.07130590536266927
+        },
+        {
+          "feature": "Age",
+          "contribution": -0.048031662172869014
+        },
+        {
+          "feature": "FBS",
+          "contribution": -0.024288072156443324
+        },
+        {
+          "feature": "HTN",
+          "contribution": -0.01981919773424815
+        },
+        {
+          "feature": "CR",
+          "contribution": -0.018493457120637966
+        },
+        {
+          "feature": "PLT",
+          "contribution": -0.013581508479772943
+        },
+        {
+          "feature": "BP",
+          "contribution": -0.013523210104777535
+        },
+        {
+          "feature": "Atypical",
+          "contribution": -0.013282740110164823
+        },
+        {
+          "feature": "EF-TTE",
+          "contribution": -0.01233089040811939
+        },
+        {
+          "feature": "Lymph",
+          "contribution": -0.011620476307962506
+        },
+        {
+          "feature": "BUN",
+          "contribution": -0.010568645040128898
+        },
+        {
+          "feature": "WBC",
+          "contribution": -0.010185495820036866
+        },
+        {
+          "feature": "Sex",
+          "contribution": -0.009076031661090642
+        },
+        {
+          "feature": "HB",
+          "contribution": -0.008965638961502525
+        },
+        {
+          "feature": "DM",
+          "contribution": -0.008885865429487048
+        },
+        {
+          "feature": "Tinversion",
+          "contribution": -0.007357733006480389
+        },
+        {
+          "feature": "LDL",
+          "contribution": -0.007056117167726283
+        },
+        {
+          "feature": "Length",
+          "contribution": -0.006341631271143423
+        },
+        {
+          "feature": "Region RWMA",
+          "contribution": -0.005955510322362293
+        },
+        {
+          "feature": "Function Class",
+          "contribution": -0.005110021174599238
+        },
+        {
+          "feature": "Obesity",
+          "contribution": -0.005033540322809495
+        },
+        {
+          "feature": "Neut",
+          "contribution": -0.004809952061795935
+        },
+        {
+          "feature": "Current Smoker",
+          "contribution": -0.003643664419811861
+        },
+        {
+          "feature": "FH",
+          "contribution": -0.0033742998615750495
+        },
+        {
+          "feature": "K",
+          "contribution": -0.003227475885368668
+        },
+        {
+          "feature": "VHD",
+          "contribution": -0.003173388371235984
+        },
+        {
+          "feature": "HDL",
+          "contribution": 0.0029921362077843547
+        },
+        {
+          "feature": "St Depression",
+          "contribution": -0.0019298839313004372
+        },
+        {
+          "feature": "DLP",
+          "contribution": 0.0015577259084419673
+        },
+        {
+          "feature": "BMI",
+          "contribution": 0.0013332478003185888
+        },
+        {
+          "feature": "Dyspnea",
+          "contribution": 0.001072153715849259
+        },
+        {
+          "feature": "Lung rales",
+          "contribution": -0.0008619154147861905
+        },
+        {
+          "feature": "TG",
+          "contribution": -0.000801046296479425
+        },
+        {
+          "feature": "EX-Smoker",
+          "contribution": -0.0006223153357490235
+        },
+        {
+          "feature": "PR",
+          "contribution": -0.0005224480732911047
+        },
+        {
+          "feature": "Na",
+          "contribution": 0.00048330984800912377
+        },
+        {
+          "feature": "Airway disease",
+          "contribution": -0.00046461916210450836
+        },
+        {
+          "feature": "ESR",
+          "contribution": -0.00044325788896230173
+        },
+        {
+          "feature": "Q Wave",
+          "contribution": -0.0004362738063618874
+        },
+        {
+          "feature": "Systolic Murmur",
+          "contribution": -0.00033923402779599483
+        },
+        {
+          "feature": "Nonanginal",
+          "contribution": 0.00030321362933918383
+        },
+        {
+          "feature": "Edema",
+          "contribution": -0.0001843508850029732
+        },
+        {
+          "feature": "Weight",
+          "contribution": -0.00014589641104556552
+        },
+        {
+          "feature": "BBB",
+          "contribution": 0.0001222509460951167
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "contribution": 0.00003833670774534332
+        },
+        {
+          "feature": "CRF",
+          "contribution": 0
+        },
+        {
+          "feature": "CVA",
+          "contribution": 0
+        },
+        {
+          "feature": "Thyroid Disease",
+          "contribution": 0
+        },
+        {
+          "feature": "CHF",
+          "contribution": 0
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "contribution": 0
+        },
+        {
+          "feature": "Exertional CP",
+          "contribution": 0
+        },
+        {
+          "feature": "LowTH Ang",
+          "contribution": 0
+        },
+        {
+          "feature": "St Elevation",
+          "contribution": 0
+        },
+        {
+          "feature": "LVH",
+          "contribution": 0
+        },
+        {
+          "feature": "Poor R Progression",
+          "contribution": 0
+        }
+      ],
+      "note": "Factors contributing to this model prediction. Associations, not causes. Correlated inputs can share attribution. TreeSHAP background: training path frequencies; tree-path-dependent attribution."
+    }
+  },
+  "rca": {
+    "probability": 0.11866982263429726,
+    "classification": 0,
+    "category": "Lower",
+    "model": "logistic",
+    "explanation": {
+      "method": "SHAP",
+      "unit": "log-odds",
+      "base_value": -0.5639828905068036,
+      "output_value": -2.0050872943326947,
+      "additivity_error": 4.440892098500626e-16,
+      "factors": [
+        {
+          "feature": "Age",
+          "contribution": -0.45548218063940893
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "contribution": -0.19407830551705013
+        },
+        {
+          "feature": "Sex",
+          "contribution": -0.15059880483367333
+        },
+        {
+          "feature": "Atypical",
+          "contribution": -0.14665351637546273
+        },
+        {
+          "feature": "DM",
+          "contribution": -0.14137185217645798
+        },
+        {
+          "feature": "TG",
+          "contribution": -0.11518751451064814
+        },
+        {
+          "feature": "Dyspnea",
+          "contribution": 0.09860284969139596
+        },
+        {
+          "feature": "HTN",
+          "contribution": -0.09083235884342539
+        },
+        {
+          "feature": "ESR",
+          "contribution": -0.07108610706006287
+        },
+        {
+          "feature": "HDL",
+          "contribution": 0.06419740711774719
+        },
+        {
+          "feature": "FBS",
+          "contribution": -0.053845953973116555
+        },
+        {
+          "feature": "Function Class",
+          "contribution": -0.04618339689679303
+        },
+        {
+          "feature": "EF-TTE",
+          "contribution": -0.03373910481242888
+        },
+        {
+          "feature": "FH",
+          "contribution": -0.02338416322928667
+        },
+        {
+          "feature": "LDL",
+          "contribution": -0.019763829875271213
+        },
+        {
+          "feature": "BP",
+          "contribution": -0.018481252958023005
+        },
+        {
+          "feature": "VHD",
+          "contribution": -0.014256811388914771
+        },
+        {
+          "feature": "Current Smoker",
+          "contribution": -0.013015363076772077
+        },
+        {
+          "feature": "K",
+          "contribution": -0.012996079645483879
+        },
+        {
+          "feature": "CR",
+          "contribution": -0.011873489309411275
+        },
+        {
+          "feature": "PLT",
+          "contribution": 0.0112277604378969
+        },
+        {
+          "feature": "WBC",
+          "contribution": -0.00906889659951814
+        },
+        {
+          "feature": "Neut",
+          "contribution": -0.00879099148226784
+        },
+        {
+          "feature": "Lymph",
+          "contribution": 0.00841085648839515
+        },
+        {
+          "feature": "DLP",
+          "contribution": -0.00840954000084077
+        },
+        {
+          "feature": "Region RWMA",
+          "contribution": 0.007859284830532956
+        },
+        {
+          "feature": "Q Wave",
+          "contribution": -0.007319514670699742
+        },
+        {
+          "feature": "BUN",
+          "contribution": 0.007304194005668061
+        },
+        {
+          "feature": "Nonanginal",
+          "contribution": 0.007170414423202282
+        },
+        {
+          "feature": "PR",
+          "contribution": -0.007111739875433605
+        },
+        {
+          "feature": "Obesity",
+          "contribution": 0.006808576404868103
+        },
+        {
+          "feature": "Tinversion",
+          "contribution": -0.0060478440102151206
+        },
+        {
+          "feature": "Weight",
+          "contribution": 0.005048652423273198
+        },
+        {
+          "feature": "BBB",
+          "contribution": 0.004420801140905627
+        },
+        {
+          "feature": "Na",
+          "contribution": -0.004264550612602324
+        },
+        {
+          "feature": "HB",
+          "contribution": 0.0036813001818685603
+        },
+        {
+          "feature": "Poor R Progression",
+          "contribution": -0.0035033428861770645
+        },
+        {
+          "feature": "St Depression",
+          "contribution": -0.0029059946504676982
+        },
+        {
+          "feature": "EX-Smoker",
+          "contribution": -0.0025019450551358874
+        },
+        {
+          "feature": "CRF",
+          "contribution": 0.002113211292814992
+        },
+        {
+          "feature": "Length",
+          "contribution": 0.0021078179212808347
+        },
+        {
+          "feature": "Systolic Murmur",
+          "contribution": 0.0016835542982556106
+        },
+        {
+          "feature": "LVH",
+          "contribution": 0.0016506393432034244
+        },
+        {
+          "feature": "CVA",
+          "contribution": -0.001400094450514639
+        },
+        {
+          "feature": "BMI",
+          "contribution": 0.0011720766421756007
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "contribution": 0.0009767017621776755
+        },
+        {
+          "feature": "Airway disease",
+          "contribution": -0.000878112017577373
+        },
+        {
+          "feature": "Thyroid Disease",
+          "contribution": -0.0004317655301131457
+        },
+        {
+          "feature": "CHF",
+          "contribution": -0.0002913713267063941
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "contribution": -0.0002486046917823944
+        },
+        {
+          "feature": "St Elevation",
+          "contribution": 0.00021371582903700805
+        },
+        {
+          "feature": "Lung rales",
+          "contribution": 0.00015743802925252307
+        },
+        {
+          "feature": "Edema",
+          "contribution": 0.00009273689190044087
+        },
+        {
+          "feature": "Exertional CP",
+          "contribution": 0
+        },
+        {
+          "feature": "LowTH Ang",
+          "contribution": 0
+        }
+      ],
+      "note": "Factors contributing to this model prediction. Associations, not causes. Correlated inputs can share attribution. Linear SHAP background: 100 deterministic training rows."
+    }
+  },
+  "warnings": [
+    "Independent model estimates are discordant: a vessel estimate exceeds CAD. These are not a coherent joint probability model."
+  ],
+  "missing_features": [],
+  "input_snapshot": {
+    "Age": 42,
+    "Sex": "Fmale",
+    "Weight": 74,
+    "Length": 165,
+    "BMI": 26.775510204081634,
+    "BP": 115,
+    "PR": 70,
+    "DM": "0",
+    "HTN": "0",
+    "Current Smoker": "0",
+    "EX-Smoker": "0",
+    "FH": "0",
+    "Obesity": "Y",
+    "CRF": "N",
+    "CVA": "N",
+    "Airway disease": "N",
+    "Thyroid Disease": "N",
+    "CHF": "N",
+    "DLP": "N",
+    "Edema": "0",
+    "Weak Peripheral Pulse": "N",
+    "Lung rales": "N",
+    "Systolic Murmur": "N",
+    "Diastolic Murmur": "N",
+    "Typical Chest Pain": "0",
+    "Dyspnea": "N",
+    "Function Class": "0",
+    "Atypical": "Y",
+    "Nonanginal": "N",
+    "Exertional CP": "N",
+    "LowTH Ang": "N",
+    "Q Wave": "0",
+    "St Elevation": "0",
+    "St Depression": "0",
+    "Tinversion": "0",
+    "LVH": "N",
+    "Poor R Progression": "N",
+    "BBB": "N",
+    "FBS": 88,
+    "CR": 1,
+    "TG": 100,
+    "LDL": 85,
+    "HDL": 48,
+    "BUN": 16,
+    "ESR": 15,
+    "HB": 13.2,
+    "K": 4.2,
+    "Na": 141,
+    "WBC": 7100,
+    "Lymph": 32,
+    "Neut": 60,
+    "PLT": 210,
+    "EF-TTE": 60,
+    "Region RWMA": "0",
+    "VHD": "mild"
+  },
+  "disclaimer": "This software is an educational/research decision-support prototype and is not a substitute for professional medical diagnosis, coronary angiography or other diagnostic imaging.",
+  "model_version": "1.0.0",
+  "profile": "Edited observations",
+  "educational_only": true
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-14",
+  "scope": "Cross-check of relayed reviewer requests against current implementation and saved browser evidence; not clinical validation",
+  "fresh_checks": {
+    "raw_workbook_and_four_baseline_model_hashes_verified": true,
+    "focused_backend_tests": 74,
+    "frontend_tests": 63,
+    "anatomy_meshes_verified": 104
+  },
+  "covered": [
+    "Heart detail and vessel colors",
+    "Unknown versus supplied-zero distinction",
+    "ECG EF and valve completeness guard in UI and API",
+    "Complete recorded R1 development example",
+    "Case summary and exports",
+    "Confirmed measurement-only photo import",
+    "Smoking lipid alcohol and lifestyle review fields",
+    "Case-switch and stale-result protection",
+    "Target labels excluded from model inputs"
+  ],
+  "limitations": [
+    "No original ECG tracing or full echo report",
+    "No measured LAD LCX RCA blockage percentages",
+    "No blanket echo override of coronary predictions",
+    "New alcohol lifestyle total-cholesterol and exposure fields are context only",
+    "Photo import has limited specimen testing and requires confirmation",
+    "Completeness gate is an engineering rule, not a clinically validated minimum",
+    "Accuracy improvements remain internal research with unresolved external generalization",
+    "Full current browser rerun not performed in this audit; reviewed existing dated browser receipts"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-14",
+  "scope": "Input review and export verification; no new model accuracy claim.",
+  "frontend_tests_passed": 62,
+  "model_input_count": 55,
+  "clinical_context_used_by_model": false,
+  "live_browser": {
+    "summary_and_exports": true,
+    "context_not_in_inference": true,
+    "model_request_keys": [
+      "features",
+      "model_variant"
+    ],
+    "model_feature_count": 55,
+    "sample_switch_clears_context": true,
+    "csv_replacement_clears_context": true,
+    "clear_resets_context": true,
+    "model_field_link": true,
+    "mobile_overflow": false
+  },
+  "json_and_worksheet_exports_verified": true,
+  "test_context": "Explicitly synthetic notes and illustrative numbers, not additional R1 source observations."
+}

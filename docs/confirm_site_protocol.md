@@ -1,0 +1,7 @@
+# Site-code robustness protocol
+
+Fixed before site-code evaluation, 8 October 2026. The workbook has 12 nonmissing integer site codes. Their hospital identities and acquisition procedures are unverified. Evaluate leave-one-code-out generalization only within the existing clinical_available training rows. No prior calibration/test patients enter this study; no tuning or winner promotion.
+
+Use the fixed full 15-input spline logistic pipeline from development v1 for all four tasks, with preprocessing refitted on each outer training partition. Site is a grouping field only, never a predictor. Calibrate on a deterministic 20% stratified patient subset of the other sites (seed 20261008), fit the classifier on the other 80%, and select the largest calibration cutoff achieving >=90% sensitivity. Report held-out code AUC, Brier, .5 metrics and selected-cutoff errors, plus pooled OOF scores. Single-class validation groups get counts/Brier only and no fabricated AUC. Save fit/calibration/validation row indices, site codes, probabilities and cutoffs. Require all three partitions disjoint and the held-out site absent from both fitting and calibration. These sites were already present in earlier development results, so this is exploratory robustness evidence rather than pristine external validation.
+
+Compare qualitatively to previous random-fold estimates with the changed calibration/training sizes disclosed. Do not attribute differences solely to site shift. No clinical operating point, fairness or site identity claim. Preserve all previous artifacts.

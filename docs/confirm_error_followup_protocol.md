@@ -1,0 +1,9 @@
+# Training-only error follow-up
+
+Locked 8 October 2026 before execution. Preserve app, external v1 and development v1 artifacts. No new test-set evaluation or model promotion.
+
+Use only clinical_available training rows from development v1, separately for all four targets. Three stratified folds, seed 20261009. Fit four fixed logistic C=1 pipelines: existing 15-input linear; existing additive spline; linear core (age/BMI/LDL/HDL/sex/htn/dm/chol/famhx/smokecurrent); spline core. Core removal tests the dependence on less complete smoking-history and symptom fields, not a clinical assertion that symptoms are unimportant. Preprocessing is fitted inside each fold. Compare a fixed 50:50 average of the full linear/spline pair and a fixed 50:50 average of core linear/spline pair. No search over weights or thresholds.
+
+Report OOF AUC, Brier and existing classification metrics at .5 for all six methods. For an operating-point diagnostic, choose the highest cutoff achieving >=90% sensitivity on each fold's training-only inner 3-fold OOF scores; apply it to that fold's validation scores. For ensemble cutoffs average the member inner OOF probabilities first. This evaluates cutoffs without choosing them on their scored rows. Retain counts and indices. Improvement screen: Brier decrease >=.002 and AUC decrease no worse than .01 versus fixed full spline; additionally compare specificity and recall at the nested cutoff. This is exploratory training-CV evidence, not an untouched model-validation claim. Do not refit a winner or change v1 test artifacts.
+
+Audit validation errors by age (<60/>=60), numeric-input completeness, and nominal sex code; display only groups >=100 with both outcomes. Do not export raw inputs or IDs. Inspect workbook headers for possible site/date variables; no inferred ID prefix or arbitrary timestamp may be used to fabricate site/time validation. All site/time findings are availability diagnostics only.

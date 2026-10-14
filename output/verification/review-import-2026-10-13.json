@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-13",
+  "scope": "Engineering checks, not medical validation or an unseen OCR benchmark.",
+  "public_browser": {
+    "url": "https://instances-corps-sorted-utah.trycloudflare.com/#summary",
+    "public_prediction_and_summary": true,
+    "specimens": [
+      {
+        "image": "lipid-1.png",
+        "expected_labs": [
+          55,
+          60,
+          27
+        ],
+        "all_three_labs_recovered": true,
+        "age": 32,
+        "sex": "Male",
+        "proposals": 5,
+        "source_chars": 2066
+      },
+      {
+        "image": "lipid-2.png",
+        "expected_labs": [
+          175,
+          45,
+          213
+        ],
+        "all_three_labs_recovered": true,
+        "age": 32,
+        "sex": "Male",
+        "proposals": 5,
+        "source_chars": 2201
+      }
+    ],
+    "application_uploads": 0,
+    "application_external_requests": 0,
+    "ocr_asset_requests": [
+      {
+        "url": "https://instances-corps-sorted-utah.trycloudflare.com/ocr/worker.min.js",
+        "method": "GET"
+      },
+      {
+        "url": "https://instances-corps-sorted-utah.trycloudflare.com/ocr/core/tesseract-core-relaxedsimd-lstm.wasm.js",
+        "method": "GET"
+      },
+      {
+        "url": "https://instances-corps-sorted-utah.trycloudflare.com/ocr/lang/eng.traineddata.gz",
+        "method": "GET"
+      },
+      {
+        "url": "https://instances-corps-sorted-utah.trycloudflare.com/ocr/worker.min.js",
+        "method": "GET"
+      },
+      {
+        "url": "https://instances-corps-sorted-utah.trycloudflare.com/ocr/core/tesseract-core-relaxedsimd-lstm.wasm.js",
+        "method": "GET"
+      },
+      {
+        "url": "https://instances-corps-sorted-utah.trycloudflare.com/ocr/lang/eng.traineddata.gz",
+        "method": "GET"
+      }
+    ],
+    "mobile_overflow": false
+  },
+  "local_state_and_mobile": {
+    "ocr_chars": 2201,
+    "requires_confirmation": true,
+    "applied_only_one": true,
+    "stale_prediction_cleared": true,
+    "unknown_fields": 54,
+    "mobile_overflow": false,
+    "back_preserves_draft": true,
+    "reload_clears_inputs": true,
+    "app_requests_all_same_origin_get": true,
+    "ocr_assets": [
+      {
+        "url": "http://127.0.0.1:8011/ocr/worker.min.js",
+        "method": "GET"
+      },
+      {
+        "url": "http://127.0.0.1:8011/ocr/core/tesseract-core-relaxedsimd-lstm.wasm.js",
+        "method": "GET"
+      },
+      {
+        "url": "http://127.0.0.1:8011/ocr/lang/eng.traineddata.gz",
+        "method": "GET"
+      }
+    ],
+    "host_antivirus_script_isolated": true
+  },
+  "specimen_source": "https://files.labcorp.com/testmenu-d8/sample_reports/343925.pdf",
+  "specimen_pdf_sha256": "34cab7d846ccd31194db99ed3f09b7383679ff75d0d10d4e4931a903089216f7",
+  "frontend_tests": 55,
+  "focused_backend_tests": 31,
+  "anatomical_meshes_verified": 104,
+  "experiment": "full_input_transfer_v1",
+  "independent_research_verifier": "30 saved fold predictions and 6 metric groups; source-private preprocessing and all role boundaries verified",
+  "no_live_model_promotion": true,
+  "limitations": [
+    "Two clean rendered specimen pages only; no smartphone/handwriting/clinical OCR benchmark.",
+    "Baseline and SIMD OCR runtimes bundled; browser exercised relaxed-SIMD only.",
+    "Original reports remain outside the source archive.",
+    "Host antivirus injection isolated only in the test browser; no device settings changed."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Fixed models on original source inputs; varied training-background choice only. No refit stability, causal or clinical validity claim.",
+  "targets": {
+    "cad": {
+      "status": "Not varied: path-dependent tree background is fixed by the trained tree. Reconstruction audited separately; stability not established."
+    },
+    "lad": {
+      "rows": 303,
+      "backgrounds": 5,
+      "background_size": 100,
+      "mean_top5_overlap_fraction": 0.9271947194719472,
+      "minimum_top5_overlap_fraction": 0.4,
+      "top5_sign_disagreement_fraction": 0.0,
+      "max_logit_reconstruction_error": 1.3322676295501878e-15
+    },
+    "lcx": {
+      "status": "Not varied: path-dependent tree background is fixed by the trained tree. Reconstruction audited separately; stability not established."
+    },
+    "rca": {
+      "rows": 303,
+      "backgrounds": 5,
+      "background_size": 100,
+      "mean_top5_overlap_fraction": 0.8862706270627064,
+      "minimum_top5_overlap_fraction": 0.4,
+      "top5_sign_disagreement_fraction": 0.0,
+      "max_logit_reconstruction_error": 1.3322676295501878e-15
+    }
+  }
+}

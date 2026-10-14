@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-10-14T15:33:11.692597+00:00",
+  "sampling": "All 11 pages of three additional official provider specimen documents, selected before OCR evaluation; earlier Labcorp lipid development document excluded.",
+  "scope": "Printed English public specimens rendered at 160 DPI; no camera photographs, handwriting or patient outcomes. Ranges, commentary, targets, HbA1c, fasting status and disease codes must not become model measurements. Age 26 in Hb specimen is outside model support and excluded from eligible automatic fields.",
+  "ground_truth": "Printed pages visually inspected and expected facts frozen before OCR. No original public-cohort patient reports are claimed.",
+  "parser_sha256": "ac977b236e6ae02e0ae5a6c39deead2537c567b2549f4da195763cb00c56488b",
+  "ocr_assets_manifest_sha256": "726134efe62e20033a550ecbabc94dba65c7a75e747648e915dc08898c373a12",
+  "sources": [
+    {
+      "id": "labcorp-cmp",
+      "url": "https://files.labcorp.com/testmenu-d8/sample_reports/322000.pdf",
+      "sha256": "23b4eddb9c85844bcca8a6d9669fe65752e6cd205231b996df77273b55ea2990",
+      "pages": 6
+    },
+    {
+      "id": "labcorp-hb",
+      "url": "https://files.labcorp.com/testmenu-d8/sample_reports/005041.pdf",
+      "sha256": "eba86d8e50f62c3f3b3db9c0936085d1c706a5c2b487c9ebd429c0dd06895d74",
+      "pages": 2
+    },
+    {
+      "id": "quest-diabetes",
+      "url": "https://www.questdiagnostics.com/content/dam/corporate/unrestricted/documents/other/drpws_sample_report/DRPwS_sample_report.pdf",
+      "sha256": "9c2ef65a98c0d8c696e3ae7db3873c8904d6cd0ae3b107307e09b0e7a0b639bf",
+      "pages": 3
+    }
+  ],
+  "cases": [
+    {
+      "id": "labcorp-cmp-1",
+      "image": "tmp/ocr-independent-20261014/labcorp-cmp-1.png",
+      "image_sha256": "d6647b0f62dd487fccfcebf571effb4f170df1c1a66b05b79bbeb682603208a9",
+      "facts": {
+        "Age": 62,
+        "Sex": "Male",
+        "CR": 0.76,
+        "Na": 134,
+        "K": 3.5
+      },
+      "eligible_fields": [
+        "Age",
+        "Sex",
+        "CR",
+        "Na",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-2",
+      "image": "tmp/ocr-independent-20261014/labcorp-cmp-2.png",
+      "image_sha256": "3c41d1565433eb9628f3078eb07008cede124147023b0613276c6ae8037928c2",
+      "facts": {
+        "Age": 62,
+        "Sex": "Male",
+        "CR": 1.5,
+        "Na": 150,
+        "K": 3.8
+      },
+      "eligible_fields": [
+        "Age",
+        "Sex",
+        "CR",
+        "Na",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-3",
+      "image": "tmp/ocr-independent-20261014/labcorp-cmp-3.png",
+      "image_sha256": "d0553299afb3c88d4259e6629b2e1495da396dc67a58604bfe9862167bade62d",
+      "facts": {},
+      "eligible_fields": []
+    },
+    {
+      "id": "labcorp-cmp-4",
+      "image": "tmp/ocr-independent-20261014/labcorp-cmp-4.png",
+      "image_sha256": "76a78283292d92f6b1742443a3551d10b8157ab86e7b8f8af94643a7012785bb",
+      "facts": {},
+      "eligible_fields": []
+    },
+    {
+      "id": "labcorp-cmp-5",
+      "image": "tmp/ocr-independent-20261014/labcorp-cmp-5.png",
+      "image_sha256": "bbc7f8a1cadd7c1006fda3bddb7508d067d0c2940f4945bb5e13396baa7bac49",
+      "facts": {
+        "Sex": "Male",
+        "K": 3.8
+      },
+      "eligible_fields": [
+        "Sex",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-6",
+      "image": "tmp/ocr-independent-20261014/labcorp-cmp-6.png",
+      "image_sha256": "c354d200c49b996b10c7aa9d15e535a861c1dc302e5622b31d7b428a4e1ea825",
+      "facts": {
+        "Sex": "Male",
+        "K": 3.8
+      },
+      "eligible_fields": [
+        "Sex",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-hb-1",
+      "image": "tmp/ocr-independent-20261014/labcorp-hb-1.png",
+      "image_sha256": "0755a22e1f91dd97971f00a0446ac67745f0aa25f1f472d1611b0eb0e49c44a0",
+      "facts": {
+        "Sex": "Fmale",
+        "HB": 13.5
+      },
+      "eligible_fields": [
+        "Sex",
+        "HB"
+      ]
+    },
+    {
+      "id": "labcorp-hb-2",
+      "image": "tmp/ocr-independent-20261014/labcorp-hb-2.png",
+      "image_sha256": "5e616a6ef72569bd18440443d1df13b67f61550f5f93691c79c65b9ab99c321f",
+      "facts": {
+        "Sex": "Fmale",
+        "HB": 10.5
+      },
+      "eligible_fields": [
+        "Sex",
+        "HB"
+      ]
+    },
+    {
+      "id": "quest-diabetes-1",
+      "image": "tmp/ocr-independent-20261014/quest-diabetes-1.png",
+      "image_sha256": "669acbe39f43880ee2fc0a3a6e323c56f02f313fa88abe67dd7025fa6a87179e",
+      "facts": {
+        "Age": 45,
+        "Sex": "Fmale"
+      },
+      "eligible_fields": [
+        "Age",
+        "Sex"
+      ]
+    },
+    {
+      "id": "quest-diabetes-2",
+      "image": "tmp/ocr-independent-20261014/quest-diabetes-2.png",
+      "image_sha256": "8cdd5068e489c797d6127114fe3f56cee150f877a792d23d81819065265b00ab",
+      "facts": {
+        "Age": 45,
+        "Sex": "Fmale",
+        "HDL": 81,
+        "TG": 45,
+        "LDL": 74
+      },
+      "eligible_fields": [
+        "Age",
+        "Sex",
+        "HDL",
+        "TG",
+        "LDL"
+      ]
+    },
+    {
+      "id": "quest-diabetes-3",
+      "image": "tmp/ocr-independent-20261014/quest-diabetes-3.png",
+      "image_sha256": "73e7db48beb2424971e433f9145edeca039255f362847462b96473c3a1e2d1e7",
+      "facts": {
+        "Age": 45,
+        "Sex": "Fmale"
+      },
+      "eligible_fields": [
+        "Age",
+        "Sex"
+      ]
+    }
+  ]
+}

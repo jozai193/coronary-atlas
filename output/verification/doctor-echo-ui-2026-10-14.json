@@ -1,0 +1,53 @@
+{
+  "actual_photo": {
+    "model_candidates": 0,
+    "readable_excerpt_groups": [
+      "Valve text",
+      "Flow / Doppler text",
+      "Impression text"
+    ],
+    "warnings": [
+      "Reference-range table detected. NORMAL/NORMALS values are not patient measurements. Blank cells and unreadable numbers remain unknown; check the image column by column.",
+      "These are OCR/pasted excerpts, not verified findings. Check missing or broken lines, negations, blank velocity/gradient fields and the original report. No coronary narrowing or model valve category is inferred."
+    ],
+    "copy_disabled": true
+  },
+  "corrected_text_fixture": {
+    "ef": 55,
+    "ef_requires_column_review": true,
+    "normal_ranges_not_imported": true,
+    "copy": {
+      "notes_preserved": true,
+      "flow_preserved": true,
+      "valves_preserved": true,
+      "echo_ef_still_blank": true,
+      "narrowing_still_blank": true,
+      "source_check_still_pending": true
+    },
+    "summary_preserved": true,
+    "case_reset": true
+  },
+  "mobile": {
+    "viewport": 390,
+    "document": 390
+  },
+  "non_get_requests": [],
+  "application_page_errors": [],
+  "frontend_tests_passed": 77,
+  "frontend_test_files": 24,
+  "production_build": "passed",
+  "protected_model_evidence_unchanged": {
+    "models/cad.joblib": true,
+    "models/lad.joblib": true,
+    "models/lcx.joblib": true,
+    "models/rca.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/background.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/cad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lcx.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/rca.joblib": true,
+    "models/metadata.json": true,
+    "ml/metrics/evaluation.json": true
+  },
+  "scope": "Actual supplied photo and manually corrected development fixture tested separately. Zero numerical proposals on the photo; no clinical OCR or CAD validation. Known antivirus-injected domain blocked only in the isolated test page."
+}

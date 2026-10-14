@@ -1,0 +1,5 @@
+# Optional research candidate; the baseline does not require these packages.
+-r requirements.txt
+catboost==1.2.10
+graphviz==0.21
+plotly==7.1.0

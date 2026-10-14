@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-14",
+  "scope": "Engineering completeness and provenance checks; not clinical validation.",
+  "required": [
+    "Age",
+    "EF-TTE",
+    "VHD",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB"
+  ],
+  "minimum_available": 28,
+  "frontend_tests_passed": 58,
+  "focused_backend_tests_passed": 74,
+  "browser": {
+    "incomplete_demo_blocked_before_request": true,
+    "complete_record_all_55": true,
+    "recorded_ef": 50,
+    "recorded_valve_code": "N",
+    "one_complete_case_prediction": true,
+    "clearing_valve_blocks_and_clears_result": true,
+    "mobile_overflow": false,
+    "url": "https://trend-monitoring-promises-appreciation.trycloudflare.com/#summary"
+  },
+  "source_case": "UCI worksheet row 2, all 55 recorded inputs, used in development",
+  "blockage_percentages_available": false,
+  "targets_never_inputs": true
+}

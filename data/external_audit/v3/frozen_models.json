@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-08T06:41:30.737551+00:00",
+  "purpose": "Freeze existing app before new-cohort compatibility screening; no external predictions made.",
+  "sha256": {
+    "models/metadata.json": "f5dd3327b6189238e33ab58090c937977b5b1140c0b87f20dc9d83dc5b9d52c7",
+    "models/cad.joblib": "8e41eb736fe1c3ad9148b679ebe942a769b05530cc324abaa3141f0d68789271",
+    "models/lad.joblib": "a761c7eaea02231afbfd17a762a0309f90bf6dc07849fc58c454f3e8dfce141f",
+    "models/lcx.joblib": "c91973f59f4f37fde361b8a57a126ebb78f717ee6774d0c24fcd1ab378992e35",
+    "models/rca.joblib": "92fd77e5913681ba50ec145f4a65452ee4791a6049a67c869c1c64f2a4d8e7e5",
+    "models/candidates/histgb_lcx/histgb_lcx.joblib": "f61d3287903233f754a2c09f2434f017d1a3e5310907bf378bdbb252882d9bb9",
+    "ml/schema.py": "8a4fa4aae2795e1f57601dd350f777edf90e61b1a118abe1659532fa92f59049",
+    "ml/preprocessing.py": "53ceea948ed8cb40a242abd4de899a2df3083847ee49bb5bfebc9451000af5f3",
+    "backend/main.py": "9444739a81a56e7ffc0e2d4bc9190f10d33ecba55a2f4bc0152f1cb21ba6506c"
+  },
+  "evaluation_policy": {
+    "no_fit_or_tuning": true,
+    "threshold": 0.5,
+    "inputs": "Only documented equivalent measurements from FEATURES; retain fitted preprocessing. No fabricated clinical inputs or target-derived inputs.",
+    "eligibility": "Independent provenance and overlap audit; documented label definition; feature coding/units/timing established; current app requires age and at least28/55 measured inputs per row. Report exclusions and missingness.",
+    "outcomes": "Each of CAD/LAD/LCX/RCA evaluated only if independently observed with compatible semantics. CT and invasive angiography differences must remain explicit.",
+    "report": "AUC, Brier, sensitivity, specificity, confusion counts and uncertainty where identifiable. A failed compatibility gate produces no external accuracy claim."
+  }
+}

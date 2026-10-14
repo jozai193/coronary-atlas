@@ -1,0 +1,13 @@
+{
+  "url": "https://data.mendeley.com/datasets/shntp48zv9/1",
+  "doi": "10.17632/shntp48zv9.1",
+  "author": "Filippo Cademartiri",
+  "license": "CC BY 4.0",
+  "download_url": "https://data.mendeley.com/public-files/datasets/shntp48zv9/files/9602d2d4-9896-438c-b7a6-eccccdae434e/file_downloaded",
+  "local_file": "CONFIRM_ST_LOCKED2.xlsx",
+  "sha256": "67eef2dcdd4b62901a459f020c0231afdabae73e70c109bf57b0540f2e25035a",
+  "bytes": 13730325,
+  "retrieved_utc": "2026-10-08T06:51:50.544143+00:00",
+  "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7849944/",
+  "note": "Public workbook has 27125 unique confirm_id values and 250 columns, not the paper-specific 13054 selected cases. Raw workbook is local-only and excluded from source packaging."
+}

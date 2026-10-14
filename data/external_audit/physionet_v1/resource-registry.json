@@ -1,0 +1,61 @@
+{
+  "reviewed_utc": "2026-10-14T16:06:22.187615+00:00",
+  "resources": [
+    {
+      "name": "PTB-XL",
+      "version": "1.0.3",
+      "url": "https://physionet.org/content/ptb-xl/1.0.3/",
+      "access": "Open; CC BY 4.0",
+      "acquired": "Full metadata/dictionary/license/checksum list; 12 header/signal pairs; small attributed reference derivative packaged.",
+      "data_verified": true,
+      "cohort_family": "PTB-XL",
+      "use": "Source ECG reference viewing and compatibility audit; no CAD model training or scoring."
+    },
+    {
+      "name": "MIMIC-IV-ECG",
+      "version": "1.0",
+      "url": "https://physionet.org/content/mimic-iv-ecg/1.0/",
+      "access": "Open machine measurements and waveforms under ODbL; cardiologist free-text notes are not included in this release.",
+      "acquired": "Dictionary/license and bounded first 2 MiB of the table; initial 278115-byte range also retained and verified as its exact prefix. First 1000 complete records inspected. No full table, cardiologist notes or ECG waveforms acquired.",
+      "data_verified": true,
+      "cohort_family": "MIMIC-IV",
+      "use": "Schema audit and negative-control replay of machine report text; not clinical report extraction validation."
+    },
+    {
+      "name": "MIMIC-IV-Echo",
+      "version": "1.0.1",
+      "url": "https://physionet.org/content/mimic-iv-echo/1.0.1/",
+      "access": "Credentialed; required training and signed project DUA.",
+      "acquired": "Official public documentation only; no protected records.",
+      "data_verified": false,
+      "cohort_family": "MIMIC-IV",
+      "use": "Documented structured echo/Doppler measurements and subject/study/time linkage planned for approved access. Cardiologist narratives are described as later MIMIC-IV-Note availability."
+    },
+    {
+      "name": "ECHO-NOTE2NUM",
+      "version": "1.0.0",
+      "url": "https://physionet.org/content/echo-note-to-num/1.0.0/",
+      "access": "Credentialed; required training and signed project DUA.",
+      "acquired": "Official public documentation only; no protected records.",
+      "data_verified": false,
+      "cohort_family": "MIMIC-III echo notes",
+      "use": "Documented echo/valve measurement extraction resource; not verified compatible angiographic endpoints."
+    },
+    {
+      "name": "EchoGraph annotations",
+      "version": "1.0.0",
+      "url": "https://physionet.org/content/echograph-note2num-annotations/1.0.0/",
+      "access": "Credentialed; required training and signed project DUA.",
+      "acquired": "Official public documentation only; no protected records.",
+      "data_verified": false,
+      "cohort_family": "MIMIC-III echo notes",
+      "use": "Automatically generated entity/relation annotations derived from related ECHO-NOTE2NUM notes. Not an independent cohort or fully manually adjudicated gold standard."
+    }
+  ],
+  "access_agreements_signed_by_agent": false,
+  "credentialed_data_acquired": false,
+  "source_patients_joined_to_uci": false,
+  "cad_model_trained_or_scored": false,
+  "independent_full_app_validation": false,
+  "outstanding": "Approved access plus actual field/label/timing/participant-overlap audit are required before an echo integration or angiographic validation study. No openly accessible echo demo was verified in this bounded pass."
+}

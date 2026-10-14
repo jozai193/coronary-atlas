@@ -1,0 +1,1325 @@
+{
+  "version": "modality_v2",
+  "source_results_sha256": "89a8ca2635cf622dfae91c693427b4fff88fd0ffd8fd1d573473a83eb8740652",
+  "audit_code_sha256": "473ae141246d17214c576a5a1485fa0e92e4d85b895b1b7c91744ebf20ff8f27",
+  "protocol_sha256": "07c769176420b7712af12f63f424b14f1b33337237653168e69a89b4a68d610b",
+  "design": {
+    "rows_per_repeat": 303,
+    "repeats": 2,
+    "estimator": "fixed regularized logistic regression, C=0.03",
+    "outer_folds": 5,
+    "comparison_metric": "ROC-AUC and Brier score",
+    "candidate_minus_comparator": true
+  },
+  "comparators": {
+    "core": "Demographics + Vitals + History & examination",
+    "all_features": "All six input groups"
+  },
+  "delta_interpretation": {
+    "roc_auc": "Positive favors candidate; negative favors comparator.",
+    "brier": "Negative favors candidate; positive favors comparator."
+  },
+  "targets": {
+    "cad": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "core": {
+            "roc_auc": 0.9003831417624522,
+            "brier": 0.12642360327467214
+          },
+          "all_features": {
+            "roc_auc": 0.9194870157513835,
+            "brier": 0.11428570720993238
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.9108663260962111,
+                "brier": 0.12153038337098086
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.9003831417624522,
+                "brier": 0.12642360327467214
+              },
+              "delta": {
+                "roc_auc": 0.010483184333758944,
+                "brier": -0.004893219903691279
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.8997977862920391,
+                "brier": 0.1242165639032558
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.9003831417624522,
+                "brier": 0.12642360327467214
+              },
+              "delta": {
+                "roc_auc": -0.0005853554704130515,
+                "brier": -0.002207039371416336
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.9162409535972754,
+                "brier": 0.1182639876658661
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.9003831417624522,
+                "brier": 0.12642360327467214
+              },
+              "delta": {
+                "roc_auc": 0.015857811834823266,
+                "brier": -0.008159615608806042
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.909323116219668,
+                "brier": 0.12435780684781071
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9194870157513835,
+                "brier": 0.11428570720993238
+              },
+              "delta": {
+                "roc_auc": -0.010163899531715481,
+                "brier": 0.010072099637878335
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.9187420178799489,
+                "brier": 0.11517074019496319
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9194870157513835,
+                "brier": 0.11428570720993238
+              },
+              "delta": {
+                "roc_auc": -0.0007449978714345606,
+                "brier": 0.0008850329850308147
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.832428693060877,
+                "brier": 0.1491667836130727
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9194870157513835,
+                "brier": 0.11428570720993238
+              },
+              "delta": {
+                "roc_auc": -0.0870583226905065,
+                "brier": 0.034881076403140324
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.9141123882503194,
+                "brier": 0.11766722448809036
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9194870157513835,
+                "brier": 0.11428570720993238
+              },
+              "delta": {
+                "roc_auc": -0.0053746275010641,
+                "brier": 0.0033815172781579833
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.9239037888463175,
+                "brier": 0.11454467397294808
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9194870157513835,
+                "brier": 0.11428570720993238
+              },
+              "delta": {
+                "roc_auc": 0.004416773094934046,
+                "brier": 0.00025896676301570554
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.9096956151553852,
+                "brier": 0.11990469120501107
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9194870157513835,
+                "brier": 0.11428570720993238
+              },
+              "delta": {
+                "roc_auc": -0.009791400595998256,
+                "brier": 0.005618983995078694
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "core": {
+            "roc_auc": 0.8992124308216263,
+            "brier": 0.12642197875015643
+          },
+          "all_features": {
+            "roc_auc": 0.9136334610472542,
+            "brier": 0.11524591995147439
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.9107598978288634,
+                "brier": 0.12172825374361283
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.8992124308216263,
+                "brier": 0.12642197875015643
+              },
+              "delta": {
+                "roc_auc": 0.011547467007237078,
+                "brier": -0.004693725006543595
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.8935185185185186,
+                "brier": 0.1248695529623893
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.8992124308216263,
+                "brier": 0.12642197875015643
+              },
+              "delta": {
+                "roc_auc": -0.005693912303107673,
+                "brier": -0.0015524257877671255
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.9121966794380588,
+                "brier": 0.1186777718633737
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.8992124308216263,
+                "brier": 0.12642197875015643
+              },
+              "delta": {
+                "roc_auc": 0.012984248616432548,
+                "brier": -0.007744206886782734
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.9061302681992337,
+                "brier": 0.1244022380888658
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9136334610472542,
+                "brier": 0.11524591995147439
+              },
+              "delta": {
+                "roc_auc": -0.007503192848020479,
+                "brier": 0.009156318137391414
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.9134206045125586,
+                "brier": 0.11646085406816391
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9136334610472542,
+                "brier": 0.11524591995147439
+              },
+              "delta": {
+                "roc_auc": -0.00021285653469560462,
+                "brier": 0.00121493411668952
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.8265219242230737,
+                "brier": 0.1508685798204026
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9136334610472542,
+                "brier": 0.11524591995147439
+              },
+              "delta": {
+                "roc_auc": -0.08711153682418049,
+                "brier": 0.03562265986892822
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.9050659855257557,
+                "brier": 0.11877544226522359
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9136334610472542,
+                "brier": 0.11524591995147439
+              },
+              "delta": {
+                "roc_auc": -0.008567475521498502,
+                "brier": 0.0035295223137492004
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.9202320136228183,
+                "brier": 0.11514822392427589
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9136334610472542,
+                "brier": 0.11524591995147439
+              },
+              "delta": {
+                "roc_auc": 0.006598552575564076,
+                "brier": -9.769602719850168e-05
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.9043209876543209,
+                "brier": 0.12048090454176053
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.9136334610472542,
+                "brier": 0.11524591995147439
+              },
+              "delta": {
+                "roc_auc": -0.009312473392933285,
+                "brier": 0.0052349845902861375
+              }
+            }
+          }
+        }
+      ]
+    },
+    "lad": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "core": {
+            "roc_auc": 0.7826652318177743,
+            "brier": 0.1855205775681799
+          },
+          "all_features": {
+            "roc_auc": 0.8282665231817774,
+            "brier": 0.1668517403751927
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.7968343646309748,
+                "brier": 0.1797950497860094
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7826652318177743,
+                "brier": 0.1855205775681799
+              },
+              "delta": {
+                "roc_auc": 0.014169132813200536,
+                "brier": -0.005725527782170503
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7878665590529997,
+                "brier": 0.18203698265252272
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7826652318177743,
+                "brier": 0.1855205775681799
+              },
+              "delta": {
+                "roc_auc": 0.005201327235225484,
+                "brier": -0.0034835949156571955
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.819433234687472,
+                "brier": 0.1724404105644884
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7826652318177743,
+                "brier": 0.1855205775681799
+              },
+              "delta": {
+                "roc_auc": 0.036768002869697725,
+                "brier": -0.013080167003691523
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.8237377813649,
+                "brier": 0.1712197505025344
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8282665231817774,
+                "brier": 0.1668517403751927
+              },
+              "delta": {
+                "roc_auc": -0.004528741816877457,
+                "brier": 0.004368010127341698
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.834857860281589,
+                "brier": 0.1655470180594828
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8282665231817774,
+                "brier": 0.1668517403751927
+              },
+              "delta": {
+                "roc_auc": 0.006591337099811634,
+                "brier": -0.0013047223157099108
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.7782710070845663,
+                "brier": 0.1907467423839924
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8282665231817774,
+                "brier": 0.1668517403751927
+              },
+              "delta": {
+                "roc_auc": -0.04999551609721109,
+                "brier": 0.02389500200879968
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.8238722984485696,
+                "brier": 0.17032221881991416
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8282665231817774,
+                "brier": 0.1668517403751927
+              },
+              "delta": {
+                "roc_auc": -0.00439422473320783,
+                "brier": 0.003470478444721453
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.8274594206797597,
+                "brier": 0.1688078146350845
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8282665231817774,
+                "brier": 0.1668517403751927
+              },
+              "delta": {
+                "roc_auc": -0.0008071025020176537,
+                "brier": 0.0019560742598918046
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.8014079454757421,
+                "brier": 0.17685550509616849
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8282665231817774,
+                "brier": 0.1668517403751927
+              },
+              "delta": {
+                "roc_auc": -0.02685857770603528,
+                "brier": 0.010003764720975777
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "core": {
+            "roc_auc": 0.7819478073715361,
+            "brier": 0.18638308679725896
+          },
+          "all_features": {
+            "roc_auc": 0.8257555376199445,
+            "brier": 0.16860347395930717
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.7933817594834544,
+                "brier": 0.18127605569879562
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7819478073715361,
+                "brier": 0.18638308679725896
+              },
+              "delta": {
+                "roc_auc": 0.011433952111918222,
+                "brier": -0.005107031098463333
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7841000807102502,
+                "brier": 0.1847251675291515
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7819478073715361,
+                "brier": 0.18638308679725896
+              },
+              "delta": {
+                "roc_auc": 0.002152273338714039,
+                "brier": -0.0016579192681074606
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.8267868352614115,
+                "brier": 0.17005265000488157
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7819478073715361,
+                "brier": 0.18638308679725896
+              },
+              "delta": {
+                "roc_auc": 0.04483902788987537,
+                "brier": -0.01633043679237739
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.8244103667832481,
+                "brier": 0.1723084354117595
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8257555376199445,
+                "brier": 0.16860347395930717
+              },
+              "delta": {
+                "roc_auc": -0.0013451708366963855,
+                "brier": 0.003704961452452332
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.829118464711685,
+                "brier": 0.16817851879422666
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8257555376199445,
+                "brier": 0.16860347395930717
+              },
+              "delta": {
+                "roc_auc": 0.003362927091740575,
+                "brier": -0.00042495516508050946
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.7702896601201686,
+                "brier": 0.19251938874484636
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8257555376199445,
+                "brier": 0.16860347395930717
+              },
+              "delta": {
+                "roc_auc": -0.05546587749977583,
+                "brier": 0.0239159147855392
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.822661644695543,
+                "brier": 0.17088695306941706
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8257555376199445,
+                "brier": 0.16860347395930717
+              },
+              "delta": {
+                "roc_auc": -0.0030938929244014313,
+                "brier": 0.0022834791101098983
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.8319881624966371,
+                "brier": 0.16739306620318795
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8257555376199445,
+                "brier": 0.16860347395930717
+              },
+              "delta": {
+                "roc_auc": 0.006232624876692627,
+                "brier": -0.0012104077561192195
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.7937853107344633,
+                "brier": 0.18059560113904696
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.8257555376199445,
+                "brier": 0.16860347395930717
+              },
+              "delta": {
+                "roc_auc": -0.03197022688548112,
+                "brier": 0.011992127179739798
+              }
+            }
+          }
+        }
+      ]
+    },
+    "lcx": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "core": {
+            "roc_auc": 0.7403635367190354,
+            "brier": 0.2033677356741587
+          },
+          "all_features": {
+            "roc_auc": 0.7492692729265619,
+            "brier": 0.199554619002649
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.7337869930580928,
+                "brier": 0.20455278126229054
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7403635367190354,
+                "brier": 0.2033677356741587
+              },
+              "delta": {
+                "roc_auc": -0.006576543660942624,
+                "brier": 0.0011850455881318445
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7575356229448302,
+                "brier": 0.19661524426039328
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7403635367190354,
+                "brier": 0.2033677356741587
+              },
+              "delta": {
+                "roc_auc": 0.017172086225794803,
+                "brier": -0.00675249141376541
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.73488308366825,
+                "brier": 0.204702216220292
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7403635367190354,
+                "brier": 0.2033677356741587
+              },
+              "delta": {
+                "roc_auc": -0.005480453050785483,
+                "brier": 0.0013344805461333042
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.7032791377420533,
+                "brier": 0.2104495439129509
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7492692729265619,
+                "brier": 0.199554619002649
+              },
+              "delta": {
+                "roc_auc": -0.04599013518450856,
+                "brier": 0.01089492491030189
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.748127511874315,
+                "brier": 0.19928009969826957
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7492692729265619,
+                "brier": 0.199554619002649
+              },
+              "delta": {
+                "roc_auc": -0.0011417610522468369,
+                "brier": -0.00027451930437943917
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.7177109974424553,
+                "brier": 0.20776324723051892
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7492692729265619,
+                "brier": 0.199554619002649
+              },
+              "delta": {
+                "roc_auc": -0.03155827548410661,
+                "brier": 0.008208628227869913
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.7532882718304713,
+                "brier": 0.1981152407103451
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7492692729265619,
+                "brier": 0.199554619002649
+              },
+              "delta": {
+                "roc_auc": 0.004018998903909443,
+                "brier": -0.0014393782923039222
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7290829375228353,
+                "brier": 0.2059294492159857
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7492692729265619,
+                "brier": 0.199554619002649
+              },
+              "delta": {
+                "roc_auc": -0.020186335403726607,
+                "brier": 0.00637483021333668
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.7538363171355499,
+                "brier": 0.1979618456928332
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7492692729265619,
+                "brier": 0.199554619002649
+              },
+              "delta": {
+                "roc_auc": 0.004567044208988014,
+                "brier": -0.0015927733098158037
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "core": {
+            "roc_auc": 0.7314121300694191,
+            "brier": 0.20584120166787379
+          },
+          "all_features": {
+            "roc_auc": 0.7161125319693095,
+            "brier": 0.20868170795292362
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.7233741322616003,
+                "brier": 0.20824964091317186
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7314121300694191,
+                "brier": 0.20584120166787379
+              },
+              "delta": {
+                "roc_auc": -0.008037997807818775,
+                "brier": 0.002408439245298072
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.732964925100475,
+                "brier": 0.20318686876864958
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7314121300694191,
+                "brier": 0.20584120166787379
+              },
+              "delta": {
+                "roc_auc": 0.0015527950310558758,
+                "brier": -0.0026543328992242043
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.721181951041286,
+                "brier": 0.20894413862321448
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7314121300694191,
+                "brier": 0.20584120166787379
+              },
+              "delta": {
+                "roc_auc": -0.010230179028133057,
+                "brier": 0.003102936955340696
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.6607142857142858,
+                "brier": 0.219528934849318
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7161125319693095,
+                "brier": 0.20868170795292362
+              },
+              "delta": {
+                "roc_auc": -0.05539824625502365,
+                "brier": 0.01084722689639439
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.709079283887468,
+                "brier": 0.20958015881762343
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7161125319693095,
+                "brier": 0.20868170795292362
+              },
+              "delta": {
+                "roc_auc": -0.00703324808184147,
+                "brier": 0.0008984508646998068
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.686746437705517,
+                "brier": 0.21564428240286102
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7161125319693095,
+                "brier": 0.20868170795292362
+              },
+              "delta": {
+                "roc_auc": -0.02936609426379244,
+                "brier": 0.006962574449937392
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.7247442455242967,
+                "brier": 0.20650779295906055
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7161125319693095,
+                "brier": 0.20868170795292362
+              },
+              "delta": {
+                "roc_auc": 0.008631713554987264,
+                "brier": -0.002173914993863074
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7125959079283888,
+                "brier": 0.21125439329267562
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7161125319693095,
+                "brier": 0.20868170795292362
+              },
+              "delta": {
+                "roc_auc": -0.0035166240409206795,
+                "brier": 0.0025726853397519955
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.7241048593350383,
+                "brier": 0.2054856779791466
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7161125319693095,
+                "brier": 0.20868170795292362
+              },
+              "delta": {
+                "roc_auc": 0.007992327365728857,
+                "brier": -0.0031960299737770204
+              }
+            }
+          }
+        }
+      ]
+    },
+    "rca": {
+      "repeats": [
+        {
+          "repeat": 1,
+          "seed": 20261007,
+          "core": {
+            "roc_auc": 0.7137287663603453,
+            "brier": 0.20523380741801048
+          },
+          "all_features": {
+            "roc_auc": 0.7393947832544324,
+            "brier": 0.19771809432308712
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.7141928896314861,
+                "brier": 0.20529722103053252
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7137287663603453,
+                "brier": 0.20523380741801048
+              },
+              "delta": {
+                "roc_auc": 0.00046412327114075946,
+                "brier": 6.341361252204525e-05
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7440824282929546,
+                "brier": 0.19568331016995213
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7137287663603453,
+                "brier": 0.20523380741801048
+              },
+              "delta": {
+                "roc_auc": 0.030353661932609244,
+                "brier": -0.009550497248058343
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.710155017172561,
+                "brier": 0.20666516949256108
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7137287663603453,
+                "brier": 0.20523380741801048
+              },
+              "delta": {
+                "roc_auc": -0.003573749187784303,
+                "brier": 0.0014313620745506073
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.7217580989510815,
+                "brier": 0.20273567337950557
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7393947832544324,
+                "brier": 0.19771809432308712
+              },
+              "delta": {
+                "roc_auc": -0.01763668430335097,
+                "brier": 0.0050175790564184475
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.7483523623874502,
+                "brier": 0.19497206626659921
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7393947832544324,
+                "brier": 0.19771809432308712
+              },
+              "delta": {
+                "roc_auc": 0.008957579133017757,
+                "brier": -0.002746028056487909
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.6964169683467929,
+                "brier": 0.20929972043443562
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7393947832544324,
+                "brier": 0.19771809432308712
+              },
+              "delta": {
+                "roc_auc": -0.04297781490763952,
+                "brier": 0.011581626111348498
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.7405550914322845,
+                "brier": 0.19689855899901357
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7393947832544324,
+                "brier": 0.19771809432308712
+              },
+              "delta": {
+                "roc_auc": 0.0011603081778520652,
+                "brier": -0.0008195353240735559
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7084377610693401,
+                "brier": 0.20682492581072434
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7393947832544324,
+                "brier": 0.19771809432308712
+              },
+              "delta": {
+                "roc_auc": -0.03095702218509233,
+                "brier": 0.009106831487637218
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.744360902255639,
+                "brier": 0.19649116440804815
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7393947832544324,
+                "brier": 0.19771809432308712
+              },
+              "delta": {
+                "roc_auc": 0.0049661190012065815,
+                "brier": -0.0012269299150389767
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "seed": 20261108,
+          "core": {
+            "roc_auc": 0.7017543859649122,
+            "brier": 0.20839091849164518
+          },
+          "all_features": {
+            "roc_auc": 0.7240787153067855,
+            "brier": 0.20392908412501345
+          },
+          "core_additions": {
+            "ECG": {
+              "scenario": "core_plus_ecg",
+              "candidate": {
+                "roc_auc": 0.7005476654599461,
+                "brier": 0.20893133521131932
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7017543859649122,
+                "brier": 0.20839091849164518
+              },
+              "delta": {
+                "roc_auc": -0.0012067205049661744,
+                "brier": 0.0005404167196741416
+              }
+            },
+            "Laboratory": {
+              "scenario": "core_plus_laboratory",
+              "candidate": {
+                "roc_auc": 0.7358674463937621,
+                "brier": 0.19957843225500924
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7017543859649122,
+                "brier": 0.20839091849164518
+              },
+              "delta": {
+                "roc_auc": 0.03411306042884987,
+                "brier": -0.008812486236635941
+              }
+            },
+            "Echocardiography": {
+              "scenario": "core_plus_echo",
+              "candidate": {
+                "roc_auc": 0.6940499396639748,
+                "brier": 0.2106953877774202
+              },
+              "comparator": {
+                "name": "core",
+                "roc_auc": 0.7017543859649122,
+                "brier": 0.20839091849164518
+              },
+              "delta": {
+                "roc_auc": -0.007704446300937473,
+                "brier": 0.002304469285775018
+              }
+            }
+          },
+          "leave_one_group_out": {
+            "Demographics": {
+              "scenario": "all_minus_demographics",
+              "candidate": {
+                "roc_auc": 0.6973452148890745,
+                "brier": 0.20880829433234144
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7240787153067855,
+                "brier": 0.20392908412501345
+              },
+              "delta": {
+                "roc_auc": -0.026733500417710943,
+                "brier": 0.004879210207327983
+              }
+            },
+            "Vitals": {
+              "scenario": "all_minus_vitals",
+              "candidate": {
+                "roc_auc": 0.7304372041214146,
+                "brier": 0.20257305924400112
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7240787153067855,
+                "brier": 0.20392908412501345
+              },
+              "delta": {
+                "roc_auc": 0.006358488814629082,
+                "brier": -0.0013560248810123299
+              }
+            },
+            "History & examination": {
+              "scenario": "all_minus_history",
+              "candidate": {
+                "roc_auc": 0.6841177016615613,
+                "brier": 0.21236161152459365
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7240787153067855,
+                "brier": 0.20392908412501345
+              },
+              "delta": {
+                "roc_auc": -0.0399610136452242,
+                "brier": 0.008432527399580197
+              }
+            },
+            "ECG": {
+              "scenario": "all_minus_ecg",
+              "candidate": {
+                "roc_auc": 0.725471085120208,
+                "brier": 0.2029317241148297
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7240787153067855,
+                "brier": 0.20392908412501345
+              },
+              "delta": {
+                "roc_auc": 0.0013923698134225004,
+                "brier": -0.0009973600101837454
+              }
+            },
+            "Laboratory": {
+              "scenario": "all_minus_laboratory",
+              "candidate": {
+                "roc_auc": 0.6935394040657199,
+                "brier": 0.21103588706954277
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7240787153067855,
+                "brier": 0.20392908412501345
+              },
+              "delta": {
+                "roc_auc": -0.03053931124106557,
+                "brier": 0.007106802944529311
+              }
+            },
+            "Echocardiography": {
+              "scenario": "all_minus_echocardiography",
+              "candidate": {
+                "roc_auc": 0.7343358395989974,
+                "brier": 0.20084245020465197
+              },
+              "comparator": {
+                "name": "all_features",
+                "roc_auc": 0.7240787153067855,
+                "brier": 0.20392908412501345
+              },
+              "delta": {
+                "roc_auc": 0.010257124292211928,
+                "brier": -0.0030866339203614868
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "caveats": [
+    "Same 303 observations appear in both repeats; do not pool them as independent people.",
+    "Exploratory internal CV; not external or clinical validation.",
+    "No deployment or form recommendation is encoded."
+  ]
+}

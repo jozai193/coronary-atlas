@@ -1,0 +1,85 @@
+{
+  "scope": "Internal held-out BMI-missing stress on original 303 source rows; not external validation.",
+  "source_rows": 303,
+  "source_bmi_max_absolute_formula_error": 0.0,
+  "raw_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "evaluation_sha256": "a8b884b2f1be42da467540fc9e282e992d3fc8312bbfc05478b58890204b1815",
+  "targets": {
+    "cad": {
+      "full": {
+        "roc_auc": 0.920338441890166,
+        "brier": 0.0985314438237378,
+        "accuracy": 0.8613861386138614,
+        "recall": 0.9027777777777778,
+        "specificity": 0.7586206896551724
+      },
+      "bmi_missing_and_imputed": {
+        "roc_auc": 0.9214027245636441,
+        "brier": 0.09841192958883485,
+        "accuracy": 0.8547854785478548,
+        "recall": 0.8981481481481481,
+        "specificity": 0.7471264367816092
+      },
+      "max_saved_oof_probability_residual": 0.0,
+      "changed_binary_decisions": 8,
+      "mean_absolute_probability_change": 0.01758302237435688
+    },
+    "lad": {
+      "full": {
+        "roc_auc": 0.83091202582728,
+        "brier": 0.16797207007820075,
+        "accuracy": 0.7821782178217822,
+        "recall": 0.8587570621468926,
+        "specificity": 0.6746031746031746
+      },
+      "bmi_missing_and_imputed": {
+        "roc_auc": 0.8318088063850775,
+        "brier": 0.16720025231013638,
+        "accuracy": 0.7887788778877888,
+        "recall": 0.8700564971751412,
+        "specificity": 0.6746031746031746
+      },
+      "max_saved_oof_probability_residual": 0.0,
+      "changed_binary_decisions": 2,
+      "mean_absolute_probability_change": 0.009252531663312661
+    },
+    "lcx": {
+      "full": {
+        "roc_auc": 0.7410485933503835,
+        "brier": 0.20302293614382178,
+        "accuracy": 0.6798679867986799,
+        "recall": 0.40336134453781514,
+        "specificity": 0.8586956521739131
+      },
+      "bmi_missing_and_imputed": {
+        "roc_auc": 0.7416423090975521,
+        "brier": 0.20212427906257713,
+        "accuracy": 0.66996699669967,
+        "recall": 0.3949579831932773,
+        "specificity": 0.8478260869565217
+      },
+      "max_saved_oof_probability_residual": 0.0,
+      "changed_binary_decisions": 7,
+      "mean_absolute_probability_change": 0.009512859139695917
+    },
+    "rca": {
+      "full": {
+        "roc_auc": 0.7165599183143043,
+        "brier": 0.20722682243832513,
+        "accuracy": 0.6633663366336634,
+        "recall": 0.40350877192982454,
+        "specificity": 0.8201058201058201
+      },
+      "bmi_missing_and_imputed": {
+        "roc_auc": 0.7194374825953773,
+        "brier": 0.20593652927774417,
+        "accuracy": 0.6633663366336634,
+        "recall": 0.39473684210526316,
+        "specificity": 0.8253968253968254
+      },
+      "max_saved_oof_probability_residual": 0.0,
+      "changed_binary_decisions": 4,
+      "mean_absolute_probability_change": 0.00898766122959954
+    }
+  }
+}

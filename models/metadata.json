@@ -1,0 +1,925 @@
+{
+  "seed": 20261007,
+  "rows": 303,
+  "features": [
+    "Age",
+    "Sex",
+    "Weight",
+    "Length",
+    "BMI",
+    "BP",
+    "PR",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "VHD"
+  ],
+  "prohibited": [
+    "Cath",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "python": "3.11.5",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "shap": "0.51.0",
+    "joblib": "1.6.0"
+  },
+  "raw_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "artifacts": {
+    "cad": {
+      "file": "cad.joblib",
+      "sha256": "8e41eb736fe1c3ad9148b679ebe942a769b05530cc324abaa3141f0d68789271",
+      "selected": {
+        "kind": "forest",
+        "strength": 0.1,
+        "mean_auc": 0.9216155810983397,
+        "fold_auc": [
+          0.9329501915708812,
+          0.9396551724137931,
+          0.8922413793103448
+        ]
+      },
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 5,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 120,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 20261007,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "lad": {
+      "file": "lad.joblib",
+      "sha256": "a761c7eaea02231afbfd17a762a0309f90bf6dc07849fc58c454f3e8dfce141f",
+      "selected": {
+        "kind": "logistic",
+        "strength": 0.03,
+        "mean_auc": 0.8375033629270918,
+        "fold_auc": [
+          0.8377723970944311,
+          0.8123486682808717,
+          0.8623890234059726
+        ]
+      },
+      "parameters": {
+        "C": 0.03,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 3000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 20261007,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "lcx": {
+      "file": "lcx.joblib",
+      "sha256": "c91973f59f4f37fde361b8a57a126ebb78f717ee6774d0c24fcd1ab378992e35",
+      "selected": {
+        "kind": "forest",
+        "strength": 0.1,
+        "mean_auc": 0.7685799129479722,
+        "fold_auc": [
+          0.7729528535980148,
+          0.7905737704918032,
+          0.7422131147540985
+        ]
+      },
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 5,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 120,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 20261007,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "rca": {
+      "file": "rca.joblib",
+      "sha256": "92fd77e5913681ba50ec145f4a65452ee4791a6049a67c869c1c64f2a4d8e7e5",
+      "selected": {
+        "kind": "logistic",
+        "strength": 0.03,
+        "mean_auc": 0.7495126705653021,
+        "fold_auc": [
+          0.6942355889724311,
+          0.7652464494569757,
+          0.7890559732664996
+        ]
+      },
+      "parameters": {
+        "C": 0.03,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 3000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 20261007,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      }
+    }
+  },
+  "feature_schema": [
+    {
+      "name": "Age",
+      "label": "Age",
+      "group": "Demographics",
+      "kind": "number",
+      "unit": "years",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 30.0,
+      "maximum": 86.0,
+      "options": null
+    },
+    {
+      "name": "Sex",
+      "label": "Sex",
+      "group": "Demographics",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "Fmale",
+        "Male"
+      ]
+    },
+    {
+      "name": "Weight",
+      "label": "Weight",
+      "group": "Demographics",
+      "kind": "number",
+      "unit": "kg",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 48.0,
+      "maximum": 120.0,
+      "options": null
+    },
+    {
+      "name": "Length",
+      "label": "Height",
+      "group": "Demographics",
+      "kind": "number",
+      "unit": "cm",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 140.0,
+      "maximum": 188.0,
+      "options": null
+    },
+    {
+      "name": "BMI",
+      "label": "BMI",
+      "group": "Demographics",
+      "kind": "number",
+      "unit": "kg/m²",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 18.115412710007302,
+      "maximum": 40.90065778377467,
+      "options": null
+    },
+    {
+      "name": "BP",
+      "label": "Blood pressure",
+      "group": "Vitals",
+      "kind": "number",
+      "unit": "mmHg",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 90.0,
+      "maximum": 190.0,
+      "options": null
+    },
+    {
+      "name": "PR",
+      "label": "Pulse rate",
+      "group": "Vitals",
+      "kind": "number",
+      "unit": "beats/min",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 50.0,
+      "maximum": 110.0,
+      "options": null
+    },
+    {
+      "name": "DM",
+      "label": "Diabetes mellitus",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "HTN",
+      "label": "Hypertension history",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "Current Smoker",
+      "label": "Current Smoker",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "EX-Smoker",
+      "label": "EX-Smoker",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "FH",
+      "label": "Family history",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "Obesity",
+      "label": "Obesity",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "CRF",
+      "label": "Chronic renal failure",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "CVA",
+      "label": "Cerebrovascular history",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Airway disease",
+      "label": "Airway disease",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Thyroid Disease",
+      "label": "Thyroid Disease",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "CHF",
+      "label": "Heart failure history",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "DLP",
+      "label": "Dyslipidemia",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Edema",
+      "label": "Edema",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "Weak Peripheral Pulse",
+      "label": "Weak Peripheral Pulse",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Lung rales",
+      "label": "Lung rales",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Systolic Murmur",
+      "label": "Systolic Murmur",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Diastolic Murmur",
+      "label": "Diastolic Murmur",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Typical Chest Pain",
+      "label": "Typical Chest Pain",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "Dyspnea",
+      "label": "Dyspnea",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Function Class",
+      "label": "Functional class code",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "Atypical",
+      "label": "Atypical",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Nonanginal",
+      "label": "Nonanginal",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Exertional CP",
+      "label": "Exertional CP",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N"
+      ]
+    },
+    {
+      "name": "LowTH Ang",
+      "label": "Low-threshold angina",
+      "group": "History & examination",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Q Wave",
+      "label": "Q Wave",
+      "group": "ECG",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "St Elevation",
+      "label": "ST elevation",
+      "group": "ECG",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "St Depression",
+      "label": "ST depression",
+      "group": "ECG",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "Tinversion",
+      "label": "T-wave inversion",
+      "group": "ECG",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "name": "LVH",
+      "label": "Left ventricular hypertrophy",
+      "group": "ECG",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "Poor R Progression",
+      "label": "Poor R Progression",
+      "group": "ECG",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "name": "BBB",
+      "label": "Bundle branch block",
+      "group": "ECG",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "LBBB",
+        "N",
+        "RBBB"
+      ]
+    },
+    {
+      "name": "FBS",
+      "label": "Fasting blood sugar",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mg/dL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 62.0,
+      "maximum": 400.0,
+      "options": null
+    },
+    {
+      "name": "CR",
+      "label": "Creatinine",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mg/dL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 0.5,
+      "maximum": 2.2,
+      "options": null
+    },
+    {
+      "name": "TG",
+      "label": "Triglycerides",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mg/dL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 37.0,
+      "maximum": 1050.0,
+      "options": null
+    },
+    {
+      "name": "LDL",
+      "label": "LDL cholesterol",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mg/dL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 18.0,
+      "maximum": 232.0,
+      "options": null
+    },
+    {
+      "name": "HDL",
+      "label": "HDL cholesterol",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mg/dL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 15.9,
+      "maximum": 111.0,
+      "options": null
+    },
+    {
+      "name": "BUN",
+      "label": "Blood urea nitrogen",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mg/dL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 6.0,
+      "maximum": 52.0,
+      "options": null
+    },
+    {
+      "name": "ESR",
+      "label": "Erythrocyte sedimentation rate",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mm/h",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 1.0,
+      "maximum": 90.0,
+      "options": null
+    },
+    {
+      "name": "HB",
+      "label": "Hemoglobin",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "g/dL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 8.9,
+      "maximum": 17.6,
+      "options": null
+    },
+    {
+      "name": "K",
+      "label": "Potassium",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mEq/L",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 3.0,
+      "maximum": 6.6,
+      "options": null
+    },
+    {
+      "name": "Na",
+      "label": "Sodium",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "mEq/L",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 128.0,
+      "maximum": 156.0,
+      "options": null
+    },
+    {
+      "name": "WBC",
+      "label": "White blood cells",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "/µL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 3700.0,
+      "maximum": 18000.0,
+      "options": null
+    },
+    {
+      "name": "Lymph",
+      "label": "Lymphocytes",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "%",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 7.0,
+      "maximum": 60.0,
+      "options": null
+    },
+    {
+      "name": "Neut",
+      "label": "Neutrophils",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "%",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 32.0,
+      "maximum": 89.0,
+      "options": null
+    },
+    {
+      "name": "PLT",
+      "label": "Platelets",
+      "group": "Laboratory",
+      "kind": "number",
+      "unit": "10³/µL",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 25.0,
+      "maximum": 742.0,
+      "options": null
+    },
+    {
+      "name": "EF-TTE",
+      "label": "Echo ejection fraction",
+      "group": "Echocardiography",
+      "kind": "number",
+      "unit": "%",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": 15.0,
+      "maximum": 60.0,
+      "options": null
+    },
+    {
+      "name": "Region RWMA",
+      "label": "RWMA region code",
+      "group": "Echocardiography",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "name": "VHD",
+      "label": "Valvular disease",
+      "group": "Echocardiography",
+      "kind": "category",
+      "unit": "source code",
+      "unit_note": "Conventional interpretation; original UCI unit dictionary incomplete.",
+      "minimum": null,
+      "maximum": null,
+      "options": [
+        "Moderate",
+        "N",
+        "Severe",
+        "mild"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Coronary Atlas",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/held-out/cases": {
+      "get": {
+        "tags": [
+          "held-out teaching cases"
+        ],
+        "summary": "Case List",
+        "operationId": "case_list_api_held_out_cases_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/held-out/cases/{case_id}/{target}": {
+      "get": {
+        "tags": [
+          "held-out teaching cases"
+        ],
+        "summary": "Case Reveal",
+        "operationId": "case_reveal_api_held_out_cases__case_id___target__get",
+        "parameters": [
+          {
+            "name": "case_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Case Id"
+            }
+          },
+          {
+            "name": "target",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "enum": [
+                "cad",
+                "lad",
+                "lcx",
+                "rca"
+              ],
+              "type": "string",
+              "title": "Target"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/model/info": {
+      "get": {
+        "summary": "Model Info",
+        "operationId": "model_info_api_model_info_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/model/info": {
+      "get": {
+        "summary": "Model Info",
+        "operationId": "model_info_model_info_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/model/metrics": {
+      "get": {
+        "summary": "Model Metrics",
+        "operationId": "model_metrics_api_model_metrics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/model/metrics": {
+      "get": {
+        "summary": "Model Metrics",
+        "operationId": "model_metrics_model_metrics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/model/coherence": {
+      "get": {
+        "summary": "Model Coherence",
+        "operationId": "model_coherence_api_model_coherence_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoherenceEvidence"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/model/coherence": {
+      "get": {
+        "summary": "Model Coherence",
+        "operationId": "model_coherence_model_coherence_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoherenceEvidence"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sample-patients": {
+      "get": {
+        "summary": "Samples",
+        "operationId": "samples_api_sample_patients_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sample-patients": {
+      "get": {
+        "summary": "Samples",
+        "operationId": "samples_sample_patients_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/review-profiles": {
+      "get": {
+        "summary": "Review Profiles",
+        "operationId": "review_profiles_api_review_profiles_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/review-profiles": {
+      "get": {
+        "summary": "Review Profiles",
+        "operationId": "review_profiles_review_profiles_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/model/candidates": {
+      "get": {
+        "summary": "Candidate Info",
+        "operationId": "candidate_info_api_model_candidates_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/model/candidates": {
+      "get": {
+        "summary": "Candidate Info",
+        "operationId": "candidate_info_model_candidates_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/predict": {
+      "post": {
+        "summary": "Predict",
+        "operationId": "predict_api_predict_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredictionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/predict": {
+      "post": {
+        "summary": "Predict",
+        "operationId": "predict_predict_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredictionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CoherenceAdjustment": {
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled"
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "euclidean_projection",
+              "none"
+            ],
+            "title": "Method"
+          },
+          "changed_targets": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "cad",
+                "lad",
+                "lcx",
+                "rca"
+              ]
+            },
+            "type": "array",
+            "title": "Changed Targets"
+          },
+          "max_absolute_change": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Max Absolute Change"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "enabled",
+          "method",
+          "changed_targets",
+          "max_absolute_change",
+          "note"
+        ],
+        "title": "CoherenceAdjustment"
+      },
+      "CoherenceEvidence": {
+        "properties": {
+          "scope": {
+            "type": "string",
+            "title": "Scope"
+          },
+          "rows": {
+            "type": "integer",
+            "title": "Rows"
+          },
+          "method": {
+            "type": "string",
+            "const": "euclidean_projection",
+            "title": "Method"
+          },
+          "repeats": {
+            "items": {
+              "$ref": "#/components/schemas/CoherenceEvidenceRepeat"
+            },
+            "type": "array",
+            "title": "Repeats"
+          },
+          "screen_passed": {
+            "type": "boolean",
+            "title": "Screen Passed"
+          },
+          "mean_four_target_brier_delta": {
+            "type": "number",
+            "title": "Mean Four Target Brier Delta"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "scope",
+          "rows",
+          "method",
+          "repeats",
+          "screen_passed",
+          "mean_four_target_brier_delta",
+          "note"
+        ],
+        "title": "CoherenceEvidence"
+      },
+      "CoherenceEvidenceRepeat": {
+        "properties": {
+          "repeat": {
+            "type": "integer",
+            "title": "Repeat"
+          },
+          "raw_mean_four_target_brier": {
+            "type": "number",
+            "title": "Raw Mean Four Target Brier"
+          },
+          "adjusted_mean_four_target_brier": {
+            "type": "number",
+            "title": "Adjusted Mean Four Target Brier"
+          },
+          "adjusted_rows": {
+            "type": "integer",
+            "title": "Adjusted Rows"
+          },
+          "discordant_rows_raw": {
+            "type": "integer",
+            "title": "Discordant Rows Raw"
+          },
+          "discordant_rows_adjusted": {
+            "type": "integer",
+            "title": "Discordant Rows Adjusted"
+          }
+        },
+        "type": "object",
+        "required": [
+          "repeat",
+          "raw_mean_four_target_brier",
+          "adjusted_mean_four_target_brier",
+          "adjusted_rows",
+          "discordant_rows_raw",
+          "discordant_rows_adjusted"
+        ],
+        "title": "CoherenceEvidenceRepeat"
+      },
+      "Explanation": {
+        "properties": {
+          "method": {
+            "type": "string",
+            "title": "Method"
+          },
+          "unit": {
+            "type": "string",
+            "title": "Unit"
+          },
+          "base_value": {
+            "type": "number",
+            "title": "Base Value"
+          },
+          "output_value": {
+            "type": "number",
+            "title": "Output Value"
+          },
+          "additivity_error": {
+            "type": "number",
+            "title": "Additivity Error"
+          },
+          "factors": {
+            "items": {
+              "$ref": "#/components/schemas/Factor"
+            },
+            "type": "array",
+            "title": "Factors"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "method",
+          "unit",
+          "base_value",
+          "output_value",
+          "additivity_error",
+          "factors",
+          "note"
+        ],
+        "title": "Explanation"
+      },
+      "Factor": {
+        "properties": {
+          "feature": {
+            "type": "string",
+            "title": "Feature"
+          },
+          "contribution": {
+            "type": "number",
+            "title": "Contribution"
+          }
+        },
+        "type": "object",
+        "required": [
+          "feature",
+          "contribution"
+        ],
+        "title": "Factor"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "PatientRequest": {
+        "properties": {
+          "features": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Features",
+            "description": "Canonical field names from /model/info. Null means unknown."
+          },
+          "model_variant": {
+            "type": "string",
+            "enum": [
+              "baseline",
+              "histgb_lcx_v2",
+              "calibrated_ensemble_v1"
+            ],
+            "title": "Model Variant",
+            "default": "baseline"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "features"
+        ],
+        "title": "PatientRequest"
+      },
+      "Prediction": {
+        "properties": {
+          "probability": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Probability"
+          },
+          "model_probability": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Model Probability",
+            "description": "Model output before coherence adjustment, reconstructed by the named attribution method."
+          },
+          "classification": {
+            "type": "integer",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Classification"
+          },
+          "category": {
+            "type": "string",
+            "title": "Category"
+          },
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "explanation": {
+            "$ref": "#/components/schemas/Explanation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "probability",
+          "model_probability",
+          "classification",
+          "category",
+          "model",
+          "explanation"
+        ],
+        "title": "Prediction"
+      },
+      "PredictionResponse": {
+        "properties": {
+          "cad": {
+            "$ref": "#/components/schemas/Prediction"
+          },
+          "lad": {
+            "$ref": "#/components/schemas/Prediction"
+          },
+          "lcx": {
+            "$ref": "#/components/schemas/Prediction"
+          },
+          "rca": {
+            "$ref": "#/components/schemas/Prediction"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "missing_features": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Missing Features"
+          },
+          "input_snapshot": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Input Snapshot"
+          },
+          "disclaimer": {
+            "type": "string",
+            "title": "Disclaimer"
+          },
+          "model_version": {
+            "type": "string",
+            "title": "Model Version"
+          },
+          "coherence_adjustment": {
+            "$ref": "#/components/schemas/CoherenceAdjustment"
+          }
+        },
+        "type": "object",
+        "required": [
+          "cad",
+          "lad",
+          "lcx",
+          "rca",
+          "warnings",
+          "missing_features",
+          "input_snapshot",
+          "disclaimer",
+          "model_version",
+          "coherence_adjustment"
+        ],
+        "title": "PredictionResponse"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

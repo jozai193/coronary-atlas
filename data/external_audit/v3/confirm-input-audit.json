@@ -1,0 +1,190 @@
+{
+  "rows": 27125,
+  "columns": 250,
+  "id_missing": 0,
+  "id_unique": 27125,
+  "features": {
+    "age": {
+      "non_null": 27100,
+      "dtype": "float64",
+      "unique": 9135,
+      "values": null
+    },
+    "sex": {
+      "non_null": 27035,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "bmi": {
+      "non_null": 21370,
+      "dtype": "float64",
+      "unique": 6388,
+      "values": null
+    },
+    "height": {
+      "non_null": 21368,
+      "dtype": "float64",
+      "unique": 353,
+      "values": null
+    },
+    "weight": {
+      "non_null": 21528,
+      "dtype": "float64",
+      "unique": 1142,
+      "values": null
+    },
+    "htn": {
+      "non_null": 26810,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "dm": {
+      "non_null": 26901,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "chol": {
+      "non_null": 26860,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "ldl": {
+      "non_null": 10590,
+      "dtype": "float64",
+      "unique": 922,
+      "values": null
+    },
+    "hdl": {
+      "non_null": 11157,
+      "dtype": "float64",
+      "unique": 732,
+      "values": null
+    },
+    "famhx": {
+      "non_null": 26630,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "smokecurrent": {
+      "non_null": 26871,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "smokepast": {
+      "non_null": 15848,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "renal_insufficiency": {
+      "non_null": 12299,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "creatinine": {
+      "non_null": 14893,
+      "dtype": "float64",
+      "unique": 291,
+      "values": null
+    },
+    "cv_disease": {
+      "non_null": 7177,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "chest_pain": {
+      "non_null": 22465,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "typicality": {
+      "non_null": 22770,
+      "dtype": "float64",
+      "unique": 4,
+      "values": [
+        "0.0",
+        "1.0",
+        "2.0",
+        "3.0"
+      ]
+    },
+    "exertion": {
+      "non_null": 11251,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "sob": {
+      "non_null": 21118,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "efinpercent": {
+      "non_null": 8789,
+      "dtype": "float64",
+      "unique": 282,
+      "values": null
+    },
+    "rwma": {
+      "non_null": 5375,
+      "dtype": "float64",
+      "unique": 2,
+      "values": [
+        "0.0",
+        "1.0"
+      ]
+    },
+    "ef_by_other_modality": {
+      "non_null": 1634,
+      "dtype": "float64",
+      "unique": 82,
+      "values": null
+    }
+  }
+}

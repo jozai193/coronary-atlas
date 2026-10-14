@@ -1,0 +1,7 @@
+{
+  "results.json": "13f5378d7437aa9e23e531a6ed224973e68204dc7b70c104d2d4c44371666713",
+  "external_predictions.csv": "924dd6f9e8ee6f0201fc9505cf887ee0f1cc6ef3327df65c3044523941e314ab",
+  "fit_manifest.json": "6fcb262fb6b796d745aec43d5f040c900e59c4d8819fbbeeb02252738d8777c9",
+  "runner_snapshot.py": "83f315074966b72e113d9175eebdff4e9e84d38ac4c36de366f52a9bec9eeafc",
+  "prefit_lock.json": "988d195649ceaf367e5d738034b17a87cad33ba71f04dd2b4b569def44173ffa"
+}

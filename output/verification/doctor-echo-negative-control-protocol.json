@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-10-14T16:04:06.717382+00:00",
+  "reports": "data/external_audit/physionet_v1/raw/mimic-iv-ecg/machine-report-sample.json",
+  "reports_sha256": "f644f20f006958fb210ca03410af5fe9b6f794f11e1e0eae8ec1122c8f1f729a",
+  "parser_sha256": "cb6aa3b5bd134fc770a040db4299a328d7db8b17a3874d7051c5325009b09a77",
+  "source_records": 1000,
+  "sampling": "First 1000 complete records in bounded public machine-table prefix; not random.",
+  "objective": "Check whether ECG machine summary text produces any lab/echo/demographic proposals or auto-confirmation. No diagnostic label mapping or CAD scoring. Negative-only corpus cannot establish extraction sensitivity or clinical safety.",
+  "scope": "Development regression of the unchanged 1000 MIMIC machine reports after echo-template parser safeguards; original evaluation preserved. Not independent validation."
+}

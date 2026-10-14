@@ -1,0 +1,13 @@
+# Beijing source audit — 10 October 2026
+
+**Decision: keep unscored.** This is a potential new center, not a completed independent test. Only the article, codebook, schema, missingness and categorical counts were inspected. No model probabilities, correlations or model-selection metrics were computed.
+
+[Zhang et al., PeerJ 2024](https://doi.org/10.7717/peerj.17012) describes Beijing Hospital Atherosclerosis Study patients recruited in 2017–2020. The paper defines CAD as at least 50% angiographic stenosis. Its official supplements are publicly downloadable through the [NCBI open-data collection](https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10921929.1/); hashes and a reproducible schema audit are saved in `data/external_audit/beijing_v1/schema_audit.json`. Article/data attribution: Zhang and colleagues, CC BY 4.0.
+
+The workbook actually has **3,000 rows and 25 columns**, versus **2,970 enrolled and 2,045 analyzed** in the paper. No patient ID, prior-PCI flag or analysis-inclusion flag identifies the final analysis subset. The stated 923 prior-PCI exclusions also do not by themselves reconcile 2,970 to 2,045. Thirty rows lack angiographic vessel counts. The categorical codebook defines vessel-count codes as 0 / 0.5 / 1 / 2 / 3 vessels, but does not explain the clinical meaning of **0.5** (48 rows) or explicitly supply a binary CAD endpoint. Clinical diagnosis, Gensini score and vessel/region counts must not be inserted as predictors.
+
+Age, sex, measured height/weight, diabetes, hypertension, fasting glucose, lipids and WBC offer potential shared inputs. HB, potassium, sodium and platelets required by the previous 14-input experiment are absent. Any eventual model would have a newly documented input contract; it would not validate the full app or the same 14-input predictor.
+
+Do not guess the published subset, substitute angina for angiographic CAD, or silently discard the ambiguous category. Reopening requires authoritative clarification of the binary endpoint, the 0.5 code and the participant selection. Raw files stay local and outside the source bundle. No author contact was sent.
+
+The same search screened [a 2024 high-frequency QRS study](https://doi.org/10.1186/s12911-024-02620-1), whose data require an author request; [PhysioNet's MIMIC-II arterial-catheter cohort](https://www.physionet.org/content/mimic2-iaccd/1.0/), whose CAD flag is an ICU comorbidity endpoint; and [PATENCY](https://doi.org/10.5061/dryad.dz08kps7j), a CABG cohort without a suitable CAD-negative comparison. None was substituted for the required angiographic task. This was a targeted search, not proof that no suitable open cohort exists.

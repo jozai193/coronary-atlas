@@ -1,0 +1,202 @@
+{
+  "scope": "Retrospective development; already inspected 553-person cohort; separate 14-input CAD task.",
+  "reviewer_guidance": "None. All sensitivity targets are exploratory and unapproved.",
+  "source_sha256": "96a48afb1a362f140af4866715bc5f0478b2eec83828698555dd770bf41d92f6",
+  "rows": [
+    {
+      "method": "source",
+      "point": "fixed_50",
+      "label": "Source: fixed 0.5",
+      "sensitivity": 0.9203980099502488,
+      "specificity": 0.16477272727272727,
+      "fraction_flagged": 0.8661844484629295,
+      "false_negatives": [
+        16,
+        16
+      ],
+      "false_positives": [
+        294,
+        294
+      ],
+      "folds_below_target": null
+    },
+    {
+      "method": "source",
+      "point": "target_90",
+      "label": "Source: 90% calibration target",
+      "sensitivity": 0.8830845771144278,
+      "specificity": 0.265625,
+      "fraction_flagged": 0.7884267631103075,
+      "false_negatives": [
+        27,
+        20
+      ],
+      "false_positives": [
+        257,
+        260
+      ],
+      "folds_below_target": 4
+    },
+    {
+      "method": "local_sigmoid",
+      "point": "fixed_50",
+      "label": "Local + calibration: fixed 0.5",
+      "sensitivity": 0.4950248756218905,
+      "specificity": 0.8764204545454546,
+      "fraction_flagged": 0.2585895117540687,
+      "false_negatives": [
+        96,
+        107
+      ],
+      "false_positives": [
+        49,
+        38
+      ],
+      "folds_below_target": null
+    },
+    {
+      "method": "local_sigmoid",
+      "point": "target_80",
+      "label": "Local + calibration: 80% target",
+      "sensitivity": 0.7835820895522387,
+      "specificity": 0.5866477272727273,
+      "fraction_flagged": 0.5479204339963833,
+      "false_negatives": [
+        48,
+        39
+      ],
+      "false_positives": [
+        132,
+        159
+      ],
+      "folds_below_target": 4
+    },
+    {
+      "method": "local_sigmoid",
+      "point": "target_90",
+      "label": "Local + calibration: 90% target",
+      "sensitivity": 0.8905472636815921,
+      "specificity": 0.43323863636363635,
+      "fraction_flagged": 0.6844484629294756,
+      "false_negatives": [
+        27,
+        17
+      ],
+      "false_positives": [
+        191,
+        208
+      ],
+      "folds_below_target": 3
+    },
+    {
+      "method": "local_sigmoid",
+      "point": "target_95",
+      "label": "Local + calibration: 95% target",
+      "sensitivity": 0.9477611940298507,
+      "specificity": 0.296875,
+      "fraction_flagged": 0.7920433996383363,
+      "false_negatives": [
+        13,
+        8
+      ],
+      "false_positives": [
+        243,
+        252
+      ],
+      "folds_below_target": 3
+    }
+  ],
+  "probabilities": {
+    "source": {
+      "brier": 0.3073481805342348,
+      "auc": 0.6740728177295341,
+      "mean_within_fold_auc": 0.6743193674240566,
+      "log_loss": 0.8267672856998278,
+      "mean_probability": 0.6737328156305846,
+      "average_precision": 0.5778867801844885
+    },
+    "source_sigmoid": {
+      "brier": 0.2122907380965048,
+      "auc": 0.6664829262777024,
+      "mean_within_fold_auc": 0.6743193674240566,
+      "log_loss": 0.6138129368637071,
+      "mean_probability": 0.369243943392503,
+      "average_precision": 0.5512903383521284
+    },
+    "local": {
+      "brier": 0.18316338183275413,
+      "auc": 0.7803878335594754,
+      "mean_within_fold_auc": 0.7847102738381508,
+      "log_loss": 0.5463091687022292,
+      "mean_probability": 0.35876208532810827,
+      "average_precision": 0.6729639378554657
+    },
+    "local_sigmoid": {
+      "brier": 0.1818629123402338,
+      "auc": 0.7735187697874266,
+      "mean_within_fold_auc": 0.7847102738381508,
+      "log_loss": 0.5442194832119068,
+      "mean_probability": 0.37123869485578054,
+      "average_precision": 0.6668856024882925
+    },
+    "constant": {
+      "brier": 0.23163822438987036,
+      "auc": 0.5002120081411126,
+      "mean_within_fold_auc": 0.5,
+      "log_loss": 0.6560173112984684,
+      "mean_probability": 0.35996634275611983,
+      "average_precision": 0.3637271683291319
+    }
+  },
+  "primary": {
+    "probability": {
+      "source": {
+        "difference": -0.12548526819400097,
+        "conditional_95_interval": [
+          -0.14868738117680985,
+          -0.10056454136465752
+        ],
+        "unique_people": 553,
+        "bootstrap_draws": 1000
+      },
+      "constant": {
+        "difference": -0.04977531204963655,
+        "conditional_95_interval": [
+          -0.06492777772468555,
+          -0.03506065508606373
+        ],
+        "unique_people": 553,
+        "bootstrap_draws": 1000
+      },
+      "local": {
+        "difference": -0.001300469492520316,
+        "conditional_95_interval": [
+          -0.005928590103800388,
+          0.003116731997416939
+        ],
+        "unique_people": 553,
+        "bootstrap_draws": 1000
+      }
+    },
+    "operating": {
+      "sensitivity": {
+        "difference": 0.007462686567164179,
+        "conditional_95_interval": [
+          -0.04477611940298507,
+          0.05721393034825871
+        ],
+        "unique_people": 201,
+        "bootstrap_draws": 1000
+      },
+      "specificity": {
+        "difference": 0.16761363636363635,
+        "conditional_95_interval": [
+          0.11647727272727272,
+          0.21878551136363633
+        ],
+        "unique_people": 352,
+        "bootstrap_draws": 1000
+      }
+    }
+  }
+}

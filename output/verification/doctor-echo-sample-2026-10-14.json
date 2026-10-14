@@ -1,0 +1,16 @@
+{
+  "source": "User-supplied partly completed echo report template, received 2026-10-14",
+  "image_sha256": "bdf98769aa6bf9905c4ebb5f2a55251f2e96336e0769addccbbf5703f8ff9ee2",
+  "expected_manually_read_ef": 55,
+  "expected_unknown": "Blank chamber measurements, velocities, gradients, valve area and PA pressure; all coronary narrowing percentages",
+  "baseline": {
+    "parser_sha256": "6c2927a1f326b6a5398af6764330a9fe145a90d8a2865cd53692b45351021d17",
+    "model_proposals": [],
+    "non_get_requests": [],
+    "raw_ocr_sha256": "bb219f3adad2e72d7eb32bba5ec2534c233bb3ffd4dbee191c1b42553e21c730"
+  },
+  "current_parser_sha256": "cb6aa3b5bd134fc770a040db4299a328d7db8b17a3874d7051c5325009b09a77",
+  "review_parser_sha256": "37afea9544da72b8621578e8cf66f246398ee08ff92f52611507a4fc02e413be",
+  "manual_text_fixture_sha256": "9109e6000f660be3f4a0d039404b8145209672a64f011d73175475e7fe7ef968",
+  "scope": "Development regression after viewing the sample and baseline OCR. Manual transcription and synthetic variants are not independent clinical or photo-OCR validation. Full image and raw OCR are not packaged."
+}

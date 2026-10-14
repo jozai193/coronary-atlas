@@ -1,0 +1,318 @@
+{
+  "results": [
+    {
+      "id": "labcorp-cmp-1",
+      "seconds": 5.974,
+      "proposals": [
+        {
+          "field": "CR",
+          "value": 0.76,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 134,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "K",
+          "value": 3.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "CR",
+          "value": 0.76,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 134,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "K",
+          "value": 3.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Age",
+        "Sex"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-2",
+      "seconds": 3.909,
+      "proposals": [
+        {
+          "field": "CR",
+          "value": 1.5,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 150,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "K",
+          "value": 3.8,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "CR",
+          "value": 1.5,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 150,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "K",
+          "value": 3.8,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Age",
+        "Sex"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-3",
+      "seconds": 4.409,
+      "proposals": [],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": []
+    },
+    {
+      "id": "labcorp-cmp-4",
+      "seconds": 1.837,
+      "proposals": [],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": []
+    },
+    {
+      "id": "labcorp-cmp-5",
+      "seconds": 4.416,
+      "proposals": [],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": [
+        "Sex",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-6",
+      "seconds": 3.375,
+      "proposals": [],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": [
+        "Sex",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-hb-1",
+      "seconds": 2.374,
+      "proposals": [
+        {
+          "field": "HB",
+          "value": 13.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "HB",
+          "value": 13.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex"
+      ]
+    },
+    {
+      "id": "labcorp-hb-2",
+      "seconds": 2.363,
+      "proposals": [
+        {
+          "field": "HB",
+          "value": 10.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "HB",
+          "value": 10.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex"
+      ]
+    },
+    {
+      "id": "quest-diabetes-1",
+      "seconds": 2.331,
+      "proposals": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex"
+      ]
+    },
+    {
+      "id": "quest-diabetes-2",
+      "seconds": 2.872,
+      "proposals": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "HB",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "HDL",
+          "value": "\u2014 mg/dL",
+          "issue": "Ambiguous result, range, comparator or multiple numbers. Enter manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "TG",
+          "value": "\u2014 mg/dL",
+          "issue": "Ambiguous result, range, comparator or multiple numbers. Enter manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "LDL",
+          "value": "\u2014 mg/dL",
+          "issue": "Ambiguous result, range, comparator or multiple numbers. Enter manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "Length",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "Weight",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex",
+        "HDL",
+        "TG",
+        "LDL"
+      ]
+    },
+    {
+      "id": "quest-diabetes-3",
+      "seconds": 1.853,
+      "proposals": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "LDL",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex"
+      ]
+    }
+  ],
+  "non_get_requests": [],
+  "device_script_isolation": "Known antivirus-injected kaspersky-labs.com requests blocked only in this test page; device settings unchanged.",
+  "protocol_sha256": "6d5ae83613225caa18b62290d3d0b3d6bcf0d712e0f6546934870edfbd9ca04c",
+  "parser_sha256": "6c2927a1f326b6a5398af6764330a9fe145a90d8a2865cd53692b45351021d17",
+  "pages": 11,
+  "source_documents": 3,
+  "correct_unflagged": 11,
+  "incorrect_unflagged": 0,
+  "eligible_fields": 27,
+  "coverage": 0.4074074074074074,
+  "unflagged_precision": 1.0,
+  "scope": "Development replay of the same 11 pages after test-heading/commentary fixes. This is no longer an unseen evaluation. Original v1 protocol/results retained. Antivirus-injected requests isolated only in the test page.",
+  "generalization": "Pages cluster within three specimen documents, not independent patients. No clinical OCR or model-accuracy validation."
+}

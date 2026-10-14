@@ -1,0 +1,161 @@
+{
+  "scope": "retrospective development on already inspected China cohort; not independent validation or app predictions",
+  "unique_people": 553,
+  "repeats": 2,
+  "source_sha256": "8f3ca4676540a4a9b1184a4071aa5c057f4021995dd9a3ca1804d7968c743fe5",
+  "rows": [
+    {
+      "method": "source",
+      "label": "Frozen source",
+      "budget": "0",
+      "auc": 0.6740728177295341,
+      "mean_within_fold_auc": 0.6743193674240566,
+      "brier": 0.3073481805342348,
+      "log_loss": 0.8267672856998278,
+      "average_precision": 0.5778867801844885,
+      "mean_probability": 0.6737328156305846,
+      "accuracy": 0.4394213381555154,
+      "sensitivity": 0.9203980099502488,
+      "specificity": 0.16477272727272727,
+      "false_negatives": [
+        16,
+        16
+      ],
+      "false_positives": [
+        294,
+        294
+      ]
+    },
+    {
+      "method": "constant",
+      "label": "Local prevalence",
+      "budget": "64",
+      "auc": 0.5009575701040253,
+      "mean_within_fold_auc": 0.5,
+      "brier": 0.2357647914783002,
+      "log_loss": 0.6654229076623726,
+      "average_precision": 0.36394793418961136,
+      "mean_probability": 0.3576797016274864,
+      "accuracy": 0.6365280289330922,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "false_negatives": [
+        201,
+        201
+      ],
+      "false_positives": [
+        0,
+        0
+      ]
+    },
+    {
+      "method": "offset",
+      "label": "Intercept adjustment",
+      "budget": "64",
+      "auc": 0.664348710990502,
+      "mean_within_fold_auc": 0.6743193674240566,
+      "brier": 0.2112601063573866,
+      "log_loss": 0.6115120426034069,
+      "average_precision": 0.561738075484572,
+      "mean_probability": 0.3562455043805968,
+      "accuracy": 0.6853526220614828,
+      "sensitivity": 0.32089552238805974,
+      "specificity": 0.8934659090909092,
+      "false_negatives": [
+        145,
+        128
+      ],
+      "false_positives": [
+        37,
+        38
+      ]
+    },
+    {
+      "method": "sigmoid",
+      "label": "Sigmoid recalibration",
+      "budget": "64",
+      "auc": 0.6608505766621438,
+      "mean_within_fold_auc": 0.6743193674240566,
+      "brier": 0.212118899570583,
+      "log_loss": 0.6139588225683332,
+      "average_precision": 0.5650379605829383,
+      "mean_probability": 0.355156537072559,
+      "accuracy": 0.674502712477396,
+      "sensitivity": 0.2537313432835821,
+      "specificity": 0.9147727272727273,
+      "false_negatives": [
+        145,
+        155
+      ],
+      "false_positives": [
+        38,
+        22
+      ]
+    },
+    {
+      "method": "local_logistic",
+      "label": "Local logistic",
+      "budget": "64",
+      "auc": 0.7106936906377206,
+      "mean_within_fold_auc": 0.7404498944888847,
+      "brier": 0.2058303127252779,
+      "log_loss": 0.5989342189223883,
+      "average_precision": 0.5924994913948345,
+      "mean_probability": 0.35211626870451973,
+      "accuracy": 0.6835443037974684,
+      "sensitivity": 0.22636815920398012,
+      "specificity": 0.9446022727272727,
+      "false_negatives": [
+        161,
+        150
+      ],
+      "false_positives": [
+        18,
+        21
+      ]
+    },
+    {
+      "method": "local_logistic",
+      "label": "Local logistic",
+      "budget": "442\u2013443",
+      "auc": 0.7784585594753505,
+      "mean_within_fold_auc": 0.7822614099229523,
+      "brier": 0.18422519163954165,
+      "log_loss": 0.5489617731240285,
+      "average_precision": 0.660201790307506,
+      "mean_probability": 0.36318878044259495,
+      "accuracy": 0.7179023508137432,
+      "sensitivity": 0.39303482587064675,
+      "specificity": 0.9034090909090908,
+      "false_negatives": [
+        126,
+        118
+      ],
+      "false_positives": [
+        32,
+        36
+      ]
+    }
+  ],
+  "primary": {
+    "source": {
+      "delta_brier": -0.09522928096365174,
+      "conditional_95_interval": [
+        -0.12050970707858932,
+        -0.07224209125897624
+      ],
+      "unique_people": 553,
+      "draws": 1000
+    },
+    "constant": {
+      "delta_brier": -0.023645891907717157,
+      "conditional_95_interval": [
+        -0.03364786475316669,
+        -0.013776143369291668
+      ],
+      "unique_people": 553,
+      "draws": 1000
+    }
+  },
+  "primary_screen": true
+}

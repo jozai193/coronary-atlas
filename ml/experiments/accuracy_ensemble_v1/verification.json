@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "roles_replayed": 60,
+  "inner_member_predictions_replayed": 1260,
+  "prediction_rows": 3636,
+  "metric_groups": 96,
+  "maximum_outer_probability_residual": 0.0,
+  "protected_files_unchanged": 212,
+  "results_sha256": "cdaacc957e22ff3f01b68a215dffea8e6db38c7dac583b6c574da2e8f6d60d9d",
+  "fit_receipt_sha256": "6ef6953d127824d576ba2a540d69b2eb8a0253a1e5bfa2b75f6aa5faf072e86a",
+  "verifier_sha256": "52ab55fce63f35a15351764ac524b33c5eae32bdcda28098f34761eebb602087"
+}

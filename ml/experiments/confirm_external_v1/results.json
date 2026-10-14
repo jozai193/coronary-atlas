@@ -1,0 +1,339 @@
+{
+  "evaluated_utc": "2026-10-08T06:56:35.392028+00:00",
+  "role": "Separate reduced-input external CCTA transport experiment; NOT validation of the app.",
+  "fit_manifest_sha256": "7244220da12ae509ae055ec6fa9cbca9fe847636748518733570980ea566f4a4",
+  "amended_runner_sha256": "32c9512d53728c101be724eac1b5fbab965076274682bc31fcd5e6c75db5c4d6",
+  "mapping_amendment_sha256": "93d0e104828ecaa538aff128d49c3757cbd83f7f79895683c33c9cb7c405dee0",
+  "rows": 27125,
+  "unique_study_ids": 27125,
+  "missing_per_input": {
+    "Age": 25,
+    "BMI": 5755,
+    "LDL": 16535,
+    "HDL": 15968
+  },
+  "exclusions": {
+    "incomplete_inputs": 16831,
+    "complete_but_outside_sanity_bounds": 149,
+    "exact_four_input_matches_to_source": 0,
+    "eligible_inputs": 10145,
+    "eligible_inputs_prior_history_or_unknown": 3045
+  },
+  "label_diagnostic": {
+    "complete_rows": 25326,
+    "cad_vs_four_vessel_OR_mismatches": 0,
+    "action": "Labels retained as supplied; diagnostic only."
+  },
+  "mapping_assumption": "CAD uses supplied stenosis_50 after a coding-only amendment. Formal codebook absent; semantics inferred from paper endpoint, headers and cross-column consistency. Binary 1 means named condition present, 0 absent; 50 suffix denotes nominal 50% CCTA threshold. Formal workbook codebook not supplied.",
+  "cohorts": {
+    "primary": {
+      "cad": {
+        "accuracy": 0.23890063424947147,
+        "precision": 0.1890547263681592,
+        "recall": 0.9835294117647059,
+        "f1": 0.3171471927162367,
+        "roc_auc": 0.6563763897311502,
+        "specificity": 0.07577319587628865,
+        "brier": 0.4086245940639804,
+        "log_loss": 1.0602685162709307,
+        "confusion_matrix": [
+          [
+            441,
+            5379
+          ],
+          [
+            21,
+            1254
+          ]
+        ],
+        "rows": 7095,
+        "positive_rows": 1275,
+        "prevalence": 0.17970401691331925,
+        "mean_predicted_probability": 0.6956862508571394,
+        "intervals": {
+          "roc_auc_95": [
+            0.6391942088791444,
+            0.6726471053771677
+          ],
+          "brier_95": [
+            0.40355560086419057,
+            0.41357631072534506
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.43167782124747117,
+        "excluded_missing_target": 5
+      },
+      "lad": {
+        "accuracy": 0.3832909963307931,
+        "precision": 0.16188402928953097,
+        "recall": 0.8583420776495279,
+        "f1": 0.2723942723942724,
+        "roc_auc": 0.6440469898707369,
+        "specificity": 0.3094733409424425,
+        "brier": 0.30291345490110416,
+        "log_loss": 0.8065391240183295,
+        "confusion_matrix": [
+          [
+            1898,
+            4235
+          ],
+          [
+            135,
+            818
+          ]
+        ],
+        "rows": 7086,
+        "positive_rows": 953,
+        "prevalence": 0.13449054473609934,
+        "mean_predicted_probability": 0.5667357915959345,
+        "intervals": {
+          "roc_auc_95": [
+            0.627383014669614,
+            0.6618012035962338
+          ],
+          "brier_95": [
+            0.29984585448852796,
+            0.30603167665618203
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.3186040324172254,
+        "excluded_missing_target": 14
+      },
+      "lcx": {
+        "accuracy": 0.8326472675656494,
+        "precision": 0.11320754716981132,
+        "recall": 0.285,
+        "f1": 0.16204690831556504,
+        "roc_auc": 0.6470985703536494,
+        "specificity": 0.8656132430398796,
+        "brier": 0.16379979159037228,
+        "log_loss": 0.5106436975557375,
+        "confusion_matrix": [
+          [
+            5752,
+            893
+          ],
+          [
+            286,
+            114
+          ]
+        ],
+        "rows": 7045,
+        "positive_rows": 400,
+        "prevalence": 0.05677785663591199,
+        "mean_predicted_probability": 0.3803815709842676,
+        "intervals": {
+          "roc_auc_95": [
+            0.6180459719521869,
+            0.673325877360135
+          ],
+          "brier_95": [
+            0.16167892352794197,
+            0.16629041187089602
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.16642420554024429,
+        "excluded_missing_target": 55
+      },
+      "rca": {
+        "accuracy": 0.8661495063469675,
+        "precision": 0.13620689655172413,
+        "recall": 0.14990512333965844,
+        "f1": 0.14272809394760613,
+        "roc_auc": 0.6256071282253076,
+        "specificity": 0.9236629590126466,
+        "brier": 0.16617769775874908,
+        "log_loss": 0.5187925999839602,
+        "confusion_matrix": [
+          [
+            6062,
+            501
+          ],
+          [
+            448,
+            79
+          ]
+        ],
+        "rows": 7090,
+        "positive_rows": 527,
+        "prevalence": 0.07433004231311707,
+        "mean_predicted_probability": 0.38389911138328603,
+        "intervals": {
+          "roc_auc_95": [
+            0.603657049542784,
+            0.647456340122791
+          ],
+          "brier_95": [
+            0.16432219014308808,
+            0.16790067532228498
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.15995327485938837,
+        "excluded_missing_target": 10
+      }
+    },
+    "secondary_all_history": {
+      "cad": {
+        "accuracy": 0.26709470304975924,
+        "precision": 0.2249119218092965,
+        "recall": 0.9855577689243028,
+        "f1": 0.36624410104561855,
+        "roc_auc": 0.6648911373722773,
+        "specificity": 0.0704647676161919,
+        "brier": 0.39646696269868115,
+        "log_loss": 1.0325320981655877,
+        "confusion_matrix": [
+          [
+            517,
+            6820
+          ],
+          [
+            29,
+            1979
+          ]
+        ],
+        "rows": 9345,
+        "positive_rows": 2008,
+        "prevalence": 0.21487426431246656,
+        "mean_predicted_probability": 0.7012957547886951,
+        "intervals": {
+          "roc_auc_95": [
+            0.6515543266409484,
+            0.6766360966355233
+          ],
+          "brier_95": [
+            0.3921336233202615,
+            0.40111286693889187
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.4167043495824877,
+        "excluded_missing_target": 800
+      },
+      "lad": {
+        "accuracy": 0.38448275862068965,
+        "precision": 0.18879576532862816,
+        "recall": 0.8681541582150102,
+        "f1": 0.3101449275362319,
+        "roc_auc": 0.6518183596544852,
+        "specificity": 0.29278297654146906,
+        "brier": 0.3017397441220252,
+        "log_loss": 0.8039050987814784,
+        "confusion_matrix": [
+          [
+            2284,
+            5517
+          ],
+          [
+            195,
+            1284
+          ]
+        ],
+        "rows": 9280,
+        "positive_rows": 1479,
+        "prevalence": 0.159375,
+        "mean_predicted_probability": 0.5731646758057664,
+        "intervals": {
+          "roc_auc_95": [
+            0.638163377009067,
+            0.6682571195466386
+          ],
+          "brier_95": [
+            0.29902342598450565,
+            0.30460517377547375
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.3144155597490441,
+        "excluded_missing_target": 865
+      },
+      "lcx": {
+        "accuracy": 0.8176710366861297,
+        "precision": 0.14864864864864866,
+        "recall": 0.31334332833583206,
+        "f1": 0.20164013506994694,
+        "roc_auc": 0.6600436404865343,
+        "specificity": 0.8576694411414982,
+        "brier": 0.16980186275221837,
+        "log_loss": 0.5236461627461708,
+        "confusion_matrix": [
+          [
+            7213,
+            1197
+          ],
+          [
+            458,
+            209
+          ]
+        ],
+        "rows": 9077,
+        "positive_rows": 667,
+        "prevalence": 0.07348242811501597,
+        "mean_predicted_probability": 0.3872945799454704,
+        "intervals": {
+          "roc_auc_95": [
+            0.637921963291535,
+            0.6809748359394259
+          ],
+          "brier_95": [
+            0.16775743146944608,
+            0.17179718865579147
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.17000769447140518,
+        "excluded_missing_target": 1068
+      },
+      "rca": {
+        "accuracy": 0.8451057335949422,
+        "precision": 0.20116279069767443,
+        "recall": 0.19073869900771775,
+        "f1": 0.19581211092246745,
+        "roc_auc": 0.6434832290389827,
+        "specificity": 0.9168985121567679,
+        "brier": 0.17298503428903184,
+        "log_loss": 0.5330887182310263,
+        "confusion_matrix": [
+          [
+            7580,
+            687
+          ],
+          [
+            734,
+            173
+          ]
+        ],
+        "rows": 9174,
+        "positive_rows": 907,
+        "prevalence": 0.09886636145628952,
+        "mean_predicted_probability": 0.38995772848272503,
+        "intervals": {
+          "roc_auc_95": [
+            0.6252258506939294,
+            0.6597604270482195
+          ],
+          "brier_95": [
+            0.17121878930860152,
+            0.17474532450580654
+          ],
+          "valid_resamples": 500,
+          "note": "Row bootstrap conditional on fitted model; excludes site clustering and source refit uncertainty."
+        },
+        "source_prevalence_constant_brier": 0.16602662118195582,
+        "excluded_missing_target": 971
+      }
+    }
+  },
+  "app_hashes_unchanged": true
+}

@@ -1,0 +1,13 @@
+.demo-context{margin:18px 0 24px;padding:22px;border:1px solid #526b72;border-radius:15px;background:#142d37;color:#d8e7e6}
+.demo-context-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.demo-context h2{font-size:18px;margin:7px 0 0;color:#edf5f2}.demo-context p{font-size:13px;line-height:1.7;margin:12px 0}
+.demo-context-tag{font-size:11px;line-height:1.5;padding:6px 9px;border-radius:7px;color:#f2d7aa;background:#3c3730;flex-shrink:0}
+.demo-valve-context{padding:14px 16px;border-left:3px solid #e4b779;background:#20343d;border-radius:5px;font-size:13px}
+.demo-valve-context p{margin:7px 0}.demo-context button{background:none;border:0;padding:0;color:#a8e9d6;font:inherit;text-align:left;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.demo-context details{margin-top:16px}.demo-context summary{font-size:13px;color:#b8e8dd;cursor:pointer;padding:4px 0}
+.demo-context-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.demo-context-groups section{min-width:0;padding:14px;border:1px solid #3c5660;border-radius:9px;background:#102731}
+.demo-context-groups h3{font-size:13px;margin:0 0 10px;color:#e2eeeb}.demo-context dl{margin:0}
+.demo-context dl>div{padding:8px 0;border-top:1px solid #304b55}.demo-context dt{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.demo-context dd{margin:4px 0 0;font-size:12px}.demo-context dd strong{font-weight:500}.demo-context dd small{display:block;font-size:10px;color:#a6bdc4;margin-top:3px}
+@media(max-width:800px){.demo-context{padding:16px}.demo-context-head{flex-direction:column}.demo-context-groups{grid-template-columns:1fr}.demo-context-tag{flex-shrink:1}}

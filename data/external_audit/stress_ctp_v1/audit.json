@@ -1,0 +1,170 @@
+{
+  "source": "https://data.mendeley.com/datasets/smwx5gzvxn/1",
+  "title": "2018 IJC (Single stress dataset CTP accuracy)",
+  "contributor": "Gianluca Pontone",
+  "license": "CC BY 4.0",
+  "sha256": "aea2c411f59d91fe183a3f97ea80dfcff8739f4e2cdd167ad75ba768bbb32ff2",
+  "provider_hash_matches": true,
+  "raw_sheet_rows_after_header": 133,
+  "participant_rows_with_id": 130,
+  "unique_ids": 130,
+  "worksheet_columns": 259,
+  "sheets": [
+    {
+      "name": "Database",
+      "state": "visible"
+    }
+  ],
+  "cell_comments": 0,
+  "named_ranges": [
+    "AW",
+    "EY"
+  ],
+  "data_validation_lists": 0,
+  "columns": {
+    "DEMOGRAPHIC CHARACTERISTICS": {
+      "nonmissing": 0,
+      "distinct": 0,
+      "counts": {}
+    },
+    "CLINICAL HISTORY": {
+      "nonmissing": 0,
+      "distinct": 0,
+      "counts": {}
+    },
+    "SYMPTOMS": {
+      "nonmissing": 130,
+      "distinct": 4,
+      "counts": {
+        "0.0": 48,
+        "2.0": 35,
+        "3.0": 26,
+        "1.0": 21
+      }
+    },
+    "ANGINA": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "2.0": 73,
+        "1.0": 57
+      }
+    },
+    "PRE_TEST_LIKELIHOOD_OF_CAD": {
+      "nonmissing": 130,
+      "distinct": 14,
+      "counts": {
+        "59.0": 27,
+        "69.0": 25,
+        "68.0": 21,
+        "77.0": 18,
+        "89.0": 9,
+        "58.0": 8,
+        "84.0": 6,
+        "47.0": 5,
+        "49.0": 3,
+        "78.0": 2,
+        "37.0": 2,
+        "28.0": 2,
+        "76.0": 1,
+        "38.0": 1
+      }
+    },
+    "STRESS_TEST": {
+      "nonmissing": 130,
+      "distinct": 5,
+      "counts": {
+        "1.0": 52,
+        "3.0": 33,
+        "0.0": 33,
+        "2.0": 9,
+        "4.0": 3
+      }
+    },
+    "STRESS TEST_RESULT": {
+      "nonmissing": 97,
+      "distinct": 3,
+      "counts": {
+        "1.0": 76,
+        "0.0": 13,
+        "2.0": 8
+      }
+    },
+    "FAMILY_HISTORY_CAD": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "1.0": 78,
+        "0.0": 52
+      }
+    },
+    "SMOKING": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "0.0": 94,
+        "1.0": 36
+      }
+    },
+    "HYPERTENSION": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "1.0": 102,
+        "0.0": 28
+      }
+    },
+    "DYSLIPIDEMIA": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "1.0": 82,
+        "0.0": 48
+      }
+    },
+    "DIABETES": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "0.0": 105,
+        "1.0": 25
+      }
+    },
+    "LAD_ICA_summary": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "0.0": 69,
+        "1.0": 61
+      }
+    },
+    "LCX_ICA_summary": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "0.0": 89,
+        "1.0": 41
+      }
+    },
+    "RCA_ICA_summary": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "0.0": 86,
+        "1.0": 44
+      }
+    },
+    "PTS_ICA_summary": {
+      "nonmissing": 130,
+      "distinct": 2,
+      "counts": {
+        "1.0": 83,
+        "0.0": 47
+      }
+    }
+  },
+  "decision": "Not fitted or scored. No age/sex columns; demographic and clinical-history sections empty. Risk-factor and symptom code meanings are not established by a workbook dictionary. Imaging stress/procedure fields are not substitutes for pre-test app inputs. ICA summary labels require an explicit stenosis/branch definition before mapping; FFR and CTP outcomes are different endpoints.",
+  "potential_followup": "Authoritative code and endpoint definitions could support a separate limited-risk-factor transport study. This is not compatible independent validation of the 55-input app.",
+  "trained": false,
+  "scored": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "held_out_target_predictions": 14544,
+  "shared_outer_folds": 15,
+  "scenarios": [
+    "complete",
+    "no_laboratory",
+    "no_echo",
+    "core_only"
+  ],
+  "maximum_probability_residual": 0.0,
+  "packaged_artifact_and_evidence_integrity": "passed",
+  "protected_historical_files_unchanged": 212,
+  "scope": "Production inference math replay with held-out fold models; full-data packaged models are not held-out validation.",
+  "hashes": {
+    "scripts/verify_packaged_ensemble.py": "07ef9b5638c0bce7903826afbe2e7aed088a84fe82dd7d0ecdba4c1653578ea3",
+    "ml/ensemble_candidate.py": "0dfabe781726e02c261f833a60c90b6888f20cc72e33d3cabe28c95d1e270e3f",
+    "models/candidates/calibrated_ensemble_v1/manifest.json": "d15100f6f19e735ae2ff7721697e6cc93e01475607f4a578c1a36853fa18b1aa",
+    "ml/experiments/accuracy_missingness_v1/predictions.csv": "e0f53a5537db22bcd34e1d6474397c6c405df9b207859eec2e6fe435391a32d9"
+  }
+}

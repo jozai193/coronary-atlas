@@ -1,0 +1,14 @@
+# Judge walkthrough
+
+Open the public Space at https://huggingface.co/spaces/jozai182/coronary-atlas. No application password or API key is required. Deployment verification is recorded in the final release receipt; a free host may need to wake before first use.
+
+1. Choose **Explore profile A**, then **Explore profile B**. Both supply all 55 actual source inputs. A is worksheet row 5, with all four source labels Normal; B is row 7, with CAD and three Stenotic vessel labels. Cases were selected by these contrasts and source row order before scoring, not by confidence. They were used in development and cannot establish accuracy.
+2. Rotate/zoom the heart. Focus LAD, LCX and RCA, use camera presets and internal anatomy, isolate a vessel, and switch between anatomy and probability display. The model colours shared reference anatomy; it does not locate lesions or measure narrowing.
+3. Read the explanation for each vessel. The baseline uses SHAP for raw outputs. Displayed probabilities have a disclosed consistency adjustment. Optional research variants disclose their methods and development limitations.
+4. Open **Model evidence** for internal metrics, cutoff trade-offs, missed cases and false alarms. The four-case challenge uses saved original-cohort held-out results and includes errors. Reduced-input external studies do not validate the full 55-input app.
+5. Open **case summary**; download a worksheet or research JSON. Edit an observation and check that old predictions clear. Loading another profile clears report evidence and pending OCR.
+6. Try **Import a report photo** with one de-identified English page, or paste text such as `LDL Cholesterol: 110 mg/dL` and `LVEF: 55 %`. Find proposals, compare them to the source and confirm individually. Applying a new case clears other inputs; a few extracted values are insufficient for prediction. Restore A/B to continue the complete demo. Reference ranges, conflicts and unreadable text require manual review.
+7. Echo chamber/valve/flow/impression excerpts can be copied into source-review notes after confirming source/case identity. They do not populate model categories or coronary narrowing. The supplied template image did not produce a reliable automatic EF; corrected-text regression is documented separately.
+8. Open **Explore real public ECG references**. Select any of twelve source records and view its calibrated waveform, original report string and annotations. These are separate people; selecting them cannot change the current profile or predictions.
+
+The app does not persist entered patient observations or upload report images. Use synthetic or de-identified information. Predictions are educational/research estimates, not diagnoses, future event risks, measured stenosis percentages or clinical decisions.

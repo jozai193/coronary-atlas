@@ -1,0 +1,27 @@
+{
+  "inputs_sha256": {
+    "data/raw/extention of Z-Alizadeh sani dataset.xlsx": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+    "ml/metrics/evaluation.json": "a8b884b2f1be42da467540fc9e282e992d3fc8312bbfc05478b58890204b1815",
+    "models/metadata.json": "f5dd3327b6189238e33ab58090c937977b5b1140c0b87f20dc9d83dc5b9d52c7",
+    "ml/schema.py": "8a4fa4aae2795e1f57601dd350f777edf90e61b1a118abe1659532fa92f59049",
+    "ml/preprocessing.py": "53ceea948ed8cb40a242abd4de899a2df3083847ee49bb5bfebc9451000af5f3",
+    "ml/evaluate.py": "333b55e651c3835724111da03775546f2b44faac2dc6673abf248c8a305fb401",
+    "ml/input_missingness_stress.py": "38aa72879349f182182433ffea7eb2cd8474a8b681bf5bb25755648f79ae94c5",
+    "docs/input_missingness_stress_protocol.md": "a0cc2fd2413908c69816b04b24181977faf46efa6c47b62ff2e0c464dff1acbe",
+    "ml/metrics/cad_oof.csv": "fd3338c643df139efacb01a537fae7ea7954013f1a06bd288947a88b0672c643",
+    "models/cad.joblib": "8e41eb736fe1c3ad9148b679ebe942a769b05530cc324abaa3141f0d68789271",
+    "ml/metrics/lad_oof.csv": "1a61e13c35bba8fc534bc604291ed60c4e61ab41e4956f702e3f149f146f8b33",
+    "models/lad.joblib": "a761c7eaea02231afbfd17a762a0309f90bf6dc07849fc58c454f3e8dfce141f",
+    "ml/metrics/lcx_oof.csv": "fce2bf63f7c0e8d8be413f820bfb4921b42b045767e47f42456f043153f2f8ce",
+    "models/lcx.joblib": "c91973f59f4f37fde361b8a57a126ebb78f717ee6774d0c24fcd1ab378992e35",
+    "ml/metrics/rca_oof.csv": "d70e7c05bf7cc6e18b8a6e6f6f967a2183d3154942b2c9265e5a826df474a6d4",
+    "models/rca.joblib": "92fd77e5913681ba50ec145f4a65452ee4791a6049a67c869c1c64f2a4d8e7e5"
+  },
+  "outputs_sha256": {
+    "output/research/input_missingness_v1/cad_predictions.csv": "77dcde0c481b9a5e0e34f90dee25d9f373a52cebc2f9ea32297e440bd5b4efb5",
+    "output/research/input_missingness_v1/lad_predictions.csv": "d52d32bba0478930e6788ab8cfae8b31b77018fd80b45a0db93dd8c63e2d6ff4",
+    "output/research/input_missingness_v1/lcx_predictions.csv": "0e824707826b7a91a05a277f9feeb897ae8f0b75730813b392fbf09f60a3b513",
+    "output/research/input_missingness_v1/rca_predictions.csv": "6013d2cdf5676999cf2c27575a7e7bb9590302fc9a2e8ac376e0b24148fa59e7",
+    "output/research/input_missingness_v1/results.json": "f2accb0257fc33c96e2473f91fd4a3cb9ddd3df84f714ef753d49166ffa61147"
+  }
+}

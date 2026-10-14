@@ -1,0 +1,12 @@
+{
+  "status": "stopped_before_external_prediction",
+  "reason": "obstructive_cad had codes 0,1,2 rather than binary",
+  "external_predictions": 0,
+  "source_model_refits": 0,
+  "observed_codes": [
+    0,
+    1,
+    2
+  ],
+  "timestamp_utc": "2026-10-08T06:56:14.308952+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "roles": 60,
+  "inner_predictions_replayed": 2160,
+  "outer_models_replayed": 120,
+  "prediction_rows": 3636,
+  "results_sha256": "85ff3449ec1ad2255f5a21c45e81eb1aa84b89bd7bc1603c89eda48b47a055db",
+  "fit_receipt_sha256": "0d7fee47eb54f9341f93e84fba078c85e75bc24bcde120b962bcc12e65cf3648",
+  "verifier_sha256": "62b2fb4ca4cd9cf1aeea0db0919424e245a374b102fb055f3ace4f499117eb8b"
+}

@@ -1,0 +1,24 @@
+{
+  "protocol_sha256": "25099236c1e75b083c843d3be0a9182dde6accf632a7c2012c3bcfcce9380ad0",
+  "code_sha256": "db258651255f2e650a8cb82bbc14d7ce3ae0b72b686b50414845cb63c6893ac8",
+  "raw_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "seeds": [
+    20261007,
+    20261108
+  ],
+  "candidates": [
+    "logistic_003",
+    "logistic_03",
+    "forest",
+    "boosting",
+    "logistic_0003",
+    "logistic_1",
+    "balanced_logistic_003",
+    "balanced_logistic_03",
+    "balanced_forest",
+    "extra",
+    "balanced_extra"
+  ],
+  "production_metadata_sha256": "f5dd3327b6189238e33ab58090c937977b5b1140c0b87f20dc9d83dc5b9d52c7",
+  "warning": "Exploratory repeated internal validation of reused data. Not external validation."
+}

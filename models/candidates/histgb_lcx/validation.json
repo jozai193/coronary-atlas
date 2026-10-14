@@ -1,0 +1,41 @@
+{
+  "inference_verified": true,
+  "explanation_method": "existing ml.explain TreeSHAP path-dependent raw-margin path",
+  "explanation_unit": "log-odds",
+  "full_cohort_rows_reconstructed": 303,
+  "full_cohort_max_additivity_error": 2.6645352591003757e-15,
+  "full_cohort_max_explained_vs_decision_function_delta": 0.0,
+  "full_cohort_explanations_seconds": 5.919826400000602,
+  "full_cohort_mean_explanation_ms_per_row": 19.537380858087797,
+  "repeated_explanation_exactly_equal": true,
+  "synthetic_cases": [
+    {
+      "case": "null_numeric_and_category",
+      "probability": 0.2527140811807209,
+      "output_value": -1.0841891322601385,
+      "additivity_error": 2.220446049250313e-16,
+      "finite_grouped_factors": true
+    },
+    {
+      "case": "numeric_out_of_range",
+      "probability": 0.7946164663213564,
+      "output_value": 1.3529804387605553,
+      "additivity_error": 1.1102230246251565e-15,
+      "finite_grouped_factors": true
+    }
+  ],
+  "note": "All-cohort explanation is a fidelity check on the fitted artifact, not held-out performance evidence.",
+  "fit_rows": 303,
+  "fit_seconds": 0.08749070001067594,
+  "batch_prediction_rows": 303,
+  "batch_prediction_seconds": 0.009346599981654435,
+  "mean_batch_prediction_ms_per_row": 0.03084686462592223,
+  "repeat_fit_probability_max_delta": 0.0,
+  "artifact_probability_range": [
+    0.029795010331756452,
+    0.9136593224201744
+  ],
+  "sklearn_version": "1.9.1",
+  "shap_version": "0.51.0",
+  "thread_limit": 1
+}

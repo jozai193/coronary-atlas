@@ -1,0 +1,6152 @@
+[
+  {
+    "key": "cad_uci_r1_f0",
+    "seconds": 0.11000000000058208,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6308475034085951
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5495700607168448
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.37343646056198515
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5097954809017239
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.4432182577622306
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.43955990148853474
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.32096600953064536
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5410745722877042
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 21,
+      "objective": 549.1385476346459,
+      "max_abs_gradient": 0.001140149389362577
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6547272903568737,
+      "anhui": -0.7433973899721479,
+      "uci": 0.8800793668980903
+    },
+    "calibration": {
+      "local": {
+        "slope": 2.4008242149471224,
+        "intercept": -1.087558334388515
+      },
+      "pooled": {
+        "slope": 1.1773382730157858,
+        "intercept": 0.6484622225883607
+      },
+      "cohort_intercepts": {
+        "slope": 1.0977277003626136,
+        "intercept": 0.0074553875425568085
+      },
+      "transfer_pooled": {
+        "slope": 0.8861707479149897,
+        "intercept": 0.8287089869819491
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r1_f1",
+    "seconds": 0.046999999998661224,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5869189777429628
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4956460455715121
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.34783479079754775
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5182636237540758
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5285189602659552
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5087915985505532
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3026642790588033
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.56568007775253
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 20,
+      "objective": 550.7682152729237,
+      "max_abs_gradient": 0.0020122573506453634
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6276258688036442,
+      "anhui": -0.7253405572828502,
+      "uci": 0.875839443443932
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.9153489984119814,
+        "intercept": -0.6901692418950203
+      },
+      "pooled": {
+        "slope": 0.8820073759301356,
+        "intercept": 0.6274906440490948
+      },
+      "cohort_intercepts": {
+        "slope": 1.2043581470962905,
+        "intercept": -0.10236743051004454
+      },
+      "transfer_pooled": {
+        "slope": 0.6471865023629222,
+        "intercept": 0.8044168021496121
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r1_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6029073689484638
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5521800085406473
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.34659851415812093
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5063464888757417
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5183337314534742
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5419003428304214
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2771454499536894
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5224707654075285
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 545.2751358364804,
+      "max_abs_gradient": 0.0005560643651632557
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6625053594025547,
+      "anhui": -0.7601889973978359,
+      "uci": 0.8456054792060083
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.5199592391702876,
+        "intercept": -0.4252430899102072
+      },
+      "pooled": {
+        "slope": 0.8799940205035386,
+        "intercept": 0.5833252486879072
+      },
+      "cohort_intercepts": {
+        "slope": 0.8583973951890282,
+        "intercept": 0.10501661824395712
+      },
+      "transfer_pooled": {
+        "slope": 0.6954213148771758,
+        "intercept": 0.7566201183092497
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r1_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6005652098295198
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.548074937563346
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4461945600544692
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5733014768548204
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5930248262801703
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5617183208317444
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3597844427137754
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5562729707745496
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 21,
+      "objective": 548.7767598585478,
+      "max_abs_gradient": 0.0012917891343136034
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6423150289944966,
+      "anhui": -0.7434247167849498,
+      "uci": 0.8745698338253843
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.5502352016168475,
+        "intercept": -0.43932236273444836
+      },
+      "pooled": {
+        "slope": 1.3041464138194412,
+        "intercept": 0.5771057006467128
+      },
+      "cohort_intercepts": {
+        "slope": 1.424285447132726,
+        "intercept": -0.2880820848867516
+      },
+      "transfer_pooled": {
+        "slope": 1.0422414789309746,
+        "intercept": 0.8266931579123816
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r1_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6022844750914369
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5739230276514216
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3541208436347298
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5739252898626607
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.4831890515227374
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5441879567226636
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.30980083212052806
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5985637570242432
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 23,
+      "objective": 542.5832013577148,
+      "max_abs_gradient": 0.00026014605665203305
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6486919560268336,
+      "anhui": -0.7414864420713737,
+      "uci": 0.856576596286572
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.2471595811863174,
+        "intercept": -0.2196870927916665
+      },
+      "pooled": {
+        "slope": 0.7087114494242356,
+        "intercept": 0.7238018208944763
+      },
+      "cohort_intercepts": {
+        "slope": 0.7946801126261249,
+        "intercept": 0.23067161224710525
+      },
+      "transfer_pooled": {
+        "slope": 0.5988355129466023,
+        "intercept": 0.8791818652448218
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r2_f0",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6021012400036789
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5596140407866903
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.34918055244759083
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4309736452839069
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5480039224315568
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5310538613734971
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3026642790588033
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.48465625288726144
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 21,
+      "objective": 546.7637741175803,
+      "max_abs_gradient": 0.0010159669543128302
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6314209680234089,
+      "anhui": -0.7401740338540346,
+      "uci": 0.8931601109828377
+    },
+    "calibration": {
+      "local": {
+        "slope": 2.1324327390668945,
+        "intercept": -0.6437175439821721
+      },
+      "pooled": {
+        "slope": 1.3977648829721552,
+        "intercept": 0.5924288869359926
+      },
+      "cohort_intercepts": {
+        "slope": 1.4774035469364353,
+        "intercept": -0.16018560414903624
+      },
+      "transfer_pooled": {
+        "slope": 1.040536757709975,
+        "intercept": 0.8070822049832065
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r2_f1",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6431847216704107
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5683348650520088
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3497096624020223
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5898147766583576
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.44689387562495547
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.557735466437524
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.32096600953064536
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6453357009841425
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 545.4366995326504,
+      "max_abs_gradient": 0.0005777809156367608
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6301278304971742,
+      "anhui": -0.7587602687192097,
+      "uci": 0.8813899346817752
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.8388257837101853,
+        "intercept": -0.8084007650318977
+      },
+      "pooled": {
+        "slope": 0.5797648171580126,
+        "intercept": 0.7228369242616156
+      },
+      "cohort_intercepts": {
+        "slope": 0.5814126378635139,
+        "intercept": 0.35595046326403545
+      },
+      "transfer_pooled": {
+        "slope": 0.3241981421057884,
+        "intercept": 0.8415322678362894
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r2_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6156781183744485
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5605138422853564
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3507952486612242
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5362009246599655
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5181892039849986
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5675958099160248
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.30980083212052806
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5803782053802972
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 546.4444776804372,
+      "max_abs_gradient": 8.218439387519538e-05
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6587211758804916,
+      "anhui": -0.7581636115165367,
+      "uci": 0.832956157484427
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.7730131521296857,
+        "intercept": -0.5922738388826393
+      },
+      "pooled": {
+        "slope": 0.828475968106367,
+        "intercept": 0.6550221219881277
+      },
+      "cohort_intercepts": {
+        "slope": 0.8412444545343009,
+        "intercept": 0.21081549784758163
+      },
+      "transfer_pooled": {
+        "slope": 0.6015073865282583,
+        "intercept": 0.8061640001896374
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r2_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6093295355040446
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5771579840867636
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.40785528938375115
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.590704580387225
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5280381284986717
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5739378256665808
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.33276986574480133
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6190526439201471
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 544.2304306053277,
+      "max_abs_gradient": 0.0010149193961206393
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6325303800446223,
+      "anhui": -0.7646865176538619,
+      "uci": 0.8808637399283897
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.5988863967764138,
+        "intercept": -0.39957932634403165
+      },
+      "pooled": {
+        "slope": 0.7840397093887393,
+        "intercept": 0.6591991190833112
+      },
+      "cohort_intercepts": {
+        "slope": 0.7596958031486459,
+        "intercept": 0.2126445179636359
+      },
+      "transfer_pooled": {
+        "slope": 0.5027075569398692,
+        "intercept": 0.8352546559206191
+      }
+    }
+  },
+  {
+    "key": "cad_uci_r2_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6438289822358289
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5562420176260312
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4433227235606698
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5456580433220041
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5737522988211982
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5392386780450819
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.40832588432907857
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5959846148578838
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 21,
+      "objective": 545.4838715528539,
+      "max_abs_gradient": 0.0009553379689943853
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6354133915310414,
+      "anhui": -0.7722263476628761,
+      "uci": 0.9585692398625811
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.4072613310936966,
+        "intercept": -0.607205700706899
+      },
+      "pooled": {
+        "slope": 0.8872649758125253,
+        "intercept": 0.38516166216952347
+      },
+      "cohort_intercepts": {
+        "slope": 0.7375290107609834,
+        "intercept": -0.0618986364310823
+      },
+      "transfer_pooled": {
+        "slope": 0.6385033841126666,
+        "intercept": 0.6255766762421482
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r1_f0",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.68754351073778
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6746057550402075
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3021227085712979
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6411983589969444
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.585427594582631
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6251903981566234
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.23238702079570456
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6545214229629012
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 550.8823619749813,
+      "max_abs_gradient": 0.00041065053833122533
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.651661044803763,
+      "anhui": -0.6710755381203896,
+      "uci": 0.9400364034152925
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.6923295958869404,
+        "intercept": -0.6055815291740594
+      },
+      "pooled": {
+        "slope": 1.0423295094784684,
+        "intercept": 1.4532178801462712
+      },
+      "cohort_intercepts": {
+        "slope": 1.141901133858276,
+        "intercept": 0.11757384789268482
+      },
+      "transfer_pooled": {
+        "slope": 1.0415852098033846,
+        "intercept": 1.883544576732223
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r1_f1",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.7026345825645777
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6415798425521262
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3588667815568175
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6493079592641207
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.722640633899442
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6922515886827308
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2684112813371003
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6728304175345182
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 23,
+      "objective": 554.9230412685141,
+      "max_abs_gradient": 0.00021062460659937443
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.7834816876984425,
+      "anhui": -0.6737298974201924,
+      "uci": 0.9206116715548643
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.762009028685977,
+        "intercept": -0.932880176534646
+      },
+      "pooled": {
+        "slope": 1.179627282930745,
+        "intercept": 1.3005198852611741
+      },
+      "cohort_intercepts": {
+        "slope": 1.2567264587941294,
+        "intercept": -0.3927719321920096
+      },
+      "transfer_pooled": {
+        "slope": 0.9478924812751426,
+        "intercept": 1.6714646330564369
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r1_f2",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6838334131075874
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.646422702198299
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.34016599303525785
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6984369138737098
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.6054648898296482
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6643361314665098
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2541136750764499
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.7084058014101254
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 551.4003353674532,
+      "max_abs_gradient": 0.0005899680770789506
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.700815239678734,
+      "anhui": -0.6863062131166777,
+      "uci": 0.9322170851812233
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.2355532309513646,
+        "intercept": -0.3498099733694819
+      },
+      "pooled": {
+        "slope": 0.5975496623719317,
+        "intercept": 1.2357748917553804
+      },
+      "cohort_intercepts": {
+        "slope": 0.5885058718672719,
+        "intercept": 0.43062771347811407
+      },
+      "transfer_pooled": {
+        "slope": 0.5184065746090669,
+        "intercept": 1.4458697849006714
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r1_f3",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.7554533367202331
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.7117003121059169
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3830400082213178
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6544264864691537
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.724890899129197
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6880370358890638
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.27248822603363754
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6745711279728824
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 21,
+      "objective": 553.1557677824081,
+      "max_abs_gradient": 0.0005627216168880567
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.7734300858094092,
+      "anhui": -0.6896129078286168,
+      "uci": 0.9287255092233299
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.6805774876915616,
+        "intercept": -0.9918869102118155
+      },
+      "pooled": {
+        "slope": 1.2455370983579188,
+        "intercept": 1.232257474700579
+      },
+      "cohort_intercepts": {
+        "slope": 1.0431250946369406,
+        "intercept": -0.2196771134159253
+      },
+      "transfer_pooled": {
+        "slope": 0.9033449223002185,
+        "intercept": 1.6160493337458992
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r1_f4",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.7027778545126929
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6739076666560685
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4365953280446025
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.7263825086982725
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.7162115971886005
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.7007269398142733
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.32432208390133654
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.7124859776132889
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 20,
+      "objective": 557.6150055375605,
+      "max_abs_gradient": 0.0007193307960751127
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6721891261927682,
+      "anhui": -0.6751725455158902,
+      "uci": 0.9053848541336924
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.747711152281979,
+        "intercept": -0.7780995586617382
+      },
+      "pooled": {
+        "slope": 1.2765148549502419,
+        "intercept": 1.301845949450927
+      },
+      "cohort_intercepts": {
+        "slope": 1.3475857778158982,
+        "intercept": -0.39676127413820433
+      },
+      "transfer_pooled": {
+        "slope": 1.2521326609401124,
+        "intercept": 1.8265281766535795
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r2_f0",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6489110421699407
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6340290486770077
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3238809932886711
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6475277591921791
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.6315858532766189
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6785303301706745
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.23238702079570456
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6420351116271698
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 558.6251437376732,
+      "max_abs_gradient": 0.0008254669676243942
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6773622621118083,
+      "anhui": -0.6655699347681969,
+      "uci": 0.9445087186705821
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.7391624124144545,
+        "intercept": -0.518750147621777
+      },
+      "pooled": {
+        "slope": 1.97061168717306,
+        "intercept": 2.0585461275585097
+      },
+      "cohort_intercepts": {
+        "slope": 1.6403331694593521,
+        "intercept": -0.13715654153714685
+      },
+      "transfer_pooled": {
+        "slope": 1.7585080699297,
+        "intercept": 2.685416845520053
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r2_f1",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.7507193332331998
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.7162511175394959
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3413976967358304
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6528000143612726
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.7116147022066779
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6899245582637357
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.27678428663972293
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.684359178083361
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 553.5443357326285,
+      "max_abs_gradient": 0.0006926410228940139
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.7133418538978398,
+      "anhui": -0.6902814933656386,
+      "uci": 0.915017012737068
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.9203030430867079,
+        "intercept": -1.1911015397934739
+      },
+      "pooled": {
+        "slope": 1.0296864589695744,
+        "intercept": 1.3079478226938188
+      },
+      "cohort_intercepts": {
+        "slope": 1.1244176703922149,
+        "intercept": -0.21585147923541276
+      },
+      "transfer_pooled": {
+        "slope": 0.9492230681747231,
+        "intercept": 1.685577375405925
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r2_f2",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6974494117033367
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6323132699524846
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4160669149142063
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6943626810574338
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.7237214495022741
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6916697465296779
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.30569033868860995
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6848160083745483
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 551.8377752258195,
+      "max_abs_gradient": 0.0008904040312365247
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.7203498384390796,
+      "anhui": -0.6705907170548809,
+      "uci": 0.9310735366875518
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.7476962727126346,
+        "intercept": -0.9174899162108744
+      },
+      "pooled": {
+        "slope": 1.1398032734992845,
+        "intercept": 1.2069205106598422
+      },
+      "cohort_intercepts": {
+        "slope": 1.1756590498966266,
+        "intercept": -0.32421898061720933
+      },
+      "transfer_pooled": {
+        "slope": 1.0296949339892207,
+        "intercept": 1.620699170432103
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r2_f3",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.7393822288940556
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6835167428328484
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3628844694759564
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6665824720407709
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.6998149726546586
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6425005551239609
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.30239328016366596
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.7087649474499018
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 22,
+      "objective": 553.5300774365793,
+      "max_abs_gradient": 0.00027039437529019494
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.7565835435126367,
+      "anhui": -0.6730569121727663,
+      "uci": 0.9190441762088615
+    },
+    "calibration": {
+      "local": {
+        "slope": 2.0791042385376945,
+        "intercept": -1.398026249412988
+      },
+      "pooled": {
+        "slope": 1.0648406776276131,
+        "intercept": 1.2921314611852615
+      },
+      "cohort_intercepts": {
+        "slope": 1.293852565804193,
+        "intercept": -0.5089048490232831
+      },
+      "transfer_pooled": {
+        "slope": 0.8871344744070855,
+        "intercept": 1.6309729962372221
+      }
+    }
+  },
+  {
+    "key": "cad_angiocad_r2_f4",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6527297809575554
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6517546539747336
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3460554645758339
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6671850904543322
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.6675880768811913
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6690743182874894
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2583380048105156
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6601503866370695
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 20,
+      "objective": 556.522037650936,
+      "max_abs_gradient": 0.0008661518168939786
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6436589440145841,
+      "anhui": -0.6712945696619683,
+      "uci": 0.9257747521855856
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.4076069942717935,
+        "intercept": -0.26152356128565585
+      },
+      "pooled": {
+        "slope": 1.110048655272073,
+        "intercept": 1.4019420189083074
+      },
+      "cohort_intercepts": {
+        "slope": 1.2593131478435027,
+        "intercept": -0.17411320528141136
+      },
+      "transfer_pooled": {
+        "slope": 1.0861138698582915,
+        "intercept": 1.8094070664827278
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r1_f0",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2262525508232832
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.24707643939335983
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4254351390326314
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20259422960595858
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2185056867300872
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21471898082137694
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6723409545613878
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21148299080432756
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 471.6006562110545,
+      "max_abs_gradient": 0.00021477221398491508
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.606026593309674,
+      "anhui": -0.5415997499482526,
+      "uci": 1.0607231664850496
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.871129658941511,
+        "intercept": -0.04313043478107501
+      },
+      "pooled": {
+        "slope": 1.1068125907250643,
+        "intercept": -1.037560836893983
+      },
+      "cohort_intercepts": {
+        "slope": 0.9767464706650375,
+        "intercept": -0.05194990086384687
+      },
+      "transfer_pooled": {
+        "slope": 1.126706517416924,
+        "intercept": -2.1258770494882486
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r1_f1",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2807145051673295
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3032286340728407
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.482415813506361
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.27625125382912424
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.23252657871315974
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.26631035452961754
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.7261646478827772
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.29829137040043563
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 481.6500593947344,
+      "max_abs_gradient": 0.0008276819345343078
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6510187212865088,
+      "anhui": -0.7087616247874959,
+      "uci": 0.9007535817451365
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.6174015548224819,
+        "intercept": -0.25104465142562105
+      },
+      "pooled": {
+        "slope": 0.6423441511886872,
+        "intercept": -0.9179344670949079
+      },
+      "cohort_intercepts": {
+        "slope": 0.6560518840638706,
+        "intercept": -0.23003263374600805
+      },
+      "transfer_pooled": {
+        "slope": 0.8710694663803177,
+        "intercept": -1.704957782796216
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r1_f2",
+    "seconds": 0.046999999998661224,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.27266755288453487
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.24496012139616785
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5376341150247826
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.30381017918823905
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.23397358022696343
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20904985576847981
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6761016994562422
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.22620710694766
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 20,
+      "objective": 469.9673010074893,
+      "max_abs_gradient": 0.0003035008105376491
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6347779928168118,
+      "anhui": -0.4750619540843942,
+      "uci": 1.080348853223061
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.2574651836252342,
+        "intercept": 0.10806213004285713
+      },
+      "pooled": {
+        "slope": 1.309926743144055,
+        "intercept": -1.0267846481034786
+      },
+      "cohort_intercepts": {
+        "slope": 1.2083641053854388,
+        "intercept": 0.10246787746821383
+      },
+      "transfer_pooled": {
+        "slope": 1.2289054446566356,
+        "intercept": -2.134221909103933
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r1_f3",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.27622206671306176
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20581077973227874
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.495261652797569
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.24968992523407657
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.24874131304244412
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2279090558231507
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6670388556305723
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.22883460841245462
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 20,
+      "objective": 470.00310879306903,
+      "max_abs_gradient": 0.00023577811996577935
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.5823458140229443,
+      "anhui": -0.5609823771783551,
+      "uci": 1.028761947306334
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.6924600447161913,
+        "intercept": 0.2799475075874463
+      },
+      "pooled": {
+        "slope": 1.228623602896466,
+        "intercept": -1.0769794271315207
+      },
+      "cohort_intercepts": {
+        "slope": 1.2045622950475783,
+        "intercept": 0.11129111202761184
+      },
+      "transfer_pooled": {
+        "slope": 1.135040443996372,
+        "intercept": -2.003554995321124
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r1_f4",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2670857996074481
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.23538874799700477
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.41947297162956654
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2294557038520357
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.20749294607302485
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20939128805872645
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6052061877367104
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21535521457715984
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 472.00964906292097,
+      "max_abs_gradient": 0.0002989588035076096
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.5915281178831193,
+      "anhui": -0.5213100711235533,
+      "uci": 1.073262794083744
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3700420484178182,
+        "intercept": 0.20487170654753636
+      },
+      "pooled": {
+        "slope": 0.8974498511805726,
+        "intercept": -0.919772242275573
+      },
+      "cohort_intercepts": {
+        "slope": 0.9869768704458707,
+        "intercept": -0.005946763457032699
+      },
+      "transfer_pooled": {
+        "slope": 0.8397110117354438,
+        "intercept": -1.6516715100071757
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r2_f0",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.22767702862872158
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.1918552425321329
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4138028296582538
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20237054505128563
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2424728403586513
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21161613995060846
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6979003617803861
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.22148170009144064
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 475.2018058551079,
+      "max_abs_gradient": 0.0007556695064241392
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.5576379387692727,
+      "anhui": -0.5393137703720894,
+      "uci": 1.0338184754516788
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3637928212368609,
+        "intercept": 0.22783842053669923
+      },
+      "pooled": {
+        "slope": 1.1326370901462453,
+        "intercept": -0.9770840832856852
+      },
+      "cohort_intercepts": {
+        "slope": 1.2555555893533925,
+        "intercept": 0.11507973535637325
+      },
+      "transfer_pooled": {
+        "slope": 1.3546724021339887,
+        "intercept": -2.39134608516652
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r2_f1",
+    "seconds": 0.0930000000007567,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3420907344609623
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2923445273756652
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5832912057176451
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.28218797100896037
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.32927304843554506
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.27393241399200724
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.734421541554685
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2733283304231736
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 488.57329418063506,
+      "max_abs_gradient": 0.0010870863921246254
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6332107250998447,
+      "anhui": -0.677591518858383,
+      "uci": 0.9044638872885509
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3633581507877268,
+        "intercept": 0.007599628259641958
+      },
+      "pooled": {
+        "slope": 1.0446591491805937,
+        "intercept": -1.2849520614156873
+      },
+      "cohort_intercepts": {
+        "slope": 1.0072353126718026,
+        "intercept": -0.2581391644211138
+      },
+      "transfer_pooled": {
+        "slope": 0.9904052340282768,
+        "intercept": -1.985214330170014
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r2_f2",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.35408051657385825
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2640664578317423
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6047331711701647
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2602318083692396
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3190617445786755
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.23685276238475347
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6868501754251359
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.17627764823538952
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 482.0221008644711,
+      "max_abs_gradient": 0.0005076881648198306
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.6874706680713463,
+      "anhui": -0.6502643594694426,
+      "uci": 0.9230043629491267
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.723865268199571,
+        "intercept": 0.011363493061673021
+      },
+      "pooled": {
+        "slope": 1.4720099913295062,
+        "intercept": -1.6707013939080602
+      },
+      "cohort_intercepts": {
+        "slope": 1.3159528749997342,
+        "intercept": -0.17240553334161188
+      },
+      "transfer_pooled": {
+        "slope": 1.4416775242777182,
+        "intercept": -2.6741163934451095
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r2_f3",
+    "seconds": 0.046999999998661224,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3174245768711034
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2684365450608058
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5361645628585682
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2645137493945052
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.28296954271558783
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.26273652369680955
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.7188724517825824
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2807188692741878
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 21,
+      "objective": 479.5199471561633,
+      "max_abs_gradient": 0.0001841325429650098
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.7307303501473215,
+      "anhui": -0.6072417163474799,
+      "uci": 0.972968318250685
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3250468503648152,
+        "intercept": 0.011929914081229231
+      },
+      "pooled": {
+        "slope": 0.9466561889376696,
+        "intercept": -1.159819798271709
+      },
+      "cohort_intercepts": {
+        "slope": 0.8720514106992301,
+        "intercept": -0.220978475899087
+      },
+      "transfer_pooled": {
+        "slope": 0.9119826695910827,
+        "intercept": -1.797136738566752
+      }
+    }
+  },
+  {
+    "key": "cad_anhui_r2_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.31728885320703065
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2748519320441514
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5244919308919149
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2637679996542506
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.24387898267862848
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.25436740566824645
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6490473049555403
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.24919480249989023
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 20,
+      "objective": 480.9656908905638,
+      "max_abs_gradient": 0.00028789803856277274
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.7108410114989503,
+      "anhui": -0.680512374906441,
+      "uci": 0.9413048995803501
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.181570767180937,
+        "intercept": -0.06475377191396031
+      },
+      "pooled": {
+        "slope": 0.8431820180834732,
+        "intercept": -1.1091461451582205
+      },
+      "cohort_intercepts": {
+        "slope": 0.7496001751725816,
+        "intercept": -0.2272587084452797
+      },
+      "transfer_pooled": {
+        "slope": 0.7470833085039038,
+        "intercept": -1.5622585779059475
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r1_f0",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.46422246041586535
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4335729032454878
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.48336511725269937
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.43054757415504774
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.41155850706156855
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4218645255293865
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4837863486172662
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4485759252017509
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 278.7108345528606,
+      "max_abs_gradient": 0.00045725656159678607
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9239165598690608,
+      "uci": 0.3945910574383707
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3178372339528928,
+        "intercept": -0.07836965975367136
+      },
+      "pooled": {
+        "slope": 0.9951865765610749,
+        "intercept": -0.21337371937295813
+      },
+      "cohort_intercepts": {
+        "slope": 1.0172011636958176,
+        "intercept": 0.048552190000482345
+      },
+      "transfer_pooled": {
+        "slope": 0.6353890273287617,
+        "intercept": -0.16520384709952846
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r1_f1",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5234963556564751
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4791883224867111
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5357481493507164
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.44214223555840104
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.45155237224596895
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.40894409062866544
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.534427764147314
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4391699042117531
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 283.94181965479044,
+      "max_abs_gradient": 0.00013303038269985024
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9418382137888236,
+      "uci": 0.38037921043937617
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.4956516598485254,
+        "intercept": -0.22396789971041806
+      },
+      "pooled": {
+        "slope": 1.1545801345075346,
+        "intercept": -0.3978509844437075
+      },
+      "cohort_intercepts": {
+        "slope": 1.2627974760371588,
+        "intercept": -0.12284379262142282
+      },
+      "transfer_pooled": {
+        "slope": 0.7776610304137273,
+        "intercept": -0.3517938864732031
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r1_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.4972639551798848
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.466220205455906
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5580203864072957
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.43866936270172335
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.45230610513209213
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.436699048868484
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.6080699802143825
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4918759335639959
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 281.29078814990766,
+      "max_abs_gradient": 0.00038146958026696876
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.990757581364763,
+      "uci": 0.32392033601051873
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.2673636904460608,
+        "intercept": -0.12145492384922156
+      },
+      "pooled": {
+        "slope": 1.2815809371133322,
+        "intercept": -0.5453413260268223
+      },
+      "cohort_intercepts": {
+        "slope": 1.0829531365897802,
+        "intercept": -0.04733868730330785
+      },
+      "transfer_pooled": {
+        "slope": 0.8628128093652113,
+        "intercept": -0.41145226800062334
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r1_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.49885384908764696
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4752628398581811
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5602208860090118
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5004512957744632
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.4783873827162478
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4849201466299283
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5797048606921376
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5063031703081305
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 278.9521586376809,
+      "max_abs_gradient": 0.00019335202252834804
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9884326390135815,
+      "uci": 0.376666195405353
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.1418540459556838,
+        "intercept": -0.09379453441703606
+      },
+      "pooled": {
+        "slope": 0.8395029472665501,
+        "intercept": -0.2014036893109156
+      },
+      "cohort_intercepts": {
+        "slope": 0.8962359882742823,
+        "intercept": 0.017190618434641536
+      },
+      "transfer_pooled": {
+        "slope": 0.5543906144013632,
+        "intercept": -0.15305690232167757
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r1_f4",
+    "seconds": 0.046000000000276486,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5603250048974403
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5143778452814607
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5286463406904051
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4282272935782335
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.45755296003179297
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.41677602450217216
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5085132319186817
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4616168638282326
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 286.1380829349587,
+      "max_abs_gradient": 0.00033026826403670384
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9414249502391595,
+      "uci": 0.3756601745196256
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.6589658720256886,
+        "intercept": -0.3447407527276688
+      },
+      "pooled": {
+        "slope": 1.1669169566937918,
+        "intercept": -0.42294562384907514
+      },
+      "cohort_intercepts": {
+        "slope": 1.2448462282889452,
+        "intercept": -0.1241522087883703
+      },
+      "transfer_pooled": {
+        "slope": 0.6409640900385768,
+        "intercept": -0.17566402112991097
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r2_f0",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.46815512705547035
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4206381960441951
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.47750189957476175
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4260511675930414
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.4147597106473272
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4336259653019794
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5086328477605261
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4697265516602178
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 281.5956097873367,
+      "max_abs_gradient": 0.00024176718371959893
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.967083131450512,
+      "uci": 0.3614232595604475
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.5062197007275522,
+        "intercept": -0.12803253284591082
+      },
+      "pooled": {
+        "slope": 0.9973392587672385,
+        "intercept": -0.20816719750759036
+      },
+      "cohort_intercepts": {
+        "slope": 1.0138918612007424,
+        "intercept": 0.08203409436233892
+      },
+      "transfer_pooled": {
+        "slope": 0.6080015989514509,
+        "intercept": -0.14223932093454733
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r2_f1",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.4202408564079845
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4115460596871139
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4589520021814489
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3907129470208288
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.38062758458893486
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3930135738271919
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4632859470241229
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4298230370466208
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 15,
+      "objective": 282.19705889915434,
+      "max_abs_gradient": 0.0011041621710714544
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.982804779027718,
+      "uci": 0.3660690665792492
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.132843972264668,
+        "intercept": 0.006954182893701425
+      },
+      "pooled": {
+        "slope": 1.1314616278144196,
+        "intercept": -0.2581203713254807
+      },
+      "cohort_intercepts": {
+        "slope": 1.0825620672025111,
+        "intercept": 0.09242128210745792
+      },
+      "transfer_pooled": {
+        "slope": 0.6918963279779742,
+        "intercept": -0.18078070980972172
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r2_f2",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.393491536339492
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4577935685333393
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4345007670226304
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4586732409082636
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.34360887882218155
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4776304771451334
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4528634432236971
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5221271767894657
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 277.31453966681966,
+      "max_abs_gradient": 0.00018835834812236385
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.0198651386265276,
+      "uci": 0.29831658027579444
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.8305274922596422,
+        "intercept": 0.19010685745635264
+      },
+      "pooled": {
+        "slope": 0.599181408412072,
+        "intercept": -0.0077939949082969934
+      },
+      "cohort_intercepts": {
+        "slope": 0.5136792223115516,
+        "intercept": 0.24294245361825104
+      },
+      "transfer_pooled": {
+        "slope": 0.26238117681674733,
+        "intercept": 0.13818487895692827
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r2_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.4260549993125436
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4559885399249309
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4581774605060253
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.40168021480518673
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3685947738666366
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3940791223764467
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.534427764147314
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4433241726636259
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 283.0597148780685,
+      "max_abs_gradient": 0.0005005988175685872
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9355846559731739,
+      "uci": 0.3349850142056853
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.8417350742109247,
+        "intercept": 0.07430506515749191
+      },
+      "pooled": {
+        "slope": 0.9812813908549166,
+        "intercept": -0.23392590280826553
+      },
+      "cohort_intercepts": {
+        "slope": 0.9315596475229901,
+        "intercept": 0.07121426234084
+      },
+      "transfer_pooled": {
+        "slope": 0.8351419135156746,
+        "intercept": -0.3428723524514277
+      }
+    }
+  },
+  {
+    "key": "lad_uci_r2_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.42716352531208546
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.44091346050756614
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5425730105400963
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4692608364022697
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.47009335432339744
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4711435691351503
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5508483027098562
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4555470743182523
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 281.8688170350632,
+      "max_abs_gradient": 0.00018932934559234837
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9771518622978435,
+      "uci": 0.37617104535980345
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.0951492249607202,
+        "intercept": 0.08389769687903287
+      },
+      "pooled": {
+        "slope": 1.0591364700161252,
+        "intercept": -0.30391220000609503
+      },
+      "cohort_intercepts": {
+        "slope": 1.0844709122828118,
+        "intercept": 0.014332460189730625
+      },
+      "transfer_pooled": {
+        "slope": 0.7436371970358231,
+        "intercept": -0.3300578653192629
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r1_f0",
+    "seconds": 0.046999999998661224,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6143430542001331
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6103223038960083
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.540582855065267
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6213105612695194
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.6045772053917033
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6088700234694207
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4521053581326973
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6038610007814184
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 283.2431771834938,
+      "max_abs_gradient": 0.00011805472942860717
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9666339218319991,
+      "uci": 0.4068668258950847
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9632865981087059,
+        "intercept": 0.0001559010148645721
+      },
+      "pooled": {
+        "slope": 0.9927293900785108,
+        "intercept": 0.33360815093007073
+      },
+      "cohort_intercepts": {
+        "slope": 1.0552275045400135,
+        "intercept": -0.00545708050451827
+      },
+      "transfer_pooled": {
+        "slope": 1.1212706275975435,
+        "intercept": 0.637050950963039
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r1_f1",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5820180991584181
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.584962544533148
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.49542296674970787
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5839795942764634
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5817924921179478
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5893844620257112
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.44975346695295154
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5958058825947514
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 290.53573509437575,
+      "max_abs_gradient": 0.0002468355362978958
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.0004232263271076,
+      "uci": 0.39490382286090814
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.0713403640000019,
+        "intercept": -0.011502549256405169
+      },
+      "pooled": {
+        "slope": 1.3544685976079893,
+        "intercept": 0.36393021355741895
+      },
+      "cohort_intercepts": {
+        "slope": 1.340185437865053,
+        "intercept": -0.08102223442774482
+      },
+      "transfer_pooled": {
+        "slope": 1.566544202894065,
+        "intercept": 0.7039396788967495
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r1_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5860123239283206
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.62065307565686
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.48598108627930836
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6489344338154789
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5349164439598654
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6316831752930876
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4070266560292288
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6387404968657117
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 288.2799870893479,
+      "max_abs_gradient": 0.00016838129948215652
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9754688275457096,
+      "uci": 0.4681844740371311
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9476917308306319,
+        "intercept": 0.16299386784487827
+      },
+      "pooled": {
+        "slope": 0.562041992307074,
+        "intercept": 0.6458838162210799
+      },
+      "cohort_intercepts": {
+        "slope": 0.6294878962991485,
+        "intercept": 0.4513832095646423
+      },
+      "transfer_pooled": {
+        "slope": 0.5998232290136855,
+        "intercept": 0.7955976663809329
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r1_f3",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.591412509600945
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5823157441687442
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4821213539034407
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5691422387252694
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5449337486312779
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5451431133911775
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.44711846507268616
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5981523734448196
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 288.5952822801756,
+      "max_abs_gradient": 0.0002990273452643244
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.0215846511328819,
+      "uci": 0.38436831484260914
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.6346564378341522,
+        "intercept": -0.2722214889338997
+      },
+      "pooled": {
+        "slope": 1.1355414839386544,
+        "intercept": 0.3595947818535346
+      },
+      "cohort_intercepts": {
+        "slope": 1.1046095555160844,
+        "intercept": -0.01800855096061247
+      },
+      "transfer_pooled": {
+        "slope": 0.9907663233005027,
+        "intercept": 0.6081322263793476
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r1_f4",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5434342532896054
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5551858276440121
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4256606946377787
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5759167686748508
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5044260538392606
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5803791352333345
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.35465206713089936
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5854782961076133
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 284.6944481073597,
+      "max_abs_gradient": 0.0003484095804129339
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.0042246014995564,
+      "uci": 0.3971153364425227
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.0326745687435346,
+        "intercept": 0.041779134298933485
+      },
+      "pooled": {
+        "slope": 0.7849456130250302,
+        "intercept": 0.5411857017510058
+      },
+      "cohort_intercepts": {
+        "slope": 0.7521096268528917,
+        "intercept": 0.3110141121387909
+      },
+      "transfer_pooled": {
+        "slope": 0.6895569608351195,
+        "intercept": 0.7581086983392133
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r2_f0",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6094735947546065
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5941366043680887
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4934452146895997
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6041027598980373
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5675617215456555
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6010260768414
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4102324205820291
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6015336117863316
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 284.7466318936556,
+      "max_abs_gradient": 0.00020868093889037098
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.0257522520730544,
+      "uci": 0.400705684718663
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3070682954913366,
+        "intercept": -0.20068352187988422
+      },
+      "pooled": {
+        "slope": 0.8520936649019268,
+        "intercept": 0.44493207699780557
+      },
+      "cohort_intercepts": {
+        "slope": 0.8257184314843539,
+        "intercept": 0.18522125020719227
+      },
+      "transfer_pooled": {
+        "slope": 0.7379256360401327,
+        "intercept": 0.6797297003133361
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r2_f1",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5724841003031936
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.605275950755788
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.47570499446149084
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6138307361770735
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5386933706389926
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.608186022325241
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.41213953801979397
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6233801896986045
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 288.51615742059715,
+      "max_abs_gradient": 0.00036748154455601423
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.9658781241684783,
+      "uci": 0.4035203264774438
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.8651593001627972,
+        "intercept": 0.17487668260681272
+      },
+      "pooled": {
+        "slope": 0.7175500336727001,
+        "intercept": 0.5332299200033482
+      },
+      "cohort_intercepts": {
+        "slope": 0.7126629458171059,
+        "intercept": 0.3291713044692195
+      },
+      "transfer_pooled": {
+        "slope": 0.6277860861803758,
+        "intercept": 0.7268645583517772
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r2_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.5532910170677914
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5071347036802767
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4889940624285142
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5423021430857482
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5623773128928193
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5239130171734663
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4511793126068762
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5470666575015669
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 281.29602649631397,
+      "max_abs_gradient": 6.000374355785709e-05
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.1145020952060247,
+      "uci": 0.43345936076845204
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3293265223757207,
+        "intercept": -0.2559042527376139
+      },
+      "pooled": {
+        "slope": 1.1480734263465977,
+        "intercept": 0.22016470352975404
+      },
+      "cohort_intercepts": {
+        "slope": 1.0824153039195958,
+        "intercept": -0.17576187660136694
+      },
+      "transfer_pooled": {
+        "slope": 1.259159099069685,
+        "intercept": 0.43550367066834134
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r2_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.626118510373972
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6246382207982616
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.47390439162183007
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5953469399048538
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5355012348757744
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5734130000727397
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.44518699012522994
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.6287768105708285
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 15,
+      "objective": 288.68653691623433,
+      "max_abs_gradient": 0.0012114400024456629
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.0090989086004976,
+      "uci": 0.37012104125393
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.5391946870375297,
+        "intercept": -0.28432767022151434
+      },
+      "pooled": {
+        "slope": 1.0000011803304272,
+        "intercept": 0.49059175825666207
+      },
+      "cohort_intercepts": {
+        "slope": 0.9741281471305206,
+        "intercept": 0.15722572054835612
+      },
+      "transfer_pooled": {
+        "slope": 0.8187199162083337,
+        "intercept": 0.7072032255596744
+      }
+    }
+  },
+  {
+    "key": "lad_angiocad_r2_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.6106573625853162
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5804452621117739
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.5040014450774875
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5800467796449444
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.5840267840456844
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5742351488897651
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4342101885923071
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.5782971310339707
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 288.1546026960654,
+      "max_abs_gradient": 0.0002568442513251057
+    },
+    "cohort_intercepts": {
+      "angiocad": 1.0598002206981278,
+      "uci": 0.46808468983748036
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.2024883883113715,
+        "intercept": -0.21660996152947265
+      },
+      "pooled": {
+        "slope": 1.0257833960652387,
+        "intercept": 0.3065466156709656
+      },
+      "cohort_intercepts": {
+        "slope": 1.086634731928065,
+        "intercept": -0.06957160765618363
+      },
+      "transfer_pooled": {
+        "slope": 1.195326731570854,
+        "intercept": 0.6321825689782602
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r1_f0",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2885802785594319
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.25889463553807895
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2746923861699603
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.24904938526478784
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3338405231544891
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.25381318861021895
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2565844451038017
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.29864766622267036
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 286.3696994878825,
+      "max_abs_gradient": 0.0005781826616257923
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.016600031149173,
+      "uci": -0.4680598581936975
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.1546291129607407,
+        "intercept": -0.009912179347388283
+      },
+      "pooled": {
+        "slope": 1.49536435186957,
+        "intercept": 0.348226342239207
+      },
+      "cohort_intercepts": {
+        "slope": 1.5398040963753756,
+        "intercept": -0.014579643269062949
+      },
+      "transfer_pooled": {
+        "slope": 1.5867446545146127,
+        "intercept": 0.8342288874547495
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r1_f1",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2906108732085547
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.25571738667348487
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.24372650638629334
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2537779668085367
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2886973605447486
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.25112936837557553
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.20235632774515833
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.26388620519554734
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 284.4026113004645,
+      "max_abs_gradient": 0.00011990082708024374
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.043137036767806,
+      "uci": -0.5649223464213353
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3449254940831605,
+        "intercept": 0.13188918615649312
+      },
+      "pooled": {
+        "slope": 1.301018400963177,
+        "intercept": 0.3946530032716206
+      },
+      "cohort_intercepts": {
+        "slope": 1.3259481473362578,
+        "intercept": 0.10303467272485438
+      },
+      "transfer_pooled": {
+        "slope": 1.1756775654534795,
+        "intercept": 0.5867300201460887
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r1_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3052854943387825
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.291728594863902
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.1998689824055224
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.18899723608531366
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2508538714472686
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19474962503573146
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.21065050853926406
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2512392679233352
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 288.1614458770694,
+      "max_abs_gradient": 0.0002854748246274852
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9966952893168145,
+      "uci": -0.5570954650395139
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.4960280443422556,
+        "intercept": 0.34311097298869647
+      },
+      "pooled": {
+        "slope": 1.5689751241763434,
+        "intercept": 0.7198073829856823
+      },
+      "cohort_intercepts": {
+        "slope": 1.6659972321709258,
+        "intercept": 0.4032682326303053
+      },
+      "transfer_pooled": {
+        "slope": 1.611038502654276,
+        "intercept": 1.036182260206056
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r1_f3",
+    "seconds": 0.046999999998661224,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3452330515019065
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.29440435520652286
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.28180006350378917
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2944752555583793
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.33991422142019995
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3119817416120146
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2565844451038017
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.33447734341103463
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 284.00631445515705,
+      "max_abs_gradient": 0.00043981361574596534
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9574410243638567,
+      "uci": -0.5613382662347137
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.6885218500611543,
+        "intercept": 0.20666658255385234
+      },
+      "pooled": {
+        "slope": 1.3598717241521376,
+        "intercept": 0.3984813541320917
+      },
+      "cohort_intercepts": {
+        "slope": 1.4149695441697867,
+        "intercept": 0.14821132193639724
+      },
+      "transfer_pooled": {
+        "slope": 1.2586832237012053,
+        "intercept": 0.6509803413846155
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r1_f4",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3350887156032198
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3418189958711121
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2158743064401197
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2735050069502717
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2631611204058008
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.27774759415339667
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.21065050853926406
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.32163392017969633
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 284.52198202647253,
+      "max_abs_gradient": 0.0003394947349653066
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.0247681954436885,
+      "uci": -0.5132535130242925
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9093980016591544,
+        "intercept": -0.03202609711338832
+      },
+      "pooled": {
+        "slope": 0.8466429137548355,
+        "intercept": 0.11515017875944789
+      },
+      "cohort_intercepts": {
+        "slope": 0.8279957936668658,
+        "intercept": -0.10315513116377008
+      },
+      "transfer_pooled": {
+        "slope": 0.6781155706784809,
+        "intercept": 0.14952354141568086
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r2_f0",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.26035207032268776
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21691111446409111
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.19876657017339433
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19960685911231765
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2382090842316978
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19618718733667348
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.21065050853926406
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2604360464977996
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 287.7929326111226,
+      "max_abs_gradient": 0.00018171692177482157
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.0289293384078377,
+      "uci": -0.524046222014225
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.5145471264543489,
+        "intercept": 0.2976398849641378
+      },
+      "pooled": {
+        "slope": 1.3665882624052752,
+        "intercept": 0.5162997116495582
+      },
+      "cohort_intercepts": {
+        "slope": 1.3678600086025112,
+        "intercept": 0.17987199941126883
+      },
+      "transfer_pooled": {
+        "slope": 1.3088476522485037,
+        "intercept": 0.6852958016380433
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r2_f1",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3108430691588374
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2513175663038174
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2980432618970976
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.29201232873483984
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3438027088695408
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.29250679603622665
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.23953646466983486
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3044361225467072
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 285.8920409008515,
+      "max_abs_gradient": 0.00016309398131841846
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9691609950327275,
+      "uci": -0.5720642360419292
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.7330588024295965,
+        "intercept": 0.28823062805511485
+      },
+      "pooled": {
+        "slope": 1.489489660290988,
+        "intercept": 0.3903155259023195
+      },
+      "cohort_intercepts": {
+        "slope": 1.5750729613105379,
+        "intercept": 0.13487683311218845
+      },
+      "transfer_pooled": {
+        "slope": 1.2326026981627574,
+        "intercept": 0.5976688109168974
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r2_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.337629776753068
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2636415556514105
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.23762619363279028
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.24785130554581347
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3037321057356027
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2513151672010292
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.23243589820127442
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.28377914811902116
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 284.99688253412995,
+      "max_abs_gradient": 0.0003383559411083148
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.0040213071474933,
+      "uci": -0.49918994545800494
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.6959560358549992,
+        "intercept": 0.11573526629912685
+      },
+      "pooled": {
+        "slope": 1.143194841555067,
+        "intercept": 0.22256081919603746
+      },
+      "cohort_intercepts": {
+        "slope": 1.2801643330609334,
+        "intercept": -0.029600819605570882
+      },
+      "transfer_pooled": {
+        "slope": 1.2966429447753378,
+        "intercept": 0.6231871236636349
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r2_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3371651219033962
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2999581740269961
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.279592179153112
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31716549471837485
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3315997704814053
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31408934355464313
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.23815467851578323
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3343215203536773
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 285.7571800486061,
+      "max_abs_gradient": 0.00024136586009726457
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.0271827597759977,
+      "uci": -0.5427559958826168
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.4353716109718608,
+        "intercept": 0.1227468794532312
+      },
+      "pooled": {
+        "slope": 1.1137507683904626,
+        "intercept": 0.28732005452908144
+      },
+      "cohort_intercepts": {
+        "slope": 1.165953115548214,
+        "intercept": 0.03621473906716488
+      },
+      "transfer_pooled": {
+        "slope": 0.9389575936353828,
+        "intercept": 0.4031380230198381
+      }
+    }
+  },
+  {
+    "key": "lcx_uci_r2_f4",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.338202265845392
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3122666581040606
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.26984022588513373
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.295343150958825
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3071554805949716
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2746418019050397
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.23698786792525128
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3114525259927447
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 284.1600289933441,
+      "max_abs_gradient": 0.0006105740005635241
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.0464951694811728,
+      "uci": -0.5641747907317964
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.4314550528254866,
+        "intercept": 0.1714147626960701
+      },
+      "pooled": {
+        "slope": 1.3704404533024344,
+        "intercept": 0.494609091295803
+      },
+      "cohort_intercepts": {
+        "slope": 1.3982791218665576,
+        "intercept": 0.16623442218737383
+      },
+      "transfer_pooled": {
+        "slope": 1.2263938592554668,
+        "intercept": 0.6406420472804115
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r1_f0",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.17961419741713705
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21063471494112504
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2184460666055922
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20540676469745928
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.18673424530165292
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20757537737997026
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2686167060946719
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21359525260937026
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 287.894598873222,
+      "max_abs_gradient": 0.00028563093068667555
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.930778698303413,
+      "uci": -0.5113679411258865
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.6881124683259645,
+        "intercept": -0.2758860261020306
+      },
+      "pooled": {
+        "slope": 0.6559705347885302,
+        "intercept": -0.5166429323191447
+      },
+      "cohort_intercepts": {
+        "slope": 0.6528065531268031,
+        "intercept": -0.37908190557171095
+      },
+      "transfer_pooled": {
+        "slope": 0.4750759271246095,
+        "intercept": -0.8275278839518277
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r1_f1",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.17174231481987504
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.1462876214876343
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.18564107548382075
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.14678588105527623
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.1293843601317689
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.13764345838617179
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.19620692908217358
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.14381762502178766
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 287.49476153323945,
+      "max_abs_gradient": 0.0004120003423775387
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.0030689022632588,
+      "uci": -0.48340979710311976
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.2717227120341412,
+        "intercept": 0.23681874619560225
+      },
+      "pooled": {
+        "slope": 0.9553417658019965,
+        "intercept": -0.34748054528913935
+      },
+      "cohort_intercepts": {
+        "slope": 0.8787294727721483,
+        "intercept": -0.15978073610876778
+      },
+      "transfer_pooled": {
+        "slope": 0.7820213549169829,
+        "intercept": -0.6811527872943569
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r1_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2268800753744559
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19574417350285425
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.22269509368240079
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.14967432355190577
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.20744510922096976
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.16729081148170083
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.33633130711249765
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.17783779943184427
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 285.95384161058746,
+      "max_abs_gradient": 0.000506254636205572
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9535002522141407,
+      "uci": -0.48145623875544924
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.542763327566262,
+        "intercept": 0.47833844145374044
+      },
+      "pooled": {
+        "slope": 1.3604150572613107,
+        "intercept": -0.03659919628446397
+      },
+      "cohort_intercepts": {
+        "slope": 1.502566008376843,
+        "intercept": 0.4090811741243859
+      },
+      "transfer_pooled": {
+        "slope": 1.6556811873607156,
+        "intercept": -0.4057218825628927
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r1_f3",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.18369649090284723
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19377595190624636
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2077642803494292
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.18600367321906403
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.13641090250309287
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.17462077765798334
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.19620692908217358
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.1806302218340515
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 285.0340483651275,
+      "max_abs_gradient": 0.00017359619190848719
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9994645342982859,
+      "uci": -0.4412548422617437
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.8883174023084022,
+        "intercept": -0.10073247558114054
+      },
+      "pooled": {
+        "slope": 0.8474235527983274,
+        "intercept": -0.3419513063030526
+      },
+      "cohort_intercepts": {
+        "slope": 0.7113794265682936,
+        "intercept": -0.2404286424780679
+      },
+      "transfer_pooled": {
+        "slope": 0.536497015434146,
+        "intercept": -0.7555304447731837
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r1_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.19241353804729822
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2009478465795487
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.17067761637794146
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.13942223772345455
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.15135875885222141
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.15486489853829458
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.22794627131336279
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.1418032702342917
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 288.4269308002539,
+      "max_abs_gradient": 0.00022099895179161777
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9708119271449106,
+      "uci": -0.45091527846910257
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.0794770065581554,
+        "intercept": 0.16802448517163512
+      },
+      "pooled": {
+        "slope": 1.0610062895522965,
+        "intercept": -0.14282377746464267
+      },
+      "cohort_intercepts": {
+        "slope": 1.0774538006091097,
+        "intercept": 0.16056932584044298
+      },
+      "transfer_pooled": {
+        "slope": 1.0745310738806668,
+        "intercept": -0.48952473959570164
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r2_f0",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2133177330970036
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21163111478468713
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.21393993372020315
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.1677693667702322
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.1720803104085444
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.16735878168771084
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.26443530151609285
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.18006533986257178
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 286.86628224406115,
+      "max_abs_gradient": 0.0005165159459636914
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.0135513694815634,
+      "uci": -0.4598503609696162
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9965193483489452,
+        "intercept": -0.014622088717505623
+      },
+      "pooled": {
+        "slope": 1.1496803903923252,
+        "intercept": -0.10539670124058984
+      },
+      "cohort_intercepts": {
+        "slope": 1.1365301033739184,
+        "intercept": 0.18097456026983383
+      },
+      "transfer_pooled": {
+        "slope": 0.8819164748357062,
+        "intercept": -0.6136673756077031
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r2_f1",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.20275832935459584
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20636050837789038
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.20814944512362693
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19900642420474182
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.16875755107848475
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20167615415023615
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.22074502839274907
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.18358139600114476
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 284.4895051716285,
+      "max_abs_gradient": 0.00037934447326298804
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9763492668348476,
+      "uci": -0.4943775185428608
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.8109550844098852,
+        "intercept": -0.23669109203869387
+      },
+      "pooled": {
+        "slope": 0.6150051640285551,
+        "intercept": -0.5707973511593171
+      },
+      "cohort_intercepts": {
+        "slope": 0.5763512006760417,
+        "intercept": -0.456883091628992
+      },
+      "transfer_pooled": {
+        "slope": 0.5489632719387013,
+        "intercept": -0.7998452411738427
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r2_f2",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.18669787741791435
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.21230673024045052
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.21102047097652607
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.20088537031766202
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.1809385778504954
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2064452877229626
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.28530201260501875
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19860040404952586
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 287.62485512549256,
+      "max_abs_gradient": 0.00017151397760173381
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9846710985370567,
+      "uci": -0.5228609129704123
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.894461248329172,
+        "intercept": 0.005222295643026828
+      },
+      "pooled": {
+        "slope": 0.9263268565714843,
+        "intercept": -0.15914377925006631
+      },
+      "cohort_intercepts": {
+        "slope": 0.9454519956386995,
+        "intercept": 0.08114682558931054
+      },
+      "transfer_pooled": {
+        "slope": 0.9505576280476158,
+        "intercept": -0.5221566731545044
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r2_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.22145496505137313
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2053317689845689
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2111218109326645
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.16283466372512662
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.16998499653623292
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.17050435073520795
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.22074502839274907
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.16132621078433368
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 287.67012778424106,
+      "max_abs_gradient": 0.0004954331419164681
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9910072140470144,
+      "uci": -0.4437891079627037
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.315037539379274,
+        "intercept": 0.2999775201410826
+      },
+      "pooled": {
+        "slope": 1.0598001798764742,
+        "intercept": -0.24028237883320896
+      },
+      "cohort_intercepts": {
+        "slope": 0.9953793996661384,
+        "intercept": -0.003650492297284651
+      },
+      "transfer_pooled": {
+        "slope": 0.7588669982820924,
+        "intercept": -0.6912116563876651
+      }
+    }
+  },
+  {
+    "key": "lcx_angiocad_r2_f4",
+    "seconds": 0.046999999998661224,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.20062556218449262
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.18806439882788287
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.21499849980968783
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.1961669875455935
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.18234462392452125
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.19696438752282167
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2686167060946719
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.1914612530233297
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 285.29605575957214,
+      "max_abs_gradient": 0.0005385618322391039
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.9638602819143642,
+      "uci": -0.5164396329951686
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.0589818465000485,
+        "intercept": 0.0012884620281019487
+      },
+      "pooled": {
+        "slope": 0.7278853064440205,
+        "intercept": -0.46777407923388414
+      },
+      "cohort_intercepts": {
+        "slope": 0.7395364665803542,
+        "intercept": -0.2956702161652326
+      },
+      "transfer_pooled": {
+        "slope": 0.7100158637389982,
+        "intercept": -0.7293542069437806
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r1_f0",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2914287889056463
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3042722723858169
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3582568694847546
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3151937102534841
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2945663925251039
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.30060612825349103
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4033039503289765
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.30387541213132263
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 316.15176143231895,
+      "max_abs_gradient": 0.0004022418635214464
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.05235842320430734,
+      "uci": -0.5121339658226531
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.272828946581451,
+        "intercept": 0.30381563420381263
+      },
+      "pooled": {
+        "slope": 1.2940333407511673,
+        "intercept": -0.02160756234849826
+      },
+      "cohort_intercepts": {
+        "slope": 1.3087344613413179,
+        "intercept": 0.29851539128638205
+      },
+      "transfer_pooled": {
+        "slope": 0.9824636444288554,
+        "intercept": -0.44406279847934577
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r1_f1",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.26428802085239317
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.29718726883607927
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3161409000263116
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.26894705273882263
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.26271173221352884
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2670509490275434
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3630472656024497
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2877313987381753
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 314.9864108780631,
+      "max_abs_gradient": 0.00019936110489915393
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.05507180195948432,
+      "uci": -0.5226452450411987
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.6061609707040679,
+        "intercept": -0.24014087144986723
+      },
+      "pooled": {
+        "slope": 0.8772162237864861,
+        "intercept": -0.32314298575406286
+      },
+      "cohort_intercepts": {
+        "slope": 0.863214210812102,
+        "intercept": -0.11886734473056994
+      },
+      "transfer_pooled": {
+        "slope": 0.7364916103932977,
+        "intercept": -0.4923997826906353
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r1_f2",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2839673057147467
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31779623533472134
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3640872581758201
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3154668031661347
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2904903904121887
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31398565189444877
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.41281197102709283
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3434404665085223
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 311.67887450932875,
+      "max_abs_gradient": 0.0006774570876695307
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.031301420175754616,
+      "uci": -0.5512341937954588
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.5945501085591046,
+        "intercept": -0.2140383730740929
+      },
+      "pooled": {
+        "slope": 0.7650247983769844,
+        "intercept": -0.3480539913206447
+      },
+      "cohort_intercepts": {
+        "slope": 0.6745109529763288,
+        "intercept": -0.17921058110212307
+      },
+      "transfer_pooled": {
+        "slope": 0.37771013592399827,
+        "intercept": -0.5149123374136644
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r1_f3",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2637577316627945
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.278007074709287
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3523542101683842
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.303903578986907
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2904516440736427
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.30444017458964007
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.41446943368547595
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3359828185463024
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 308.83837527298016,
+      "max_abs_gradient": 0.0007516840154542237
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.04369847369036053,
+      "uci": -0.5389661332941924
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.6646002224233801,
+        "intercept": -0.27213788495899627
+      },
+      "pooled": {
+        "slope": 0.6814351511345643,
+        "intercept": -0.4139833785911701
+      },
+      "cohort_intercepts": {
+        "slope": 0.6565445617169633,
+        "intercept": -0.23982237761370728
+      },
+      "transfer_pooled": {
+        "slope": 0.3865237249702526,
+        "intercept": -0.5476966494780791
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r1_f4",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3623196103302236
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.334449560122087
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.338911679052357
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.26493417067885905
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2911539429025669
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.27198253638387265
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4165702204843604
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.32456275720605615
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 314.11101770242203,
+      "max_abs_gradient": 0.00017445777026336984
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.03656611934237908,
+      "uci": -0.4926362580745023
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.7250674453058037,
+        "intercept": 0.2870703500263089
+      },
+      "pooled": {
+        "slope": 1.2791764652234916,
+        "intercept": -0.16579959656311846
+      },
+      "cohort_intercepts": {
+        "slope": 1.2561338370589994,
+        "intercept": 0.13310342146999773
+      },
+      "transfer_pooled": {
+        "slope": 0.7422928681987501,
+        "intercept": -0.48282583573745436
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r2_f0",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.268126643588007
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3498941910237547
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.31671469602933067
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.33815655978429926
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.2716546282968291
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3315707893823785
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4093437903058969
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.34717621027428025
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 311.68240198597636,
+      "max_abs_gradient": 0.00027519511723461676
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.05770206468357454,
+      "uci": -0.48767779800300154
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.2280882322379377,
+        "intercept": -0.3904699772942903
+      },
+      "pooled": {
+        "slope": 0.29963729772297687,
+        "intercept": -0.4411255943687043
+      },
+      "cohort_intercepts": {
+        "slope": 0.35520258249694897,
+        "intercept": -0.3507728108009915
+      },
+      "transfer_pooled": {
+        "slope": 0.26721888900849694,
+        "intercept": -0.5334912897000009
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r2_f1",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.31884541585047715
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2911209027365728
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3591379845094601
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.25618458937892685
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3197865790805647
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2820336046542446
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4093437903058969
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2632317742437144
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 316.6283937050889,
+      "max_abs_gradient": 0.00023552911187607606
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.04793816557225851,
+      "uci": -0.5471847488175815
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.8503129361080963,
+        "intercept": 0.5145945416412879
+      },
+      "pooled": {
+        "slope": 1.6126773906521668,
+        "intercept": -0.13198109645995507
+      },
+      "cohort_intercepts": {
+        "slope": 1.6200985235895065,
+        "intercept": 0.288377313311349
+      },
+      "transfer_pooled": {
+        "slope": 1.2462487716255588,
+        "intercept": -0.5722654744505751
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r2_f2",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.2505807447012724
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.35382353153852175
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3015073629336181
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31667112173560513
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.24760242091787335
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3222980380014306
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3477293870079116
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.32185451082038513
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 12,
+      "objective": 310.07549190174024,
+      "max_abs_gradient": 0.0003757689935699471
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.05379998486094477,
+      "uci": -0.5462913604433223
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.17126463058186409,
+        "intercept": -0.4146509681383211
+      },
+      "pooled": {
+        "slope": 0.45698554813424114,
+        "intercept": -0.3851851390923631
+      },
+      "cohort_intercepts": {
+        "slope": 0.40936175976341754,
+        "intercept": -0.2882496417709446
+      },
+      "transfer_pooled": {
+        "slope": 0.41650528650869484,
+        "intercept": -0.483265845518171
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r2_f3",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.26585261621324985
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2633049960737226
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3545653302759493
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31238041285834417
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3141332686611419
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.33701359584213586
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4005786789836567
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31270308103155847
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 19,
+      "objective": 315.7979309818448,
+      "max_abs_gradient": 0.00020364194796140822
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.033860138498140895,
+      "uci": -0.5152866062697822
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.3514296831528805,
+        "intercept": 0.34387772119162735
+      },
+      "pooled": {
+        "slope": 1.4533670947992308,
+        "intercept": 0.08159845253869151
+      },
+      "cohort_intercepts": {
+        "slope": 1.4294906022161324,
+        "intercept": 0.43960942891513966
+      },
+      "transfer_pooled": {
+        "slope": 0.9676426317251892,
+        "intercept": -0.397499535887583
+      }
+    }
+  },
+  {
+    "key": "rca_uci_r2_f4",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.28304623664830136
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.27093801113631977
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3307415211703146
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.2649632137131631
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.27691054945741655
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.267971241203105
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.4033039503289765
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.29001353728816964
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 312.0050563748668,
+      "max_abs_gradient": 0.0008314479574988987
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.045252222303810194,
+      "uci": -0.54277444380732
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.356518507094227,
+        "intercept": 0.2708810682069555
+      },
+      "pooled": {
+        "slope": 1.0926500147914449,
+        "intercept": -0.25019355826974843
+      },
+      "cohort_intercepts": {
+        "slope": 1.0740860108525552,
+        "intercept": 0.026008871331744024
+      },
+      "transfer_pooled": {
+        "slope": 0.8579959490861346,
+        "intercept": -0.5592263952470462
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r1_f0",
+    "seconds": 0.046999999998661224,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.34875087976527075
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3623478418373998
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2683509938974139
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3329494340765333
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.31404003504864547
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.33184933917592807
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.27619755690088027
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.35681000624979886
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 18,
+      "objective": 301.641016843754,
+      "max_abs_gradient": 0.00037935431141278286
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.015046680424495527,
+      "uci": -0.41809743632559127
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9745246671972427,
+        "intercept": 0.04343587657886438
+      },
+      "pooled": {
+        "slope": 0.824744368495498,
+        "intercept": 0.13234757992774804
+      },
+      "cohort_intercepts": {
+        "slope": 0.8458528532548718,
+        "intercept": -0.03896881096700023
+      },
+      "transfer_pooled": {
+        "slope": 0.8993153712122748,
+        "intercept": 0.2771655930344962
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r1_f1",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3251736025604717
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.38695125526918717
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2990498632002559
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3925972599069193
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.34726747104862477
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3919189435408307
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.26966601214317976
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.38193372562744915
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 302.30246611161937,
+      "max_abs_gradient": 0.00014023787503969487
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.056930341427511626,
+      "uci": -0.4444936509543173
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.647810088702918,
+        "intercept": 0.012818006353720109
+      },
+      "pooled": {
+        "slope": 0.6123680589724187,
+        "intercept": 0.0852235343256567
+      },
+      "cohort_intercepts": {
+        "slope": 0.6169102755265291,
+        "intercept": -0.049938254606131466
+      },
+      "transfer_pooled": {
+        "slope": 0.6438083342379634,
+        "intercept": 0.1600890769967418
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r1_f2",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.35570968046697454
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3589660660574743
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3113615283738093
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3378484765368164
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3620070856759337
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.33022038551966554
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.33233792234928977
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.38278325553150644
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 310.5405366766122,
+      "max_abs_gradient": 0.00024406418854150402
+    },
+    "cohort_intercepts": {
+      "angiocad": -1.9357694031539295e-05,
+      "uci": -0.4558713437364416
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9226099770981375,
+        "intercept": -0.03179234312945153
+      },
+      "pooled": {
+        "slope": 0.9512154667706183,
+        "intercept": 0.08214149997339089
+      },
+      "cohort_intercepts": {
+        "slope": 1.025905448286396,
+        "intercept": -0.1258453971193568
+      },
+      "transfer_pooled": {
+        "slope": 1.002285319622527,
+        "intercept": 0.22147285804343933
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r1_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.35521814107257094
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.33243329964941504
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.30321797291989827
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3867997574873077
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.34941921479763044
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.37992765970768005
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.25260977785263466
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3777438625478198
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 303.46818884780697,
+      "max_abs_gradient": 0.0005051904508421856
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.02655384711798044,
+      "uci": -0.43025032793324425
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.0761425907625886,
+        "intercept": -0.05562541200082123
+      },
+      "pooled": {
+        "slope": 0.6611375261887262,
+        "intercept": 0.08929570293981387
+      },
+      "cohort_intercepts": {
+        "slope": 0.7190089015888087,
+        "intercept": -0.04292431901714869
+      },
+      "transfer_pooled": {
+        "slope": 0.5879856529753041,
+        "intercept": 0.1386769979794082
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r1_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3808350544652233
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3110273599083077
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3280628552527599
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3450706794234051
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.38856576992467756
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.34298828988143254
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.27619755690088027
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3336410757980508
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 306.9010869475779,
+      "max_abs_gradient": 0.0014515184665735426
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.0036946497484247145,
+      "uci": -0.47275330558296913
+    },
+    "calibration": {
+      "local": {
+        "slope": 1.2885100885772671,
+        "intercept": -0.16909787572070992
+      },
+      "pooled": {
+        "slope": 0.9829236326479978,
+        "intercept": 0.06393845614078915
+      },
+      "cohort_intercepts": {
+        "slope": 1.0622965539956502,
+        "intercept": -0.1684187608519884
+      },
+      "transfer_pooled": {
+        "slope": 0.9203048348528413,
+        "intercept": 0.19486094341809299
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r2_f0",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.38630965487922353
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3650041074955107
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.35155376484782264
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3791084044965502
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3997872403490523
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3752334242534485
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3145698798699989
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.391059823883063
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 302.88392981992274,
+      "max_abs_gradient": 0.00025757494979039564
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.0018564154953041561,
+      "uci": -0.43809894860884946
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9711715623910464,
+        "intercept": -0.10420198635144132
+      },
+      "pooled": {
+        "slope": 1.0798050753120374,
+        "intercept": 0.1677401043488374
+      },
+      "cohort_intercepts": {
+        "slope": 1.1452766391180673,
+        "intercept": -0.04444471172669222
+      },
+      "transfer_pooled": {
+        "slope": 1.0721605782071482,
+        "intercept": 0.3921823964484055
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r2_f1",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3546233849706257
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3611505932643468
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.32002416853550614
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.38024573285036856
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.35018697787967423
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3628826968675346
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3211110703400658
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4048457208325731
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 306.48125258544985,
+      "max_abs_gradient": 0.0005101344708027256
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.005659946512729076,
+      "uci": -0.43996836873167455
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9589424300142645,
+        "intercept": 0.0038196199455632117
+      },
+      "pooled": {
+        "slope": 0.7770707857277563,
+        "intercept": 0.09714239321490398
+      },
+      "cohort_intercepts": {
+        "slope": 0.818303771199668,
+        "intercept": -0.0569845015729967
+      },
+      "transfer_pooled": {
+        "slope": 0.7794108752367477,
+        "intercept": 0.19820729066124934
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r2_f2",
+    "seconds": 0.04700000000048021,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.3422759360891118
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.31358785133649836
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2865874976691626
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3351181288666089
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.3672191549593472
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.361956441257087
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.27865009641437544
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3644013569366372
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 16,
+      "objective": 304.1282590021619,
+      "max_abs_gradient": 0.0005920628094351343
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.07083734383013056,
+      "uci": -0.47220731532776006
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.9803249839630139,
+        "intercept": -0.1430815492598311
+      },
+      "pooled": {
+        "slope": 0.9118013803218038,
+        "intercept": 0.146451067861273
+      },
+      "cohort_intercepts": {
+        "slope": 0.8459512581912513,
+        "intercept": -0.1065453382399119
+      },
+      "transfer_pooled": {
+        "slope": 0.868227600022958,
+        "intercept": 0.26951843273633747
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r2_f3",
+    "seconds": 0.06300000000010186,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.41656457428616483
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.4144958988678084
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.336747122432482
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3808446492945239
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.386958710013422
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.37853831120101217
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2938856268746474
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3737675944615222
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 306.6819304981552,
+      "max_abs_gradient": 0.0002085578497510454
+    },
+    "cohort_intercepts": {
+      "angiocad": -0.06351950105907614,
+      "uci": -0.42621915313461434
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.7533142985955881,
+        "intercept": -0.09162432909572124
+      },
+      "pooled": {
+        "slope": 0.6396063812933381,
+        "intercept": -0.05242406919784849
+      },
+      "cohort_intercepts": {
+        "slope": 0.7240448737067302,
+        "intercept": -0.16261358230918888
+      },
+      "transfer_pooled": {
+        "slope": 0.69321715518571,
+        "intercept": 0.09157748241759824
+      }
+    }
+  },
+  {
+    "key": "rca_angiocad_r2_f4",
+    "seconds": 0.06199999999989814,
+    "cutoffs": {
+      "local": {
+        "fixed_50": 0.5,
+        "target_90": 0.31752151638967113
+      },
+      "local_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3949782210080461
+      },
+      "pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.3036565972239165
+      },
+      "pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.378499761276378
+      },
+      "cohort_intercepts": {
+        "fixed_50": 0.5,
+        "target_90": 0.33291092921152676
+      },
+      "cohort_intercepts_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.3639344092375614
+      },
+      "transfer_pooled": {
+        "fixed_50": 0.5,
+        "target_90": 0.2787799045162511
+      },
+      "transfer_pooled_sigmoid": {
+        "fixed_50": 0.5,
+        "target_90": 0.34541240914513244
+      },
+      "training_prevalence": {
+        "fixed_50": 0.5
+      }
+    },
+    "optimizer": {
+      "iterations": 17,
+      "objective": 304.511226544361,
+      "max_abs_gradient": 0.0006029006260193093
+    },
+    "cohort_intercepts": {
+      "angiocad": 0.030099482006086323,
+      "uci": -0.5011262891149423
+    },
+    "calibration": {
+      "local": {
+        "slope": 0.41957400377736415,
+        "intercept": -0.10538192018137922
+      },
+      "pooled": {
+        "slope": 0.7723340157597335,
+        "intercept": 0.14507427634765735
+      },
+      "cohort_intercepts": {
+        "slope": 0.7160238059454265,
+        "intercept": -0.06065668579284269
+      },
+      "transfer_pooled": {
+        "slope": 1.0011413004509537,
+        "intercept": 0.3123402749077378
+      }
+    }
+  }
+]

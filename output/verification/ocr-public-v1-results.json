@@ -1,0 +1,311 @@
+{
+  "results": [
+    {
+      "id": "labcorp-cmp-1",
+      "seconds": 4.423,
+      "proposals": [
+        {
+          "field": "CR",
+          "value": 0.76,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 134,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "K",
+          "value": 3.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "CR",
+          "value": 0.76,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 134,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "K",
+          "value": 3.5,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Age",
+        "Sex"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-2",
+      "seconds": 4.423,
+      "proposals": [
+        {
+          "field": "CR",
+          "value": 1.5,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 150,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "K",
+          "value": 3.8,
+          "issue": "Conflicting occurrences. Use one report, one patient and one collection date; resolve manually.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "CR",
+          "value": 1.5,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "Na",
+          "value": 150,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Age",
+        "Sex",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-3",
+      "seconds": 4.39,
+      "proposals": [],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": []
+    },
+    {
+      "id": "labcorp-cmp-4",
+      "seconds": 2.359,
+      "proposals": [],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": []
+    },
+    {
+      "id": "labcorp-cmp-5",
+      "seconds": 4.423,
+      "proposals": [],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": [
+        "Sex",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-cmp-6",
+      "seconds": 3.385,
+      "proposals": [
+        {
+          "field": "K",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": [
+        "Sex",
+        "K"
+      ]
+    },
+    {
+      "id": "labcorp-hb-1",
+      "seconds": 2.873,
+      "proposals": [
+        {
+          "field": "HB",
+          "value": "\u2014",
+          "issue": "Conflicting occurrences. Use one report, one patient and one collection date; resolve manually.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": [
+        "Sex",
+        "HB"
+      ]
+    },
+    {
+      "id": "labcorp-hb-2",
+      "seconds": 2.871,
+      "proposals": [
+        {
+          "field": "HB",
+          "value": "\u2014",
+          "issue": "Conflicting occurrences. Use one report, one patient and one collection date; resolve manually.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [],
+      "missed_eligible": [
+        "Sex",
+        "HB"
+      ]
+    },
+    {
+      "id": "quest-diabetes-1",
+      "seconds": 2.883,
+      "proposals": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex"
+      ]
+    },
+    {
+      "id": "quest-diabetes-2",
+      "seconds": 3.384,
+      "proposals": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "HB",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "HDL",
+          "value": "\u2014 mg/dL",
+          "issue": "Ambiguous result, range, comparator or multiple numbers. Enter manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "TG",
+          "value": "\u2014 mg/dL",
+          "issue": "Ambiguous result, range, comparator or multiple numbers. Enter manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "LDL",
+          "value": "\u2014 mg/dL",
+          "issue": "Ambiguous result, range, comparator or multiple numbers. Enter manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "Length",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        },
+        {
+          "field": "Weight",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex",
+        "HDL",
+        "TG",
+        "LDL"
+      ]
+    },
+    {
+      "id": "quest-diabetes-3",
+      "seconds": 2.377,
+      "proposals": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        },
+        {
+          "field": "LDL",
+          "value": "\u2014",
+          "issue": "Required unit not found. Enter this observation manually after checking the report.",
+          "confirmed": false
+        }
+      ],
+      "incorrect_unflagged": [],
+      "correct_unflagged": [
+        {
+          "field": "Age",
+          "value": 45,
+          "issue": "",
+          "confirmed": false
+        }
+      ],
+      "missed_eligible": [
+        "Sex"
+      ]
+    }
+  ],
+  "non_get_requests": [
+    {
+      "method": "POST",
+      "path": "/90475744-B4A7-47A3-B312-BCA69F37D1A9/1D2121A6-B5CB-47D3-B5F1-9884B909E6A0/to/dp.onGetFields"
+    }
+  ],
+  "protocol_sha256": "9ddf14c05cd957b7cef0187d0bc1a041da365135939ca3002df40a4bfbecbbae",
+  "parser_sha256": "ac977b236e6ae02e0ae5a6c39deead2537c567b2549f4da195763cb00c56488b",
+  "pages": 11,
+  "source_documents": 3,
+  "correct_unflagged": 8,
+  "incorrect_unflagged": 0,
+  "eligible_fields": 27,
+  "coverage": 0.2962962962962963,
+  "unflagged_precision": 1.0,
+  "scope": "Small frozen public specimen challenge. Pages cluster within three documents, not independent patients. No clinical OCR or model-accuracy validation."
+}

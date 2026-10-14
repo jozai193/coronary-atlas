@@ -1,0 +1,75 @@
+{
+  "archive_sha256": "40665852c49f218326590e204db91064a1ecfc3c6f8cbd7bbbcaac62c7cd409e",
+  "manifest_sha256": "d2af46424068cb34efb016569b6c64d0ecbe84f57ecc0290faa57a46d31576d3",
+  "mapping": {
+    "lad": [
+      "FMA74912"
+    ],
+    "lcx": [
+      "FMA3895"
+    ],
+    "rca": [
+      "FMA3802"
+    ],
+    "heart": [
+      "FMA13884",
+      "FMA9457",
+      "FMA9531"
+    ],
+    "aorta": [
+      "FMA3736"
+    ],
+    "left_main": [
+      "FMA3855"
+    ],
+    "context_branches": [
+      "FMA3860",
+      "FMA3892",
+      "FMA3818",
+      "FMA3840",
+      "FMA3815",
+      "FMA3837",
+      "FMA3868"
+    ],
+    "coronary_sinus": [
+      "FMA4706"
+    ],
+    "pulmonary_trunk": [
+      "FMA8612"
+    ],
+    "cardiac_veins": [
+      "FMA4707",
+      "FMA4712",
+      "FMA4713",
+      "FMA4714",
+      "FMA76767"
+    ],
+    "atrial_chambers": [
+      "FMA9465",
+      "FMA11359"
+    ],
+    "ventricular_chambers": [
+      "FMA9291",
+      "FMA9466"
+    ],
+    "valve_leaflets": [
+      "FMA7238",
+      "FMA7239",
+      "FMA7240",
+      "FMA7242",
+      "FMA7243",
+      "FMA7247",
+      "FMA7249",
+      "FMA7250",
+      "FMA7252",
+      "FMA7253",
+      "FMA7254"
+    ],
+    "papillary_muscles": [
+      "FMA7260",
+      "FMA7261",
+      "FMA7262",
+      "FMA7264"
+    ]
+  }
+}

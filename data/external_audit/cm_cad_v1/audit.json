@@ -1,0 +1,259 @@
+{
+  "retrieved_utc": "2026-10-13T10:54:14.459269+00:00",
+  "doi": "10.5281/zenodo.21257707",
+  "page": "https://zenodo.org/records/21257707",
+  "version": "v1.1.0",
+  "license": "cc-by-4.0",
+  "files": {
+    "clip_segment_manifest.csv": {
+      "bytes": 39137,
+      "sha256": "9cece8f96274e46566ed09c96e82565cc8e4574114054f5e9918507f2611f5e3"
+    },
+    "cohort_definition.md": {
+      "bytes": 2209,
+      "sha256": "f36127d181b990c2945c5cfb9be62499107e3bed6dcc90d0011010e7be7f9d1c"
+    },
+    "data_dictionary.csv": {
+      "bytes": 13985,
+      "sha256": "a7cd66cadea36771ed174d7464976007ffef31397738d5ad2e47358ef0f9eb90"
+    },
+    "followup.csv": {
+      "bytes": 3053,
+      "sha256": "89dc7cc93a83899cb83302d1b99c0126b44740768da51307effe595d2da156cc"
+    },
+    "hemodynamics.csv": {
+      "bytes": 4889,
+      "sha256": "55f8e78e47b69f31d6b980cc01891629f7918b6abdab1bdec8721740270c119b"
+    },
+    "patients.csv": {
+      "bytes": 1625,
+      "sha256": "36eacc563fe32b6ac3a75681acb56dbc5471a2d8033135963947b63f7f9c091d"
+    },
+    "perioperative_sessions.csv": {
+      "bytes": 8456,
+      "sha256": "df6595f6529729bc1afe153f014a8acf54d016a4991fba8b4a0e77bbb6ca324e"
+    },
+    "phase_definition.md": {
+      "bytes": 1506,
+      "sha256": "fd9b8f1a599dc406faf2f5ec353646a4c3003da802802ca8792f29a37ecdf9cf"
+    },
+    "README.md": {
+      "bytes": 6957,
+      "sha256": "522bbe3471abb5c683caa0dc67214ede36e62809005203ba30c39ccb250c05cc"
+    },
+    "record_qc_manifest.csv": {
+      "bytes": 23952,
+      "sha256": "e7e73a4e7430728b21e4bef20aa2ab7635a0feb998ed409434db38915b476374"
+    },
+    "reference_manifest.csv": {
+      "bytes": 99325,
+      "sha256": "7f2551f6c1611d1a3d48110447907af1b8c75520a56231353482b0b7e09c900b"
+    },
+    "RELEASE_NOTES.md": {
+      "bytes": 856,
+      "sha256": "d515f7144c45fe97ee6b3b0c9b9582e9be1333724acc0fcaf232d46fad6af9b8"
+    },
+    "signal_manifest.csv": {
+      "bytes": 85971,
+      "sha256": "71ebbfca557c69c1135c882799f0ac7cc01ce0afd9d7b7b059d62d5354e9591c"
+    },
+    "tables.zip": {
+      "bytes": 31627,
+      "sha256": "fdedac53f14fc867e653061446a16dc4e5df2aa6378b514d5553d04e4ea791c8"
+    }
+  },
+  "tables": {
+    "clip_segment_manifest.csv": {
+      "shape": [
+        295,
+        17
+      ],
+      "columns": [
+        "signal_record_id",
+        "session_id",
+        "patient_id",
+        "phase",
+        "record_number",
+        "signal_file",
+        "source_clip_start_sec",
+        "source_clip_end_sec",
+        "source_clip_duration_sec",
+        "segment_index",
+        "valid_start_sec",
+        "valid_end_sec",
+        "n_rpeaks",
+        "segment_status",
+        "audit_issue",
+        "source_clip_reconstruction_match",
+        "source_clip_reconstruction_note"
+      ]
+    },
+    "data_dictionary.csv": {
+      "shape": [
+        105,
+        8
+      ],
+      "columns": [
+        "file_name",
+        "variable_name",
+        "description",
+        "data_type",
+        "unit",
+        "allowed_values",
+        "missing_definition",
+        "level"
+      ]
+    },
+    "followup.csv": {
+      "shape": [
+        75,
+        7
+      ],
+      "columns": [
+        "patient_id",
+        "visit_time",
+        "LVEF",
+        "PASP",
+        "LAD",
+        "LVDd",
+        "E_over_e"
+      ]
+    },
+    "hemodynamics.csv": {
+      "shape": [
+        246,
+        5
+      ],
+      "columns": [
+        "session_id",
+        "PASP",
+        "PAMP",
+        "PCWP",
+        "CO"
+      ]
+    },
+    "patients.csv": {
+      "shape": [
+        82,
+        5
+      ],
+      "columns": [
+        "patient_id",
+        "sex",
+        "age",
+        "height_cm",
+        "weight_kg"
+      ]
+    },
+    "perioperative_sessions.csv": {
+      "shape": [
+        246,
+        7
+      ],
+      "columns": [
+        "session_id",
+        "patient_id",
+        "phase",
+        "raw_session_label",
+        "ecg_available",
+        "scg_available",
+        "pcg_available"
+      ]
+    },
+    "record_qc_manifest.csv": {
+      "shape": [
+        138,
+        26
+      ],
+      "columns": [
+        "record_id",
+        "session_id",
+        "patient_id",
+        "phase",
+        "raw_session_label",
+        "signal_file",
+        "public_clipped_record",
+        "n_rpeaks",
+        "analyzable_for_morphology",
+        "morphology_missing_reason",
+        "ecg_template_corr_median",
+        "pcg_template_corr_median",
+        "scg_template_corr_median",
+        "ecg_retention_ratio",
+        "pcg_retention_ratio",
+        "scg_retention_ratio",
+        "detection_available_pcg",
+        "detection_available_scg_x",
+        "detection_available_scg_y",
+        "detection_available_scg_z",
+        "ibi_available_pcg",
+        "ibi_available_scg_x",
+        "ibi_available_scg_y",
+        "ibi_available_scg_z",
+        "overall_qc_status",
+        "qc_or_exclusion_reason"
+      ]
+    },
+    "reference_manifest.csv": {
+      "shape": [
+        1359,
+        10
+      ],
+      "columns": [
+        "patient_id",
+        "session_id",
+        "phase",
+        "visit_time",
+        "reference_scope",
+        "reference_type",
+        "reference_variable",
+        "reference_value",
+        "reference_available",
+        "paired_with_public_clipped_waveform"
+      ]
+    },
+    "signal_manifest.csv": {
+      "shape": [
+        138,
+        28
+      ],
+      "columns": [
+        "signal_record_id",
+        "session_id",
+        "patient_id",
+        "phase",
+        "raw_session_label",
+        "raw_signal_file",
+        "raw_signal_path",
+        "clipped_signal_file",
+        "annotation_lookup_key",
+        "annotation_expected_stem",
+        "annotation_file",
+        "annotation_directory",
+        "paired_original_available",
+        "paired_release_scope",
+        "name_normalized_equal",
+        "clipped_basename_match",
+        "annotation_match_rule",
+        "public_waveform_release",
+        "recommended_for_analysis",
+        "ecg_available",
+        "pcg_available",
+        "scg_available",
+        "scg_axes",
+        "ecg_sampling_rate_hz",
+        "pcg_sampling_rate_hz",
+        "scg_sampling_rate_hz",
+        "primary_duration_sec",
+        "public_notes"
+      ]
+    }
+  },
+  "critical_mapping": {
+    "field": "followup.csv:LAD",
+    "meaning": "Left atrial diameter",
+    "unit": "mm",
+    "not_a_coronary_artery_label": true
+  },
+  "decision": "Not fitted or scored for CAD/artery prediction. All 82 participants belong to a CABG-selected CAD cohort, no matched negative CAD group or named coronary stenosis outcomes are supplied. Follow-up echo observations are post-treatment repeated visits, not pre-test training inputs. This may support a separate participant-grouped waveform study, with no current clinical accuracy claim. Raw tables and identifiers remain local."
+}

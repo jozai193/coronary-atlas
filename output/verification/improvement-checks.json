@@ -1,0 +1,25 @@
+{
+  "python_tests": 25,
+  "frontend_tests": 7,
+  "production_build": "passed; existing Three.js size warning",
+  "browser": {
+    "desktop_width": 1440,
+    "mobile_width": 390,
+    "horizontal_overflow": false,
+    "console_errors": 0,
+    "console_warnings": 0,
+    "evidence_download_status": 200,
+    "evidence_download_version": "improvement_v1",
+    "sample_a_prediction": "Prediction ready",
+    "rca_run_2_recall_policy": {
+      "recall": 0.7192982456140351,
+      "specificity": 0.5396825396825397,
+      "precision": 0.48520710059171596,
+      "false_negatives": 32,
+      "false_positives": 87
+    }
+  },
+  "production_model_changes": false,
+  "external_validation": false,
+  "results": "docs/model_improvement_results.md"
+}

@@ -1,0 +1,254 @@
+{
+  "version": "modality_v2",
+  "source_sha256": "7b09db0129de259ef8c1500aaa5e17241cb958ae98026ce9f336617b5ef63bb6",
+  "targets": {
+    "cad": [
+      {
+        "seed": 20261007,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.9003831417624522,
+            "brier": 0.12642360327467214
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.9108663260962111,
+            "brier": 0.12153038337098086
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.8997977862920391,
+            "brier": 0.1242165639032558
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.9162409535972754,
+            "brier": 0.1182639876658661
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.9194870157513835,
+            "brier": 0.11428570720993238
+          }
+        ]
+      },
+      {
+        "seed": 20261108,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.8992124308216263,
+            "brier": 0.12642197875015643
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.9107598978288634,
+            "brier": 0.12172825374361283
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.8935185185185186,
+            "brier": 0.1248695529623893
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.9121966794380588,
+            "brier": 0.1186777718633737
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.9136334610472542,
+            "brier": 0.11524591995147439
+          }
+        ]
+      }
+    ],
+    "lad": [
+      {
+        "seed": 20261007,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.7826652318177743,
+            "brier": 0.1855205775681799
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.7968343646309748,
+            "brier": 0.1797950497860094
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.7878665590529997,
+            "brier": 0.18203698265252272
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.819433234687472,
+            "brier": 0.1724404105644884
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.8282665231817774,
+            "brier": 0.1668517403751927
+          }
+        ]
+      },
+      {
+        "seed": 20261108,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.7819478073715361,
+            "brier": 0.18638308679725896
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.7933817594834544,
+            "brier": 0.18127605569879562
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.7841000807102502,
+            "brier": 0.1847251675291515
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.8267868352614115,
+            "brier": 0.17005265000488157
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.8257555376199445,
+            "brier": 0.16860347395930717
+          }
+        ]
+      }
+    ],
+    "lcx": [
+      {
+        "seed": 20261007,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.7403635367190354,
+            "brier": 0.2033677356741587
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.7337869930580928,
+            "brier": 0.20455278126229054
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.7575356229448302,
+            "brier": 0.19661524426039328
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.73488308366825,
+            "brier": 0.204702216220292
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.7492692729265619,
+            "brier": 0.199554619002649
+          }
+        ]
+      },
+      {
+        "seed": 20261108,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.7314121300694191,
+            "brier": 0.20584120166787379
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.7233741322616003,
+            "brier": 0.20824964091317186
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.732964925100475,
+            "brier": 0.20318686876864958
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.721181951041286,
+            "brier": 0.20894413862321448
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.7161125319693095,
+            "brier": 0.20868170795292362
+          }
+        ]
+      }
+    ],
+    "rca": [
+      {
+        "seed": 20261007,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.7137287663603453,
+            "brier": 0.20523380741801048
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.7141928896314861,
+            "brier": 0.20529722103053252
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.7440824282929546,
+            "brier": 0.19568331016995213
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.710155017172561,
+            "brier": 0.20666516949256108
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.7393947832544324,
+            "brier": 0.19771809432308712
+          }
+        ]
+      },
+      {
+        "seed": 20261108,
+        "rows": [
+          {
+            "name": "Clinical core",
+            "roc_auc": 0.7017543859649122,
+            "brier": 0.20839091849164518
+          },
+          {
+            "name": "Core + ECG",
+            "roc_auc": 0.7005476654599461,
+            "brier": 0.20893133521131932
+          },
+          {
+            "name": "Core + Laboratory",
+            "roc_auc": 0.7358674463937621,
+            "brier": 0.19957843225500924
+          },
+          {
+            "name": "Core + Echocardiography",
+            "roc_auc": 0.6940499396639748,
+            "brier": 0.2106953877774202
+          },
+          {
+            "name": "All input groups",
+            "roc_auc": 0.7240787153067855,
+            "brier": 0.20392908412501345
+          }
+        ]
+      }
+    ]
+  }
+}
