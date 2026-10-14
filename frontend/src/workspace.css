@@ -41,3 +41,6 @@ body{background:var(--atlas-bg);color:var(--atlas-ink)}
 .cad-input-context{display:flex;flex-direction:column;align-items:flex-start;gap:9px}.cad-input-context button{margin-top:2px;font-size:11px}.cad-input-context>span{line-height:1.5}
 
 @media(max-width:800px){.topbar nav{display:flex}.cad-input-context>span{margin-left:0}}
+
+.topbar{position:sticky;top:0;z-index:30}.explore-view,.inputs-view,.evidence-view,.anatomy,.patient,#model-details,#public-ecg-library,.heldout-challenge,.review-workspace,.guided-case{scroll-margin-top:85px}
+@media(max-width:800px){.explore-view,.inputs-view,.evidence-view,.anatomy,.patient,#model-details,#public-ecg-library,.heldout-challenge,.review-workspace,.guided-case{scroll-margin-top:115px}}
