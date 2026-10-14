@@ -11,7 +11,9 @@ The redesigned interface includes two complete recorded examples, searchable obs
 - [Open the live application](https://coronary-atlas-production.up.railway.app) · [Watch the narrated demo](https://youtu.be/jiFX468FLYQ) · [Stable judge portal](https://huggingface.co/spaces/jozai182/coronary-atlas). The complete application runs on Railway and does not require the entrant's laptop. Availability depends on the hosting account's remaining credits/plan.
 - Repository: https://github.com/jozai193/coronary-atlas.
 - Choose **Explore profile A** or **Explore profile B**. Both have all 55 recorded model inputs and immediately compute four outputs. A/B are selected development examples, not independent tests. C/D have been removed from the judge-facing choices.
-- Focus LAD, LCX and RCA; try the internal view, camera presets and probability mode. Inspect the explanation and **Model evidence**, then **Open case summary** and download a worksheet/research result.
+- **Explore** focuses on the reference heart, four estimates and explanations. Select LAD, LCX or RCA; try the internal view and camera presets. Optional colour, label and tour controls are under **View, colour & anatomy options**.
+- **Inputs & reports** contains searchable observations, CSV import and reviewed report assistance. **Start your own case** clears the examples so judges can enter their own de-identified observations.
+- **Evidence** contains model comparison, evaluation and separate public ECG references. **Open case summary** provides a worksheet; **Export research result** downloads the current outputs.
 - **Import a report photo** runs OCR locally. Confirm each numerical proposal. Echo excerpts require separate case/source review; unreadable measurements remain unknown. **Explore real public ECG references** is separate from the current case.
 - No password, API key or account is required. Anonymous A/B predictions passed for all three model variants, alongside desktop/mobile browser checks. If the host is unavailable, use the narrated video or reproduce locally from this repository.
 
@@ -33,7 +35,7 @@ npm.cmd --prefix frontend run build
 .\.venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
 ```
 
-Open **http://127.0.0.1:8000**. Use Explore profile A/B for complete recorded examples. Drag/zoom the heart; click a vessel or its labelled button. Use the explanation tabs and Model evidence panel. Both examples were used in development and are not independent evaluation.
+Open **http://127.0.0.1:8000**. Use Explore profile A/B for complete recorded examples. Drag/zoom the heart; click a vessel or its labelled button. Use the explanation tabs and the Evidence view. Both examples were used in development and are not independent evaluation.
 
 For source review, choose **Start clinician review** and inspect A/B before predicting. Their exact tabular source sheets are available there, with input values and separate recorded outcomes. These are not original ECG/echo reports. Regenerate/check them with `python scripts/build_source_review_sheets.py` / `--verify`.
 
@@ -62,7 +64,7 @@ The **Prediction model** control now offers **Research calibrated ensemble · ad
 .\.venv\Scripts\python.exe -m pip install -r requirements-ensemble.txt
 ```
 
-Restart the backend after installation. The baseline remains the default, and the default Docker image does not install the optional ensemble. The ensemble changes all four fitted models, retains the coherence adjustment, and has its own sampled permutation attributions; these are approximate allocations that reconstruct its calibrated probabilities before adjustment. They are not the baseline's SHAP factors. Model switching clears previous outputs, and exported results identify the selected version.
+Restart the backend after installation. The baseline remains the default, and the Railway Docker image installs the optional ensemble dependencies. The ensemble changes all four fitted models, retains the coherence adjustment, and has its own sampled permutation attributions; these are approximate allocations that reconstruct its calibrated probabilities before adjustment. They are not the baseline's SHAP factors. Model switching clears previous outputs, and exported results identify the selected version.
 
 On three matched internal repeats of the same 303 people, mean accuracy across the four targets improved **72.6% → 75.0%** and mean Brier error fell **0.1753 → 0.1650**. These are development results, not an independent or clinical validation. LCX/RCA sensitivity remains low; naturally incomplete profiles and attribution stability remain unvalidated. Feature selection and splines did not pass their separate improvement screens. [Complete results](docs/accuracy_goal_results.md), [frozen ensemble protocol](docs/accuracy_goal_protocol.md), [missing-input protocol](docs/accuracy_missingness_protocol.md), [additional-data audit](docs/accuracy_goal_data_review.md).
 
