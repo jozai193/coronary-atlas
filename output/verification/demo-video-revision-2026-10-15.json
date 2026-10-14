@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-10-15",
+  "duration_seconds": 220.521333,
+  "under_four_minutes": true,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "fps": "30/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio_mean_db": -17.1,
+  "audio_peak_db": -1.4,
+  "bytes": 42539788,
+  "sha256": "ca050c24b77a1688426d70577526403e7605befcbb75d8651ad717db7c63f10a",
+  "track_or_submission_explanation": "removed from narration",
+  "voice": "Deepgram Aura 2 Orion",
+  "captions": "English, burned; companion SRT",
+  "visual_review": "12-frame contact sheet plus full-size opening, input-navigation and closing frames reviewed. Entire heart visible; no gray padding. Chapters 0,1,2,3,7 recaptured with corrected presentation sizing.",
+  "project_status": "Draft; final submission not performed",
+  "capture_notes": "Real app, viewport 2560x1440, presentation zoom 160%, high-DPI renderer. Capture-only canvas CSS sizing corrected for presentation zoom; no product changes or mocked outputs.",
+  "youtube_status": "Published unlisted; 1440p HD playback option verified",
+  "previous_video_url": "https://youtu.be/93zRA3R-Mdo",
+  "youtube_url": "https://youtu.be/jiFX468FLYQ",
+  "approval": "User explicitly approved new upload including Terms notice and judge-link updates; final hackathon submission remains unauthorized.",
+  "youtube_visibility": "unlisted",
+  "anonymous_oembed": "passed; channel Aditya M Jevoor",
+  "youtube_quality_options": [
+    "1440p HD",
+    "1080p HD",
+    "720p"
+  ],
+  "devpost_video_embed": "Verified new video ID jiFX468FLYQ in draft preview",
+  "devpost_status": "Draft, 4/5; final submit untouched",
+  "portal_video_link": "New ID served anonymously at static judge portal",
+  "portal_commit": "dad45465ef888fe3fb678791cba80fec6850244f",
+  "full_decode_check": "ffmpeg decoded complete file without errors"
+}

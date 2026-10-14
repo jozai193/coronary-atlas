@@ -5,14 +5,21 @@
   "frontend_build": "passed",
   "protected_models_and_evaluation": "11 hashes unchanged",
   "video": {
-    "url": "https://youtu.be/93zRA3R-Mdo",
+    "url": "https://youtu.be/jiFX468FLYQ",
     "visibility": "unlisted",
-    "seconds": 357.24,
+    "seconds": 220.521333,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "fps": 30,
     "narration_voice": "aura-2-orion-en",
-    "captions": "burned in",
+    "captions": "burned English captions and companion SRT",
     "anonymous_oembed": "passed",
-    "audio_mean_db": -17.2,
-    "audio_peak_db": -1.3
+    "hd_processing": "complete; 1440p HD playback option verified",
+    "audio_mean_db": -17.1,
+    "audio_peak_db": -1.4,
+    "revision_date": "2026-10-15"
   },
   "technical_report": {
     "path": "output/pdf/technical_report.pdf",
@@ -50,5 +57,16 @@
     "thumbnail": "uploaded and verified",
     "entrant_profile_name": "Aditya Jevoor, persisted and verified"
   },
-  "claims": "Engineering verification only; no independent clinical or broad OCR validation claimed."
+  "claims": "Engineering verification only; no independent clinical or broad OCR validation claimed.",
+  "previous_video": {
+    "url": "https://youtu.be/93zRA3R-Mdo",
+    "visibility": "unlisted",
+    "seconds": 357.24,
+    "narration_voice": "aura-2-orion-en",
+    "captions": "burned in",
+    "anonymous_oembed": "passed",
+    "audio_mean_db": -17.2,
+    "audio_peak_db": -1.3
+  },
+  "last_media_update": "2026-10-15"
 }

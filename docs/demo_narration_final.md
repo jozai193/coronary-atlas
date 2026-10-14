@@ -1,5 +1,7 @@
 # Coronary Atlas — final narrated demo
 
+Historical long cut. The shorter submission demo uses [demo_narration_short.md](demo_narration_short.md).
+
 Voice: Deepgram Aura 2 Orion, matching the configured Jarvis voice and the saved NextStep Orion demo. Synthetic narration; no voice cloning. Each numbered section is a separate audio segment.
 
 ## 01 — The problem
