@@ -7,12 +7,13 @@ RUN npm run build
 
 FROM python:3.11-slim
 WORKDIR /app
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt requirements-ensemble.txt ./
+RUN pip install --no-cache-dir -r requirements-ensemble.txt
 COPY backend/ backend/
 COPY ml/ ml/
 COPY models/ models/
 COPY data/processed/ data/processed/
+COPY scripts/ scripts/
 COPY --from=web /app/frontend/dist frontend/dist
 EXPOSE 8000
-CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "exec python -m uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000} --no-access-log"]
