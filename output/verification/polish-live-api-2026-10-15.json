@@ -1,0 +1,118 @@
+{
+  "url": "https://coronary-atlas-production.up.railway.app",
+  "checked_on": "2026-10-15",
+  "deployed_source": "838a56e",
+  "anonymous": true,
+  "authenticated_browser_session_used": false,
+  "asset_hashes_match_local_build": {
+    "/assets/index-DUZItgY-.js": true,
+    "/assets/three-BjcGrliQ.js": true,
+    "/assets/index-D4-wnz52.css": true
+  },
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "seconds": 0.67
+    },
+    {
+      "path": "/assets/index-DUZItgY-.js",
+      "status": 200,
+      "seconds": 0.4
+    },
+    {
+      "path": "/assets/three-BjcGrliQ.js",
+      "status": 200,
+      "seconds": 0.43
+    },
+    {
+      "path": "/assets/index-D4-wnz52.css",
+      "status": 200,
+      "seconds": 0.3
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.28
+    },
+    {
+      "path": "/api/review-profiles",
+      "status": 200,
+      "seconds": 0.3
+    }
+  ],
+  "predictions": [
+    {
+      "profile": "a",
+      "variant": "baseline",
+      "status": 200,
+      "seconds": 0.56,
+      "probabilities": {
+        "cad": 0.40105774405650746,
+        "lad": 0.35266328599096775,
+        "lcx": 0.2722392443031388,
+        "rca": 0.26394035790149906
+      }
+    },
+    {
+      "profile": "a",
+      "variant": "histgb_lcx_v2",
+      "status": 200,
+      "seconds": 0.6,
+      "probabilities": {
+        "cad": 0.40105774405650746,
+        "lad": 0.35266328599096775,
+        "lcx": 0.23239012649154991,
+        "rca": 0.26394035790149906
+      }
+    },
+    {
+      "profile": "a",
+      "variant": "calibrated_ensemble_v1",
+      "status": 200,
+      "seconds": 2.24,
+      "probabilities": {
+        "cad": 0.23487718169994487,
+        "lad": 0.2163197831336612,
+        "lcx": 0.1660221532300556,
+        "rca": 0.23487718169994487
+      }
+    },
+    {
+      "profile": "b",
+      "variant": "baseline",
+      "status": 200,
+      "seconds": 0.59,
+      "probabilities": {
+        "cad": 0.8872264377779081,
+        "lad": 0.5867044260295038,
+        "lcx": 0.5850702752924316,
+        "rca": 0.47043081633924666
+      }
+    },
+    {
+      "profile": "b",
+      "variant": "histgb_lcx_v2",
+      "status": 200,
+      "seconds": 0.59,
+      "probabilities": {
+        "cad": 0.8872264377779081,
+        "lad": 0.5867044260295038,
+        "lcx": 0.5752577470171674,
+        "rca": 0.47043081633924666
+      }
+    },
+    {
+      "profile": "b",
+      "variant": "calibrated_ensemble_v1",
+      "status": 200,
+      "seconds": 2.18,
+      "probabilities": {
+        "cad": 0.8962559688992118,
+        "lad": 0.7097363408623389,
+        "lcx": 0.5348403572209639,
+        "rca": 0.6632075898755697
+      }
+    }
+  ]
+}

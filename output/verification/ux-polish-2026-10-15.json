@@ -1,0 +1,100 @@
+{
+  "protected_artifact_hashes_unchanged": {
+    "models/cad.joblib": true,
+    "models/lad.joblib": true,
+    "models/lcx.joblib": true,
+    "models/rca.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/background.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/cad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lcx.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/rca.joblib": true,
+    "models/metadata.json": true,
+    "ml/metrics/evaluation.json": true
+  },
+  "frontend_tests": 79,
+  "production_build": "passed",
+  "scope": "Presentation and navigation only; no model or backend changes",
+  "live_application": "https://coronary-atlas-production.up.railway.app",
+  "deployed_source": "838a56e",
+  "video_url": "https://youtu.be/opyfTMic1kc",
+  "youtube_visibility": "unlisted",
+  "youtube_1440p_quality_option": "verified",
+  "devpost_video_link_saved": true,
+  "devpost_status": "Draft, 4/5 steps",
+  "final_submission_performed": false,
+  "portal": {
+    "url": "https://jozai182-coronary-atlas.static.hf.space/index.html",
+    "verification": {
+      "Commit": "5e2bae4fb226722b36722db3f16c9c187d48e856",
+      "Stage": "RUNNING",
+      "HtmlStatus": 200,
+      "ImageStatus": 200,
+      "NewVideoLink": true,
+      "LaunchButton": true,
+      "HasIframe": false
+    },
+    "browser_visual_check": "Passed. Direct launch page replaces the blank cross-origin preview."
+  },
+  "report_pages": 6,
+  "report_sha256": "36f3db483b72592adcdc238e81d778921068c47ce12745d91728d13616620930",
+  "live_browser_checks": [
+    {
+      "profileB": "88.7%\nHigher predicted probability"
+    },
+    {
+      "proposalNotAutoApplied": "Prediction ready",
+      "photoUpload": 1
+    },
+    {
+      "findInput": "Typical Chest Pain"
+    },
+    {
+      "publicECG": "Explore real public ECG references\nPTB-XL \u00b7 separate source cases"
+    },
+    {
+      "emptyCase": "",
+      "blocked": true
+    },
+    {
+      "ownCaseCsvPrediction": true
+    },
+    {
+      "mobileOverflow": false
+    },
+    {
+      "mobileInputsOverflow": false
+    },
+    {
+      "pageErrors": []
+    }
+  ],
+  "ocr_smoke_check": {
+    "scope": "One previously inspected public lab specimen, engineering smoke check only",
+    "ocrWorkerLoaded": true,
+    "proposals": [
+      {
+        "field": "CR",
+        "value": 0.76,
+        "confirmed": false
+      },
+      {
+        "field": "Na",
+        "value": 134,
+        "confirmed": false
+      },
+      {
+        "field": "K",
+        "value": 3.5,
+        "confirmed": false
+      }
+    ],
+    "postRequests": [],
+    "broadIndependentValidation": false
+  },
+  "fresh_phone_check": {
+    "freshMobileNavigation": true,
+    "expandForm": true,
+    "overflow": false
+  }
+}

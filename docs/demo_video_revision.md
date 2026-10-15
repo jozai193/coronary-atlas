@@ -1,11 +1,9 @@
-# Concise demo revision
+# Concise demo and workspace refresh
 
-The revised cut is 220.52 seconds (3:40.52), reduced from 357.24 seconds (5:57.24), and removes the spoken track and submission explanation. It opens with the working heart and follows the actions a judge can try: complete A/B source cases, artery focus and isolation, explanations, report-text review, separate public ECG references, model evidence and the case summary.
+The current demo is 220.52 seconds (3:40.52), 2560 x 1440 at 30 fps. The 15 October refresh replaces every screen capture with the focused three-view workspace: Explore, Inputs & reports, and Evidence. All eight existing Deepgram Aura 2 Orion narration segments are reused, with the same chapter timings and English captions. No second voice or voice clone was introduced. Spoken track and submission explanations remain removed.
 
-Fresh Deepgram Aura 2 Orion narration accompanies a real application capture. The export is 2560Ã—1440 at 30 fps, with readable English captions and chapter markers. No voice was cloned. Presentation zoom and capture-only canvas sizing improve readability; the deployed product and model outputs were not changed for the video. The standard label-visibility control is used during zoomed heart captures.
+Current unlisted video: https://youtu.be/opyfTMic1kc. Earlier uploads remain available as history; current judge links use the refreshed interface.
 
-The concise script is [demo_narration_short.md](demo_narration_short.md). The previous long script is retained for history. Engineering checks and selected public cases do not establish clinical validation.
+The capture shows actual A/B model outputs, reference anatomy, explanations, reviewed report text, separate ECG records, held-out examples and the case summary. Capture-only presentation zoom and canvas sizing improve readability. Standard label visibility is switched off during zoomed heart views; inference and geometry are unchanged. No mock model outputs appear.
 
-The local MP4 and companion SRT are in `output/video/short/` and excluded from the source tree. The final media check is recorded in `output/verification/demo-video-revision-2026-10-15.json`.
-
-Revised unlisted YouTube demo: https://youtu.be/jiFX468FLYQ. The prior upload is retained; current judge links use the concise cut.
+The MP4 and companion SRT are in output/video/polish/ and excluded from source control. The final check is output/verification/demo-video-polish-2026-10-15.json. The unchanged concise narration is docs/demo_narration_short.md. Engineering checks and selected public examples do not establish clinical validation.

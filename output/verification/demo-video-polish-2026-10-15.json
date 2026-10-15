@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-10-15",
+  "duration_seconds": 220.521333,
+  "under_four_minutes": true,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "fps": "30/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio_mean_db": -17.1,
+  "audio_peak_db": -1.4,
+  "bytes": 41308787,
+  "sha256": "b059af85a99b4bb844694069167851d035713b0934a65ebbf0f334016fa9004f",
+  "track_or_submission_explanation": "removed from narration",
+  "voice": "Deepgram Aura 2 Orion",
+  "captions": "English, burned; companion SRT",
+  "visual_review": "Passed 12-frame contact sheet and full-size opening, internal anatomy and input-focus frame review",
+  "project_status": "Draft; final submission not performed",
+  "capture_notes": "Real app, viewport 2560x1440, presentation zoom 150%, high-DPI renderer. Capture-only canvas CSS sizing corrected for presentation zoom; no product changes or mocked outputs.",
+  "full_decode": "Passed ffmpeg decode with no errors",
+  "youtube_url": "https://youtu.be/opyfTMic1kc",
+  "youtube_upload_authorized": true,
+  "youtube_visibility": "Unlisted, verified in Studio",
+  "youtube_hd_processing": "Complete"
+}
