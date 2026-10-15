@@ -20,5 +20,8 @@
   "project_status": "Draft; final submission not performed",
   "capture_notes": "Real app, viewport 2560x1440, presentation zoom 150%, high-DPI renderer. Capture-only canvas CSS sizing corrected for presentation zoom; no product changes or mocked outputs.",
   "youtube_url": "https://youtu.be/2r2m-abrkS0",
-  "youtube_upload_authorized": true
+  "youtube_upload_authorized": true,
+  "youtube_visibility": "Unlisted",
+  "youtube_1440p_option_verified": true,
+  "devpost_link_saved": true
 }

@@ -1,0 +1,23 @@
+{
+  "page_title": "Cardiofolio \u00b7 Research workspace",
+  "assets": [
+    {
+      "path": "/assets/index-Df2mDc8R.js",
+      "bytes": 200494,
+      "sha256": "b809c2c5ef67a4a203fa14b113d450f40af64f3d3aadcbf78d2f250bd3fe799e",
+      "matches_local_build": true
+    },
+    {
+      "path": "/assets/three-BjcGrliQ.js",
+      "bytes": 1132982,
+      "sha256": "e56d34d6f55bdb52dea6974872354ae941f8480f14768606abbd96a8a72f42f8",
+      "matches_local_build": true
+    },
+    {
+      "path": "/assets/index-CA6UCao4.css",
+      "bytes": 108468,
+      "sha256": "49eed5705df124e66fe41625444f2be5d7e02e155c5c72d97f3111378f9cd2d2",
+      "matches_local_build": true
+    }
+  ]
+}

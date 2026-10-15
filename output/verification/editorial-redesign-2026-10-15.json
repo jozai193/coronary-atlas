@@ -1,7 +1,6 @@
 {
   "checked_on": "2026-10-15",
-  "status": "Live app deployed; final video processing and link publication in progress",
-  "provisional_local_name": "VesselLens",
+  "status": "Published and verified; Devpost intentionally remains a draft",
   "public_deployment_updated": true,
   "devpost_updated_in_this_pass": true,
   "final_submission_performed": false,
@@ -26,19 +25,27 @@
     "OCR of one previously inspected public specimen returned unconfirmed CR 0.76, Na 134 and K 3.5 proposals; instrumented repeat observed no POST requests",
     "Explore, Inputs and Evidence have no page overflow at 320, 390, 768 and 1440 pixel widths",
     "Scoped rendered-text contrast check found no failing text in three main views with reduced motion",
-    "No page exceptions in completed core-workflow browser checks"
+    "No page exceptions in completed core-workflow browser checks",
+    "Final deployed guide reopens collapsed model reasoning; branded JSON and review worksheet download correctly"
   ],
   "resolved_regression": "Fresh mobile input page initially collapsed the fields; fields now start visible on the dedicated Inputs page and the fresh-case browser check passes",
   "ocr_instrumentation_note": "An initial smoke invocation reported an unexpected POST without retaining its destination. A subsequent instrumented run observed none. This is a bounded engineering check, not broad OCR or privacy validation.",
-  "pending_brand_materials": [
-    "YouTube HD processing verification",
-    "Save final video links",
-    "Hugging Face portal publication"
-  ],
+  "pending_brand_materials": [],
   "clinical_or_learning_validation_claimed": false,
   "selected_name": "Cardiofolio",
   "name_selection": "Explicitly selected by user",
-  "deployed_source": "4212dc2",
+  "deployed_source": "f4ab308",
   "devpost_status": "Draft, 4/5",
-  "video_url": "https://youtu.be/2r2m-abrkS0"
+  "video_url": "https://youtu.be/2r2m-abrkS0",
+  "youtube_visibility": "Unlisted",
+  "youtube_1440p_option_verified": true,
+  "devpost_video_link_saved": true,
+  "devpost_embedded_video_id": "2r2m-abrkS0",
+  "devpost_team_name": "Cardiofolio",
+  "devpost_track": "Track A",
+  "report_pages": 6,
+  "report_sha256": "d02ce42454b452af480316e7e5b19d4840c021bff44dcc8245df97dff4579e90",
+  "portal_commit": "3b912fea6b7c806b4d8011eb6c0bbce72f479964",
+  "portal_status": "RUNNING; HTTP 200; updated name, screenshot and video verified",
+  "last_change_checks": "18 App tests passed after the guided-reasoning reopen fix; production build passed; live guide and both exports passed"
 }
