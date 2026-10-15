@@ -1,0 +1,86 @@
+{
+  "anonymous_live_prediction_checks": [
+    {
+      "profile": "a",
+      "variant": "baseline",
+      "probabilities": {
+        "cad": 0.40105774405650746,
+        "lad": 0.35266328599096775,
+        "lcx": 0.2722392443031388,
+        "rca": 0.26394035790149906
+      },
+      "missing": 0
+    },
+    {
+      "profile": "b",
+      "variant": "baseline",
+      "probabilities": {
+        "cad": 0.8872264377779081,
+        "lad": 0.5867044260295038,
+        "lcx": 0.5850702752924316,
+        "rca": 0.47043081633924666
+      },
+      "missing": 0
+    },
+    {
+      "profile": "a",
+      "variant": "histgb_lcx_v2",
+      "probabilities": {
+        "cad": 0.40105774405650746,
+        "lad": 0.35266328599096775,
+        "lcx": 0.23239012649154991,
+        "rca": 0.26394035790149906
+      },
+      "missing": 0
+    },
+    {
+      "profile": "b",
+      "variant": "histgb_lcx_v2",
+      "probabilities": {
+        "cad": 0.8872264377779081,
+        "lad": 0.5867044260295038,
+        "lcx": 0.5752577470171674,
+        "rca": 0.47043081633924666
+      },
+      "missing": 0
+    },
+    {
+      "profile": "a",
+      "variant": "calibrated_ensemble_v1",
+      "probabilities": {
+        "cad": 0.23487718169994487,
+        "lad": 0.2163197831336612,
+        "lcx": 0.1660221532300556,
+        "rca": 0.23487718169994487
+      },
+      "missing": 0
+    },
+    {
+      "profile": "b",
+      "variant": "calibrated_ensemble_v1",
+      "probabilities": {
+        "cad": 0.8962559688992118,
+        "lad": 0.7097363408623389,
+        "lcx": 0.5348403572209639,
+        "rca": 0.6632075898755697
+      },
+      "missing": 0
+    }
+  ],
+  "protected_artifacts_unchanged": {
+    "models/cad.joblib": true,
+    "models/lad.joblib": true,
+    "models/lcx.joblib": true,
+    "models/rca.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/background.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/cad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lad.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/lcx.joblib": true,
+    "models/candidates/calibrated_ensemble_v1/rca.joblib": true,
+    "models/metadata.json": true,
+    "ml/metrics/evaluation.json": true
+  },
+  "anatomy_files_unchanged": 105,
+  "anatomy_all_match_public_baseline": true,
+  "backend_modified_for_redesign": false
+}

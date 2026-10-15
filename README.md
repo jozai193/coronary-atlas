@@ -10,7 +10,7 @@ The redesigned interface includes two complete recorded examples, searchable obs
 
 ## Judge quick start
 
-- [Open the live application](https://coronary-atlas-production.up.railway.app) · [Watch the narrated demo](https://youtu.be/opyfTMic1kc) · [Stable judge portal](https://jozai182-coronary-atlas.static.hf.space/index.html). The complete application runs on Railway and does not require the entrant's laptop. Availability depends on the hosting account's remaining credits/plan.
+- [Open the live application](https://coronary-atlas-production.up.railway.app) · [Watch the narrated demo](https://youtu.be/2r2m-abrkS0) · [Stable judge portal](https://jozai182-coronary-atlas.static.hf.space/index.html). The complete application runs on Railway and does not require the entrant's laptop. Availability depends on the hosting account's remaining credits/plan.
 - Repository: https://github.com/jozai193/coronary-atlas.
 - Choose **Explore profile A** or **Explore profile B**. Both have all 55 recorded model inputs and immediately compute four outputs. A/B are selected development examples, not independent tests. C/D have been removed from the judge-facing choices.
 - Focus LAD, LCX and RCA; try the internal view, camera presets and probability mode. Inspect the explanation and **Model evidence**, then **Open case summary** and download a worksheet/research result.

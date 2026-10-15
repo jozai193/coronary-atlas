@@ -11,7 +11,7 @@ license: mit
 
 # Cardiofolio
 
-Track A educational research prototype. [Open the interactive demo](https://coronary-atlas-production.up.railway.app) · [Narrated demo](https://youtu.be/opyfTMic1kc) · [Source, setup and report](https://github.com/jozai193/coronary-atlas).
+Track A educational research prototype. [Open the interactive demo](https://coronary-atlas-production.up.railway.app) · [Narrated demo](https://youtu.be/2r2m-abrkS0) · [Source, setup and report](https://github.com/jozai193/coronary-atlas).
 
 This free static launch page links to the complete Railway-hosted application. A direct launch button avoids unreliable cross-origin embedding. The backend runs independently of the entrant's laptop. Availability depends on the Railway account's remaining credits/plan. The video, public source and six-page report remain independently accessible. Anonymous API and desktop/mobile browser checks passed, including A/B predictions on all three variants, heart controls, explanations, case summaries, local OCR and exports.
 

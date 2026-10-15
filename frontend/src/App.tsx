@@ -63,7 +63,7 @@ export default function App(){
   function changeModel(v:ModelVariant){revision.current++;setReferenceCase(null);setModelVariant(v);setResult(null);setDirty(true);setError('');if(guideStep!==null){setGuideStep(0);setGuideProfile(null)}}
   function explore(s:Sample){sample(s);if(info&&completenessIssue(s.features,info.features)){setTimeout(()=>focusSection('.patient'),0);return}setView('explore');void predict(s.features)}
   function guidedExplore(s:Sample){explore(s);setGuideProfile(s.id)}
-  function showDetails(t:'explain'|'evidence'){setTab(t);setView(t==='evidence'?'evidence':'explore');setTimeout(()=>focusSection(t==='evidence'?'.evidence-view':'#model-details'),0)}
+  function showDetails(t:'explain'|'evidence'){setTab(t);if(t==='explain')setExplanationOpen(true);setView(t==='evidence'?'evidence':'explore');setTimeout(()=>focusSection(t==='evidence'?'.evidence-view':'#model-details'),0)}
   function download(){if(!result)return;const blob=new Blob([JSON.stringify({...result,profile,clinical_context:clinicalContext,clinical_context_used_by_model:false,report_evidence:serializeReportEvidence(reportEvidence),educational_only:true},null,2)],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='cardiofolio-research-result.json';a.click();URL.revokeObjectURL(u)}
   const loadedExample=samples.find(s=>s.name===profile)
   const incompleteExample=info&&loadedExample?completenessIssue(features,info.features):''

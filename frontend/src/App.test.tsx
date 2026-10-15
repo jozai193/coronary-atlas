@@ -187,6 +187,11 @@ describe('Prediction workflow',()=>{
     expect(screen.getByRole('button',{name:'LCX Left circumflex 25.0% Lower'})).toHaveAttribute('aria-pressed','true')
     fireEvent.click(guide.getByRole('button',{name:/Next:/}))
     expect(guide.getByText(/Lowers raw model output/)).toBeInTheDocument()
+    const disclosure=screen.getByText('Read the model’s reasoning').closest('details')!
+    fireEvent.click(disclosure.querySelector('summary')!)
+    await waitFor(()=>expect(disclosure).not.toHaveAttribute('open'))
+    fireEvent.click(guide.getByRole('button',{name:/Open the complete model explanation/}))
+    await waitFor(()=>expect(disclosure).toHaveAttribute('open'))
     fireEvent.click(guide.getByRole('button',{name:/Next:/}))
     expect(guide.getByText(/No independent clinical validation/)).toBeInTheDocument()
     fireEvent.click(guide.getByRole('button',{name:/Finish walkthrough/}))

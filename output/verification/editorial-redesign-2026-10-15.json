@@ -1,9 +1,9 @@
 {
   "checked_on": "2026-10-15",
-  "status": "Brand selected; publication in progress",
+  "status": "Live app deployed; final video processing and link publication in progress",
   "provisional_local_name": "VesselLens",
-  "public_deployment_updated": false,
-  "devpost_updated_in_this_pass": false,
+  "public_deployment_updated": true,
+  "devpost_updated_in_this_pass": true,
   "final_submission_performed": false,
   "frontend_tests": {
     "files": 24,
@@ -31,14 +31,14 @@
   "resolved_regression": "Fresh mobile input page initially collapsed the fields; fields now start visible on the dedicated Inputs page and the fresh-case browser check passes",
   "ocr_instrumentation_note": "An initial smoke invocation reported an unexpected POST without retaining its destination. A subsequent instrumented run observed none. This is a bounded engineering check, not broad OCR or privacy validation.",
   "pending_brand_materials": [
-    "Final product name",
-    "Public source and Railway deployment",
-    "Devpost title/story/gallery",
-    "Six-page report render",
-    "Renamed video capture/render/upload",
-    "Hugging Face launch portal"
+    "YouTube HD processing verification",
+    "Save final video links",
+    "Hugging Face portal publication"
   ],
   "clinical_or_learning_validation_claimed": false,
   "selected_name": "Cardiofolio",
-  "name_selection": "Explicitly selected by user"
+  "name_selection": "Explicitly selected by user",
+  "deployed_source": "4212dc2",
+  "devpost_status": "Draft, 4/5",
+  "video_url": "https://youtu.be/2r2m-abrkS0"
 }

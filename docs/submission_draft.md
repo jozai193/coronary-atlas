@@ -10,7 +10,7 @@ For medical learners and educators, a model result such as "LCX: 58.5%" is an in
 
 Cardiofolio is an educational workspace for exploring those connections through named coronary anatomy, actual model explanations and visible prediction errors.
 
-**Try it:** [Open the working application](https://coronary-atlas-production.up.railway.app) · [Watch the 3:40 narrated demo](https://youtu.be/opyfTMic1kc). No password, account or API key is required.
+**Try it:** [Open the working application](https://coronary-atlas-production.up.railway.app) · [Watch the 3:44 narrated demo](https://youtu.be/2r2m-abrkS0). No password, account or API key is required.
 
 Conversations with my cousin, a doctor, shaped the project. Her feedback led to clearer vessel colours, complete demonstration cases and better source review for echo findings. This was advisory feedback, not clinical validation.
 

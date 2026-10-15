@@ -1,6 +1,6 @@
 # Judge walkthrough
 
-Open https://coronary-atlas-production.up.railway.app, or the stable static portal at https://jozai182-coronary-atlas.static.hf.space/index.html. No application password or API key is required. The complete application runs on Railway independently of the entrant's laptop; availability depends on account credits/plan. The narrated demo at https://youtu.be/opyfTMic1kc, public repository and six-page report remain independently accessible. Anonymous A/B predictions passed on all three variants. Desktop and 390-pixel mobile checks passed with no page exceptions or horizontal overflow.
+Open https://coronary-atlas-production.up.railway.app, or the stable static portal at https://jozai182-coronary-atlas.static.hf.space/index.html. No application password or API key is required. The complete application runs on Railway independently of the entrant's laptop; availability depends on account credits/plan. The narrated demo at https://youtu.be/2r2m-abrkS0, public repository and six-page report remain independently accessible. Anonymous A/B predictions passed on all three variants. Desktop and 390-pixel mobile checks passed with no page exceptions or horizontal overflow.
 
 ## Start with one educational task
 
