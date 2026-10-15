@@ -1,8 +1,10 @@
 # Coronary Atlas
 
-A local educational research app for the Multimodal AI Hackathon 2026, Track A. It predicts the supplied CAD, LAD, LCX and RCA labels from 55 clinical observations and maps the estimates onto licensed BodyParts3D anatomy. Baseline models use SHAP explanations; the optional calibrated ensemble uses its own sampled permutation attributions.
+An educational workspace for medical learners and educators to connect coronary estimates with named reference anatomy, inspect the observations behind a live model output, and examine saved prediction errors. Prediction, SHAP and 3D anatomy are established techniques; the contribution is a connected educational workflow, with uncertainty and failures visible.
 
-The redesigned interface includes two complete recorded examples, searchable observations, dash-based missing-field guidance, a CSV template, 104 atlas meshes, internal heart views, camera presets, vessel isolation and plain-language contribution summaries. [Product research](docs/product_research.md) documents existing alternatives, public feedback and the learner/educator audience hypothesis; it does not claim validated user demand or unique invention.
+[Try the working application](https://coronary-atlas-production.up.railway.app) · [Watch the 3:40 demo](https://youtu.be/opyfTMic1kc).
+
+The Track A app estimates the supplied CAD, LAD, LCX and RCA labels from 55 observations. Baseline models use SHAP; the optional ensemble has sampled permutation attributions. [Product research](docs/product_research.md) records alternatives and the audience hypothesis. No learner study, measured learning improvement or proven unique invention is claimed.
 
 **Working educational prototype; not clinically validated.** These are disease-label probabilities in a small selected cohort, not future heart-attack risk, measured stenosis percentages, diagnostic findings or localized plaque maps. LCX/RCA held-out sensitivity is only about 40% at the fixed 0.5 threshold.
 
@@ -10,7 +12,7 @@ The redesigned interface includes two complete recorded examples, searchable obs
 
 - [Open the live application](https://coronary-atlas-production.up.railway.app) · [Watch the narrated demo](https://youtu.be/opyfTMic1kc) · [Stable judge portal](https://jozai182-coronary-atlas.static.hf.space/index.html). The complete application runs on Railway and does not require the entrant's laptop. Availability depends on the hosting account's remaining credits/plan.
 - Repository: https://github.com/jozai193/coronary-atlas.
-- Choose **Explore profile A** or **Explore profile B**. Both have all 55 recorded model inputs and immediately compute four outputs. A/B are selected development examples, not independent tests. C/D have been removed from the judge-facing choices.
+- Choose **Explore profile A** or **Explore profile B**. Both have all 55 recorded model inputs and immediately compute four outputs. A/B are selected development examples, not independent tests. These live input profiles are separate from the four held-out teaching cases under Evidence.
 - **Explore** focuses on the reference heart, four estimates and explanations. Select LAD, LCX or RCA; try the internal view and camera presets. Optional colour, label and tour controls are under **View, colour & anatomy options**.
 - **Inputs & reports** contains searchable observations, CSV import and reviewed report assistance. **Start your own case** clears the examples so judges can enter their own de-identified observations.
 - **Evidence** contains model comparison, evaluation and separate public ECG references. **Open case summary** provides a worksheet; **Export research result** downloads the current outputs.

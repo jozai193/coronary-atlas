@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-15",
+  "scope": "Devpost narrative and supporting documentation only",
+  "five_improvements": [
+    "problem stated in opening",
+    "medical learners and educators named",
+    "integrated workflow distinguished from established components",
+    "concrete observable task and explicit unmeasured learning outcomes",
+    "direct application and narrated video links near opening"
+  ],
+  "story_sha256": "9291e197b0dc7e0be7a9a1adc8da6a0d8a994db37655e1fe2000f312e05b5e65",
+  "saved_story_matches": true,
+  "public_preview_verified": true,
+  "existing_media_retained": {
+    "video": "https://youtu.be/opyfTMic1kc",
+    "gallery_images": 5
+  },
+  "teaching_case_verified_against_live_api": {
+    "case_id": "D",
+    "target": "cad",
+    "probability": 0.3035720421567857,
+    "label": 1,
+    "predicted_label": 0,
+    "fold": 3,
+    "note": "Saved raw nested outer-fold prediction for this original-cohort row. No full-data model, SHAP, or coherence adjustment was applied."
+  },
+  "final_submission_performed": false,
+  "elevator_pitch_verified": true
+}

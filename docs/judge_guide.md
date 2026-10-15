@@ -2,6 +2,14 @@
 
 Open https://coronary-atlas-production.up.railway.app, or the stable static portal at https://jozai182-coronary-atlas.static.hf.space/index.html. No application password or API key is required. The complete application runs on Railway independently of the entrant's laptop; availability depends on account credits/plan. The narrated demo at https://youtu.be/opyfTMic1kc, public repository and six-page report remain independently accessible. Anonymous A/B predictions passed on all three variants. Desktop and 390-pixel mobile checks passed with no page exceptions or horizontal overflow.
 
+## Start with one educational task
+
+For medical learners and educators: load profile B, locate and isolate LCX, inspect its live explanation, and select a factor to find its entered value. Then open Evidence -> Try four cases. In that separate teaching challenge, choose Case D and CAD, guess, and reveal the saved 30.4% raw fold probability against a positive source label. The fixed 0.5 rule missed that row. The live profile's explanation does not explain this saved fold prediction.
+
+The observable task is to locate a vessel, trace an estimate to an observation, and explain a model error. No measured learning improvement or learner study has yet been completed. Proposed user testing should record task completion, time and interpretation errors against current teaching resources.
+
+## Full feature walkthrough
+
 1. Choose **Explore profile A**, then **Explore profile B**. Both supply all 55 actual source inputs. A is worksheet row 5, with all four source labels Normal; B is row 7, with CAD and three Stenotic vessel labels. Cases were selected by these contrasts and source row order before scoring, not by confidence. They were used in development and cannot establish accuracy.
 2. Rotate/zoom the heart. Focus LAD, LCX and RCA, use camera presets and internal anatomy, isolate a vessel, and switch between anatomy and probability display. The model colours shared reference anatomy; it does not locate lesions or measure narrowing.
 3. Read the explanation for each vessel. The baseline uses SHAP for raw outputs. Displayed probabilities have a disclosed consistency adjustment. Optional research variants disclose their methods and development limitations.
