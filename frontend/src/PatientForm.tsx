@@ -9,7 +9,7 @@ export {categoryLabel} from './observations'
 
 export default function PatientForm({fields,features,samples,busy,onChange,onSample,onPredict,onNewCase,focusField}:{fields:Field[];features:Features;samples:Sample[];busy:boolean;onChange:(f:Features)=>void;onSample:(s:Sample)=>void;onPredict:()=>void;onNewCase?:(f:Features)=>void;focusField?:{name:string;revision:number}}){
   const [group,setGroup]=useState('Demographics'),[error,setError]=useState(''),[query,setQuery]=useState(''),[missingOnly,setMissingOnly]=useState(false)
-  const [editing,setEditing]=useState(()=>typeof window.matchMedia!=='function'||!window.matchMedia('(max-width: 800px)').matches)
+  const [editing,setEditing]=useState(true)
   const upload=useRef<HTMLInputElement>(null)
   const root=useRef<HTMLElement>(null)
   useEffect(()=>{if(!focusField)return;setEditing(true);setQuery(focusField.name);setMissingOnly(false)
@@ -38,7 +38,7 @@ export default function PatientForm({fields,features,samples,busy,onChange,onSam
     entirelyMissing('Echocardiography')?'All echocardiography observations are missing. In a post-hoc internal test on complete records, masking this group changed LAD raw estimates. Performance on naturally incomplete records has not been validated.':null,
   ].filter((warning):warning is string=>warning!==null):[]
   const reason=outOfRange?`${outOfRange.label} is outside this model’s observed range (${outOfRange.minimum}–${outOfRange.maximum} ${outOfRange.unit}). Check the entry.`:calculatedBMIOutside?'BMI calculated from weight and height is outside this model’s observed range.':bmiConflict?'BMI does not match weight and height. Check the three entries.':incomplete?incomplete:availableCount<28?`Add ${28-availableCount} more observations, or load an example.`:`${count} supplied${calculatedBMI!==null&&suppliedBMI==null?' · BMI calculated':''} · ${fields.length-availableCount} will be imputed`
-  function template(){const blob=new Blob([Papa.unparse([Object.fromEntries(fields.map(f=>[f.name,'']))])],{type:'text/csv'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='coronary-atlas-input-template.csv';a.click();URL.revokeObjectURL(url)}
+  function template(){const blob=new Blob([Papa.unparse([Object.fromEntries(fields.map(f=>[f.name,'']))])],{type:'text/csv'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='cardiofolio-input-template.csv';a.click();URL.revokeObjectURL(url)}
   function change(field:Field,value:string){onChange({...features,[field.name]:value===''?null:field.kind==='number'?Number(value):value})}
   function csv(file:File){
     setError('')

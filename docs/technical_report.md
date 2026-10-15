@@ -1,12 +1,12 @@
-# Coronary Atlas
+# Cardiofolio
 
-Track A - Cardiovascular Risk Visualization & Prediction. Multimodal AI Hackathon 2026. Technical report, updated 14 October 2026.
+Track A - Cardiovascular Risk Visualization & Prediction. Multimodal AI Hackathon 2026. Technical report, updated 15 October 2026.
 
 ## 1. Problem and claim boundary
 
-Coronary Atlas connects four tabular classification models to an interactive anatomical reference and model-specific explanations. The input workflow accepts demographic, clinical, ECG, laboratory and echocardiographic observations. Outputs estimate the dataset's overall CAD and LAD/LCX/RCA stenosis labels.
+Cardiofolio connects four tabular classification models to an interactive anatomical reference and model-specific explanations. The input workflow accepts demographic, clinical, ECG, laboratory and echocardiographic observations. Outputs estimate the dataset's overall CAD and LAD/LCX/RCA stenosis labels.
 
-The application distinguishes prediction, association, visualization and diagnosis. A 70% vessel probability is not 70% narrowing, a future-event risk score or a localized blockage. Geometry is a shared atlas; it never represents a patient's imaging. The software is an educational/research decision-support prototype, not a substitute for professional diagnosis, coronary angiography or other diagnostic imaging.
+The application distinguishes prediction, association, visualization and diagnosis. A 70% vessel probability is not 70% narrowing, a future-event risk score or a localized blockage. Geometry is a shared atlas; it never represents a patient's imaging. The software is an educational/research prototype, not a substitute for professional diagnosis, coronary angiography or other diagnostic imaging.
 
 ## 2. Dataset and audit
 

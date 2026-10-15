@@ -1,10 +1,10 @@
-# Coronary Atlas — concise demo
+# Cardiofolio — concise demo
 
 Voice: Deepgram Aura 2 Orion. Fresh narration for the shorter cut. English captions accompany the narration. No track or submission instructions are spoken.
 
 ## 01 — See what a prediction means
 
-What does a cardiac prediction actually mean? Coronary Atlas connects the inputs, the estimate, and the heart, so a learner can explore the result instead of staring at a percentage. Let me show you.
+What does a cardiac prediction actually mean? Cardiofolio connects the inputs, the estimate, and the heart, so a learner can explore the result instead of staring at a percentage. Let me show you.
 
 ## 02 — Start with a complete case
 
@@ -32,4 +32,4 @@ The evidence panel shows performance, missed positive cases, false alarms and cu
 
 ## 08 — Take the case away
 
-Finally, the case summary brings the entered observations and model outputs together, with report evidence kept separate. Download the worksheet or research result for review. Editing an input clears stale predictions. Try profiles A and B, explore an artery, and ask why the estimate changed. Coronary Atlas makes the model inspectable. It is an educational research prototype, not a diagnostic system.
+Finally, the case summary brings the entered observations and model outputs together, with report evidence kept separate. Download the worksheet or research result for review. Editing an input clears stale predictions. Try profiles A and B, explore an artery, and ask why the estimate changed. Cardiofolio makes the model inspectable. It is an educational research prototype, not a diagnostic system.

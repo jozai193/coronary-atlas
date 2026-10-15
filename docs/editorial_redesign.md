@@ -1,0 +1,11 @@
+# Clinical Editorial redesign
+
+The frontend now uses warm ivory, white, oxblood, sage and copper with serif editorial headings and a neutral anatomical canvas. The shared tokens in `frontend/src/workspace.css` also theme the report importer, evidence tools, guided review and case summary. Secondary reading text is slightly darker than the supplied slate swatch to meet text contrast on ivory and the soft footer background.
+
+Explore keeps the interactive heart beside the four estimates. The viewer expands in place without remounting or replacing its state; Escape restores its compact size and focus. Model reasoning is expandable, and a direct teaching-challenge route opens the existing held-out cases without exposing the saved answer before a guess. Inputs remain visible by default on the dedicated input page, including a fresh mobile case.
+
+This changes presentation and navigation, not inference, evaluation, input requirements or anatomical meaning. All 104 meshes, their manifest, generated anchors and structure-to-target mappings are retained. Red/blue reference flow colours and the separate light-to-dark-red vessel probability scale retain their meanings. Lower/intermediate/higher textual probability bands keep their original boundaries; their UI text colours are darker for the light theme. Signed contributions retain explicit increase/decrease labels.
+
+Verification: 81 frontend tests in 24 files; TypeScript and production build passed. Real-browser checks covered profile B, vessel isolation, internal views, expand/Escape, raw explanations, the Case D CAD false negative, summary, fresh-case blocking and desktop/mobile navigation. The three main views had no detected rendered-text contrast failures in the scoped check. Desktop and mobile screenshots were reviewed. All six A/B/variant prediction requests succeeded locally, and all 11 protected model/evaluation hashes and 105 anatomy files matched the previous public build.
+
+The existing Three.js bundle-size warning remains. These checks are engineering verification, not independent OCR, clinical or learner-outcome validation. Public branding and media publication are recorded separately after the name is selected.

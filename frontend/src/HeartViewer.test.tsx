@@ -46,3 +46,15 @@ it('lets anatomy colors hide probability shading while keeping the estimates ava
   expect(screen.getByText(/No probability is mapped in anatomy-color mode/)).toBeInTheDocument()
   expect(screen.getByText('90.0%')).toBeInTheDocument()
 })
+
+it('expands the same viewer and lets Escape restore the compact view and keyboard focus',()=>{
+  render(<HeartViewer result={null} selected="lcx" onSelect={()=>{}}/>)
+  const expand=screen.getByRole('button',{name:'Expand heart'})
+  fireEvent.click(expand)
+  expect(screen.getByRole('region',{name:'Interactive coronary anatomy'})).toHaveClass('anatomy-expanded')
+  expect(screen.getByRole('button',{name:'Compact view'})).toHaveAttribute('aria-expanded','true')
+  expect(screen.getByRole('button',{name:'Isolate LCX'})).toBeInTheDocument()
+  fireEvent.keyDown(window,{key:'Escape'})
+  expect(screen.getByRole('region',{name:'Interactive coronary anatomy'})).not.toHaveClass('anatomy-expanded')
+  expect(screen.getByRole('button',{name:'Expand heart'})).toHaveFocus()
+})

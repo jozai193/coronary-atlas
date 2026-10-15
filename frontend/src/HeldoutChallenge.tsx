@@ -11,7 +11,7 @@ interface Reveal {case_id:string;target:Target;probability:number;label:0|1;pred
 
 type VesselTarget = Exclude<Target,'cad'>
 
-export default function HeldoutChallenge({onInspectVessel,onLeaveReference}:{onInspectVessel:(vessel:VesselTarget,caseId:string)=>void;onLeaveReference:()=>void}){
+export default function HeldoutChallenge({openRequest=0,onInspectVessel,onLeaveReference}:{openRequest?:number;onInspectVessel:(vessel:VesselTarget,caseId:string)=>void;onLeaveReference:()=>void}){
   const [open,setOpen]=useState(false)
   const [index,setIndex]=useState<CaseIndex|null>(null)
   const [caseId,setCaseId]=useState('A')
@@ -35,6 +35,7 @@ export default function HeldoutChallenge({onInspectVessel,onLeaveReference}:{onI
     catch(e){setError((e as Error).message)}
     finally{setBusy(false)}
   }
+  useEffect(()=>{if(openRequest>0){setOpen(true);if(!index)void loadIndex()}},[openRequest])
   function toggle(){const next=!open;setOpen(next);if(!next)onLeaveReference();if(next&&!index)void loadIndex()}
   function changeCase(id:string){serial.current++;onLeaveReference();setCaseId(id);setGuess(null);setReveal(null);setBusy(false);setError('')}
   function changeTarget(value:Target){serial.current++;onLeaveReference();setTarget(value);setGuess(null);setReveal(null);setBusy(false);setError('')}

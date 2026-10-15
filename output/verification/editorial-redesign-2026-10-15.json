@@ -1,0 +1,44 @@
+{
+  "checked_on": "2026-10-15",
+  "status": "Brand selected; publication in progress",
+  "provisional_local_name": "VesselLens",
+  "public_deployment_updated": false,
+  "devpost_updated_in_this_pass": false,
+  "final_submission_performed": false,
+  "frontend_tests": {
+    "files": 24,
+    "tests": 81,
+    "result": "passed"
+  },
+  "production_build": "TypeScript and Vite passed; existing large Three.js chunk warning remains",
+  "prediction_smoke": "Six A/B predictions across all three variants passed locally",
+  "protected_artifact_checks": "11 model/evaluation hashes unchanged; 105 anatomy files match previous public source",
+  "browser_checks": [
+    "Profile B produced CAD 88.7%",
+    "Expand heart and Escape restore viewer size and keyboard focus",
+    "Inside heart and LCX isolation remain usable",
+    "Raw contributions and factor-to-input navigation work",
+    "Explore shortcut opens held-out challenge; Case D shows saved CAD 30.4% false negative",
+    "Echo proposals remain separate from active prediction until confirmed",
+    "Case summary opens and returns to workspace",
+    "Own case clears old values and blocks incomplete inference",
+    "CSV imports a complete record and generates a prediction",
+    "OCR of one previously inspected public specimen returned unconfirmed CR 0.76, Na 134 and K 3.5 proposals; instrumented repeat observed no POST requests",
+    "Explore, Inputs and Evidence have no page overflow at 320, 390, 768 and 1440 pixel widths",
+    "Scoped rendered-text contrast check found no failing text in three main views with reduced motion",
+    "No page exceptions in completed core-workflow browser checks"
+  ],
+  "resolved_regression": "Fresh mobile input page initially collapsed the fields; fields now start visible on the dedicated Inputs page and the fresh-case browser check passes",
+  "ocr_instrumentation_note": "An initial smoke invocation reported an unexpected POST without retaining its destination. A subsequent instrumented run observed none. This is a bounded engineering check, not broad OCR or privacy validation.",
+  "pending_brand_materials": [
+    "Final product name",
+    "Public source and Railway deployment",
+    "Devpost title/story/gallery",
+    "Six-page report render",
+    "Renamed video capture/render/upload",
+    "Hugging Face launch portal"
+  ],
+  "clinical_or_learning_validation_claimed": false,
+  "selected_name": "Cardiofolio",
+  "name_selection": "Explicitly selected by user"
+}

@@ -24,6 +24,8 @@ import ReportEvidence from './ReportEvidence'
 import {emptyReportEvidence,serializeReportEvidence,appendEchoReview} from './evidenceRecord'
 
 export default function App(){
+  const [explanationOpen,setExplanationOpen]=useState(true)
+  const [challengeRequest,setChallengeRequest]=useState(0)
   const [view,setView]=useState<'explore'|'inputs'|'evidence'>('explore')
   const [info,setInfo]=useState<ModelInfo|null>(null),[samples,setSamples]=useState<Sample[]>([]),[evaluation,setEvaluation]=useState<Evaluation|null>(null)
   const [features,setFeatures]=useState<Features>({}),[result,setResult]=useState<Result|null>(null),[selected,setSelected]=useState<Target>('lad'),[busy,setBusy]=useState(false),[error,setError]=useState(''),[profile,setProfile]=useState('Manual observations'),[,setTab]=useState<'explain'|'evidence'>('explain'),[dirty,setDirty]=useState(false)
@@ -62,18 +64,18 @@ export default function App(){
   function explore(s:Sample){sample(s);if(info&&completenessIssue(s.features,info.features)){setTimeout(()=>focusSection('.patient'),0);return}setView('explore');void predict(s.features)}
   function guidedExplore(s:Sample){explore(s);setGuideProfile(s.id)}
   function showDetails(t:'explain'|'evidence'){setTab(t);setView(t==='evidence'?'evidence':'explore');setTimeout(()=>focusSection(t==='evidence'?'.evidence-view':'#model-details'),0)}
-  function download(){if(!result)return;const blob=new Blob([JSON.stringify({...result,profile,clinical_context:clinicalContext,clinical_context_used_by_model:false,report_evidence:serializeReportEvidence(reportEvidence),educational_only:true},null,2)],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='coronary-atlas-research-result.json';a.click();URL.revokeObjectURL(u)}
+  function download(){if(!result)return;const blob=new Blob([JSON.stringify({...result,profile,clinical_context:clinicalContext,clinical_context_used_by_model:false,report_evidence:serializeReportEvidence(reportEvidence),educational_only:true},null,2)],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='cardiofolio-research-result.json';a.click();URL.revokeObjectURL(u)}
   const loadedExample=samples.find(s=>s.name===profile)
   const incompleteExample=info&&loadedExample?completenessIssue(features,info.features):''
   const completeExample=info?samples.find(s=>!s.synthetic&&!completenessIssue(s.features,info.features)):undefined
   if(summaryOpen&&info)return <CaseSummary reportEvidence={reportEvidence} clinicalContext={clinicalContext} profile={profile} fields={info.features} features={features} result={referenceCase?null:result} sample={loadedExample} imported={imported} onBack={closeSummary}/>
   return <><header className="topbar">
-    <a className="brand" href="/"><span className="brand-mark"><Activity size={23}/></span>coronary<span>atlas</span></a>
+    <a className="brand" href="/" aria-label="Cardiofolio home"><span className="brand-mark"><svg width="27" height="32" viewBox="0 0 32 36" fill="none" aria-hidden="true"><path d="M5 5l11 27L27 5M16 32V10m0 12L8 16m8 0l7-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg></span>Cardio<span>folio</span></a>
     <nav aria-label="Workspace"><button className={view==='explore'?'nav-active':''} aria-current={view==='explore'?'page':undefined} onClick={()=>openView('explore')}>Explore</button><button className={view==='inputs'?'nav-active':''} aria-current={view==='inputs'?'page':undefined} onClick={()=>openView('inputs')}>Inputs &amp; reports</button><button className={view==='evidence'?'nav-active':''} aria-current={view==='evidence'?'page':undefined} onClick={()=>openView('evidence')}>Evidence</button></nav>
     <span className="research"><i/>Educational prototype</span>
   </header>
   <main className="atlas-workspace">
-    <div className="workspace-intro"><div><span className="folio">THE CORONARY ATLAS</span><h1>See the heart. <em>Understand the estimate.</em></h1><p>Clinical observations, connected to anatomy.</p></div><div className="intro-actions"><button className="start-guide text-action" disabled={busy} onClick={startGuide}><BookOpen size={15}/>Start guided case</button><button className="review-start text-action" disabled={busy} onClick={startReview}>Start clinician review<ArrowUpRight size={14}/></button></div></div>
+    <div className="workspace-intro"><div><span className="folio">CORONARY ANATOMY &amp; MODEL EVIDENCE</span><h1>Understand the heart <em>behind the estimate.</em></h1><p>A working atlas for medical learners and educators.</p></div><div className="intro-actions"><button className="start-guide text-action" disabled={busy} onClick={startGuide}><BookOpen size={15}/>Start guided case</button><button className="review-start text-action" disabled={busy} onClick={startReview}>Start clinician review<ArrowUpRight size={14}/></button></div></div>
     <section className="case-toolbar" aria-label="Example profiles">
       <div className="case-choices"><span>Start with a case</span>{samples.map(s=><button key={s.id} disabled={busy} aria-pressed={profile===s.name} onClick={()=>explore(s)} aria-label={`Explore profile ${s.id.toUpperCase()} Age ${s.features.Age??'unknown'} ${info&&completenessIssue(s.features,info.features)?'incomplete':'complete recorded example'}`}><span>{s.id.toUpperCase()}</span><strong>Profile {s.id.toUpperCase()}</strong><small>{s.features.Age??'—'} years</small><span className="sr-only">{info&&completenessIssue(s.features,info.features)?'Incomplete · input review only':'Required inputs supplied'}</span></button>)}</div>
       <button className="own-case" disabled={!info||busy} onClick={()=>{if(info){replaceCase(Object.fromEntries(info.features.map(f=>[f.name,null])));setProfile('Your own case');openView('inputs')}}}><Plus size={16}/>Start your own case</button>
@@ -100,8 +102,11 @@ export default function App(){
         </div>
         {!referenceCase&&result&&result.warnings.length>0&&<div className="warnings"><Info size={18}/><div>{result.warnings.map(w=><p key={w}>{w}</p>)}</div></div>}
         {!referenceCase&&loadedExample?.synthetic&&<p className="synthetic-note">Synthetic demonstration profile. No ground-truth diagnosis; this example is not evaluation evidence.</p>}
-        <div tabIndex={-1} className="bottom-tabs" id="model-details"><button className="active" onClick={()=>setTab('explain')}><Activity size={16}/>Prediction explanation</button><button onClick={()=>showDetails('evidence')}><BookOpen size={16}/>Validation &amp; model details<ArrowUpRight size={13}/></button></div>
+        <div className="learning-route"><div><span className="folio">A LESSON IN UNCERTAINTY</span><strong>Can you spot a model error?</strong><p>Compare a saved held-out prediction with its recorded label.</p></div><button onClick={()=>{setChallengeRequest(n=>n+1);setView('evidence');setTimeout(()=>focusSection('.heldout-head button'),0)}}>Try the teaching challenge<ArrowRight size={16}/></button></div>
+        <div tabIndex={-1} className="bottom-tabs" id="model-details"><button className="active" onClick={()=>{setTab('explain');setExplanationOpen(true)}}><Activity size={16}/>Prediction explanation</button><button onClick={()=>showDetails('evidence')}><BookOpen size={16}/>Validation &amp; model details<ArrowUpRight size={13}/></button></div>
+        <details className="explanation-disclosure" open={explanationOpen} onToggle={e=>setExplanationOpen(e.currentTarget.open)}><summary><span>Read the model’s reasoning <small>{selected.toUpperCase()} · raw output &amp; contributing observations</small></span><span aria-hidden="true" className="disclosure-symbol"/></summary>
         <ExplanationPanel result={referenceCase?null:result} selected={selected} onSelect={setSelected} fields={info.features} onFind={findMeasurement}/>
+        </details>
       </section>
       <section className="inputs-view" aria-label="Inputs and reports workspace" tabIndex={-1} hidden={view!=='inputs'}>
         <div className="section-intro"><div><span className="folio">01 / THE OBSERVATIONS</span><h2>Your case, your observations.</h2><p>Enter values, import a CSV, or review a report. Unknown values stay blank.</p></div><button className="text-action" onClick={()=>openView('explore')}>Back to the heart<ArrowRight size={15}/></button></div>
@@ -119,12 +124,12 @@ export default function App(){
         <div className="section-intro"><div><span className="folio">03 / BEHIND THE ESTIMATE</span><h2>Evidence, including the limitations.</h2><p>Inspect evaluation results, compare research models, or explore separate public references.</p></div><button className="text-action" onClick={()=>openView('explore')}>Back to the heart<ArrowRight size={15}/></button></div>
         <ModelComparison info={candidate} variant={modelVariant} busy={busy} onChange={changeModel}/>
         <Evidence evaluation={evaluation} coherence={coherence} info={info} selected={selected}/>
-        <div className="reference-section"><span className="folio">EXPLORE THE SOURCE MATERIAL</span><HeldoutChallenge onInspectVessel={inspectHeldoutVessel} onLeaveReference={()=>setReferenceCase(null)}/><PublicECGReference/></div>
+        <div className="reference-section"><span className="folio">EXPLORE THE SOURCE MATERIAL</span><HeldoutChallenge openRequest={challengeRequest} onInspectVessel={inspectHeldoutVessel} onLeaveReference={()=>setReferenceCase(null)}/><PublicECGReference/></div>
       </section>
       <div aria-live="polite" className="prediction-announcement">{referenceCase?'Reference anatomy only. The saved fold result is in the challenge.':busy?'Computing four predictions and model explanations…':result?`Prediction complete. CAD ${percent(result.cad.probability)}. ${result.missing_features.length} imputed observations.`:dirty?'Previous results cleared. Generate a new prediction.':''}</div>
     </>}
     {guideStep!==null&&<button className="guide-resume" onClick={returnToGuide}><BookOpen size={14}/>Guided case · step {guideStep+1}/5 ↑</button>}
-    <footer className="credits"><span>Coronary Atlas · Educational research</span><span>BodyParts3D · The Database Center for Life Science · CC BY 4.0</span></footer>
+    <footer className="credits"><span>Cardiofolio · Educational research</span><span>BodyParts3D · The Database Center for Life Science · CC BY 4.0</span></footer>
   </main>
   <div className="disclaimer"><ShieldCheck size={15}/><p>Educational research prototype. Not a diagnosis, measured narrowing, or a substitute for diagnostic imaging. Independent clinical validation remains outstanding.</p></div>
   </>

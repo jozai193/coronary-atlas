@@ -14,7 +14,7 @@ export default function ThresholdLab(){
   const [repeat,setRepeat]=useState(0)
   const run=data.targets[target].runs[repeat]
   return <section className="threshold-lab" aria-labelledby="threshold-title">
-    <div className="threshold-heading"><div><span className="eyebrow">EXPERIMENT / DECISION CUTOFFS</span><h2 id="threshold-title">Catch more cases. See the cost.</h2></div><a href={evidenceUrl} download="coronary-atlas-cutoff-evidence.json">Download evidence ↓</a></div>
+    <div className="threshold-heading"><div><span className="eyebrow">EXPERIMENT / DECISION CUTOFFS</span><h2 id="threshold-title">Catch more cases. See the cost.</h2></div><a href={evidenceUrl} download="cardiofolio-cutoff-evidence.json">Download evidence ↓</a></div>
     <p>A lower decision cutoff can detect more positive cases while raising more false alarms. Compare three rules on held-out raw-model probabilities. This experiment does not measure the coherence-adjusted display or change the patient prediction above.</p>
     <div className="threshold-controls"><label>Compare target<select value={target} onChange={e=>setTarget(e.target.value as Target)}>{TARGETS.map(t=><option key={t} value={t}>{t.toUpperCase()}</option>)}</select></label><label>Validation run<select value={repeat} onChange={e=>setRepeat(Number(e.target.value))}><option value={0}>Run 1 · 303 records</option><option value={1}>Run 2 · same 303 records</option></select></label><span>ROC-AUC <b>{run.auc.toFixed(3)}</b><small>Same probabilities for all three rules</small></span></div>
     <div className="threshold-policies">{policies.map(policy=>{

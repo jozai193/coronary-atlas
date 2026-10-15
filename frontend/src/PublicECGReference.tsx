@@ -34,7 +34,7 @@ export default function PublicECGReference(){
         <h3>Original source report string</h3><blockquote>{record.report}</blockquote><p>Preserved as published, without translation or new diagnostic interpretation. PTB-XL reports may originate from a clinician or ECG device. Source human-validation flag: {record.validated_by_human?'true':'false'}.</p>
         <div className="public-ecg-table"><table><caption>Original SCP-ECG statements · source annotations, not CAD model outputs</caption><thead><tr><th>Source code</th><th>Provider description</th><th>Source likelihood</th></tr></thead><tbody>{record.statements.map(s=><tr key={s.code}><th scope="row">{s.code}</th><td>{s.description}</td><td>{s.source_likelihood===0?'Unknown (source code 0)':`${s.source_likelihood}%`}</td></tr>)}</tbody></table></div>
         <p>Unlisted findings remain unknown. ECG annotations do not establish angiographic CAD or LAD/LCX/RCA narrowing. These records cannot be joined to an unrelated echo report or to the current profile.</p>
-        <p className="public-ecg-credit">{data.citation} <a href={data.source} target="_blank" rel="noreferrer">Official dataset ↗</a> · <a href="/reference-ecg/LICENSE.txt" target="_blank" rel="noreferrer">{data.license}</a>. Waveform excerpts and layout prepared by Coronary Atlas.</p>
+        <p className="public-ecg-credit">{data.citation} <a href={data.source} target="_blank" rel="noreferrer">Official dataset ↗</a> · <a href="/reference-ecg/LICENSE.txt" target="_blank" rel="noreferrer">{data.license}</a>. Waveform excerpts and layout prepared by Cardiofolio.</p>
         <p>{data.selection}</p>
       </>}
     </details>

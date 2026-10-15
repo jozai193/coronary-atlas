@@ -4,7 +4,7 @@ import { Html, OrbitControls } from '@react-three/drei'
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib'
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
 import { Mesh, MeshStandardMaterial, DoubleSide, Vector3, Quaternion, Spherical } from 'three'
-import { RotateCcw, Focus, Layers3, Move3D } from 'lucide-react'
+import { RotateCcw, Focus, Layers3, Move3D, Maximize2, Minimize2 } from 'lucide-react'
 import { percent, NAMES, type Result, type Target } from './types'
 import anchors from './generated/anatomy-anchors.json'
 import {ARTERY_COLOR,VEIN_COLOR,HEART_COLOR,INTERNAL_PARTS,DETAIL_PARTS,structureColor,coronaryShade,type AnatomyColorMode} from './anatomyDisplay'
@@ -114,6 +114,9 @@ function VesselLabels({selected,result,onSelect}:{selected:Target;result:Result|
 }
 
 export default function HeartViewer({result,selected,onSelect}:{result:Result|null;selected:Target;onSelect:(t:Target)=>void}){
+  const [expanded,setExpanded]=useState(false)
+  const expandButton=useRef<HTMLButtonElement>(null)
+  useEffect(()=>{if(!expanded)return;function escape(e:KeyboardEvent){if(e.key==='Escape'){setExpanded(false);expandButton.current?.focus()}}window.addEventListener('keydown',escape);return()=>window.removeEventListener('keydown',escape)},[expanded])
   const [manifest,setManifest]=useState<Manifest|null>(null),[failed,setFailed]=useState(false)
   const [tissue,setTissue]=useState<Tissue>('surface'),[detail,setDetail]=useState(true),[isolate,setIsolate]=useState(false)
   const [view,setView]=useState<View>('front'),[reset,setReset]=useState(0)
@@ -127,8 +130,8 @@ export default function HeartViewer({result,selected,onSelect}:{result:Result|nu
   useEffect(()=>{fetch('/anatomy/manifest.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(setManifest).catch(()=>setFailed(true))},[])
   function restore(){setView('front');setReset(n=>n+1);setIsolate(false);setTour(false)}
   function select(v:Target){onSelect(v);setView('focus');setReset(n=>n+1)}
-  return <section tabIndex={-1} className="anatomy panel" aria-label="Interactive coronary anatomy" data-anatomy-ready={ready} data-camera-view={view}>
-    <div className="panel-heading"><div><span className="eyebrow">02 / EXPLORE THE ANATOMY</span><h2>Inside the coronary network</h2></div><span className="reference-badge">REFERENCE HEART</span></div>
+  return <section tabIndex={-1} className={`anatomy panel${expanded?' anatomy-expanded':''}`} aria-label="Interactive coronary anatomy" data-anatomy-ready={ready} data-camera-view={view}>
+    <div className="panel-heading"><div><span className="eyebrow">02 / EXPLORE THE ANATOMY</span><h2>Inside the coronary network</h2></div><div className="viewer-heading-actions"><span className="reference-badge">SHARED REFERENCE · 104 MESHES</span><button ref={expandButton} className="expand-viewer" aria-expanded={expanded} onClick={()=>setExpanded(!expanded)}>{expanded?<Minimize2 size={15}/>:<Maximize2 size={15}/>}<span>{expanded?'Compact view':'Expand heart'}</span></button></div></div>
     <div className="scene-wrap">
       <div className="scene-label"><span className="tiny-dot"/>{result&&colorMode==='probability'?'Coronary probability shading':'Anatomy colors · no probability shading'}</div>
       <div className="view-switch" aria-label="Camera views">{(['front','back','side'] as const).map(v=><button key={v} aria-pressed={view===v} onClick={()=>{setView(v);setReset(n=>n+1)}}>{v[0].toUpperCase()+v.slice(1)}</button>)}<button onClick={restore} title="Reset 3D view" aria-label="Reset 3D view"><RotateCcw size={15}/></button></div>

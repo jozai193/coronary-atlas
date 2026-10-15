@@ -11,6 +11,15 @@ beforeEach(()=>{inspect.mockClear();leaveReference.mockClear();fetchMock=vi.fn(a
 afterEach(()=>{cleanup();vi.unstubAllGlobals()})
 
 describe('Held-out teaching challenge',()=>{
+  it('opens from the Explore shortcut without exposing a saved result before a guess',async()=>{
+    const {rerender}=render(<HeldoutChallenge openRequest={0} onInspectVessel={inspect} onLeaveReference={leaveReference}/>)
+    expect(fetchMock).not.toHaveBeenCalled()
+    rerender(<HeldoutChallenge openRequest={1} onInspectVessel={inspect} onLeaveReference={leaveReference}/>)
+    await screen.findByText('60–69 years')
+    expect(screen.getByRole('button',{name:/Close challenge/})).toHaveAttribute('aria-expanded','true')
+    expect(screen.queryByText('42.0%')).not.toBeInTheDocument()
+    expect(fetchMock.mock.calls.map(([url])=>url)).toEqual(['/api/held-out/cases'])
+  })
   it('keeps the saved truth hidden until a guess and resets it after changing cases',async()=>{
     render(<HeldoutChallenge onInspectVessel={inspect} onLeaveReference={leaveReference}/>)
     expect(fetchMock).not.toHaveBeenCalled()

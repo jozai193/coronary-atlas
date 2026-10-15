@@ -14,5 +14,5 @@ export interface CandidateInfo {available:boolean;candidate_id:string;name?:stri
 export interface Evaluation {method:string;threshold:number;targets:Record<Target,{metrics:Metrics;baseline:Metrics;fold_sd:Metrics;auc_bootstrap_interval:number[];interval_note:string;curves:{roc:{fpr:number[];tpr:number[]};calibration:{predicted:number[];observed:number[]}}}>}
 export const TARGETS:Target[]=['cad','lad','lcx','rca']
 export const NAMES:Record<Target,string>={cad:'Overall coronary artery disease',lad:'Left anterior descending',lcx:'Left circumflex',rca:'Right coronary artery'}
-export const color=(p:number|undefined)=>p===undefined?'#a3b4c2':p<.3?'#64d8bc':p<.7?'#edc27d':'#f39780'
+export const color=(p:number|undefined)=>p===undefined?'#606A70':p<.3?'#526851':p<.7?'#805C28':'#8A413A'
 export const percent=(p:number)=>`${(p*100).toFixed(1)}%`

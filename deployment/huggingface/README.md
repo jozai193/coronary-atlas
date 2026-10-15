@@ -1,15 +1,15 @@
 ---
-title: Coronary Atlas
+title: Cardiofolio
 emoji: "\U0001F9EC"
-colorFrom: green
-colorTo: blue
+colorFrom: red
+colorTo: gray
 sdk: static
 app_file: index.html
 pinned: false
 license: mit
 ---
 
-# Coronary Atlas
+# Cardiofolio
 
 Track A educational research prototype. [Open the interactive demo](https://coronary-atlas-production.up.railway.app) · [Narrated demo](https://youtu.be/opyfTMic1kc) · [Source, setup and report](https://github.com/jozai193/coronary-atlas).
 
